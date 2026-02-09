@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log majority.2100_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/majority.2100/index.html" target="_blank">majority.2100</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[142.332, 86.585, 95.339, 116.665, 104.193]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_majority.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+Wallclock time: 142.332 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:45:04 GMT+01:00 2026
+Hostname: r23m0073
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+
+Importing model from "models/majority.2100/prism.model.tradir/model.tra", "models/majority.2100/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/majority.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 6% 8% 12% 14% 18% 22% 24% 28% 30% 34% 38% 40% 44% 46% 50% 52% 56% 60% 62% 66% 68% 72% 74% 78% 82% 84% 88% 90% 92% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 48 iterations in 0.06 seconds (average 0.001250, setup 0.00)
+
+Time for model construction: 96.222 seconds.
+
+Type:        CTMC
+States:      192000 (1 initial)
+Transitions: 1961600
+
+Rate matrix: 5862 nodes (85 terminal), 1961600 minterms, vars: 18r/18c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 189000 of 192000 (98.4%)
+
+Building hybrid MTBDD matrix... [levels=18, nodes=7680] [360.0 KB]
+Adding explicit sparse matrices... [levels=9, num=256, compact] [669.6 KB]
+Creating vector for diagonals... [1.5 MB]
+Allocating iteration vectors... [3 x 1.5 MB]
+TOTAL: [6.9 MB]
+
+Uniformisation: q.t = 3.287227 x 2100.000000 = 6903.175850
+Fox-Glynn: left = 6319, right = 7610
+
+Starting iterations...
+Iteration 901 (of 7610): max relative diff=0.009588, 5.01 sec so far
+Iteration 1807 (of 7610): max relative diff=0.001939, 10.02 sec so far
+Iteration 2709 (of 7610): max relative diff=0.000814, 15.03 sec so far
+Iteration 3609 (of 7610): max relative diff=0.000474, 20.04 sec so far
+Iteration 4511 (of 7610): max relative diff=0.000330, 25.05 sec so far
+Iteration 5415 (of 7610): max relative diff=0.000252, 30.06 sec so far
+Iteration 6317 (of 7610): max relative diff=0.000204, 35.07 sec so far
+Iteration 7169 (of 7610): max relative diff=0.000172, 40.08 sec so far
+
+Iterative method: 7610 iterations in 45.17 seconds (average 0.005607, setup 2.50)
+
+Value in the initial state: 0.4446382245084161
+
+Time for model checking: 45.329 seconds.
+
+Result: 0.4446382245084161
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_majority.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+Wallclock time: 86.585 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:20:44 GMT+01:00 2026
+Hostname: n23m0028
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+
+Importing model from "models/majority.2100/prism.model.tradir/model.tra", "models/majority.2100/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/majority.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 4% 10% 16% 22% 28% 34% 40% 46% 50% 56% 62% 68% 74% 80% 86% 92% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 48 iterations in 0.03 seconds (average 0.000625, setup 0.00)
+
+Time for model construction: 52.126 seconds.
+
+Type:        CTMC
+States:      192000 (1 initial)
+Transitions: 1961600
+
+Rate matrix: 5862 nodes (85 terminal), 1961600 minterms, vars: 18r/18c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 189000 of 192000 (98.4%)
+
+Building hybrid MTBDD matrix... [levels=18, nodes=7680] [360.0 KB]
+Adding explicit sparse matrices... [levels=9, num=256, compact] [669.6 KB]
+Creating vector for diagonals... [1.5 MB]
+Allocating iteration vectors... [3 x 1.5 MB]
+TOTAL: [6.9 MB]
+
+Uniformisation: q.t = 3.287227 x 2100.000000 = 6903.175850
+Fox-Glynn: left = 6319, right = 7610
+
+Starting iterations...
+Iteration 1211 (of 7610): max relative diff=0.004990, 5.01 sec so far
+Iteration 2419 (of 7610): max relative diff=0.001031, 10.02 sec so far
+Iteration 3628 (of 7610): max relative diff=0.000469, 15.03 sec so far
+Iteration 4839 (of 7610): max relative diff=0.000297, 20.04 sec so far
+Iteration 6017 (of 7610): max relative diff=0.000217, 25.05 sec so far
+Iteration 7208 (of 7610): max relative diff=0.000171, 30.06 sec so far
+
+Iterative method: 7610 iterations in 33.84 seconds (average 0.004176, setup 2.06)
+
+Value in the initial state: 0.4446382245084161
+
+Time for model checking: 33.919 seconds.
+
+Result: 0.4446382245084161
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_majority.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+Wallclock time: 95.339 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:17:34 GMT+01:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+
+Importing model from "models/majority.2100/prism.model.tradir/model.tra", "models/majority.2100/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/majority.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 4% 10% 14% 20% 26% 30% 36% 42% 46% 52% 58% 62% 68% 72% 78% 84% 88% 94% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 48 iterations in 0.04 seconds (average 0.000833, setup 0.00)
+
+Time for model construction: 57.571 seconds.
+
+Type:        CTMC
+States:      192000 (1 initial)
+Transitions: 1961600
+
+Rate matrix: 5862 nodes (85 terminal), 1961600 minterms, vars: 18r/18c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 189000 of 192000 (98.4%)
+
+Building hybrid MTBDD matrix... [levels=18, nodes=7680] [360.0 KB]
+Adding explicit sparse matrices... [levels=9, num=256, compact] [669.6 KB]
+Creating vector for diagonals... [1.5 MB]
+Allocating iteration vectors... [3 x 1.5 MB]
+TOTAL: [6.9 MB]
+
+Uniformisation: q.t = 3.287227 x 2100.000000 = 6903.175850
+Fox-Glynn: left = 6319, right = 7610
+
+Starting iterations...
+Iteration 1089 (of 7610): max relative diff=0.006427, 5.01 sec so far
+Iteration 2184 (of 7610): max relative diff=0.001285, 10.02 sec so far
+Iteration 3276 (of 7610): max relative diff=0.000563, 15.03 sec so far
+Iteration 4355 (of 7610): max relative diff=0.000348, 20.04 sec so far
+Iteration 5482 (of 7610): max relative diff=0.000248, 25.05 sec so far
+Iteration 6597 (of 7610): max relative diff=0.000192, 30.06 sec so far
+
+Iterative method: 7610 iterations in 37.06 seconds (average 0.004564, setup 2.33)
+
+Value in the initial state: 0.4446382245084161
+
+Time for model checking: 37.171 seconds.
+
+Result: 0.4446382245084161
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_majority.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+Wallclock time: 116.665 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:47:30 GMT+01:00 2026
+Hostname: r23m0214
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+
+Importing model from "models/majority.2100/prism.model.tradir/model.tra", "models/majority.2100/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/majority.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 4% 8% 12% 16% 20% 24% 28% 32% 36% 40% 44% 48% 52% 56% 60% 64% 68% 72% 76% 80% 84% 88% 92% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 48 iterations in 0.06 seconds (average 0.001250, setup 0.00)
+
+Time for model construction: 74.033 seconds.
+
+Type:        CTMC
+States:      192000 (1 initial)
+Transitions: 1961600
+
+Rate matrix: 5862 nodes (85 terminal), 1961600 minterms, vars: 18r/18c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 189000 of 192000 (98.4%)
+
+Building hybrid MTBDD matrix... [levels=18, nodes=7680] [360.0 KB]
+Adding explicit sparse matrices... [levels=9, num=256, compact] [669.6 KB]
+Creating vector for diagonals... [1.5 MB]
+Allocating iteration vectors... [3 x 1.5 MB]
+TOTAL: [6.9 MB]
+
+Uniformisation: q.t = 3.287227 x 2100.000000 = 6903.175850
+Fox-Glynn: left = 6319, right = 7610
+
+Starting iterations...
+Iteration 973 (of 7610): max relative diff=0.008208, 5.01 sec so far
+Iteration 1951 (of 7610): max relative diff=0.001642, 10.02 sec so far
+Iteration 2928 (of 7610): max relative diff=0.000697, 15.03 sec so far
+Iteration 3907 (of 7610): max relative diff=0.000414, 20.04 sec so far
+Iteration 4884 (of 7610): max relative diff=0.000293, 25.05 sec so far
+Iteration 5861 (of 7610): max relative diff=0.000225, 30.06 sec so far
+Iteration 6821 (of 7610): max relative diff=0.000184, 35.07 sec so far
+
+Iterative method: 7610 iterations in 41.73 seconds (average 0.005156, setup 2.49)
+
+Value in the initial state: 0.4446382245084161
+
+Time for model checking: 41.9 seconds.
+
+Result: 0.4446382245084161
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_majority.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+Wallclock time: 104.193 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:48:17 GMT+01:00 2026
+Hostname: n23m0343
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/majority.2100/prism.model.tradir/model.all models/majority.2100/property.props
+
+Importing model from "models/majority.2100/prism.model.tradir/model.tra", "models/majority.2100/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/majority.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 4% 8% 14% 18% 24% 28% 34% 38% 42% 48% 52% 56% 62% 66% 72% 76% 80% 86% 90% 94% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 48 iterations in 0.04 seconds (average 0.000833, setup 0.00)
+
+Time for model construction: 62.805 seconds.
+
+Type:        CTMC
+States:      192000 (1 initial)
+Transitions: 1961600
+
+Rate matrix: 5862 nodes (85 terminal), 1961600 minterms, vars: 18r/18c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 189000 of 192000 (98.4%)
+
+Building hybrid MTBDD matrix... [levels=18, nodes=7680] [360.0 KB]
+Adding explicit sparse matrices... [levels=9, num=256, compact] [669.6 KB]
+Creating vector for diagonals... [1.5 MB]
+Allocating iteration vectors... [3 x 1.5 MB]
+TOTAL: [6.9 MB]
+
+Uniformisation: q.t = 3.287227 x 2100.000000 = 6903.175850
+Fox-Glynn: left = 6319, right = 7610
+
+Starting iterations...
+Iteration 1002 (of 7610): max relative diff=0.007717, 5.01 sec so far
+Iteration 2008 (of 7610): max relative diff=0.001543, 10.02 sec so far
+Iteration 3013 (of 7610): max relative diff=0.000659, 15.03 sec so far
+Iteration 4018 (of 7610): max relative diff=0.000396, 20.04 sec so far
+Iteration 5024 (of 7610): max relative diff=0.000281, 25.05 sec so far
+Iteration 6028 (of 7610): max relative diff=0.000217, 30.06 sec so far
+Iteration 7020 (of 7610): max relative diff=0.000177, 35.07 sec so far
+
+Iterative method: 7610 iterations in 40.54 seconds (average 0.005003, setup 2.47)
+
+Value in the initial state: 0.4446382245084161
+
+Time for model checking: 40.683 seconds.
+
+Result: 0.4446382245084161
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

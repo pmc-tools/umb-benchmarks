@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pacman.60_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pacman.60/index.html" target="_blank">pacman.60</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[154.055, 167.26, 147.751, 147.687, 143.263]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pacman.60_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 154.055 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:50:35 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.046s.
+
+Time for model construction: 107.201s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	38786521 (736888 nodes)
+Transitions: 	53648196 (3546225 nodes)
+Choices: 	48926255
+Reward Models:  none
+Variables: 	rows: 15 meta variables (39 DD variables), columns: 15 meta variables (39 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (40 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 31.950s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	38786521
+Transitions: 	53648196
+Choices: 	48926255
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 1819987 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "crash": Pmin=? [F "Crash"] ...
+Result (for initial states): 0.5511074971
+Time for model checking: 11.108s.
+
+Performance statistics:
+  * peak memory usage: 4375MB
+  * CPU time: 152.254s
+  * wallclock time: 153.993s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pacman.60_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 167.260 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 14:25:45 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.031s.
+
+Time for model construction: 118.004s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	38786521 (736888 nodes)
+Transitions: 	53648196 (3546225 nodes)
+Choices: 	48926255
+Reward Models:  none
+Variables: 	rows: 15 meta variables (39 DD variables), columns: 15 meta variables (39 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (40 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 33.995s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	38786521
+Transitions: 	53648196
+Choices: 	48926255
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 1819987 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "crash": Pmin=? [F "Crash"] ...
+Result (for initial states): 0.5511074971
+Time for model checking: 11.386s.
+
+Performance statistics:
+  * peak memory usage: 4337MB
+  * CPU time: 165.476s
+  * wallclock time: 167.179s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pacman.60_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 147.751 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 13:51:32 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.064s.
+
+Time for model construction: 96.975s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	38786521 (736888 nodes)
+Transitions: 	53648196 (3546225 nodes)
+Choices: 	48926255
+Reward Models:  none
+Variables: 	rows: 15 meta variables (39 DD variables), columns: 15 meta variables (39 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (40 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 35.771s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	38786521
+Transitions: 	53648196
+Choices: 	48926255
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 1819987 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "crash": Pmin=? [F "Crash"] ...
+Result (for initial states): 0.5511074971
+Time for model checking: 11.257s.
+
+Performance statistics:
+  * peak memory usage: 4337MB
+  * CPU time: 145.979s
+  * wallclock time: 147.691s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pacman.60_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 147.687 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:41:08 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.039s.
+
+Time for model construction: 96.560s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	38786521 (736888 nodes)
+Transitions: 	53648196 (3546225 nodes)
+Choices: 	48926255
+Reward Models:  none
+Variables: 	rows: 15 meta variables (39 DD variables), columns: 15 meta variables (39 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (40 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 34.913s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	38786521
+Transitions: 	53648196
+Choices: 	48926255
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 1819987 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "crash": Pmin=? [F "Crash"] ...
+Result (for initial states): 0.5511074971
+Time for model checking: 11.835s.
+
+Performance statistics:
+  * peak memory usage: 4338MB
+  * CPU time: 145.904s
+  * wallclock time: 147.635s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pacman.60_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 143.263 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 13:20:47 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.60/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.048s.
+
+Time for model construction: 99.250s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	38786521 (736888 nodes)
+Transitions: 	53648196 (3546225 nodes)
+Choices: 	48926255
+Reward Models:  none
+Variables: 	rows: 15 meta variables (39 DD variables), columns: 15 meta variables (39 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (40 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 30.179s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	38786521
+Transitions: 	53648196
+Choices: 	48926255
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 1819987 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "crash": Pmin=? [F "Crash"] ...
+Result (for initial states): 0.5511074971
+Time for model checking: 10.384s.
+
+Performance statistics:
+  * peak memory usage: 4337MB
+  * CPU time: 141.586s
+  * wallclock time: 143.201s
+</pre>
+</div>
+</body>
+</html>

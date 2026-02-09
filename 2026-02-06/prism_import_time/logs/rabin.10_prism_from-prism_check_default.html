@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log rabin.10_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/rabin.10/index.html" target="_blank">rabin.10</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[41.877, 43.82, 41.523, 43.945, 42.995]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_rabin.10_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/rabin.10/model.prism models/rabin.10/property.props
+Wallclock time: 43.697 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:48:09 GMT+01:00 2026
+Hostname: n23m0185
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/rabin.10/model.prism models/rabin.10/property.props
+
+Parsing PRISM model file "models/rabin.10/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Parsing properties file "models/rabin.10/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 39.52 seconds (average 0.940952, setup 0.00)
+
+Time for model construction: 41.877 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 5 iterations in 0.69 seconds (average 0.138000, setup 0.00)
+
+Prob1E: 6 iterations in 0.37 seconds (average 0.061667, setup 0.00)
+
+yes = 358055586147376, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.095 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_rabin.10_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/rabin.10/model.prism models/rabin.10/property.props
+Wallclock time: 45.803 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:48:09 GMT+01:00 2026
+Hostname: n23m0031
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/rabin.10/model.prism models/rabin.10/property.props
+
+Parsing PRISM model file "models/rabin.10/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Parsing properties file "models/rabin.10/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 41.30 seconds (average 0.983333, setup 0.00)
+
+Time for model construction: 43.82 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 5 iterations in 0.68 seconds (average 0.136000, setup 0.00)
+
+Prob1E: 6 iterations in 0.37 seconds (average 0.061667, setup 0.00)
+
+yes = 358055586147376, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.097 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_rabin.10_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/rabin.10/model.prism models/rabin.10/property.props
+Wallclock time: 43.334 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:57:48 GMT+01:00 2026
+Hostname: r23m0210
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/rabin.10/model.prism models/rabin.10/property.props
+
+Parsing PRISM model file "models/rabin.10/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Parsing properties file "models/rabin.10/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 39.18 seconds (average 0.932857, setup 0.00)
+
+Time for model construction: 41.523 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 5 iterations in 0.70 seconds (average 0.140000, setup 0.00)
+
+Prob1E: 6 iterations in 0.36 seconds (average 0.060000, setup 0.00)
+
+yes = 358055586147376, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.081 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_rabin.10_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/rabin.10/model.prism models/rabin.10/property.props
+Wallclock time: 45.909 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:10 GMT+01:00 2026
+Hostname: n23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/rabin.10/model.prism models/rabin.10/property.props
+
+Parsing PRISM model file "models/rabin.10/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Parsing properties file "models/rabin.10/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 41.59 seconds (average 0.990238, setup 0.00)
+
+Time for model construction: 43.945 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 5 iterations in 0.68 seconds (average 0.136000, setup 0.00)
+
+Prob1E: 6 iterations in 0.36 seconds (average 0.060000, setup 0.00)
+
+yes = 358055586147376, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.091 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_rabin.10_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/rabin.10/model.prism models/rabin.10/property.props
+Wallclock time: 45.028 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:16 GMT+01:00 2026
+Hostname: r23m0197
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/rabin.10/model.prism models/rabin.10/property.props
+
+Parsing PRISM model file "models/rabin.10/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Parsing properties file "models/rabin.10/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 40.46 seconds (average 0.963333, setup 0.00)
+
+Time for model construction: 42.995 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 5 iterations in 0.71 seconds (average 0.142000, setup 0.00)
+
+Prob1E: 6 iterations in 0.41 seconds (average 0.068333, setup 0.00)
+
+yes = 358055586147376, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.152 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

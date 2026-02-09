@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log embedded.8-12_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/embedded.8-12/index.html" target="_blank">embedded.8-12</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.604, 1.841, 1.898, 1.599, 1.652]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_embedded.8-12_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+Wallclock time: 1.604 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:04 GMT+01:00 2026
+Hostname: n23m0240
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.05 seconds (average 0.002381, setup 0.00)
+
+Time for model construction: 0.858 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 9323 nodes (9 terminal), 36041 minterms, vars: 14r/14c
+
+Diagonals vector: 768 nodes (69 terminal), 8548 minterms
+Embedded Markov chain: 30780 nodes (309 terminal), 36041 minterms
+
+Prob0: 4 iterations in 0.01 seconds (average 0.002500, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1064, no = 6356, maybe = 1128
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=10937] [512.7 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [38.1 KB]
+Creating vector for diagonals... [dist=5, compact] [16.7 KB]
+Creating vector for RHS... [dist=2, compact] [16.7 KB]
+Allocating iteration vectors... [2 x 66.8 KB]
+TOTAL: [717.8 KB]
+
+Starting iterations...
+
+Jacobi: 687 iterations in 0.06 seconds (average 0.000044, setup 0.03)
+
+Value in the initial state: 0.10529804738570939
+
+Time for model checking: 0.106 seconds.
+
+Result: 0.10529804738570939 (+/- 1.0374370755849761E-6 estimated; rel err 9.85238664288634E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_embedded.8-12_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+Wallclock time: 1.841 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:17 GMT+01:00 2026
+Hostname: n23m0061
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.06 seconds (average 0.002857, setup 0.00)
+
+Time for model construction: 1.076 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 9323 nodes (9 terminal), 36041 minterms, vars: 14r/14c
+
+Diagonals vector: 768 nodes (69 terminal), 8548 minterms
+Embedded Markov chain: 30780 nodes (309 terminal), 36041 minterms
+
+Prob0: 4 iterations in 0.01 seconds (average 0.002500, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1064, no = 6356, maybe = 1128
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=10937] [512.7 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [38.1 KB]
+Creating vector for diagonals... [dist=5, compact] [16.7 KB]
+Creating vector for RHS... [dist=2, compact] [16.7 KB]
+Allocating iteration vectors... [2 x 66.8 KB]
+TOTAL: [717.8 KB]
+
+Starting iterations...
+
+Jacobi: 687 iterations in 0.06 seconds (average 0.000044, setup 0.03)
+
+Value in the initial state: 0.10529804738570939
+
+Time for model checking: 0.097 seconds.
+
+Result: 0.10529804738570939 (+/- 1.0374370755849761E-6 estimated; rel err 9.85238664288634E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_embedded.8-12_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+Wallclock time: 1.898 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:46 GMT+01:00 2026
+Hostname: r23m0044
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.06 seconds (average 0.002857, setup 0.00)
+
+Time for model construction: 1.144 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 9323 nodes (9 terminal), 36041 minterms, vars: 14r/14c
+
+Diagonals vector: 768 nodes (69 terminal), 8548 minterms
+Embedded Markov chain: 30780 nodes (309 terminal), 36041 minterms
+
+Prob0: 4 iterations in 0.01 seconds (average 0.002500, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1064, no = 6356, maybe = 1128
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=10937] [512.7 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [38.1 KB]
+Creating vector for diagonals... [dist=5, compact] [16.7 KB]
+Creating vector for RHS... [dist=2, compact] [16.7 KB]
+Allocating iteration vectors... [2 x 66.8 KB]
+TOTAL: [717.8 KB]
+
+Starting iterations...
+
+Jacobi: 687 iterations in 0.05 seconds (average 0.000029, setup 0.03)
+
+Value in the initial state: 0.10529804738570939
+
+Time for model checking: 0.088 seconds.
+
+Result: 0.10529804738570939 (+/- 1.0374370755849761E-6 estimated; rel err 9.85238664288634E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_embedded.8-12_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+Wallclock time: 1.599 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:17:40 GMT+01:00 2026
+Hostname: n23m0317
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.05 seconds (average 0.002381, setup 0.00)
+
+Time for model construction: 0.901 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 9323 nodes (9 terminal), 36041 minterms, vars: 14r/14c
+
+Diagonals vector: 768 nodes (69 terminal), 8548 minterms
+Embedded Markov chain: 30780 nodes (309 terminal), 36041 minterms
+
+Prob0: 4 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1064, no = 6356, maybe = 1128
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=10937] [512.7 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [38.1 KB]
+Creating vector for diagonals... [dist=5, compact] [16.7 KB]
+Creating vector for RHS... [dist=2, compact] [16.7 KB]
+Allocating iteration vectors... [2 x 66.8 KB]
+TOTAL: [717.8 KB]
+
+Starting iterations...
+
+Jacobi: 687 iterations in 0.05 seconds (average 0.000044, setup 0.02)
+
+Value in the initial state: 0.10529804738570939
+
+Time for model checking: 0.079 seconds.
+
+Result: 0.10529804738570939 (+/- 1.0374370755849761E-6 estimated; rel err 9.85238664288634E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_embedded.8-12_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+Wallclock time: 1.652 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:38 GMT+01:00 2026
+Hostname: n23m0382
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.umb models/embedded.8-12/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.04 seconds (average 0.001905, setup 0.00)
+
+Time for model construction: 0.861 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 9323 nodes (9 terminal), 36041 minterms, vars: 14r/14c
+
+Diagonals vector: 768 nodes (69 terminal), 8548 minterms
+Embedded Markov chain: 30780 nodes (309 terminal), 36041 minterms
+
+Prob0: 4 iterations in 0.01 seconds (average 0.002500, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1064, no = 6356, maybe = 1128
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=10937] [512.7 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [38.1 KB]
+Creating vector for diagonals... [dist=5, compact] [16.7 KB]
+Creating vector for RHS... [dist=2, compact] [16.7 KB]
+Allocating iteration vectors... [2 x 66.8 KB]
+TOTAL: [717.8 KB]
+
+Starting iterations...
+
+Jacobi: 687 iterations in 0.06 seconds (average 0.000044, setup 0.03)
+
+Value in the initial state: 0.10529804738570939
+
+Time for model checking: 0.082 seconds.
+
+Result: 0.10529804738570939 (+/- 1.0374370755849761E-6 estimated; rel err 9.85238664288634E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

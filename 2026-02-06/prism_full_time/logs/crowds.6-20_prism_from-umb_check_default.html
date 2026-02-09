@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log crowds.6-20_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/crowds.6-20/index.html" target="_blank">crowds.6-20</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3906.436, 3946.304, 4802.839, 4730.529, 4137.106]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_crowds.6-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+Wallclock time: 3906.436 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:05 GMT+01:00 2026
+Hostname: n23m0063
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 56 iterations in 11.49 seconds (average 0.205179, setup 0.00)
+
+Time for model construction: 3858.245 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Transition matrix: 970726 nodes (7 terminal), 38261191 minterms, vars: 24r/24c
+
+Prob0: 14 iterations in 0.69 seconds (average 0.049286, setup 0.00)
+
+Prob1: 37 iterations in 1.65 seconds (average 0.044595, setup 0.00)
+
+yes = 363561, no = 8587502, maybe = 1682528
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=24, nodes=199079] [9.1 MB]
+Adding explicit sparse matrices... [levels=4, num=12180, compact] [444.5 KB]
+Creating vector for diagonals... [dist=1, compact] [20.3 MB]
+Creating vector for RHS... [dist=2, compact] [20.3 MB]
+Allocating iteration vectors... [2 x 81.1 MB]
+TOTAL: [212.4 MB]
+
+Starting iterations...
+Iteration 49: max relative diff=0.038045, 5.10 sec so far
+Iteration 97: max relative diff=0.003935, 10.13 sec so far
+Iteration 145: max relative diff=0.000150, 15.14 sec so far
+Iteration 195: max relative diff=0.000003, 20.22 sec so far
+
+Jacobi: 206 iterations in 44.36 seconds (average 0.103107, setup 23.12)
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 46.918 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352701778754864E-6 estimated; rel err 9.423270659171553E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_crowds.6-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+Wallclock time: 3946.304 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:48:03 GMT+01:00 2026
+Hostname: n23m0237
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 56 iterations in 11.56 seconds (average 0.206429, setup 0.00)
+
+Time for model construction: 3897.606 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Transition matrix: 970726 nodes (7 terminal), 38261191 minterms, vars: 24r/24c
+
+Prob0: 14 iterations in 0.74 seconds (average 0.052857, setup 0.00)
+
+Prob1: 37 iterations in 1.67 seconds (average 0.045135, setup 0.00)
+
+yes = 363561, no = 8587502, maybe = 1682528
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=24, nodes=199079] [9.1 MB]
+Adding explicit sparse matrices... [levels=4, num=12180, compact] [444.5 KB]
+Creating vector for diagonals... [dist=1, compact] [20.3 MB]
+Creating vector for RHS... [dist=2, compact] [20.3 MB]
+Allocating iteration vectors... [2 x 81.1 MB]
+TOTAL: [212.4 MB]
+
+Starting iterations...
+Iteration 50: max relative diff=0.037551, 5.01 sec so far
+Iteration 100: max relative diff=0.003285, 10.06 sec so far
+Iteration 148: max relative diff=0.000120, 15.10 sec so far
+Iteration 197: max relative diff=0.000002, 20.20 sec so far
+
+Jacobi: 206 iterations in 44.88 seconds (average 0.102621, setup 23.74)
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 47.562 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352701778754864E-6 estimated; rel err 9.423270659171553E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_crowds.6-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+Wallclock time: 4802.839 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:30 GMT+01:00 2026
+Hostname: n23m0025
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 56 iterations in 12.73 seconds (average 0.227321, setup 0.00)
+
+Time for model construction: 4734.276 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Transition matrix: 970726 nodes (7 terminal), 38261191 minterms, vars: 24r/24c
+
+Prob0: 14 iterations in 0.87 seconds (average 0.062143, setup 0.00)
+
+Prob1: 37 iterations in 2.10 seconds (average 0.056757, setup 0.00)
+
+yes = 363561, no = 8587502, maybe = 1682528
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=24, nodes=199079] [9.1 MB]
+Adding explicit sparse matrices... [levels=4, num=12180, compact] [444.5 KB]
+Creating vector for diagonals... [dist=1, compact] [20.3 MB]
+Creating vector for RHS... [dist=2, compact] [20.3 MB]
+Allocating iteration vectors... [2 x 81.1 MB]
+TOTAL: [212.4 MB]
+
+Starting iterations...
+Iteration 53: max relative diff=0.033613, 5.02 sec so far
+Iteration 106: max relative diff=0.002264, 10.04 sec so far
+Iteration 159: max relative diff=0.000048, 15.07 sec so far
+
+Jacobi: 206 iterations in 64.29 seconds (average 0.094709, setup 44.78)
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 67.45 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352701778754864E-6 estimated; rel err 9.423270659171553E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_crowds.6-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+Wallclock time: 4730.529 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:23 GMT+01:00 2026
+Hostname: r23m0214
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 56 iterations in 12.79 seconds (average 0.228393, setup 0.00)
+
+Time for model construction: 4671.956 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Transition matrix: 970726 nodes (7 terminal), 38261191 minterms, vars: 24r/24c
+
+Prob0: 14 iterations in 0.82 seconds (average 0.058571, setup 0.00)
+
+Prob1: 37 iterations in 2.12 seconds (average 0.057297, setup 0.00)
+
+yes = 363561, no = 8587502, maybe = 1682528
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=24, nodes=199079] [9.1 MB]
+Adding explicit sparse matrices... [levels=4, num=12180, compact] [444.5 KB]
+Creating vector for diagonals... [dist=1, compact] [20.3 MB]
+Creating vector for RHS... [dist=2, compact] [20.3 MB]
+Allocating iteration vectors... [2 x 81.1 MB]
+TOTAL: [212.4 MB]
+
+Starting iterations...
+Iteration 46: max relative diff=0.043880, 5.02 sec so far
+Iteration 92: max relative diff=0.004879, 10.05 sec so far
+Iteration 138: max relative diff=0.000235, 15.08 sec so far
+Iteration 184: max relative diff=0.000007, 20.11 sec so far
+
+Jacobi: 206 iterations in 53.92 seconds (average 0.109320, setup 31.40)
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 57.224 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352701778754864E-6 estimated; rel err 9.423270659171553E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_crowds.6-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+Wallclock time: 4137.106 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:47:24 GMT+01:00 2026
+Hostname: n23m0097
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/crowds.6-20/prism.model.umb models/crowds.6-20/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 56 iterations in 12.36 seconds (average 0.220714, setup 0.00)
+
+Time for model construction: 4085.493 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Transition matrix: 970726 nodes (7 terminal), 38261191 minterms, vars: 24r/24c
+
+Prob0: 14 iterations in 0.74 seconds (average 0.052857, setup 0.00)
+
+Prob1: 37 iterations in 1.76 seconds (average 0.047568, setup 0.00)
+
+yes = 363561, no = 8587502, maybe = 1682528
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=24, nodes=199079] [9.1 MB]
+Adding explicit sparse matrices... [levels=4, num=12180, compact] [444.5 KB]
+Creating vector for diagonals... [dist=1, compact] [20.3 MB]
+Creating vector for RHS... [dist=2, compact] [20.3 MB]
+Allocating iteration vectors... [2 x 81.1 MB]
+TOTAL: [212.4 MB]
+
+Starting iterations...
+Iteration 47: max relative diff=0.043260, 5.06 sec so far
+Iteration 94: max relative diff=0.004695, 10.13 sec so far
+Iteration 141: max relative diff=0.000188, 15.21 sec so far
+Iteration 188: max relative diff=0.000004, 20.27 sec so far
+
+Jacobi: 206 iterations in 47.57 seconds (average 0.107816, setup 25.36)
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 50.353 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352701778754864E-6 estimated; rel err 9.423270659171553E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

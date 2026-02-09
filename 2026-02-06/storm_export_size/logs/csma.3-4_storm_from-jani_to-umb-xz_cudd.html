@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_storm_from-jani_to-umb-xz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration storm_from-jani_to-umb-xz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1584568.0, 1567428.0, 1573652.0, 1579228.0, 1579228.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 11.511 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:31:15 2026
+Command line arguments: --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.562s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1460287 (24552 nodes)
+Transitions: 	2396727 (113363 nodes)
+Choices: 	1471059
+Reward Models:  none
+Variables: 	rows: 19 meta variables (55 DD variables), columns: 19 meta variables (55 DD variables), nondeterminism: 13 meta variables (13 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (56 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.157s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb.xz'.
+Time for model export: 9.614s.
+
+
+Performance statistics:
+  * peak memory usage: 262MB
+  * CPU time: 11.332s
+  * wallclock time: 11.407s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb.xz:	Size of output file is 1584568 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep2.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 11.747 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:23:09 2026
+Command line arguments: --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep2.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.580s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1460287 (24552 nodes)
+Transitions: 	2396727 (113363 nodes)
+Choices: 	1471059
+Reward Models:  none
+Variables: 	rows: 19 meta variables (55 DD variables), columns: 19 meta variables (55 DD variables), nondeterminism: 13 meta variables (13 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (56 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.193s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep2.xz'.
+Time for model export: 9.857s.
+
+
+Performance statistics:
+  * peak memory usage: 262MB
+  * CPU time: 11.634s
+  * wallclock time: 11.705s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep2.xz:	Size of output file is 1567428 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep3.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 14.220 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:44 2026
+Command line arguments: --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep3.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.817s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1460287 (24552 nodes)
+Transitions: 	2396727 (113363 nodes)
+Choices: 	1471059
+Reward Models:  none
+Variables: 	rows: 19 meta variables (55 DD variables), columns: 19 meta variables (55 DD variables), nondeterminism: 13 meta variables (13 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (56 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.381s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep3.xz'.
+Time for model export: 11.867s.
+
+
+Performance statistics:
+  * peak memory usage: 261MB
+  * CPU time: 14.051s
+  * wallclock time: 14.159s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep3.xz:	Size of output file is 1573652 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep4.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 12.266 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:48:03 2026
+Command line arguments: --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep4.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.591s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1460287 (24552 nodes)
+Transitions: 	2396727 (113363 nodes)
+Choices: 	1471059
+Reward Models:  none
+Variables: 	rows: 19 meta variables (55 DD variables), columns: 19 meta variables (55 DD variables), nondeterminism: 13 meta variables (13 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (56 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.185s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep4.xz'.
+Time for model export: 10.303s.
+
+
+Performance statistics:
+  * peak memory usage: 262MB
+  * CPU time: 12.090s
+  * wallclock time: 12.161s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep4.xz:	Size of output file is 1579228 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep5.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 12.001 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:31:16 2026
+Command line arguments: --timemem --buildfull --jani models/csma.3-4/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep5.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.584s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1460287 (24552 nodes)
+Transitions: 	2396727 (113363 nodes)
+Choices: 	1471059
+Reward Models:  none
+Variables: 	rows: 19 meta variables (55 DD variables), columns: 19 meta variables (55 DD variables), nondeterminism: 13 meta variables (13 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (56 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.147s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep5.xz'.
+Time for model export: 9.715s.
+
+
+Performance statistics:
+  * peak memory usage: 262MB
+  * CPU time: 11.433s
+  * wallclock time: 11.521s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/csma.3-4/model.umb_rep5.xz:	Size of output file is 1579228 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

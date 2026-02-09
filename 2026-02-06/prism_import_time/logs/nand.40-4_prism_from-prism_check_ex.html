@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.40-4_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.40-4/index.html" target="_blank">nand.40-4</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[6.522, 6.987, 6.672, 6.872, 10.088]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_nand.40-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+Wallclock time: 43.627 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:20:35 GMT+01:00 2026
+Hostname: r23m0212
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+
+Parsing PRISM model file "models/nand.40-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 2144686 3999522 states
+Reachable states exploration and model construction done in 5.561 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.522 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.332 seconds)
+Starting Prob0...
+Prob0 took 0.573 seconds.
+Starting Prob1...
+Prob1 took 1.276 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 159: 5.02 sec so far
+Iteration 326: 10.03 sec so far
+Iteration 508: 15.04 sec so far
+Iteration 703: 20.05 sec so far
+Iteration 929: 25.07 sec so far
+Iteration 1195: 30.07 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 34.077 seconds.
+Probabilistic reachability took 36.28 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 36.452 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_nand.40-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+Wallclock time: 45.607 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:45:03 GMT+01:00 2026
+Hostname: r23m0164
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+
+Parsing PRISM model file "models/nand.40-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 2055474 3999522 states
+Reachable states exploration and model construction done in 5.802 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.987 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.303 seconds)
+Starting Prob0...
+Prob0 took 0.597 seconds.
+Starting Prob1...
+Prob1 took 1.38 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 150: 5.02 sec so far
+Iteration 307: 10.03 sec so far
+Iteration 476: 15.04 sec so far
+Iteration 661: 20.05 sec so far
+Iteration 869: 25.08 sec so far
+Iteration 1116: 30.09 sec so far
+Iteration 1421: 35.10 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 35.496 seconds.
+Probabilistic reachability took 37.804 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 37.899 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_nand.40-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+Wallclock time: 47.268 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:47:50 GMT+01:00 2026
+Hostname: n23m0178
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+
+Parsing PRISM model file "models/nand.40-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 2139472 3999522 states
+Reachable states exploration and model construction done in 5.584 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.672 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.367 seconds)
+Starting Prob0...
+Prob0 took 0.61 seconds.
+Starting Prob1...
+Prob1 took 1.31 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 143: 5.02 sec so far
+Iteration 295: 10.02 sec so far
+Iteration 459: 15.04 sec so far
+Iteration 637: 20.06 sec so far
+Iteration 832: 25.06 sec so far
+Iteration 1052: 30.08 sec so far
+Iteration 1308: 35.08 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 37.605 seconds.
+Probabilistic reachability took 39.915 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 40.005 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_nand.40-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+Wallclock time: 44.530 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:52 GMT+01:00 2026
+Hostname: r23m0139
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+
+Parsing PRISM model file "models/nand.40-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 2026693 3999522 states
+Reachable states exploration and model construction done in 5.807 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.872 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.387 seconds)
+Starting Prob0...
+Prob0 took 0.597 seconds.
+Starting Prob1...
+Prob1 took 1.335 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 157: 5.03 sec so far
+Iteration 321: 10.06 sec so far
+Iteration 500: 15.06 sec so far
+Iteration 697: 20.07 sec so far
+Iteration 921: 25.08 sec so far
+Iteration 1183: 30.09 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 34.336 seconds.
+Probabilistic reachability took 36.678 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 36.857 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_nand.40-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+Wallclock time: 66.673 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:48:18 GMT+01:00 2026
+Hostname: n23m0082
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/nand.40-4/model.prism models/nand.40-4/property.props
+
+Parsing PRISM model file "models/nand.40-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 1403900 2949908 3999522 states
+Reachable states exploration and model construction done in 8.489 secs.
+Sorting reachable states list...
+
+Time for model construction: 10.088 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.934 seconds)
+Starting Prob0...
+Prob0 took 1.201 seconds.
+Starting Prob1...
+Prob1 took 2.847 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 108: 5.04 sec so far
+Iteration 227: 10.09 sec so far
+Iteration 352: 15.11 sec so far
+Iteration 475: 20.13 sec so far
+Iteration 606: 25.15 sec so far
+Iteration 747: 30.16 sec so far
+Iteration 907: 35.18 sec so far
+Iteration 1082: 40.21 sec so far
+Iteration 1275: 45.23 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 49.793 seconds.
+Probabilistic reachability took 54.813 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 54.977 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

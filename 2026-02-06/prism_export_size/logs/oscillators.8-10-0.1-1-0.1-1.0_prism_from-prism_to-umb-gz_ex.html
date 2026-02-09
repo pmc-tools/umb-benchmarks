@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2091864.0, 2091864.0, 2091864.0, 2091864.0, 2091864.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_oscillators.8-10-0.1-1-0.1-1.0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 113.743 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:16:55 GMT+01:00 2026
+Hostname: n23m0279
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/oscillators.8-10-0.1-1-0.1-1.0/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 539 1127 1724 2324 2936 3526 4119 4729 5352 6001 6674 7345 8017 8681 9352 10022 10704 11387 12071 12756 13432 14113 14794 15476 16141 16825 17510 18192 18861 19557 20255 20954 21655 22357 23062 23769 24311 states
+Reachable states exploration and model construction done in 110.393 secs.
+Sorting reachable states list...
+
+Time for model construction: 110.928 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb.gz"...
+Time for exporting: 0.192 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb.gz:	Size of output file is 2091864 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_oscillators.8-10-0.1-1-0.1-1.0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 115.256 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:30:20 GMT+01:00 2026
+Hostname: n23m0240
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/oscillators.8-10-0.1-1-0.1-1.0/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 501 1078 1672 2268 2852 3486 4125 4772 5421 6072 6721 7374 8015 8668 9326 9984 10640 11302 11964 12627 13289 13951 14614 15278 15943 16613 17272 17922 18579 19234 19896 20599 21298 22003 22711 23420 24134 24311 states
+Reachable states exploration and model construction done in 111.848 secs.
+Sorting reachable states list...
+
+Time for model construction: 112.408 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep2.gz"...
+Time for exporting: 0.194 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep2.gz:	Size of output file is 2091864 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_oscillators.8-10-0.1-1-0.1-1.0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 154.314 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:16:25 GMT+01:00 2026
+Hostname: r23m0085
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/oscillators.8-10-0.1-1-0.1-1.0/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 416 893 1365 1844 2316 2796 3268 3747 4220 4698 5174 5740 6210 6695 7167 7649 8122 8605 9079 9562 10037 10518 10994 11478 11955 12439 12916 13401 13883 14364 14857 15435 15915 16408 16887 17378 17858 18349 18831 19322 19803 20294 20780 21271 21761 22252 22742 23228 23725 24212 24311 states
+Reachable states exploration and model construction done in 150.775 secs.
+Sorting reachable states list...
+
+Time for model construction: 151.42 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep3.gz"...
+Time for exporting: 0.208 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep3.gz:	Size of output file is 2091864 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_oscillators.8-10-0.1-1-0.1-1.0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 109.319 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:10:04 GMT+01:00 2026
+Hostname: n23m0038
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/oscillators.8-10-0.1-1-0.1-1.0/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 591 1261 1931 2605 3283 3963 4642 5323 6005 6689 7373 8058 8744 9433 10124 10816 11509 12199 12887 13578 14267 14961 15657 16356 17056 17758 18458 19162 19866 20575 21284 21996 22708 23422 24139 24311 states
+Reachable states exploration and model construction done in 105.819 secs.
+Sorting reachable states list...
+
+Time for model construction: 106.434 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep4.gz"...
+Time for exporting: 0.306 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep4.gz:	Size of output file is 2091864 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_oscillators.8-10-0.1-1-0.1-1.0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 109.447 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:59:58 GMT+01:00 2026
+Hostname: r23m0125
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/oscillators.8-10-0.1-1-0.1-1.0/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/oscillators.8-10-0.1-1-0.1-1.0/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 600 1274 1945 2623 3296 3975 4656 5335 6020 6705 7390 8076 8763 9452 10142 10832 11524 12218 12913 13602 14295 14988 15681 16379 17078 17717 18396 19062 19766 20479 21194 21911 22631 23352 24073 24311 states
+Reachable states exploration and model construction done in 106.092 secs.
+Sorting reachable states list...
+
+Time for model construction: 106.636 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep5.gz"...
+Time for exporting: 0.193 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/oscillators.8-10-0.1-1-0.1-1.0/model.umb_rep5.gz:	Size of output file is 2091864 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

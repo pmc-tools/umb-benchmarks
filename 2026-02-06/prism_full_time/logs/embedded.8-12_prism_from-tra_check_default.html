@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log embedded.8-12_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/embedded.8-12/index.html" target="_blank">embedded.8-12</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.527, 1.429, 1.645, 1.961, 1.464]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_embedded.8-12_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+Wallclock time: 1.527 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:07:18 GMT+01:00 2026
+Hostname: n23m0141
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+
+Importing model from "models/embedded.8-12/prism.model.tradir/model.tra", "models/embedded.8-12/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 10 iterations in 0.01 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 0.929 seconds.
+
+Type:        DTMC
+States:      10 (1 initial)
+Transitions: 10
+
+Transition matrix: 90 nodes (2 terminal), 10 minterms, vars: 14r/14c
+
+yes = 0, no = 10, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.006 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_embedded.8-12_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+Wallclock time: 1.429 seconds
+Return code: 0
+##############################
+[0.002s][warning][perf,memops] Cannot use file /tmp/hsperfdata_tq429871/159625 because it is locked by another process (errno = 11)
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:09 GMT+01:00 2026
+Hostname: n23m0195
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+
+Importing model from "models/embedded.8-12/prism.model.tradir/model.tra", "models/embedded.8-12/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 10 iterations in 0.01 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 0.888 seconds.
+
+Type:        DTMC
+States:      10 (1 initial)
+Transitions: 10
+
+Transition matrix: 90 nodes (2 terminal), 10 minterms, vars: 14r/14c
+
+yes = 0, no = 10, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_embedded.8-12_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+Wallclock time: 1.645 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:48:09 GMT+01:00 2026
+Hostname: n23m0214
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+
+Importing model from "models/embedded.8-12/prism.model.tradir/model.tra", "models/embedded.8-12/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 10 iterations in 0.01 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 1.041 seconds.
+
+Type:        DTMC
+States:      10 (1 initial)
+Transitions: 10
+
+Transition matrix: 90 nodes (2 terminal), 10 minterms, vars: 14r/14c
+
+yes = 0, no = 10, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.011 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_embedded.8-12_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+Wallclock time: 1.961 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:01 GMT+01:00 2026
+Hostname: n23m0254
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+
+Importing model from "models/embedded.8-12/prism.model.tradir/model.tra", "models/embedded.8-12/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 10 iterations in 0.01 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 1.276 seconds.
+
+Type:        DTMC
+States:      10 (1 initial)
+Transitions: 10
+
+Transition matrix: 90 nodes (2 terminal), 10 minterms, vars: 14r/14c
+
+yes = 0, no = 10, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.012 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_embedded.8-12_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+Wallclock time: 1.464 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:04:07 GMT+01:00 2026
+Hostname: n23m0212
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/embedded.8-12/prism.model.tradir/model.all models/embedded.8-12/property.props
+
+Importing model from "models/embedded.8-12/prism.model.tradir/model.tra", "models/embedded.8-12/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 10 iterations in 0.01 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 0.917 seconds.
+
+Type:        DTMC
+States:      10 (1 initial)
+Transitions: 10
+
+Transition matrix: 90 nodes (2 terminal), 10 minterms, vars: 14r/14c
+
+yes = 0, no = 10, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

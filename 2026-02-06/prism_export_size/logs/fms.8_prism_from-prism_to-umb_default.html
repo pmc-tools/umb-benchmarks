@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log fms.8_prism_from-prism_to-umb_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/fms.8/index.html" target="_blank">fms.8</a> and tool configuration prism_from-prism_to-umb_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1150869504.0, 1150869504.0, 1150869504.0, 1150869504.0, 1150869504.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_fms.8_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-umb_default/fms.8/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 231.646 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:25:18 GMT+01:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-umb_default/fms.8/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.26 seconds (average 0.050154, setup 0.00)
+
+Time for model construction: 3.44 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_default/fms.8/model.umb"...
+Model export size: 1123896 Kb
+Time for exporting: 227.675 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_default/fms.8/model.umb:	Size of output file is 1150869504 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_fms.8_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-umb_default/fms.8/model_rep2.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 229.334 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:00:05 GMT+01:00 2026
+Hostname: n23m0297
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-umb_default/fms.8/model_rep2.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.75 seconds (average 0.057692, setup 0.00)
+
+Time for model construction: 3.954 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_default/fms.8/model_rep2.umb"...
+Model export size: 1123896 Kb
+Time for exporting: 223.207 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_default/fms.8/model_rep2.umb:	Size of output file is 1150869504 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_fms.8_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-umb_default/fms.8/model_rep3.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 230.258 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:00:31 GMT+01:00 2026
+Hostname: r23m0092
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-umb_default/fms.8/model_rep3.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.22 seconds (average 0.049538, setup 0.00)
+
+Time for model construction: 3.388 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_default/fms.8/model_rep3.umb"...
+Model export size: 1123896 Kb
+Time for exporting: 226.053 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_default/fms.8/model_rep3.umb:	Size of output file is 1150869504 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_fms.8_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-umb_default/fms.8/model_rep4.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 243.415 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:25:07 GMT+01:00 2026
+Hostname: r23m0091
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-umb_default/fms.8/model_rep4.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.61 seconds (average 0.055538, setup 0.00)
+
+Time for model construction: 3.83 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_default/fms.8/model_rep4.umb"...
+Model export size: 1123896 Kb
+Time for exporting: 238.532 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_default/fms.8/model_rep4.umb:	Size of output file is 1150869504 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_fms.8_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-umb_default/fms.8/model_rep5.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 275.476 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:04:07 GMT+01:00 2026
+Hostname: r23m0068
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-umb_default/fms.8/model_rep5.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.31 seconds (average 0.050923, setup 0.00)
+
+Time for model construction: 3.536 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_default/fms.8/model_rep5.umb"...
+Model export size: 1123896 Kb
+Time for exporting: 271.25 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_default/fms.8/model_rep5.umb:	Size of output file is 1150869504 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

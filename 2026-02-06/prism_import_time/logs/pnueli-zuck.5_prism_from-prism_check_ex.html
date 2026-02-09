@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pnueli-zuck.5_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.144, 4.074, 3.117, 3.177, 3.274]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_pnueli-zuck.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+Wallclock time: 4.349 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:58:09 GMT+01:00 2026
+Hostname: n23m0054
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+
+Parsing PRISM model file "models/pnueli-zuck.5/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "models/pnueli-zuck.5/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 397435 states
+Reachable states exploration and model construction done in 2.559 secs.
+Sorting reachable states list...
+
+Time for model construction: 3.144 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.203 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.245 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.463 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.489 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_pnueli-zuck.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+Wallclock time: 6.607 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:48:14 GMT+01:00 2026
+Hostname: n23m0153
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+
+Parsing PRISM model file "models/pnueli-zuck.5/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "models/pnueli-zuck.5/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 376735 397435 states
+Reachable states exploration and model construction done in 3.158 secs.
+Sorting reachable states list...
+
+Time for model construction: 4.074 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.206 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.237 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.459 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.49 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_pnueli-zuck.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+Wallclock time: 4.185 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:57:49 GMT+01:00 2026
+Hostname: n23m0128
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+
+Parsing PRISM model file "models/pnueli-zuck.5/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "models/pnueli-zuck.5/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 397435 states
+Reachable states exploration and model construction done in 2.501 secs.
+Sorting reachable states list...
+
+Time for model construction: 3.117 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.202 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.238 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.455 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.479 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_pnueli-zuck.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+Wallclock time: 4.272 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:37 GMT+01:00 2026
+Hostname: r23m0206
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+
+Parsing PRISM model file "models/pnueli-zuck.5/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "models/pnueli-zuck.5/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 397435 states
+Reachable states exploration and model construction done in 2.625 secs.
+Sorting reachable states list...
+
+Time for model construction: 3.177 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.21 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.249 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.47 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.495 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_pnueli-zuck.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+Wallclock time: 4.342 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:10 GMT+01:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/pnueli-zuck.5/model.prism models/pnueli-zuck.5/property.props
+
+Parsing PRISM model file "models/pnueli-zuck.5/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "models/pnueli-zuck.5/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 397435 states
+Reachable states exploration and model construction done in 2.677 secs.
+Sorting reachable states list...
+
+Time for model construction: 3.274 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.194 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.24 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.446 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.474 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_storm_from-jani_to-drn-gz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration storm_from-jani_to-drn-gz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[16.121, 16.001, 16.075, 16.045, 16.632]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 37.230 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:22:36 2026
+Command line arguments: --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 3.344s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 17.708s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn.gz'.
+Time for model export: 16.121s.
+
+
+Performance statistics:
+  * peak memory usage: 1269MB
+  * CPU time: 36.844s
+  * wallclock time: 37.194s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn.gz:	Size of output file is 62064416 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep2.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 37.612 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:25:55 2026
+Command line arguments: --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep2.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 3.628s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 17.833s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep2.gz'.
+Time for model export: 16.001s.
+
+
+Performance statistics:
+  * peak memory usage: 1267MB
+  * CPU time: 37.112s
+  * wallclock time: 37.485s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep2.gz:	Size of output file is 62064422 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep3.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 37.505 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:25:28 2026
+Command line arguments: --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep3.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 3.256s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 17.728s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep3.gz'.
+Time for model export: 16.075s.
+
+
+Performance statistics:
+  * peak memory usage: 1268MB
+  * CPU time: 36.732s
+  * wallclock time: 37.083s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep3.gz:	Size of output file is 62064422 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep4.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 37.429 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:23:10 2026
+Command line arguments: --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep4.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 3.594s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 17.734s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep4.gz'.
+Time for model export: 16.045s.
+
+
+Performance statistics:
+  * peak memory usage: 1269MB
+  * CPU time: 37.049s
+  * wallclock time: 37.392s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep4.gz:	Size of output file is 62064422 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep5.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 38.465 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:22:47 2026
+Command line arguments: --timemem --buildfull --jani models/mapk-cascade.4-30/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep5.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 3.121s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 18.648s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep5.gz'.
+Time for model export: 16.632s.
+
+
+Performance statistics:
+  * peak memory usage: 1271MB
+  * CPU time: 38.010s
+  * wallclock time: 38.426s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/mapk-cascade.4-30/model.drn_rep5.gz:	Size of output file is 62064422 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

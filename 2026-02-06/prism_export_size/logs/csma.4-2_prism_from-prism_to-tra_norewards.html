@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.4-2_prism_from-prism_to-tra_norewards</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.4-2/index.html" target="_blank">csma.4-2</a> and tool configuration prism_from-prism_to-tra_norewards</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[28937083.0, 28937083.0, 28937083.0, 28937083.0, 28937083.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_norewards_csma.4-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-tra_norewards/csma.4-2/model.tra,lab:precision=17
+Wallclock time: 2.707 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:22 GMT+01:00 2026
+Hostname: r23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-tra_norewards/csma.4-2/model.tra,lab:precision=17'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 0.92 seconds (average 0.004767, setup 0.00)
+
+Time for model construction: 1.01 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model.lab"...
+Time for exporting: 1.174 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_norewards/csma.4-2/model.tra:	Size of output file is 28902491 bytes
+out/prism_from-prism_to-tra_norewards/csma.4-2/model.lab:	Size of output file is 34592 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_norewards_csma.4-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep2.tra,lab:precision=17
+Wallclock time: 3.010 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:26:04 GMT+01:00 2026
+Hostname: n23m0396
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep2.tra,lab:precision=17'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.01 seconds (average 0.005233, setup 0.00)
+
+Time for model construction: 1.121 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep2.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep2.lab"...
+Time for exporting: 1.259 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep2.tra:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep2.lab:	Size of output file is 34592 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_norewards_csma.4-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep3.tra,lab:precision=17
+Wallclock time: 3.921 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:16:39 GMT+01:00 2026
+Hostname: r23m0146
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep3.tra,lab:precision=17'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.63 seconds (average 0.008446, setup 0.00)
+
+Time for model construction: 1.765 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep3.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep3.lab"...
+Time for exporting: 1.476 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep3.tra:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep3.lab:	Size of output file is 34592 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_norewards_csma.4-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep4.tra,lab:precision=17
+Wallclock time: 2.931 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:31:06 GMT+01:00 2026
+Hostname: r23m0134
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep4.tra,lab:precision=17'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.13 seconds (average 0.005855, setup 0.00)
+
+Time for model construction: 1.216 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep4.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep4.lab"...
+Time for exporting: 1.201 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep4.tra:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep4.lab:	Size of output file is 34592 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_norewards_csma.4-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep5.tra,lab:precision=17
+Wallclock time: 2.858 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:35 GMT+01:00 2026
+Hostname: n23m0257
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep5.tra,lab:precision=17'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.06 seconds (average 0.005492, setup 0.00)
+
+Time for model construction: 1.145 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep5.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep5.lab"...
+Time for exporting: 1.189 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep5.tra:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_norewards/csma.4-2/model_rep5.lab:	Size of output file is 34592 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

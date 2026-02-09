@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[207.977, 231.674, 182.389, 302.632, 328.826]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+Wallclock time: 406.724 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:50:39 GMT+01:00 2026
+Hostname: r23m0083
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+
+Importing model from "models/csma.3-4/prism.model.tradir/model.tra", "models/csma.3-4/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 11.21 seconds (average 0.083037, setup 0.00)
+
+Time for model construction: 207.977 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 409392 nodes (6 terminal), 2396727 minterms, vars: 21r/21c/3nd
+
+Prob0A: 133 iterations in 6.33 seconds (average 0.047594, setup 0.00)
+
+Prob1E: 533 iterations in 44.79 seconds (average 0.084034, setup 0.00)
+
+yes = 710317, no = 31622, maybe = 718348
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=3, levels=21, nodes=372670] [17.1 MB]
+Adding sparse bits... [levels=4-17, num=15356, compact=3/3] [2.3 MB]
+Creating vector for yes... [dist=2, compact] [2.8 MB]
+Allocating iteration vectors... [3 x 11.1 MB]
+TOTAL: [55.5 MB]
+
+Starting iterations...
+
+Iterative method: 97 iterations in 146.37 seconds (average 0.046186, setup 141.89)
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 197.932 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784720206123637E-6 estimated; rel err 4.0589142128344855E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+Wallclock time: 551.503 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:51 GMT+01:00 2026
+Hostname: n23m0281
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+
+Importing model from "models/csma.3-4/prism.model.tradir/model.tra", "models/csma.3-4/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 11.63 seconds (average 0.086148, setup 0.00)
+
+Time for model construction: 231.674 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 409392 nodes (6 terminal), 2396727 minterms, vars: 21r/21c/3nd
+
+Prob0A: 133 iterations in 8.49 seconds (average 0.063835, setup 0.00)
+
+Prob1E: 533 iterations in 55.83 seconds (average 0.104747, setup 0.00)
+
+yes = 710317, no = 31622, maybe = 718348
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=3, levels=21, nodes=372670] [17.1 MB]
+Adding sparse bits... [levels=4-17, num=15356, compact=3/3] [2.3 MB]
+Creating vector for yes... [dist=2, compact] [2.8 MB]
+Allocating iteration vectors... [3 x 11.1 MB]
+TOTAL: [55.5 MB]
+
+Starting iterations...
+
+Iterative method: 97 iterations in 253.11 seconds (average 0.046804, setup 248.57)
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 318.95 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784720206123637E-6 estimated; rel err 4.0589142128344855E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+Wallclock time: 379.674 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:11 GMT+01:00 2026
+Hostname: n23m0180
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+
+Importing model from "models/csma.3-4/prism.model.tradir/model.tra", "models/csma.3-4/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 8% 10% 12% 14% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 9.25 seconds (average 0.068519, setup 0.00)
+
+Time for model construction: 182.389 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 409392 nodes (6 terminal), 2396727 minterms, vars: 21r/21c/3nd
+
+Prob0A: 133 iterations in 6.27 seconds (average 0.047143, setup 0.00)
+
+Prob1E: 533 iterations in 44.63 seconds (average 0.083734, setup 0.00)
+
+yes = 710317, no = 31622, maybe = 718348
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=3, levels=21, nodes=372670] [17.1 MB]
+Adding sparse bits... [levels=4-17, num=15356, compact=3/3] [2.3 MB]
+Creating vector for yes... [dist=2, compact] [2.8 MB]
+Allocating iteration vectors... [3 x 11.1 MB]
+TOTAL: [55.5 MB]
+
+Starting iterations...
+
+Iterative method: 97 iterations in 145.05 seconds (average 0.045773, setup 140.61)
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 196.497 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784720206123637E-6 estimated; rel err 4.0589142128344855E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+Wallclock time: 918.418 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:31 GMT+01:00 2026
+Hostname: r23m0208
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+
+Importing model from "models/csma.3-4/prism.model.tradir/model.tra", "models/csma.3-4/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 13.24 seconds (average 0.098074, setup 0.00)
+
+Time for model construction: 302.632 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 409392 nodes (6 terminal), 2396727 minterms, vars: 21r/21c/3nd
+
+Prob0A: 133 iterations in 9.30 seconds (average 0.069925, setup 0.00)
+
+Prob1E: 533 iterations in 65.92 seconds (average 0.123677, setup 0.00)
+
+yes = 710317, no = 31622, maybe = 718348
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=3, levels=21, nodes=372670] [17.1 MB]
+Adding sparse bits... [levels=4-17, num=15356, compact=3/3] [2.3 MB]
+Creating vector for yes... [dist=2, compact] [2.8 MB]
+Allocating iteration vectors... [3 x 11.1 MB]
+TOTAL: [55.5 MB]
+
+Starting iterations...
+Iteration 81: max relative diff=0.002282, 5.01 sec so far
+
+Iterative method: 97 iterations in 537.09 seconds (average 0.061649, setup 531.11)
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 614.717 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784720206123637E-6 estimated; rel err 4.0589142128344855E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+Wallclock time: 911.401 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:35 GMT+01:00 2026
+Hostname: r23m0069
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/csma.3-4/prism.model.tradir/model.all models/csma.3-4/property.props
+
+Importing model from "models/csma.3-4/prism.model.tradir/model.tra", "models/csma.3-4/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 12.60 seconds (average 0.093333, setup 0.00)
+
+Time for model construction: 328.826 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 409392 nodes (6 terminal), 2396727 minterms, vars: 21r/21c/3nd
+
+Prob0A: 133 iterations in 8.79 seconds (average 0.066090, setup 0.00)
+
+Prob1E: 533 iterations in 64.00 seconds (average 0.120075, setup 0.00)
+
+yes = 710317, no = 31622, maybe = 718348
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=3, levels=21, nodes=372670] [17.1 MB]
+Adding sparse bits... [levels=4-17, num=15356, compact=3/3] [2.3 MB]
+Creating vector for yes... [dist=2, compact] [2.8 MB]
+Allocating iteration vectors... [3 x 11.1 MB]
+TOTAL: [55.5 MB]
+
+Starting iterations...
+Iteration 86: max relative diff=0.000031, 5.03 sec so far
+
+Iterative method: 97 iterations in 507.41 seconds (average 0.058454, setup 501.74)
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 581.588 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784720206123637E-6 estimated; rel err 4.0589142128344855E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log zeroconf.1000-8-false_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[5.683, 4.972, 5.488, 5.029, 6.042]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_zeroconf.1000-8-false_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+Wallclock time: 58.343 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:35:12 GMT+01:00 2026
+Hostname: n23m0173
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+
+Importing model from "models/zeroconf.1000-8-false/prism.model.tradir/model.tra", "models/zeroconf.1000-8-false/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 5.683 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.333 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 44.181 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 296: 5.00 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.317 seconds.
+Probabilistic reachability took 51.853 seconds.
+
+Value in the initial state: 4.8014136350724235E-8
+
+Time for model checking: 51.991 seconds.
+
+Result: 4.8014136350724235E-8 (+/- 4.0740514521238873E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+Wallclock time: 52.903 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:07 GMT+01:00 2026
+Hostname: r23m0091
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+
+Importing model from "models/zeroconf.1000-8-false/prism.model.tradir/model.tra", "models/zeroconf.1000-8-false/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 4.972 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.08 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 40.056 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 4.831 seconds.
+Probabilistic reachability took 46.989 seconds.
+
+Value in the initial state: 4.8014136350724235E-8
+
+Time for model checking: 47.041 seconds.
+
+Result: 4.8014136350724235E-8 (+/- 4.0740514521238873E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+Wallclock time: 55.373 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:46 GMT+01:00 2026
+Hostname: n23m0106
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+
+Importing model from "models/zeroconf.1000-8-false/prism.model.tradir/model.tra", "models/zeroconf.1000-8-false/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 5.488 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.279 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 41.362 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 291: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.397 seconds.
+Probabilistic reachability took 49.068 seconds.
+
+Value in the initial state: 4.8014136350724235E-8
+
+Time for model checking: 49.158 seconds.
+
+Result: 4.8014136350724235E-8 (+/- 4.0740514521238873E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_zeroconf.1000-8-false_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+Wallclock time: 53.032 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:09 GMT+01:00 2026
+Hostname: n23m0279
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+
+Importing model from "models/zeroconf.1000-8-false/prism.model.tradir/model.tra", "models/zeroconf.1000-8-false/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 5.029 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.068 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 39.561 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 284: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.559 seconds.
+Probabilistic reachability took 47.209 seconds.
+
+Value in the initial state: 4.8014136350724235E-8
+
+Time for model checking: 47.337 seconds.
+
+Result: 4.8014136350724235E-8 (+/- 4.0740514521238873E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+Wallclock time: 63.807 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:03 GMT+01:00 2026
+Hostname: n23m0117
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/zeroconf.1000-8-false/prism.model.tradir/model.all models/zeroconf.1000-8-false/property.props
+
+Importing model from "models/zeroconf.1000-8-false/prism.model.tradir/model.tra", "models/zeroconf.1000-8-false/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 6.042 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.558 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 47.832 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 245: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 6.435 seconds.
+Probabilistic reachability took 56.848 seconds.
+
+Value in the initial state: 4.8014136350724235E-8
+
+Time for model checking: 56.915 seconds.
+
+Result: 4.8014136350724235E-8 (+/- 4.0740514521238873E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

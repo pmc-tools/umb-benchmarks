@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.60-4_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.60-4/index.html" target="_blank">nand.60-4</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[290.082, 294.642, 336.765, 303.945, 295.002]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_nand.60-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/nand.60-4/model.prism models/nand.60-4/property.props
+Wallclock time: 290.082 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:09 GMT+01:00 2026
+Hostname: n23m0169
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/nand.60-4/model.prism models/nand.60-4/property.props
+
+Parsing PRISM model file "models/nand.60-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 7.40 seconds (average 0.003423, setup 0.00)
+
+Time for model construction: 7.618 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 97452 nodes (1103 terminal), 29772212 minterms, vars: 33r/33c
+
+Prob0: 2162 iterations in 6.34 seconds (average 0.002932, setup 0.00)
+
+Prob1: 1945 iterations in 5.80 seconds (average 0.002982, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=33, nodes=136740] [6.3 MB]
+Adding explicit sparse matrices... [levels=14, num=365, compact] [769.2 KB]
+Creating vector for diagonals... [dist=1, compact] [35.9 MB]
+Creating vector for RHS... [dist=2, compact] [35.9 MB]
+Allocating iteration vectors... [2 x 143.6 MB]
+TOTAL: [366.1 MB]
+
+Starting iterations...
+Iteration 41: max relative diff=inf, 5.03 sec so far
+Iteration 82: max relative diff=inf, 10.05 sec so far
+Iteration 124: max relative diff=inf, 15.10 sec so far
+Iteration 166: max relative diff=inf, 20.16 sec so far
+Iteration 208: max relative diff=inf, 25.23 sec so far
+Iteration 250: max relative diff=inf, 30.35 sec so far
+Iteration 292: max relative diff=inf, 35.44 sec so far
+Iteration 334: max relative diff=inf, 40.50 sec so far
+Iteration 376: max relative diff=inf, 45.56 sec so far
+Iteration 418: max relative diff=inf, 50.62 sec so far
+Iteration 460: max relative diff=inf, 55.67 sec so far
+Iteration 502: max relative diff=inf, 60.74 sec so far
+Iteration 544: max relative diff=inf, 65.80 sec so far
+Iteration 586: max relative diff=inf, 70.86 sec so far
+Iteration 628: max relative diff=inf, 75.92 sec so far
+Iteration 670: max relative diff=inf, 80.98 sec so far
+Iteration 712: max relative diff=inf, 86.08 sec so far
+Iteration 754: max relative diff=inf, 91.17 sec so far
+Iteration 796: max relative diff=inf, 96.25 sec so far
+Iteration 838: max relative diff=inf, 101.31 sec so far
+Iteration 880: max relative diff=inf, 106.35 sec so far
+Iteration 922: max relative diff=inf, 111.41 sec so far
+Iteration 964: max relative diff=inf, 116.46 sec so far
+Iteration 1006: max relative diff=inf, 121.51 sec so far
+Iteration 1048: max relative diff=inf, 126.56 sec so far
+Iteration 1090: max relative diff=inf, 131.61 sec so far
+Iteration 1132: max relative diff=inf, 136.65 sec so far
+Iteration 1174: max relative diff=inf, 141.70 sec so far
+Iteration 1216: max relative diff=inf, 146.80 sec so far
+Iteration 1258: max relative diff=inf, 151.90 sec so far
+Iteration 1300: max relative diff=inf, 156.98 sec so far
+Iteration 1342: max relative diff=inf, 162.02 sec so far
+Iteration 1384: max relative diff=inf, 167.08 sec so far
+Iteration 1426: max relative diff=inf, 172.13 sec so far
+Iteration 1468: max relative diff=inf, 177.21 sec so far
+Iteration 1510: max relative diff=inf, 182.29 sec so far
+Iteration 1551: max relative diff=inf, 187.38 sec so far
+Iteration 1593: max relative diff=inf, 192.45 sec so far
+Iteration 1634: max relative diff=inf, 197.49 sec so far
+Iteration 1676: max relative diff=inf, 202.59 sec so far
+Iteration 1716: max relative diff=inf, 207.66 sec so far
+Iteration 1757: max relative diff=inf, 212.75 sec so far
+Iteration 1798: max relative diff=inf, 217.80 sec so far
+Iteration 1838: max relative diff=inf, 222.82 sec so far
+Iteration 1879: max relative diff=inf, 227.90 sec so far
+Iteration 1919: max relative diff=inf, 232.91 sec so far
+Iteration 1960: max relative diff=inf, 237.99 sec so far
+Iteration 2001: max relative diff=inf, 243.05 sec so far
+Iteration 2042: max relative diff=inf, 248.13 sec so far
+Iteration 2083: max relative diff=inf, 253.21 sec so far
+Iteration 2124: max relative diff=inf, 258.30 sec so far
+
+Jacobi: 2161 iterations in 268.64 seconds (average 0.121638, setup 5.78)
+
+Value in the initial state: 0.6867214589192238
+
+Time for model checking: 281.835 seconds.
+
+Result: 0.6867214589192238 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_nand.60-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/nand.60-4/model.prism models/nand.60-4/property.props
+Wallclock time: 294.642 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:22 GMT+01:00 2026
+Hostname: r23m0143
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/nand.60-4/model.prism models/nand.60-4/property.props
+
+Parsing PRISM model file "models/nand.60-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 7.44 seconds (average 0.003441, setup 0.00)
+
+Time for model construction: 7.676 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 97452 nodes (1103 terminal), 29772212 minterms, vars: 33r/33c
+
+Prob0: 2162 iterations in 6.45 seconds (average 0.002983, setup 0.00)
+
+Prob1: 1945 iterations in 5.89 seconds (average 0.003028, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=33, nodes=136740] [6.3 MB]
+Adding explicit sparse matrices... [levels=14, num=365, compact] [769.2 KB]
+Creating vector for diagonals... [dist=1, compact] [35.9 MB]
+Creating vector for RHS... [dist=2, compact] [35.9 MB]
+Allocating iteration vectors... [2 x 143.6 MB]
+TOTAL: [366.1 MB]
+
+Starting iterations...
+Iteration 40: max relative diff=inf, 5.02 sec so far
+Iteration 81: max relative diff=inf, 10.15 sec so far
+Iteration 122: max relative diff=inf, 15.27 sec so far
+Iteration 163: max relative diff=inf, 20.37 sec so far
+Iteration 204: max relative diff=inf, 25.42 sec so far
+Iteration 245: max relative diff=inf, 30.50 sec so far
+Iteration 286: max relative diff=inf, 35.55 sec so far
+Iteration 327: max relative diff=inf, 40.61 sec so far
+Iteration 368: max relative diff=inf, 45.68 sec so far
+Iteration 409: max relative diff=inf, 50.72 sec so far
+Iteration 450: max relative diff=inf, 55.78 sec so far
+Iteration 491: max relative diff=inf, 60.84 sec so far
+Iteration 532: max relative diff=inf, 65.89 sec so far
+Iteration 573: max relative diff=inf, 70.92 sec so far
+Iteration 614: max relative diff=inf, 75.98 sec so far
+Iteration 655: max relative diff=inf, 81.09 sec so far
+Iteration 696: max relative diff=inf, 86.17 sec so far
+Iteration 737: max relative diff=inf, 91.26 sec so far
+Iteration 778: max relative diff=inf, 96.30 sec so far
+Iteration 819: max relative diff=inf, 101.34 sec so far
+Iteration 860: max relative diff=inf, 106.39 sec so far
+Iteration 901: max relative diff=inf, 111.40 sec so far
+Iteration 943: max relative diff=inf, 116.52 sec so far
+Iteration 985: max relative diff=inf, 121.64 sec so far
+Iteration 1026: max relative diff=inf, 126.65 sec so far
+Iteration 1067: max relative diff=inf, 131.66 sec so far
+Iteration 1108: max relative diff=inf, 136.70 sec so far
+Iteration 1149: max relative diff=inf, 141.73 sec so far
+Iteration 1190: max relative diff=inf, 146.76 sec so far
+Iteration 1231: max relative diff=inf, 151.89 sec so far
+Iteration 1271: max relative diff=inf, 156.90 sec so far
+Iteration 1311: max relative diff=inf, 161.92 sec so far
+Iteration 1352: max relative diff=inf, 167.01 sec so far
+Iteration 1393: max relative diff=inf, 172.13 sec so far
+Iteration 1434: max relative diff=inf, 177.24 sec so far
+Iteration 1475: max relative diff=inf, 182.35 sec so far
+Iteration 1516: max relative diff=inf, 187.45 sec so far
+Iteration 1557: max relative diff=inf, 192.52 sec so far
+Iteration 1598: max relative diff=inf, 197.62 sec so far
+Iteration 1639: max relative diff=inf, 202.66 sec so far
+Iteration 1680: max relative diff=inf, 207.73 sec so far
+Iteration 1721: max relative diff=inf, 212.80 sec so far
+Iteration 1762: max relative diff=inf, 217.86 sec so far
+Iteration 1803: max relative diff=inf, 222.96 sec so far
+Iteration 1844: max relative diff=inf, 227.98 sec so far
+Iteration 1885: max relative diff=inf, 233.06 sec so far
+Iteration 1926: max relative diff=inf, 238.11 sec so far
+Iteration 1967: max relative diff=inf, 243.17 sec so far
+Iteration 2008: max relative diff=inf, 248.19 sec so far
+Iteration 2049: max relative diff=inf, 253.27 sec so far
+Iteration 2090: max relative diff=inf, 258.36 sec so far
+Iteration 2131: max relative diff=inf, 263.49 sec so far
+
+Jacobi: 2161 iterations in 273.06 seconds (average 0.123642, setup 5.87)
+
+Value in the initial state: 0.6867214589192238
+
+Time for model checking: 286.406 seconds.
+
+Result: 0.6867214589192238 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_nand.60-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/nand.60-4/model.prism models/nand.60-4/property.props
+Wallclock time: 336.765 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:47:14 GMT+01:00 2026
+Hostname: r23m0068
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/nand.60-4/model.prism models/nand.60-4/property.props
+
+Parsing PRISM model file "models/nand.60-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 8.72 seconds (average 0.004033, setup 0.00)
+
+Time for model construction: 8.989 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 97452 nodes (1103 terminal), 29772212 minterms, vars: 33r/33c
+
+Prob0: 2162 iterations in 7.56 seconds (average 0.003497, setup 0.00)
+
+Prob1: 1945 iterations in 6.96 seconds (average 0.003578, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=33, nodes=136740] [6.3 MB]
+Adding explicit sparse matrices... [levels=14, num=365, compact] [769.2 KB]
+Creating vector for diagonals... [dist=1, compact] [35.9 MB]
+Creating vector for RHS... [dist=2, compact] [35.9 MB]
+Allocating iteration vectors... [2 x 143.6 MB]
+TOTAL: [366.1 MB]
+
+Starting iterations...
+Iteration 36: max relative diff=inf, 5.12 sec so far
+Iteration 72: max relative diff=inf, 10.18 sec so far
+Iteration 108: max relative diff=inf, 15.25 sec so far
+Iteration 144: max relative diff=inf, 20.32 sec so far
+Iteration 180: max relative diff=inf, 25.39 sec so far
+Iteration 216: max relative diff=inf, 30.46 sec so far
+Iteration 252: max relative diff=inf, 35.53 sec so far
+Iteration 288: max relative diff=inf, 40.60 sec so far
+Iteration 324: max relative diff=inf, 45.67 sec so far
+Iteration 360: max relative diff=inf, 50.74 sec so far
+Iteration 396: max relative diff=inf, 55.81 sec so far
+Iteration 432: max relative diff=inf, 60.88 sec so far
+Iteration 468: max relative diff=inf, 65.95 sec so far
+Iteration 504: max relative diff=inf, 71.02 sec so far
+Iteration 540: max relative diff=inf, 76.09 sec so far
+Iteration 576: max relative diff=inf, 81.16 sec so far
+Iteration 612: max relative diff=inf, 86.23 sec so far
+Iteration 648: max relative diff=inf, 91.30 sec so far
+Iteration 684: max relative diff=inf, 96.37 sec so far
+Iteration 720: max relative diff=inf, 101.44 sec so far
+Iteration 756: max relative diff=inf, 106.51 sec so far
+Iteration 792: max relative diff=inf, 111.58 sec so far
+Iteration 828: max relative diff=inf, 116.65 sec so far
+Iteration 864: max relative diff=inf, 121.72 sec so far
+Iteration 900: max relative diff=inf, 126.79 sec so far
+Iteration 936: max relative diff=inf, 131.87 sec so far
+Iteration 972: max relative diff=inf, 136.94 sec so far
+Iteration 1008: max relative diff=inf, 142.01 sec so far
+Iteration 1044: max relative diff=inf, 147.08 sec so far
+Iteration 1080: max relative diff=inf, 152.15 sec so far
+Iteration 1116: max relative diff=inf, 157.22 sec so far
+Iteration 1152: max relative diff=inf, 162.29 sec so far
+Iteration 1188: max relative diff=inf, 167.36 sec so far
+Iteration 1224: max relative diff=inf, 172.43 sec so far
+Iteration 1260: max relative diff=inf, 177.50 sec so far
+Iteration 1296: max relative diff=inf, 182.58 sec so far
+Iteration 1332: max relative diff=inf, 187.65 sec so far
+Iteration 1368: max relative diff=inf, 192.72 sec so far
+Iteration 1404: max relative diff=inf, 197.79 sec so far
+Iteration 1440: max relative diff=inf, 202.86 sec so far
+Iteration 1476: max relative diff=inf, 207.94 sec so far
+Iteration 1512: max relative diff=inf, 213.01 sec so far
+Iteration 1548: max relative diff=inf, 218.08 sec so far
+Iteration 1584: max relative diff=inf, 223.15 sec so far
+Iteration 1620: max relative diff=inf, 228.22 sec so far
+Iteration 1656: max relative diff=inf, 233.29 sec so far
+Iteration 1692: max relative diff=inf, 238.37 sec so far
+Iteration 1728: max relative diff=inf, 243.44 sec so far
+Iteration 1764: max relative diff=inf, 248.51 sec so far
+Iteration 1800: max relative diff=inf, 253.57 sec so far
+Iteration 1836: max relative diff=inf, 258.64 sec so far
+Iteration 1872: max relative diff=inf, 263.71 sec so far
+Iteration 1908: max relative diff=inf, 268.78 sec so far
+Iteration 1944: max relative diff=inf, 273.85 sec so far
+Iteration 1980: max relative diff=inf, 278.92 sec so far
+Iteration 2016: max relative diff=inf, 283.99 sec so far
+Iteration 2052: max relative diff=inf, 289.06 sec so far
+Iteration 2088: max relative diff=inf, 294.13 sec so far
+Iteration 2124: max relative diff=inf, 299.20 sec so far
+Iteration 2160: max relative diff=0.004551, 304.28 sec so far
+
+Jacobi: 2161 iterations in 310.92 seconds (average 0.140870, setup 6.50)
+
+Value in the initial state: 0.6867214589192238
+
+Time for model checking: 326.996 seconds.
+
+Result: 0.6867214589192238 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_nand.60-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/nand.60-4/model.prism models/nand.60-4/property.props
+Wallclock time: 303.945 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:50:57 GMT+01:00 2026
+Hostname: r23m0217
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/nand.60-4/model.prism models/nand.60-4/property.props
+
+Parsing PRISM model file "models/nand.60-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 7.78 seconds (average 0.003599, setup 0.00)
+
+Time for model construction: 8.069 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 97452 nodes (1103 terminal), 29772212 minterms, vars: 33r/33c
+
+Prob0: 2162 iterations in 6.47 seconds (average 0.002993, setup 0.00)
+
+Prob1: 1945 iterations in 5.92 seconds (average 0.003044, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=33, nodes=136740] [6.3 MB]
+Adding explicit sparse matrices... [levels=14, num=365, compact] [769.2 KB]
+Creating vector for diagonals... [dist=1, compact] [35.9 MB]
+Creating vector for RHS... [dist=2, compact] [35.9 MB]
+Allocating iteration vectors... [2 x 143.6 MB]
+TOTAL: [366.1 MB]
+
+Starting iterations...
+Iteration 40: max relative diff=inf, 5.06 sec so far
+Iteration 80: max relative diff=inf, 10.11 sec so far
+Iteration 120: max relative diff=inf, 15.22 sec so far
+Iteration 160: max relative diff=inf, 20.34 sec so far
+Iteration 200: max relative diff=inf, 25.43 sec so far
+Iteration 240: max relative diff=inf, 30.53 sec so far
+Iteration 280: max relative diff=inf, 35.65 sec so far
+Iteration 320: max relative diff=inf, 40.77 sec so far
+Iteration 360: max relative diff=inf, 45.88 sec so far
+Iteration 400: max relative diff=inf, 50.97 sec so far
+Iteration 440: max relative diff=inf, 56.07 sec so far
+Iteration 480: max relative diff=inf, 61.14 sec so far
+Iteration 519: max relative diff=inf, 66.15 sec so far
+Iteration 559: max relative diff=inf, 71.26 sec so far
+Iteration 599: max relative diff=inf, 76.38 sec so far
+Iteration 638: max relative diff=inf, 81.40 sec so far
+Iteration 678: max relative diff=inf, 86.55 sec so far
+Iteration 718: max relative diff=inf, 91.64 sec so far
+Iteration 757: max relative diff=inf, 96.66 sec so far
+Iteration 797: max relative diff=inf, 101.80 sec so far
+Iteration 835: max relative diff=inf, 106.91 sec so far
+Iteration 873: max relative diff=inf, 111.96 sec so far
+Iteration 913: max relative diff=inf, 117.04 sec so far
+Iteration 953: max relative diff=inf, 122.05 sec so far
+Iteration 994: max relative diff=inf, 127.18 sec so far
+Iteration 1034: max relative diff=inf, 132.19 sec so far
+Iteration 1074: max relative diff=inf, 137.20 sec so far
+Iteration 1114: max relative diff=inf, 142.21 sec so far
+Iteration 1155: max relative diff=inf, 147.34 sec so far
+Iteration 1195: max relative diff=inf, 152.36 sec so far
+Iteration 1235: max relative diff=inf, 157.42 sec so far
+Iteration 1275: max relative diff=inf, 162.44 sec so far
+Iteration 1315: max relative diff=inf, 167.46 sec so far
+Iteration 1355: max relative diff=inf, 172.47 sec so far
+Iteration 1395: max relative diff=inf, 177.48 sec so far
+Iteration 1435: max relative diff=inf, 182.49 sec so far
+Iteration 1475: max relative diff=inf, 187.50 sec so far
+Iteration 1515: max relative diff=inf, 192.51 sec so far
+Iteration 1556: max relative diff=inf, 197.64 sec so far
+Iteration 1596: max relative diff=inf, 202.65 sec so far
+Iteration 1637: max relative diff=inf, 207.78 sec so far
+Iteration 1677: max relative diff=inf, 212.79 sec so far
+Iteration 1717: max relative diff=inf, 217.84 sec so far
+Iteration 1757: max relative diff=inf, 222.86 sec so far
+Iteration 1797: max relative diff=inf, 227.89 sec so far
+Iteration 1837: max relative diff=inf, 232.90 sec so far
+Iteration 1877: max relative diff=inf, 237.91 sec so far
+Iteration 1918: max relative diff=inf, 243.04 sec so far
+Iteration 1959: max relative diff=inf, 248.17 sec so far
+Iteration 1999: max relative diff=inf, 253.18 sec so far
+Iteration 2039: max relative diff=inf, 258.19 sec so far
+Iteration 2079: max relative diff=inf, 263.21 sec so far
+Iteration 2120: max relative diff=inf, 268.34 sec so far
+Iteration 2160: max relative diff=0.004551, 273.36 sec so far
+
+Jacobi: 2161 iterations in 281.74 seconds (average 0.126557, setup 8.25)
+
+Value in the initial state: 0.6867214589192238
+
+Time for model checking: 295.323 seconds.
+
+Result: 0.6867214589192238 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_nand.60-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/nand.60-4/model.prism models/nand.60-4/property.props
+Wallclock time: 295.002 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:08:11 GMT+01:00 2026
+Hostname: r23m0145
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/nand.60-4/model.prism models/nand.60-4/property.props
+
+Parsing PRISM model file "models/nand.60-4/model.prism"...
+
+Type:        DTMC
+Modules:     multiplex
+Actions:     []
+Variables:   u c s z zx zy x y
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 7.94 seconds (average 0.003673, setup 0.00)
+
+Time for model construction: 8.194 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 97452 nodes (1103 terminal), 29772212 minterms, vars: 33r/33c
+
+Prob0: 2162 iterations in 6.44 seconds (average 0.002979, setup 0.00)
+
+Prob1: 1945 iterations in 5.84 seconds (average 0.003003, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=33, nodes=136740] [6.3 MB]
+Adding explicit sparse matrices... [levels=14, num=365, compact] [769.2 KB]
+Creating vector for diagonals... [dist=1, compact] [35.9 MB]
+Creating vector for RHS... [dist=2, compact] [35.9 MB]
+Allocating iteration vectors... [2 x 143.6 MB]
+TOTAL: [366.1 MB]
+
+Starting iterations...
+Iteration 41: max relative diff=inf, 5.08 sec so far
+Iteration 82: max relative diff=inf, 10.14 sec so far
+Iteration 123: max relative diff=inf, 15.17 sec so far
+Iteration 164: max relative diff=inf, 20.24 sec so far
+Iteration 204: max relative diff=inf, 25.26 sec so far
+Iteration 245: max relative diff=inf, 30.31 sec so far
+Iteration 286: max relative diff=inf, 35.42 sec so far
+Iteration 327: max relative diff=inf, 40.46 sec so far
+Iteration 368: max relative diff=inf, 45.51 sec so far
+Iteration 409: max relative diff=inf, 50.55 sec so far
+Iteration 450: max relative diff=inf, 55.56 sec so far
+Iteration 491: max relative diff=inf, 60.62 sec so far
+Iteration 532: max relative diff=inf, 65.73 sec so far
+Iteration 573: max relative diff=inf, 70.82 sec so far
+Iteration 614: max relative diff=inf, 75.88 sec so far
+Iteration 655: max relative diff=inf, 80.94 sec so far
+Iteration 696: max relative diff=inf, 86.06 sec so far
+Iteration 737: max relative diff=inf, 91.16 sec so far
+Iteration 777: max relative diff=inf, 96.19 sec so far
+Iteration 818: max relative diff=inf, 101.28 sec so far
+Iteration 859: max relative diff=inf, 106.35 sec so far
+Iteration 900: max relative diff=inf, 111.38 sec so far
+Iteration 941: max relative diff=inf, 116.39 sec so far
+Iteration 982: max relative diff=inf, 121.40 sec so far
+Iteration 1023: max relative diff=inf, 126.44 sec so far
+Iteration 1064: max relative diff=inf, 131.56 sec so far
+Iteration 1105: max relative diff=inf, 136.59 sec so far
+Iteration 1145: max relative diff=inf, 141.62 sec so far
+Iteration 1186: max relative diff=inf, 146.72 sec so far
+Iteration 1227: max relative diff=inf, 151.78 sec so far
+Iteration 1268: max relative diff=inf, 156.79 sec so far
+Iteration 1309: max relative diff=inf, 161.83 sec so far
+Iteration 1350: max relative diff=inf, 166.88 sec so far
+Iteration 1391: max relative diff=inf, 171.90 sec so far
+Iteration 1432: max relative diff=inf, 176.99 sec so far
+Iteration 1473: max relative diff=inf, 182.02 sec so far
+Iteration 1514: max relative diff=inf, 187.07 sec so far
+Iteration 1555: max relative diff=inf, 192.17 sec so far
+Iteration 1596: max relative diff=inf, 197.21 sec so far
+Iteration 1637: max relative diff=inf, 202.28 sec so far
+Iteration 1677: max relative diff=inf, 207.29 sec so far
+Iteration 1718: max relative diff=inf, 212.35 sec so far
+Iteration 1759: max relative diff=inf, 217.39 sec so far
+Iteration 1800: max relative diff=inf, 222.43 sec so far
+Iteration 1841: max relative diff=inf, 227.46 sec so far
+Iteration 1882: max relative diff=inf, 232.52 sec so far
+Iteration 1923: max relative diff=inf, 237.55 sec so far
+Iteration 1964: max relative diff=inf, 242.64 sec so far
+Iteration 2005: max relative diff=inf, 247.67 sec so far
+Iteration 2046: max relative diff=inf, 252.72 sec so far
+Iteration 2087: max relative diff=inf, 257.76 sec so far
+Iteration 2127: max relative diff=inf, 262.77 sec so far
+
+Jacobi: 2161 iterations in 273.01 seconds (average 0.123540, setup 6.04)
+
+Value in the initial state: 0.6867214589192238
+
+Time for model checking: 286.259 seconds.
+
+Result: 0.6867214589192238 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[749961178.0, 749961178.0, 749961178.0, 749961178.0, 749961178.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/eajs.6-300-13/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 81.246 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:30:36 GMT+01:00 2026
+Hostname: r23m0196
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/eajs.6-300-13/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/eajs.6-300-13/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 402869 825844 1256575 1695574 2120449 2563792 2998417 3418370 3837906 4269869 4718686 5140381 5590796 6011692 6467493 6885604 7332019 7764501 7901694 states
+Reachable states exploration and model construction done in 54.873 secs.
+Sorting reachable states list...
+
+Time for model construction: 60.794 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb.gz"...
+Time for exporting: 19.747 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb.gz:	Size of output file is 749961178 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/eajs.6-300-13/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 79.280 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:48:03 GMT+01:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/eajs.6-300-13/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/eajs.6-300-13/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 407047 818629 1263256 1687536 2125879 2575582 3014560 3449975 3884842 4343006 4778502 5210057 5665232 6097675 6550495 6977539 7434810 7890420 7901694 states
+Reachable states exploration and model construction done in 54.218 secs.
+Sorting reachable states list...
+
+Time for model construction: 58.432 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep2.gz"...
+Time for exporting: 20.012 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep2.gz:	Size of output file is 749961178 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/eajs.6-300-13/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 81.943 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:21 GMT+01:00 2026
+Hostname: r23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/eajs.6-300-13/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/eajs.6-300-13/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 391305 832358 1254495 1695751 2098252 2532825 2974362 3400664 3835771 4297579 4723795 5158041 5595917 6011064 6467250 6875271 7332578 7757421 7901694 states
+Reachable states exploration and model construction done in 54.897 secs.
+Sorting reachable states list...
+
+Time for model construction: 61.266 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep3.gz"...
+Time for exporting: 19.975 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep3.gz:	Size of output file is 749961178 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/eajs.6-300-13/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 79.944 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:04:06 GMT+01:00 2026
+Hostname: n23m0172
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/eajs.6-300-13/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/eajs.6-300-13/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 399344 815369 1252425 1689531 2114615 2558080 3016484 3469722 3900161 4331087 4785180 5215730 5664173 6090829 6520221 6976659 7419939 7884948 7901694 states
+Reachable states exploration and model construction done in 54.497 secs.
+Sorting reachable states list...
+
+Time for model construction: 59.927 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep4.gz"...
+Time for exporting: 19.388 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep4.gz:	Size of output file is 749961178 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/eajs.6-300-13/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 93.126 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:04:07 GMT+01:00 2026
+Hostname: n23m0049
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/eajs.6-300-13/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/eajs.6-300-13/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 331298 697718 1068940 1454030 1822799 2208865 2589468 2981397 3365791 3765395 4152155 4537126 4925177 5326573 5692875 6097460 6476005 6858252 7255625 7623124 7901694 states
+Reachable states exploration and model construction done in 62.212 secs.
+Sorting reachable states list...
+
+Time for model construction: 68.899 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep5.gz"...
+Time for exporting: 23.463 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/eajs.6-300-13/model.umb_rep5.gz:	Size of output file is 749961178 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

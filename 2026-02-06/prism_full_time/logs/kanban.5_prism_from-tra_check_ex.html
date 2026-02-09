@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log kanban.5_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/kanban.5/index.html" target="_blank">kanban.5</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[ERR, ERR, ERR, ERR, ERR]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_kanban.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+Wallclock time: 33.873 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:07:18 GMT+01:00 2026
+Hostname: n23m0115
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+
+Importing model from "models/kanban.5/prism.model.tradir/model.tra", "models/kanban.5/prism.model.tradir/model.lab", "models/kanban.5/prism.model.tradir/model.srew", "models/kanban.5/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Rewards:     "throughput"
+
+Parsing properties file "models/kanban.5/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 30.723 seconds.
+
+Type:        DTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+Building reward structure...
+
+java.lang.StackOverflowError
+    at java.base/java.util.LinkedList.add(LinkedList.java:524)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:111)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    ....
+
+Try increasing the value of the Java stack size (via the -javastack argument).
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_kanban.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+Wallclock time: 25.969 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:57 GMT+01:00 2026
+Hostname: n23m0387
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+
+Importing model from "models/kanban.5/prism.model.tradir/model.tra", "models/kanban.5/prism.model.tradir/model.lab", "models/kanban.5/prism.model.tradir/model.srew", "models/kanban.5/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Rewards:     "throughput"
+
+Parsing properties file "models/kanban.5/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 23.917 seconds.
+
+Type:        DTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+Building reward structure...
+
+java.lang.StackOverflowError
+    at java.base/java.util.LinkedList.add(LinkedList.java:524)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:111)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    ....
+
+Try increasing the value of the Java stack size (via the -javastack argument).
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_kanban.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+Wallclock time: 29.533 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:51:21 GMT+01:00 2026
+Hostname: r23m0203
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+
+Importing model from "models/kanban.5/prism.model.tradir/model.tra", "models/kanban.5/prism.model.tradir/model.lab", "models/kanban.5/prism.model.tradir/model.srew", "models/kanban.5/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Rewards:     "throughput"
+
+Parsing properties file "models/kanban.5/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 27.19 seconds.
+
+Type:        DTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+Building reward structure...
+
+java.lang.StackOverflowError
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:111)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    ....
+
+Try increasing the value of the Java stack size (via the -javastack argument).
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_kanban.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+Wallclock time: 31.110 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:52 GMT+01:00 2026
+Hostname: r23m0197
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+
+Importing model from "models/kanban.5/prism.model.tradir/model.tra", "models/kanban.5/prism.model.tradir/model.lab", "models/kanban.5/prism.model.tradir/model.srew", "models/kanban.5/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Rewards:     "throughput"
+
+Parsing properties file "models/kanban.5/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 28.432 seconds.
+
+Type:        DTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+Building reward structure...
+
+java.lang.StackOverflowError
+    at java.base/java.util.LinkedList.add(LinkedList.java:524)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:111)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    ....
+
+Try increasing the value of the Java stack size (via the -javastack argument).
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_kanban.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+Wallclock time: 29.306 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:35 GMT+01:00 2026
+Hostname: r23m0096
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/kanban.5/prism.model.tradir/model.all models/kanban.5/property.props
+
+Importing model from "models/kanban.5/prism.model.tradir/model.tra", "models/kanban.5/prism.model.tradir/model.lab", "models/kanban.5/prism.model.tradir/model.srew", "models/kanban.5/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Rewards:     "throughput"
+
+Parsing properties file "models/kanban.5/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 26.981 seconds.
+
+Type:        DTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+Building reward structure...
+
+java.lang.StackOverflowError
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:111)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    at explicit.SCCComputerTarjan.tarjan(SCCComputerTarjan.java:130)
+    ....
+
+Try increasing the value of the Java stack size (via the -javastack argument).
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

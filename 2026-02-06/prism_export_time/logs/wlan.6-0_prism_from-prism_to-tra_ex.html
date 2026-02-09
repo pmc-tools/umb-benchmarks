@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.6-0_prism_from-prism_to-tra_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a> and tool configuration prism_from-prism_to-tra_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[11.267, 9.967, 9.674, 10.255, 11.218]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_wlan.6-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.6-0/model.prism -exportmodel out/prism_from-prism_to-tra_ex/wlan.6-0/model.tra,lab,rew:precision=17
+Wallclock time: 42.039 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:55:15 GMT+01:00 2026
+Hostname: r23m0214
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.6-0/model.prism -exportmodel 'out/prism_from-prism_to-tra_ex/wlan.6-0/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/wlan.6-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 496427 1072765 1660217 2080313 2568699 2766128 3594116 4431551 5007548 states
+Reachable states exploration and model construction done in 26.931 secs.
+Sorting reachable states list...
+
+Time for model construction: 30.023 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model.trew"...
+Time for exporting: 11.267 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_ex/wlan.6-0/model.tra:	Size of output file is 255342633 bytes
+out/prism_from-prism_to-tra_ex/wlan.6-0/model.lab:	Size of output file is 49 bytes
+out/prism_from-prism_to-tra_ex/wlan.6-0/model.srew:	File does not exist.
+out/prism_from-prism_to-tra_ex/wlan.6-0/model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_wlan.6-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.6-0/model.prism -exportmodel out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.tra,lab,rew:precision=17
+Wallclock time: 35.355 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:30:57 GMT+01:00 2026
+Hostname: r23m0139
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.6-0/model.prism -exportmodel 'out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/wlan.6-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 611815 1364401 1790847 2455928 2885688 3859746 4782563 5007548 states
+Reachable states exploration and model construction done in 22.048 secs.
+Sorting reachable states list...
+
+Time for model construction: 24.539 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.trew"...
+Time for exporting: 9.967 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.tra:	Size of output file is 255342633 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.lab:	Size of output file is 49 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.srew:	File does not exist.
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep2.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_wlan.6-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.6-0/model.prism -exportmodel out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.tra,lab,rew:precision=17
+Wallclock time: 33.979 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:10:42 GMT+01:00 2026
+Hostname: r23m0091
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.6-0/model.prism -exportmodel 'out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/wlan.6-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 616317 1415176 1847429 2510487 3018042 4071433 4980815 5007548 states
+Reachable states exploration and model construction done in 21.213 secs.
+Sorting reachable states list...
+
+Time for model construction: 23.666 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.trew"...
+Time for exporting: 9.674 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.tra:	Size of output file is 255342633 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.lab:	Size of output file is 49 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.srew:	File does not exist.
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep3.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_wlan.6-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.6-0/model.prism -exportmodel out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.tra,lab,rew:precision=17
+Wallclock time: 35.733 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:23:19 GMT+01:00 2026
+Hostname: n23m0248
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.6-0/model.prism -exportmodel 'out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/wlan.6-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 626513 1433632 1854862 2503326 2908351 3900831 4830058 5007548 states
+Reachable states exploration and model construction done in 21.816 secs.
+Sorting reachable states list...
+
+Time for model construction: 24.752 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.trew"...
+Time for exporting: 10.255 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.tra:	Size of output file is 255342633 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.lab:	Size of output file is 49 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.srew:	File does not exist.
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep4.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_wlan.6-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.6-0/model.prism -exportmodel out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.tra,lab,rew:precision=17
+Wallclock time: 40.262 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:25:29 GMT+01:00 2026
+Hostname: r23m0206
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.6-0/model.prism -exportmodel 'out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/wlan.6-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 524926 1125338 1663086 2096414 2571945 3094655 3939616 4769396 5007548 states
+Reachable states exploration and model construction done in 25.055 secs.
+Sorting reachable states list...
+
+Time for model construction: 28.335 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.trew"...
+Time for exporting: 11.218 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.tra:	Size of output file is 255342633 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.lab:	Size of output file is 49 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.srew:	File does not exist.
+out/prism_from-prism_to-tra_ex/wlan.6-0/model_rep5.trew:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

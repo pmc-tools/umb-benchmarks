@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[81.248, 70.358, 67.142, 60.695, 76.189]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+Wallclock time: 81.248 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:17:34 GMT+01:00 2026
+Hostname: n23m0352
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+
+Importing model from "models/mapk-cascade.4-30/prism.model.tradir/model.tra", "models/mapk-cascade.4-30/prism.model.tradir/model.lab", "models/mapk-cascade.4-30/prism.model.tradir/model.srew", "models/mapk-cascade.4-30/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.662 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.118 seconds)
+Starting Prob1...
+Prob1 took 0.129 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 116: 5.01 sec so far
+Iteration 238: 10.02 sec so far
+Iteration 359: 15.02 sec so far
+Iteration 481: 20.05 sec so far
+Iteration 600: 25.09 sec so far
+Iteration 721: 30.11 sec so far
+Iteration 842: 35.12 sec so far
+Iteration 964: 40.15 sec so far
+Iteration 1086: 45.18 sec so far
+Iteration 1208: 50.20 sec so far
+Iteration 1330: 55.23 sec so far
+Iteration 1452: 60.28 sec so far
+Iteration 1574: 65.31 sec so far
+Iteration 1694: 70.32 sec so far
+Iteration 1814: 75.35 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 77.941 seconds.
+Expected reachability took 78.201 seconds.
+
+Value in the initial state: 4.7330677162239
+
+Time for model checking: 78.718 seconds.
+
+Result: 4.7330677162239 (+/- 4.707302446975535E-5 estimated; rel err 9.945563277786948E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+Wallclock time: 70.358 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:09 GMT+01:00 2026
+Hostname: r23m0188
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+
+Importing model from "models/mapk-cascade.4-30/prism.model.tradir/model.tra", "models/mapk-cascade.4-30/prism.model.tradir/model.lab", "models/mapk-cascade.4-30/prism.model.tradir/model.srew", "models/mapk-cascade.4-30/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.566 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.095 seconds)
+Starting Prob1...
+Prob1 took 0.122 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 113: 5.00 sec so far
+Iteration 256: 10.04 sec so far
+Iteration 395: 15.06 sec so far
+Iteration 521: 20.09 sec so far
+Iteration 666: 25.10 sec so far
+Iteration 818: 30.12 sec so far
+Iteration 966: 35.13 sec so far
+Iteration 1111: 40.15 sec so far
+Iteration 1244: 45.16 sec so far
+Iteration 1380: 50.19 sec so far
+Iteration 1524: 55.22 sec so far
+Iteration 1673: 60.24 sec so far
+Iteration 1824: 65.27 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 67.144 seconds.
+Expected reachability took 67.378 seconds.
+
+Value in the initial state: 4.7330677162239
+
+Time for model checking: 67.722 seconds.
+
+Result: 4.7330677162239 (+/- 4.707302446975535E-5 estimated; rel err 9.945563277786948E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+Wallclock time: 67.142 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:13 GMT+01:00 2026
+Hostname: n23m0048
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+
+Importing model from "models/mapk-cascade.4-30/prism.model.tradir/model.tra", "models/mapk-cascade.4-30/prism.model.tradir/model.lab", "models/mapk-cascade.4-30/prism.model.tradir/model.srew", "models/mapk-cascade.4-30/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.482 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.11 seconds)
+Starting Prob1...
+Prob1 took 0.089 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 138: 5.03 sec so far
+Iteration 285: 10.06 sec so far
+Iteration 433: 15.07 sec so far
+Iteration 578: 20.08 sec so far
+Iteration 721: 25.09 sec so far
+Iteration 869: 30.09 sec so far
+Iteration 1016: 35.10 sec so far
+Iteration 1162: 40.14 sec so far
+Iteration 1309: 45.15 sec so far
+Iteration 1454: 50.18 sec so far
+Iteration 1599: 55.21 sec so far
+Iteration 1747: 60.22 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 64.53 seconds.
+Expected reachability took 64.738 seconds.
+
+Value in the initial state: 4.7330677162239
+
+Time for model checking: 64.958 seconds.
+
+Result: 4.7330677162239 (+/- 4.707302446975535E-5 estimated; rel err 9.945563277786948E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+Wallclock time: 60.695 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:11 GMT+01:00 2026
+Hostname: n23m0301
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+
+Importing model from "models/mapk-cascade.4-30/prism.model.tradir/model.tra", "models/mapk-cascade.4-30/prism.model.tradir/model.lab", "models/mapk-cascade.4-30/prism.model.tradir/model.srew", "models/mapk-cascade.4-30/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.416 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.078 seconds)
+Starting Prob1...
+Prob1 took 0.097 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 150: 5.02 sec so far
+Iteration 311: 10.02 sec so far
+Iteration 475: 15.05 sec so far
+Iteration 639: 20.07 sec so far
+Iteration 802: 25.07 sec so far
+Iteration 966: 30.09 sec so far
+Iteration 1130: 35.10 sec so far
+Iteration 1294: 40.13 sec so far
+Iteration 1458: 45.15 sec so far
+Iteration 1621: 50.16 sec so far
+Iteration 1784: 55.17 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 58.011 seconds.
+Expected reachability took 58.201 seconds.
+
+Value in the initial state: 4.7330677162239
+
+Time for model checking: 58.578 seconds.
+
+Result: 4.7330677162239 (+/- 4.707302446975535E-5 estimated; rel err 9.945563277786948E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+Wallclock time: 76.189 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:59:27 GMT+01:00 2026
+Hostname: n23m0117
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/mapk-cascade.4-30/prism.model.tradir/model.all models/mapk-cascade.4-30/property.props
+
+Importing model from "models/mapk-cascade.4-30/prism.model.tradir/model.tra", "models/mapk-cascade.4-30/prism.model.tradir/model.lab", "models/mapk-cascade.4-30/prism.model.tradir/model.srew", "models/mapk-cascade.4-30/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.755 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.093 seconds)
+Starting Prob1...
+Prob1 took 0.117 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 120: 5.01 sec so far
+Iteration 251: 10.05 sec so far
+Iteration 381: 15.06 sec so far
+Iteration 511: 20.09 sec so far
+Iteration 641: 25.13 sec so far
+Iteration 771: 30.16 sec so far
+Iteration 901: 35.18 sec so far
+Iteration 1031: 40.21 sec so far
+Iteration 1162: 45.23 sec so far
+Iteration 1292: 50.27 sec so far
+Iteration 1422: 55.30 sec so far
+Iteration 1552: 60.32 sec so far
+Iteration 1682: 65.36 sec so far
+Iteration 1812: 70.39 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 72.883 seconds.
+Expected reachability took 73.105 seconds.
+
+Value in the initial state: 4.7330677162239
+
+Time for model checking: 73.365 seconds.
+
+Result: 4.7330677162239 (+/- 4.707302446975535E-5 estimated; rel err 9.945563277786948E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2188.529, 3482.267, 2216.227, 3688.163, 1935.292]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 2188.529 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:47:42 GMT+01:00 2026
+Hostname: r23m0071
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 22 iterations in 1.42 seconds (average 0.064545, setup 0.00)
+
+Time for model construction: 2187.699 seconds.
+
+Type:        MDP
+States:      28620 (1 initial)
+Transitions: 71470
+
+Transition matrix: 59036 nodes (7 terminal), 71470 minterms, vars: 23r/23c/12nd
+
+goal = 28620, inf = 0, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 3482.267 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:11 GMT+01:00 2026
+Hostname: r23m0138
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 22 iterations in 2.44 seconds (average 0.110909, setup 0.00)
+
+Time for model construction: 3481.117 seconds.
+
+Type:        MDP
+States:      28620 (1 initial)
+Transitions: 71470
+
+Transition matrix: 59036 nodes (7 terminal), 71470 minterms, vars: 23r/23c/12nd
+
+goal = 28620, inf = 0, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.01 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 2216.227 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:51:57 GMT+01:00 2026
+Hostname: n23m0272
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 22 iterations in 1.46 seconds (average 0.066364, setup 0.00)
+
+Time for model construction: 2215.312 seconds.
+
+Type:        MDP
+States:      28620 (1 initial)
+Transitions: 71470
+
+Transition matrix: 59036 nodes (7 terminal), 71470 minterms, vars: 23r/23c/12nd
+
+goal = 28620, inf = 0, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.01 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 3688.163 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:39 GMT+01:00 2026
+Hostname: n23m0019
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 22 iterations in 3.97 seconds (average 0.180455, setup 0.00)
+
+Time for model construction: 3686.398 seconds.
+
+Type:        MDP
+States:      28620 (1 initial)
+Transitions: 71470
+
+Transition matrix: 59036 nodes (7 terminal), 71470 minterms, vars: 23r/23c/12nd
+
+goal = 28620, inf = 0, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.057 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 1935.292 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:47 GMT+01:00 2026
+Hostname: r23m0074
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 22 iterations in 1.20 seconds (average 0.054545, setup 0.00)
+
+Time for model construction: 1932.751 seconds.
+
+Type:        MDP
+States:      28620 (1 initial)
+Transitions: 71470
+
+Transition matrix: 59036 nodes (7 terminal), 71470 minterms, vars: 23r/23c/12nd
+
+goal = 28620, inf = 0, maybe = 0
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.044 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

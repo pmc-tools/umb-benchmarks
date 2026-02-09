@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log embedded.8-12_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/embedded.8-12/index.html" target="_blank">embedded.8-12</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.219, 0.355, 0.212, 0.118, 0.123]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_embedded.8-12_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+Wallclock time: 1.666 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:02 GMT+01:00 2026
+Hostname: n23m0397
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+
+Parsing PRISM model file "models/embedded.8-12/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 8548 states
+Reachable states exploration and model construction done in 0.108 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.219 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+Building embedded DTMC...
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.024 seconds)
+Starting Prob0...
+Prob0 took 0.003 seconds.
+Starting Prob1...
+Prob1 took 0.005 seconds.
+target=1064, yes=1064, no=6356, maybe=1128
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 687 iterations, 5072808 multiplications and 0.271 seconds.
+Probabilistic reachability took 0.322 seconds.
+
+Value in the initial state: 0.10529804738524096
+
+Time for model checking: 0.374 seconds.
+
+Result: 0.10529804738524096 (+/- 1.0374360534628648E-6 estimated; rel err 9.85237693598748E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_embedded.8-12_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+Wallclock time: 2.715 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:39 GMT+01:00 2026
+Hostname: r23m0004
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+
+Parsing PRISM model file "models/embedded.8-12/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 8548 states
+Reachable states exploration and model construction done in 0.114 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.355 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+Building embedded DTMC...
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.027 seconds)
+Starting Prob0...
+Prob0 took 0.005 seconds.
+Starting Prob1...
+Prob1 took 0.005 seconds.
+target=1064, yes=1064, no=6356, maybe=1128
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 687 iterations, 5072808 multiplications and 0.27 seconds.
+Probabilistic reachability took 0.317 seconds.
+
+Value in the initial state: 0.10529804738524096
+
+Time for model checking: 0.37 seconds.
+
+Result: 0.10529804738524096 (+/- 1.0374360534628648E-6 estimated; rel err 9.85237693598748E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_embedded.8-12_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+Wallclock time: 4.451 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:17 GMT+01:00 2026
+Hostname: n23m0080
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+
+Parsing PRISM model file "models/embedded.8-12/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 8548 states
+Reachable states exploration and model construction done in 0.126 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.212 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+Building embedded DTMC...
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.032 seconds)
+Starting Prob0...
+Prob0 took 0.005 seconds.
+Starting Prob1...
+Prob1 took 0.006 seconds.
+target=1064, yes=1064, no=6356, maybe=1128
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 687 iterations, 5072808 multiplications and 0.356 seconds.
+Probabilistic reachability took 0.414 seconds.
+
+Value in the initial state: 0.10529804738524096
+
+Time for model checking: 0.476 seconds.
+
+Result: 0.10529804738524096 (+/- 1.0374360534628648E-6 estimated; rel err 9.85237693598748E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_embedded.8-12_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+Wallclock time: 1.243 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:03 GMT+01:00 2026
+Hostname: n23m0026
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+
+Parsing PRISM model file "models/embedded.8-12/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 8548 states
+Reachable states exploration and model construction done in 0.092 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.118 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+Building embedded DTMC...
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.021 seconds)
+Starting Prob0...
+Prob0 took 0.005 seconds.
+Starting Prob1...
+Prob1 took 0.004 seconds.
+target=1064, yes=1064, no=6356, maybe=1128
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 687 iterations, 5072808 multiplications and 0.234 seconds.
+Probabilistic reachability took 0.276 seconds.
+
+Value in the initial state: 0.10529804738524096
+
+Time for model checking: 0.315 seconds.
+
+Result: 0.10529804738524096 (+/- 1.0374360534628648E-6 estimated; rel err 9.85237693598748E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_embedded.8-12_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+Wallclock time: 1.281 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:48:53 GMT+01:00 2026
+Hostname: r23m0147
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/embedded.8-12/model.prism models/embedded.8-12/property.props
+
+Parsing PRISM model file "models/embedded.8-12/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Parsing properties file "models/embedded.8-12/property.props"...
+
+1 property:
+(1) "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"l_down" U "fail_actuators" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 8548 states
+Reachable states exploration and model construction done in 0.094 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.123 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+Building embedded DTMC...
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.02 seconds)
+Starting Prob0...
+Prob0 took 0.003 seconds.
+Starting Prob1...
+Prob1 took 0.005 seconds.
+target=1064, yes=1064, no=6356, maybe=1128
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 687 iterations, 5072808 multiplications and 0.292 seconds.
+Probabilistic reachability took 0.325 seconds.
+
+Value in the initial state: 0.10529804738524096
+
+Time for model checking: 0.358 seconds.
+
+Result: 0.10529804738524096 (+/- 1.0374360534628648E-6 estimated; rel err 9.85237693598748E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

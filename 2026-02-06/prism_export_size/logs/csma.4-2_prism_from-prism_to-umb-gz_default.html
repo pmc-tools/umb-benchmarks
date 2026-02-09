@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.4-2_prism_from-prism_to-umb-gz_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.4-2/index.html" target="_blank">csma.4-2</a> and tool configuration prism_from-prism_to-umb-gz_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[28902491.0, 28902491.0, 28902491.0, 28902491.0, 28902491.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_csma.4-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 4.510 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:00:04 GMT+01:00 2026
+Hostname: n23m0172
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.11 seconds (average 0.005751, setup 0.00)
+
+Time for model construction: 1.226 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb.gz"...
+Time for exporting: 1.181 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb.gz:	Size of output file is 28902491 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_csma.4-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 3.854 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:54:19 GMT+01:00 2026
+Hostname: r23m0012
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.65 seconds (average 0.008549, setup 0.00)
+
+Time for model construction: 1.811 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep2.gz"...
+Time for exporting: 1.433 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep2.gz:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_csma.4-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.712 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:22 GMT+01:00 2026
+Hostname: r23m0148
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 0.94 seconds (average 0.004870, setup 0.00)
+
+Time for model construction: 1.026 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep3.gz"...
+Time for exporting: 1.152 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep3.gz:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_csma.4-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.710 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:30:37 GMT+01:00 2026
+Hostname: n23m0245
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 0.95 seconds (average 0.004922, setup 0.00)
+
+Time for model construction: 1.029 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep4.gz"...
+Time for exporting: 1.151 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep4.gz:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_csma.4-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/csma.4-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 3.280 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:55:28 GMT+01:00 2026
+Hostname: n23m0025
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/csma.4-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/csma.4-2/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3 station4
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3 s4 x4 bc4 cd4
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 193 iterations in 1.46 seconds (average 0.007565, setup 0.00)
+
+Time for model construction: 1.568 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+
+Transition matrix: 52233 nodes (4 terminal), 1327068 minterms, vars: 54r/54c/17nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep5.gz"...
+Time for exporting: 1.173 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_default/csma.4-2/model.umb_rep5.gz:	Size of output file is 28902491 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

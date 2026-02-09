@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.6-2_storm_from-jani_to-drn-gz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.6-2/index.html" target="_blank">consensus.6-2</a> and tool configuration storm_from-jani_to-drn-gz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[23677975.0, 23677971.0, 23677971.0, 23677971.0, 23677971.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_consensus.6-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 6.294 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:30:38 2026
+Command line arguments: --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.039s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1258240 (224 nodes)
+Transitions: 	6236736 (7148 nodes)
+Choices: 	5008128
+Reward Models:  none
+Variables: 	rows: 19 meta variables (30 DD variables), columns: 19 meta variables (30 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (31 nodes)
+   * agree
+   * finished
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.485s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn.gz'.
+Time for model export: 4.730s.
+
+
+Performance statistics:
+  * peak memory usage: 501MB
+  * CPU time: 6.154s
+  * wallclock time: 6.261s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn.gz:	Size of output file is 23677975 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_consensus.6-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep2.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 6.314 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:16:34 2026
+Command line arguments: --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep2.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.042s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1258240 (224 nodes)
+Transitions: 	6236736 (7148 nodes)
+Choices: 	5008128
+Reward Models:  none
+Variables: 	rows: 19 meta variables (30 DD variables), columns: 19 meta variables (30 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (31 nodes)
+   * agree
+   * finished
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.500s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep2.gz'.
+Time for model export: 4.730s.
+
+
+Performance statistics:
+  * peak memory usage: 501MB
+  * CPU time: 6.158s
+  * wallclock time: 6.280s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep2.gz:	Size of output file is 23677971 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_consensus.6-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep3.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 7.623 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:16:25 2026
+Command line arguments: --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep3.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.046s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1258240 (224 nodes)
+Transitions: 	6236736 (7148 nodes)
+Choices: 	5008128
+Reward Models:  none
+Variables: 	rows: 19 meta variables (30 DD variables), columns: 19 meta variables (30 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (31 nodes)
+   * agree
+   * finished
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.763s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep3.gz'.
+Time for model export: 5.764s.
+
+
+Performance statistics:
+  * peak memory usage: 501MB
+  * CPU time: 7.462s
+  * wallclock time: 7.582s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep3.gz:	Size of output file is 23677971 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_consensus.6-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep4.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 6.275 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:23:21 2026
+Command line arguments: --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep4.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.038s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1258240 (224 nodes)
+Transitions: 	6236736 (7148 nodes)
+Choices: 	5008128
+Reward Models:  none
+Variables: 	rows: 19 meta variables (30 DD variables), columns: 19 meta variables (30 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (31 nodes)
+   * agree
+   * finished
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.476s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep4.gz'.
+Time for model export: 4.722s.
+
+
+Performance statistics:
+  * peak memory usage: 501MB
+  * CPU time: 6.134s
+  * wallclock time: 6.242s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep4.gz:	Size of output file is 23677971 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-gz_cudd_consensus.6-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep5.gz drn --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 6.332 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:55:13 2026
+Command line arguments: --timemem --buildfull --jani models/consensus.6-2/model.jani --exportbuild out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep5.gz drn --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.040s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1258240 (224 nodes)
+Transitions: 	6236736 (7148 nodes)
+Choices: 	5008128
+Reward Models:  none
+Variables: 	rows: 19 meta variables (30 DD variables), columns: 19 meta variables (30 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (31 nodes)
+   * agree
+   * finished
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.504s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep5.gz'.
+Time for model export: 4.739s.
+
+
+Performance statistics:
+  * peak memory usage: 501MB
+  * CPU time: 6.173s
+  * wallclock time: 6.290s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-gz_cudd/consensus.6-2/model.drn_rep5.gz:	Size of output file is 23677971 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

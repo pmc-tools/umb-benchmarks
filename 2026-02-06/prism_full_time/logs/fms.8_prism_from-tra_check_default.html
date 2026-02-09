@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log fms.8_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/fms.8/index.html" target="_blank">fms.8</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, TO]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_fms.8_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+Wallclock time: 7200.330 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:34 GMT+01:00 2026
+Hostname: r23m0142
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+
+Importing model from "models/fms.8/prism.model.tradir/model.tra", "models/fms.8/prism.model.tradir/model.lab", "models/fms.8/prism.model.tradir/model.srew", "models/fms.8/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "models/fms.8/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 76.30 seconds (average 1.173846, setup 0.00)
+
+Time for model construction: 5794.854 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 1377387 nodes (84 terminal), 38533968 minterms, vars: 23r/23c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:4459455
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_fms.8_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+Wallclock time: 7200.318 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:08:09 GMT+01:00 2026
+Hostname: n23m0035
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+
+Importing model from "models/fms.8/prism.model.tradir/model.tra", "models/fms.8/prism.model.tradir/model.lab", "models/fms.8/prism.model.tradir/model.srew", "models/fms.8/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "models/fms.8/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 75.10 seconds (average 1.155385, setup 0.00)
+
+Time for model construction: 5807.507 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 1377387 nodes (84 terminal), 38533968 minterms, vars: 23r/23c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:4459455
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_fms.8_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+Wallclock time: 7200.334 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:04:45 GMT+01:00 2026
+Hostname: r23m0006
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+
+Importing model from "models/fms.8/prism.model.tradir/model.tra", "models/fms.8/prism.model.tradir/model.lab", "models/fms.8/prism.model.tradir/model.srew", "models/fms.8/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "models/fms.8/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 77.85 seconds (average 1.197692, setup 0.00)
+
+Time for model construction: 5347.777 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 1377387 nodes (84 terminal), 38533968 minterms, vars: 23r/23c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:4459455
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_fms.8_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+Wallclock time: 7200.328 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:05 GMT+01:00 2026
+Hostname: n23m0314
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+
+Importing model from "models/fms.8/prism.model.tradir/model.tra", "models/fms.8/prism.model.tradir/model.lab", "models/fms.8/prism.model.tradir/model.srew", "models/fms.8/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "models/fms.8/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 77.46 seconds (average 1.191692, setup 0.00)
+
+Time for model construction: 5923.03 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 1377387 nodes (84 terminal), 38533968 minterms, vars: 23r/23c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:4459455
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_fms.8_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+Wallclock time: 7200.320 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:11 GMT+01:00 2026
+Hostname: n23m0311
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/fms.8/prism.model.tradir/model.all models/fms.8/property.props
+
+Importing model from "models/fms.8/prism.model.tradir/model.tra", "models/fms.8/prism.model.tradir/model.lab", "models/fms.8/prism.model.tradir/model.srew", "models/fms.8/prism.model.tradir/model.trew"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "models/fms.8/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 71.06 seconds (average 1.093231, setup 0.00)
+
+Time for model construction: 5560.596 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 1377387 nodes (84 terminal), 38533968 minterms, vars: 23r/23c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:4459455
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_storm_from-jani_to-umb-gz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration storm_from-jani_to-umb-gz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2.911, 2.931, 2.916, 3.034, 2.907]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 4.132 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:22:34 2026
+Command line arguments: --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.195s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.979s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb.gz'.
+Time for model export: 2.911s.
+
+
+Performance statistics:
+  * peak memory usage: 227MB
+  * CPU time: 4.053s
+  * wallclock time: 4.091s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb.gz:	Size of output file is 12011506 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep2.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 4.170 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:10:04 2026
+Command line arguments: --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep2.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.209s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.990s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep2.gz'.
+Time for model export: 2.931s.
+
+
+Performance statistics:
+  * peak memory usage: 226MB
+  * CPU time: 4.094s
+  * wallclock time: 4.137s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep2.gz:	Size of output file is 12011505 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep3.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 4.114 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:25:30 2026
+Command line arguments: --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep3.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.184s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.974s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep3.gz'.
+Time for model export: 2.916s.
+
+
+Performance statistics:
+  * peak memory usage: 227MB
+  * CPU time: 4.052s
+  * wallclock time: 4.081s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep3.gz:	Size of output file is 12011521 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep4.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 4.289 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:25:08 2026
+Command line arguments: --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep4.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.194s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.016s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep4.gz'.
+Time for model export: 3.034s.
+
+
+Performance statistics:
+  * peak memory usage: 227MB
+  * CPU time: 4.214s
+  * wallclock time: 4.252s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep4.gz:	Size of output file is 12011506 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep5.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 4.104 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:50 2026
+Command line arguments: --timemem --buildfull --jani models/resource-gathering.1300-100-100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep5.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.185s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.973s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep5.gz'.
+Time for model export: 2.907s.
+
+
+Performance statistics:
+  * peak memory usage: 227MB
+  * CPU time: 4.037s
+  * wallclock time: 4.070s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/resource-gathering.1300-100-100/model.umb_rep5.gz:	Size of output file is 12011520 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

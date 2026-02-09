@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.4-4_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.4-4/index.html" target="_blank">consensus.4-4</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.119, 0.132, 0.161, 0.076, 0.067]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 6.542 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:34 GMT+01:00 2026
+Hostname: n23m0191
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.119 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.082 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.495 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 3.935 seconds.
+Probabilistic reachability took 5.528 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.549 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 8.231 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:10 GMT+01:00 2026
+Hostname: n23m0359
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.132 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.089 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.697 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.197 seconds.
+Probabilistic reachability took 6.002 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 6.025 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 6.213 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:13 GMT+01:00 2026
+Hostname: n23m0386
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.161 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.083 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.391 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 3.572 seconds.
+Probabilistic reachability took 5.064 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.091 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 6.715 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:23 GMT+01:00 2026
+Hostname: n23m0359
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.076 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.093 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.625 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.125 seconds.
+Probabilistic reachability took 5.854 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.869 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 5.834 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:46 GMT+01:00 2026
+Hostname: r23m0044
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.067 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.08 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.463 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 3.533 seconds.
+Probabilistic reachability took 5.086 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.1 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

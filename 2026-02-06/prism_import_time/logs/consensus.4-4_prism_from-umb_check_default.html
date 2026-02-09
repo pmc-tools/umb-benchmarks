@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.4-4_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.4-4/index.html" target="_blank">consensus.4-4</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[4.012, 4.073, 3.972, 5.004, 4.353]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.4-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 15.606 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:13 GMT+01:00 2026
+Hostname: n23m0311
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 76% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.13 seconds (average 0.000667, setup 0.00)
+
+Time for model construction: 4.012 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+
+Transition matrix: 9092 nodes (3 terminal), 144352 minterms, vars: 16r/16c/4nd
+
+Prob0A: 149 iterations in 0.24 seconds (average 0.001611, setup 0.00)
+
+Prob1E: 2480 iterations in 4.84 seconds (average 0.001952, setup 0.00)
+
+yes = 10872, no = 910, maybe = 31354
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=16, nodes=14277] [669.2 KB]
+Adding sparse bits... [levels=16-16, num=4, compact=4/4] [630.2 KB]
+Creating vector for yes... [dist=2, compact] [84.3 KB]
+Allocating iteration vectors... [3 x 337.0 KB]
+TOTAL: [2.3 MB]
+
+Starting iterations...
+
+Iterative method: 6873 iterations in 4.37 seconds (average 0.000633, setup 0.02)
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 9.483 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602140768172048E-6 estimated; rel err 9.997722437944864E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.4-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 14.939 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:10 GMT+01:00 2026
+Hostname: r23m0147
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 76% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.14 seconds (average 0.000718, setup 0.00)
+
+Time for model construction: 4.073 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+
+Transition matrix: 9092 nodes (3 terminal), 144352 minterms, vars: 16r/16c/4nd
+
+Prob0A: 149 iterations in 0.28 seconds (average 0.001879, setup 0.00)
+
+Prob1E: 2480 iterations in 5.49 seconds (average 0.002214, setup 0.00)
+
+yes = 10872, no = 910, maybe = 31354
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=16, nodes=14277] [669.2 KB]
+Adding sparse bits... [levels=16-16, num=4, compact=4/4] [630.2 KB]
+Creating vector for yes... [dist=2, compact] [84.3 KB]
+Allocating iteration vectors... [3 x 337.0 KB]
+TOTAL: [2.3 MB]
+
+Starting iterations...
+
+Iterative method: 6873 iterations in 4.44 seconds (average 0.000640, setup 0.04)
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 10.227 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602140768172048E-6 estimated; rel err 9.997722437944864E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.4-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 14.200 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:51 GMT+01:00 2026
+Hostname: n23m0141
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 78% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.14 seconds (average 0.000718, setup 0.00)
+
+Time for model construction: 3.972 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+
+Transition matrix: 9092 nodes (3 terminal), 144352 minterms, vars: 16r/16c/4nd
+
+Prob0A: 149 iterations in 0.24 seconds (average 0.001611, setup 0.00)
+
+Prob1E: 2480 iterations in 4.86 seconds (average 0.001960, setup 0.00)
+
+yes = 10872, no = 910, maybe = 31354
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=16, nodes=14277] [669.2 KB]
+Adding sparse bits... [levels=16-16, num=4, compact=4/4] [630.2 KB]
+Creating vector for yes... [dist=2, compact] [84.3 KB]
+Allocating iteration vectors... [3 x 337.0 KB]
+TOTAL: [2.3 MB]
+
+Starting iterations...
+
+Iterative method: 6873 iterations in 4.47 seconds (average 0.000647, setup 0.02)
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 9.589 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602140768172048E-6 estimated; rel err 9.997722437944864E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.4-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 17.405 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:40 GMT+01:00 2026
+Hostname: r23m0044
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 62% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.17 seconds (average 0.000872, setup 0.00)
+
+Time for model construction: 5.004 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+
+Transition matrix: 9092 nodes (3 terminal), 144352 minterms, vars: 16r/16c/4nd
+
+Prob0A: 149 iterations in 0.34 seconds (average 0.002282, setup 0.00)
+
+Prob1E: 2480 iterations in 6.44 seconds (average 0.002597, setup 0.00)
+
+yes = 10872, no = 910, maybe = 31354
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=16, nodes=14277] [669.2 KB]
+Adding sparse bits... [levels=16-16, num=4, compact=4/4] [630.2 KB]
+Creating vector for yes... [dist=2, compact] [84.3 KB]
+Allocating iteration vectors... [3 x 337.0 KB]
+TOTAL: [2.3 MB]
+
+Starting iterations...
+
+Iterative method: 6873 iterations in 4.90 seconds (average 0.000707, setup 0.04)
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 11.729 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602140768172048E-6 estimated; rel err 9.997722437944864E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.4-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+Wallclock time: 15.782 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:11 GMT+01:00 2026
+Hostname: n23m0048
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.4-4/prism.model.umb models/consensus.4-4/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.4-4/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 70% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.15 seconds (average 0.000769, setup 0.00)
+
+Time for model construction: 4.353 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+
+Transition matrix: 9092 nodes (3 terminal), 144352 minterms, vars: 16r/16c/4nd
+
+Prob0A: 149 iterations in 0.26 seconds (average 0.001745, setup 0.00)
+
+Prob1E: 2480 iterations in 5.58 seconds (average 0.002250, setup 0.00)
+
+yes = 10872, no = 910, maybe = 31354
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=16, nodes=14277] [669.2 KB]
+Adding sparse bits... [levels=16-16, num=4, compact=4/4] [630.2 KB]
+Creating vector for yes... [dist=2, compact] [84.3 KB]
+Allocating iteration vectors... [3 x 337.0 KB]
+TOTAL: [2.3 MB]
+
+Starting iterations...
+
+Iterative method: 6873 iterations in 4.87 seconds (average 0.000704, setup 0.03)
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 10.75 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602140768172048E-6 estimated; rel err 9.997722437944864E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

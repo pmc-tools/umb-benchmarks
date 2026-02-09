@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log zeroconf.1000-8-false_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[13.666, 14.688, 15.587, 12.666, 12.539]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+Wallclock time: 56.664 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:05 GMT+01:00 2026
+Hostname: n23m0045
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+
+Parsing PRISM model file "models/zeroconf.1000-8-false/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 525220 1025188 1507518 1870338 states
+Reachable states exploration and model construction done in 11.215 secs.
+Sorting reachable states list...
+
+Time for model construction: 13.666 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 1.984 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 34.839 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 300: 5.02 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.247 seconds.
+Probabilistic reachability took 42.087 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 42.165 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+Wallclock time: 69.526 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:47:32 GMT+01:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+
+Parsing PRISM model file "models/zeroconf.1000-8-false/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 508648 961311 1407701 1848238 1870338 states
+Reachable states exploration and model construction done in 12.277 secs.
+Sorting reachable states list...
+
+Time for model construction: 14.688 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.426 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 46.066 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 282: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.589 seconds.
+Probabilistic reachability took 54.104 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 54.162 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+Wallclock time: 60.967 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:45:04 GMT+01:00 2026
+Hostname: n23m0104
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+
+Parsing PRISM model file "models/zeroconf.1000-8-false/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 443841 882857 1341573 1757941 1870338 states
+Reachable states exploration and model construction done in 12.804 secs.
+Sorting reachable states list...
+
+Time for model construction: 15.587 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.041 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 36.462 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 263: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.892 seconds.
+Probabilistic reachability took 44.417 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 44.471 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+Wallclock time: 58.659 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:29 GMT+01:00 2026
+Hostname: r23m0161
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+
+Parsing PRISM model file "models/zeroconf.1000-8-false/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 575300 1117723 1647404 1870338 states
+Reachable states exploration and model construction done in 10.36 secs.
+Sorting reachable states list...
+
+Time for model construction: 12.666 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.073 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 38.431 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 4.829 seconds.
+Probabilistic reachability took 45.351 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 45.404 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+Wallclock time: 59.446 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:37 GMT+01:00 2026
+Hostname: r23m0160
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/zeroconf.1000-8-false/model.prism models/zeroconf.1000-8-false/property.props
+
+Parsing PRISM model file "models/zeroconf.1000-8-false/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "models/zeroconf.1000-8-false/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 574573 1134167 1657104 1870338 states
+Reachable states exploration and model construction done in 10.171 secs.
+Sorting reachable states list...
+
+Time for model construction: 12.539 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.068 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 39.403 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 4.788 seconds.
+Probabilistic reachability took 46.28 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 46.335 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

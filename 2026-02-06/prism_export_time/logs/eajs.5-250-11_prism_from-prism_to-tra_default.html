@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.5-250-11_prism_from-prism_to-tra_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.5-250-11/index.html" target="_blank">eajs.5-250-11</a> and tool configuration prism_from-prism_to-tra_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[10.542, 10.524, 10.665, 10.428, 10.529]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_eajs.5-250-11_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/eajs.5-250-11/model.prism -exportmodel out/prism_from-prism_to-tra_default/eajs.5-250-11/model.tra,lab,rew:precision=17
+Wallclock time: 11.346 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:55:20 GMT+01:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/eajs.5-250-11/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/eajs.5-250-11/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/eajs.5-250-11/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_5 Process_4
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 loc_5 t_5 t_4 loc_4
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.09 seconds (average 0.001233, setup 0.00)
+
+Time for model construction: 0.262 seconds.
+
+Type:        MDP
+States:      3049471 (1 initial)
+Transitions: 6977654
+
+Transition matrix: 25363 nodes (7 terminal), 6977654 minterms, vars: 43r/43c/5nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model.trew"...
+Time for exporting: 10.542 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model.tra:	Size of output file is 265797862 bytes
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model.lab:	Size of output file is 110224 bytes
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model.srew:	Size of output file is 60 bytes
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model.trew:	Size of output file is 2018126 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_eajs.5-250-11_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/eajs.5-250-11/model.prism -exportmodel out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.tra,lab,rew:precision=17
+Wallclock time: 11.447 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:18 GMT+01:00 2026
+Hostname: r23m0206
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/eajs.5-250-11/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/eajs.5-250-11/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_5 Process_4
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 loc_5 t_5 t_4 loc_4
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.10 seconds (average 0.001370, setup 0.00)
+
+Time for model construction: 0.346 seconds.
+
+Type:        MDP
+States:      3049471 (1 initial)
+Transitions: 6977654
+
+Transition matrix: 25363 nodes (7 terminal), 6977654 minterms, vars: 43r/43c/5nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.trew"...
+Time for exporting: 10.524 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.tra:	Size of output file is 265797862 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.lab:	Size of output file is 110224 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep2.trew:	Size of output file is 2018126 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_eajs.5-250-11_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/eajs.5-250-11/model.prism -exportmodel out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.tra,lab,rew:precision=17
+Wallclock time: 11.620 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:04:02 GMT+01:00 2026
+Hostname: n23m0130
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/eajs.5-250-11/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/eajs.5-250-11/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_5 Process_4
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 loc_5 t_5 t_4 loc_4
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.10 seconds (average 0.001370, setup 0.00)
+
+Time for model construction: 0.364 seconds.
+
+Type:        MDP
+States:      3049471 (1 initial)
+Transitions: 6977654
+
+Transition matrix: 25363 nodes (7 terminal), 6977654 minterms, vars: 43r/43c/5nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.trew"...
+Time for exporting: 10.665 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.tra:	Size of output file is 265797862 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.lab:	Size of output file is 110224 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep3.trew:	Size of output file is 2018126 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_eajs.5-250-11_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/eajs.5-250-11/model.prism -exportmodel out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.tra,lab,rew:precision=17
+Wallclock time: 11.217 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:55:37 GMT+01:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/eajs.5-250-11/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/eajs.5-250-11/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_5 Process_4
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 loc_5 t_5 t_4 loc_4
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.09 seconds (average 0.001233, setup 0.00)
+
+Time for model construction: 0.264 seconds.
+
+Type:        MDP
+States:      3049471 (1 initial)
+Transitions: 6977654
+
+Transition matrix: 25363 nodes (7 terminal), 6977654 minterms, vars: 43r/43c/5nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.trew"...
+Time for exporting: 10.428 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.tra:	Size of output file is 265797862 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.lab:	Size of output file is 110224 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep4.trew:	Size of output file is 2018126 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_eajs.5-250-11_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/eajs.5-250-11/model.prism -exportmodel out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.tra,lab,rew:precision=17
+Wallclock time: 11.368 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:30:53 GMT+01:00 2026
+Hostname: n23m0272
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/eajs.5-250-11/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/eajs.5-250-11/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_5 Process_4
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 loc_5 t_5 t_4 loc_4
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.09 seconds (average 0.001233, setup 0.00)
+
+Time for model construction: 0.303 seconds.
+
+Type:        MDP
+States:      3049471 (1 initial)
+Transitions: 6977654
+
+Transition matrix: 25363 nodes (7 terminal), 6977654 minterms, vars: 43r/43c/5nd
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.trew"...
+Time for exporting: 10.529 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.tra:	Size of output file is 265797862 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.lab:	Size of output file is 110224 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_default/eajs.5-250-11/model_rep5.trew:	Size of output file is 2018126 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

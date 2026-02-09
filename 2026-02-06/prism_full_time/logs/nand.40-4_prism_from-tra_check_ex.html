@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.40-4_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.40-4/index.html" target="_blank">nand.40-4</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[55.822, 49.33, 54.147, 46.791, 46.572]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_nand.40-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+Wallclock time: 55.822 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:51:59 GMT+01:00 2026
+Hostname: n23m0393
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+
+Importing model from "models/nand.40-4/prism.model.tradir/model.tra", "models/nand.40-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 8.644 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.497 seconds)
+Starting Prob0...
+Prob0 took 0.618 seconds.
+Starting Prob1...
+Prob1 took 1.336 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 125: 5.03 sec so far
+Iteration 253: 10.04 sec so far
+Iteration 390: 15.06 sec so far
+Iteration 535: 20.07 sec so far
+Iteration 692: 25.07 sec so far
+Iteration 863: 30.08 sec so far
+Iteration 1054: 35.11 sec so far
+Iteration 1271: 40.11 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 43.842 seconds.
+Probabilistic reachability took 46.319 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 46.44 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_nand.40-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+Wallclock time: 49.330 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:51:21 GMT+01:00 2026
+Hostname: n23m0279
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+
+Importing model from "models/nand.40-4/prism.model.tradir/model.tra", "models/nand.40-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 7.042 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.545 seconds)
+Starting Prob0...
+Prob0 took 0.681 seconds.
+Starting Prob1...
+Prob1 took 1.39 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 143: 5.02 sec so far
+Iteration 293: 10.02 sec so far
+Iteration 453: 15.03 sec so far
+Iteration 629: 20.04 sec so far
+Iteration 817: 25.06 sec so far
+Iteration 1018: 30.06 sec so far
+Iteration 1255: 35.08 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 38.81 seconds.
+Probabilistic reachability took 41.452 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 41.554 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_nand.40-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+Wallclock time: 54.147 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:04 GMT+01:00 2026
+Hostname: n23m0393
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+
+Importing model from "models/nand.40-4/prism.model.tradir/model.tra", "models/nand.40-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 8.216 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.499 seconds)
+Starting Prob0...
+Prob0 took 0.659 seconds.
+Starting Prob1...
+Prob1 took 1.407 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 127: 5.02 sec so far
+Iteration 260: 10.05 sec so far
+Iteration 400: 15.07 sec so far
+Iteration 552: 20.09 sec so far
+Iteration 715: 25.09 sec so far
+Iteration 892: 30.11 sec so far
+Iteration 1093: 35.11 sec so far
+Iteration 1322: 40.12 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 42.58 seconds.
+Probabilistic reachability took 45.172 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 45.306 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_nand.40-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+Wallclock time: 46.791 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:44 GMT+01:00 2026
+Hostname: n23m0141
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+
+Importing model from "models/nand.40-4/prism.model.tradir/model.tra", "models/nand.40-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 6.54 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.501 seconds)
+Starting Prob0...
+Prob0 took 0.66 seconds.
+Starting Prob1...
+Prob1 took 1.412 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 150: 5.03 sec so far
+Iteration 302: 10.04 sec so far
+Iteration 469: 15.05 sec so far
+Iteration 650: 20.07 sec so far
+Iteration 851: 25.09 sec so far
+Iteration 1080: 30.10 sec so far
+Iteration 1348: 35.12 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 36.852 seconds.
+Probabilistic reachability took 39.451 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 39.554 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_nand.40-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+Wallclock time: 46.572 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:17:51 GMT+01:00 2026
+Hostname: n23m0039
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/nand.40-4/prism.model.tradir/model.all models/nand.40-4/property.props
+
+Importing model from "models/nand.40-4/prism.model.tradir/model.tra", "models/nand.40-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.40-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 6.851 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.481 seconds)
+Starting Prob0...
+Prob0 took 0.591 seconds.
+Starting Prob1...
+Prob1 took 1.198 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 147: 5.01 sec so far
+Iteration 304: 10.04 sec so far
+Iteration 474: 15.06 sec so far
+Iteration 657: 20.09 sec so far
+Iteration 861: 25.10 sec so far
+Iteration 1095: 30.12 sec so far
+Iteration 1365: 35.12 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 36.58 seconds.
+Probabilistic reachability took 38.88 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 38.982 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

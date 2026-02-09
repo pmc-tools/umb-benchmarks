@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_storm_from-umb-gz_check_exact</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration storm_from-umb-gz_check_exact</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.987, 3.812, 3.732, 3.708, 3.681]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Wallclock time: 3.987 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Mon Feb  9 10:50:03 2026
+Command line arguments: --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Current working directory: $PWD
+
+First pass: Index file loaded in 0.014s seconds.
+Index file is #1 file in the archive.
+Second pass: bin files loaded in 0.175s seconds.
+Time for model construction: 1.292s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.541s.
+
+Performance statistics:
+  * peak memory usage: 972MB
+  * CPU time: 3.573s
+  * wallclock time: 3.869s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Wallclock time: 3.812 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Mon Feb  9 10:50:25 2026
+Command line arguments: --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Current working directory: $PWD
+
+First pass: Index file loaded in 0.011s seconds.
+Index file is #1 file in the archive.
+Second pass: bin files loaded in 0.145s seconds.
+Time for model construction: 1.159s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.532s.
+
+Performance statistics:
+  * peak memory usage: 971MB
+  * CPU time: 3.486s
+  * wallclock time: 3.727s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Wallclock time: 3.732 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Mon Feb  9 10:46:59 2026
+Command line arguments: --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Current working directory: $PWD
+
+First pass: Index file loaded in 0.014s seconds.
+Index file is #1 file in the archive.
+Second pass: bin files loaded in 0.137s seconds.
+Time for model construction: 1.181s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.438s.
+
+Performance statistics:
+  * peak memory usage: 971MB
+  * CPU time: 3.420s
+  * wallclock time: 3.652s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Wallclock time: 3.708 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Mon Feb  9 10:46:57 2026
+Command line arguments: --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Current working directory: $PWD
+
+First pass: Index file loaded in 0.010s seconds.
+Index file is #1 file in the archive.
+Second pass: bin files loaded in 0.144s seconds.
+Time for model construction: 1.133s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.465s.
+
+Performance statistics:
+  * peak memory usage: 972MB
+  * CPU time: 3.394s
+  * wallclock time: 3.633s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Wallclock time: 3.681 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Mon Feb  9 10:53:24 2026
+Command line arguments: --timemem --buildfull --explicit-umb models/csma.3-4/storm.model.exact.umb.gz --prop models/csma.3-4/property.props --exact
+Current working directory: $PWD
+
+First pass: Index file loaded in 0.006s seconds.
+Index file is #1 file in the archive.
+Second pass: bin files loaded in 0.146s seconds.
+Time for model construction: 1.139s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.428s.
+
+Performance statistics:
+  * peak memory usage: 972MB
+  * CPU time: 3.365s
+  * wallclock time: 3.602s
+</pre>
+</div>
+</body>
+</html>

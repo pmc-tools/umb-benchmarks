@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.6-2_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.6-2/index.html" target="_blank">consensus.6-2</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[360.293, 324.417, 419.114, 527.256, 377.242]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.6-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+Wallclock time: 775.894 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:50 GMT+01:00 2026
+Hostname: n23m0101
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.6-2/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 149 iterations in 2.24 seconds (average 0.015034, setup 0.00)
+
+Time for model construction: 360.293 seconds.
+
+Type:        MDP
+States:      1258240 (1 initial)
+Transitions: 6236736
+
+Transition matrix: 114557 nodes (3 terminal), 6236736 minterms, vars: 21r/21c/6nd
+
+Prob0A: 115 iterations in 10.76 seconds (average 0.093565, setup 0.00)
+
+Prob1E: 1925 iterations in 174.50 seconds (average 0.090649, setup 0.00)
+
+yes = 583956, no = 27270, maybe = 647014
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=21, nodes=232894] [10.7 MB]
+Adding sparse bits... [levels=6-10, num=18580, compact=6/6] [4.2 MB]
+Creating vector for yes... [dist=2, compact] [2.4 MB]
+Allocating iteration vectors... [3 x 9.6 MB]
+TOTAL: [46.0 MB]
+
+Starting iterations...
+Iteration 83: max relative diff=inf, 5.04 sec so far
+Iteration 168: max relative diff=0.242132, 10.09 sec so far
+Iteration 252: max relative diff=0.090423, 15.11 sec so far
+Iteration 336: max relative diff=0.048774, 20.16 sec so far
+Iteration 420: max relative diff=0.030091, 25.21 sec so far
+Iteration 504: max relative diff=0.019947, 30.26 sec so far
+Iteration 588: max relative diff=0.013820, 35.29 sec so far
+Iteration 672: max relative diff=0.009865, 40.31 sec so far
+Iteration 756: max relative diff=0.007194, 45.35 sec so far
+Iteration 840: max relative diff=0.005331, 50.39 sec so far
+Iteration 924: max relative diff=0.003999, 55.41 sec so far
+Iteration 1009: max relative diff=0.003028, 60.47 sec so far
+Iteration 1092: max relative diff=0.002312, 65.52 sec so far
+Iteration 1175: max relative diff=0.001788, 70.53 sec so far
+Iteration 1258: max relative diff=0.001380, 75.56 sec so far
+Iteration 1342: max relative diff=0.001068, 80.62 sec so far
+Iteration 1426: max relative diff=0.000830, 85.66 sec so far
+Iteration 1510: max relative diff=0.000646, 90.69 sec so far
+Iteration 1594: max relative diff=0.000504, 95.71 sec so far
+Iteration 1677: max relative diff=0.000394, 100.72 sec so far
+Iteration 1761: max relative diff=0.000308, 105.75 sec so far
+Iteration 1845: max relative diff=0.000242, 110.78 sec so far
+Iteration 1929: max relative diff=0.000189, 115.80 sec so far
+Iteration 2013: max relative diff=0.000149, 120.83 sec so far
+Iteration 2096: max relative diff=0.000118, 125.88 sec so far
+Iteration 2180: max relative diff=0.000092, 130.94 sec so far
+Iteration 2264: max relative diff=0.000073, 135.98 sec so far
+Iteration 2348: max relative diff=0.000057, 141.00 sec so far
+Iteration 2432: max relative diff=0.000045, 146.06 sec so far
+Iteration 2515: max relative diff=0.000035, 151.08 sec so far
+Iteration 2598: max relative diff=0.000028, 156.10 sec so far
+Iteration 2681: max relative diff=0.000022, 161.11 sec so far
+Iteration 2765: max relative diff=0.000017, 166.14 sec so far
+Iteration 2849: max relative diff=0.000014, 171.15 sec so far
+Iteration 2933: max relative diff=0.000011, 176.21 sec so far
+Iteration 3016: max relative diff=0.000008, 181.22 sec so far
+Iteration 3099: max relative diff=0.000007, 186.23 sec so far
+Iteration 3183: max relative diff=0.000005, 191.25 sec so far
+Iteration 3267: max relative diff=0.000004, 196.28 sec so far
+Iteration 3352: max relative diff=0.000003, 201.33 sec so far
+Iteration 3437: max relative diff=0.000003, 206.39 sec so far
+Iteration 3521: max relative diff=0.000002, 211.44 sec so far
+Iteration 3604: max relative diff=0.000002, 216.45 sec so far
+Iteration 3688: max relative diff=0.000001, 221.51 sec so far
+
+Iterative method: 3759 iterations in 228.26 seconds (average 0.060059, setup 2.50)
+
+Value in the initial state: 0.36362423396240773
+
+Time for model checking: 414.688 seconds.
+
+Result: 0.36362423396240773 (+/- 3.607106234271578E-6 estimated; rel err 9.91987303751732E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.6-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+Wallclock time: 713.410 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:51:11 GMT+01:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.6-2/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 149 iterations in 2.11 seconds (average 0.014161, setup 0.00)
+
+Time for model construction: 324.417 seconds.
+
+Type:        MDP
+States:      1258240 (1 initial)
+Transitions: 6236736
+
+Transition matrix: 114557 nodes (3 terminal), 6236736 minterms, vars: 21r/21c/6nd
+
+Prob0A: 115 iterations in 10.21 seconds (average 0.088783, setup 0.00)
+
+Prob1E: 1925 iterations in 167.44 seconds (average 0.086982, setup 0.00)
+
+yes = 583956, no = 27270, maybe = 647014
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=21, nodes=232894] [10.7 MB]
+Adding sparse bits... [levels=6-10, num=18580, compact=6/6] [4.2 MB]
+Creating vector for yes... [dist=2, compact] [2.4 MB]
+Allocating iteration vectors... [3 x 9.6 MB]
+TOTAL: [46.0 MB]
+
+Starting iterations...
+Iteration 91: max relative diff=inf, 5.01 sec so far
+Iteration 182: max relative diff=0.200922, 10.03 sec so far
+Iteration 273: max relative diff=0.076540, 15.05 sec so far
+Iteration 364: max relative diff=0.041369, 20.07 sec so far
+Iteration 454: max relative diff=0.025416, 25.08 sec so far
+Iteration 544: max relative diff=0.016723, 30.10 sec so far
+Iteration 635: max relative diff=0.011480, 35.15 sec so far
+Iteration 726: max relative diff=0.008036, 40.18 sec so far
+Iteration 817: max relative diff=0.005797, 45.20 sec so far
+Iteration 908: max relative diff=0.004248, 50.21 sec so far
+Iteration 999: max relative diff=0.003113, 55.24 sec so far
+Iteration 1090: max relative diff=0.002329, 60.25 sec so far
+Iteration 1181: max relative diff=0.001755, 65.27 sec so far
+Iteration 1272: max relative diff=0.001320, 70.30 sec so far
+Iteration 1363: max relative diff=0.001005, 75.32 sec so far
+Iteration 1454: max relative diff=0.000767, 80.33 sec so far
+Iteration 1545: max relative diff=0.000581, 85.37 sec so far
+Iteration 1636: max relative diff=0.000446, 90.41 sec so far
+Iteration 1727: max relative diff=0.000343, 95.45 sec so far
+Iteration 1818: max relative diff=0.000262, 100.46 sec so far
+Iteration 1909: max relative diff=0.000202, 105.48 sec so far
+Iteration 2000: max relative diff=0.000155, 110.50 sec so far
+Iteration 2091: max relative diff=0.000119, 115.52 sec so far
+Iteration 2182: max relative diff=0.000092, 120.53 sec so far
+Iteration 2273: max relative diff=0.000071, 125.56 sec so far
+Iteration 2364: max relative diff=0.000054, 130.57 sec so far
+Iteration 2455: max relative diff=0.000042, 135.59 sec so far
+Iteration 2546: max relative diff=0.000032, 140.61 sec so far
+Iteration 2637: max relative diff=0.000025, 145.66 sec so far
+Iteration 2728: max relative diff=0.000019, 150.70 sec so far
+Iteration 2819: max relative diff=0.000015, 155.73 sec so far
+Iteration 2910: max relative diff=0.000011, 160.75 sec so far
+Iteration 3001: max relative diff=0.000009, 165.77 sec so far
+Iteration 3092: max relative diff=0.000007, 170.78 sec so far
+Iteration 3183: max relative diff=0.000005, 175.80 sec so far
+Iteration 3274: max relative diff=0.000004, 180.84 sec so far
+Iteration 3365: max relative diff=0.000003, 185.85 sec so far
+Iteration 3456: max relative diff=0.000002, 190.87 sec so far
+Iteration 3547: max relative diff=0.000002, 195.89 sec so far
+Iteration 3638: max relative diff=0.000001, 200.91 sec so far
+Iteration 3729: max relative diff=0.000001, 205.96 sec so far
+
+Iterative method: 3759 iterations in 209.91 seconds (average 0.055230, setup 2.30)
+
+Value in the initial state: 0.36362423396240773
+
+Time for model checking: 388.17 seconds.
+
+Result: 0.36362423396240773 (+/- 3.607106234271578E-6 estimated; rel err 9.91987303751732E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.6-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+Wallclock time: 814.040 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:04:06 GMT+01:00 2026
+Hostname: n23m0389
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.6-2/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 149 iterations in 2.15 seconds (average 0.014430, setup 0.00)
+
+Time for model construction: 419.114 seconds.
+
+Type:        MDP
+States:      1258240 (1 initial)
+Transitions: 6236736
+
+Transition matrix: 114557 nodes (3 terminal), 6236736 minterms, vars: 21r/21c/6nd
+
+Prob0A: 115 iterations in 10.26 seconds (average 0.089217, setup 0.00)
+
+Prob1E: 1925 iterations in 168.14 seconds (average 0.087345, setup 0.00)
+
+yes = 583956, no = 27270, maybe = 647014
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=21, nodes=232894] [10.7 MB]
+Adding sparse bits... [levels=6-10, num=18580, compact=6/6] [4.2 MB]
+Creating vector for yes... [dist=2, compact] [2.4 MB]
+Allocating iteration vectors... [3 x 9.6 MB]
+TOTAL: [46.0 MB]
+
+Starting iterations...
+Iteration 89: max relative diff=inf, 5.03 sec so far
+Iteration 178: max relative diff=0.211579, 10.05 sec so far
+Iteration 267: max relative diff=0.080349, 15.06 sec so far
+Iteration 356: max relative diff=0.043556, 20.09 sec so far
+Iteration 445: max relative diff=0.026580, 25.11 sec so far
+Iteration 534: max relative diff=0.017424, 30.12 sec so far
+Iteration 623: max relative diff=0.012048, 35.18 sec so far
+Iteration 712: max relative diff=0.008483, 40.19 sec so far
+Iteration 801: max relative diff=0.006103, 45.20 sec so far
+Iteration 890: max relative diff=0.004516, 50.22 sec so far
+Iteration 978: max relative diff=0.003342, 55.26 sec so far
+Iteration 1067: max relative diff=0.002515, 60.30 sec so far
+Iteration 1156: max relative diff=0.001892, 65.36 sec so far
+Iteration 1245: max relative diff=0.001431, 70.37 sec so far
+Iteration 1334: max relative diff=0.001100, 75.38 sec so far
+Iteration 1424: max relative diff=0.000839, 80.44 sec so far
+Iteration 1514: max relative diff=0.000642, 85.49 sec so far
+Iteration 1603: max relative diff=0.000492, 90.50 sec so far
+Iteration 1693: max relative diff=0.000378, 95.56 sec so far
+Iteration 1783: max relative diff=0.000291, 100.61 sec so far
+Iteration 1872: max relative diff=0.000224, 105.62 sec so far
+Iteration 1961: max relative diff=0.000174, 110.63 sec so far
+Iteration 2049: max relative diff=0.000134, 115.67 sec so far
+Iteration 2138: max relative diff=0.000104, 120.70 sec so far
+Iteration 2227: max relative diff=0.000081, 125.74 sec so far
+Iteration 2316: max relative diff=0.000062, 130.75 sec so far
+Iteration 2406: max relative diff=0.000048, 135.81 sec so far
+Iteration 2495: max relative diff=0.000037, 140.82 sec so far
+Iteration 2584: max relative diff=0.000029, 145.84 sec so far
+Iteration 2673: max relative diff=0.000022, 150.86 sec so far
+Iteration 2762: max relative diff=0.000017, 155.87 sec so far
+Iteration 2852: max relative diff=0.000013, 160.92 sec so far
+Iteration 2941: max relative diff=0.000010, 165.94 sec so far
+Iteration 3030: max relative diff=0.000008, 170.98 sec so far
+Iteration 3117: max relative diff=0.000006, 176.01 sec so far
+Iteration 3206: max relative diff=0.000005, 181.06 sec so far
+Iteration 3294: max relative diff=0.000004, 186.07 sec so far
+Iteration 3383: max relative diff=0.000003, 191.10 sec so far
+Iteration 3472: max relative diff=0.000002, 196.12 sec so far
+Iteration 3561: max relative diff=0.000002, 201.17 sec so far
+Iteration 3649: max relative diff=0.000001, 206.18 sec so far
+Iteration 3738: max relative diff=0.000001, 211.22 sec so far
+
+Iterative method: 3759 iterations in 214.67 seconds (average 0.056510, setup 2.25)
+
+Value in the initial state: 0.36362423396240773
+
+Time for model checking: 394.058 seconds.
+
+Result: 0.36362423396240773 (+/- 3.607106234271578E-6 estimated; rel err 9.91987303751732E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.6-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+Wallclock time: 996.517 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:26:00 GMT+01:00 2026
+Hostname: n23m0130
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.6-2/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 149 iterations in 3.17 seconds (average 0.021275, setup 0.00)
+
+Time for model construction: 527.256 seconds.
+
+Type:        MDP
+States:      1258240 (1 initial)
+Transitions: 6236736
+
+Transition matrix: 114557 nodes (3 terminal), 6236736 minterms, vars: 21r/21c/6nd
+
+Prob0A: 115 iterations in 12.76 seconds (average 0.110957, setup 0.00)
+
+Prob1E: 1925 iterations in 207.69 seconds (average 0.107891, setup 0.00)
+
+yes = 583956, no = 27270, maybe = 647014
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=21, nodes=232894] [10.7 MB]
+Adding sparse bits... [levels=6-10, num=18580, compact=6/6] [4.2 MB]
+Creating vector for yes... [dist=2, compact] [2.4 MB]
+Allocating iteration vectors... [3 x 9.6 MB]
+TOTAL: [46.0 MB]
+
+Starting iterations...
+Iteration 78: max relative diff=inf, 5.05 sec so far
+Iteration 156: max relative diff=0.300046, 10.11 sec so far
+Iteration 234: max relative diff=0.106567, 15.18 sec so far
+Iteration 312: max relative diff=0.057139, 20.23 sec so far
+Iteration 390: max relative diff=0.035387, 25.28 sec so far
+Iteration 465: max relative diff=0.023960, 30.30 sec so far
+Iteration 542: max relative diff=0.016959, 35.33 sec so far
+Iteration 619: max relative diff=0.012210, 40.34 sec so far
+Iteration 697: max relative diff=0.008992, 45.39 sec so far
+Iteration 775: max relative diff=0.006735, 50.45 sec so far
+Iteration 853: max relative diff=0.005111, 55.50 sec so far
+Iteration 931: max relative diff=0.003918, 60.56 sec so far
+Iteration 1009: max relative diff=0.003028, 65.60 sec so far
+Iteration 1086: max relative diff=0.002356, 70.61 sec so far
+Iteration 1164: max relative diff=0.001843, 75.66 sec so far
+Iteration 1242: max relative diff=0.001447, 80.71 sec so far
+Iteration 1320: max relative diff=0.001141, 85.76 sec so far
+Iteration 1395: max relative diff=0.000908, 90.79 sec so far
+Iteration 1472: max relative diff=0.000727, 95.80 sec so far
+Iteration 1549: max relative diff=0.000577, 100.82 sec so far
+Iteration 1627: max relative diff=0.000459, 105.87 sec so far
+Iteration 1705: max relative diff=0.000365, 110.92 sec so far
+Iteration 1783: max relative diff=0.000291, 115.96 sec so far
+Iteration 1861: max relative diff=0.000232, 121.03 sec so far
+Iteration 1939: max relative diff=0.000185, 126.07 sec so far
+Iteration 2017: max relative diff=0.000148, 131.12 sec so far
+Iteration 2095: max relative diff=0.000118, 136.18 sec so far
+Iteration 2173: max relative diff=0.000094, 141.22 sec so far
+Iteration 2251: max relative diff=0.000075, 146.27 sec so far
+Iteration 2326: max relative diff=0.000060, 151.30 sec so far
+Iteration 2403: max relative diff=0.000048, 156.31 sec so far
+Iteration 2480: max relative diff=0.000039, 161.33 sec so far
+Iteration 2558: max relative diff=0.000031, 166.38 sec so far
+Iteration 2636: max relative diff=0.000025, 171.43 sec so far
+Iteration 2714: max relative diff=0.000020, 176.47 sec so far
+Iteration 2792: max relative diff=0.000016, 181.54 sec so far
+Iteration 2870: max relative diff=0.000013, 186.60 sec so far
+Iteration 2948: max relative diff=0.000010, 191.65 sec so far
+Iteration 3026: max relative diff=0.000008, 196.70 sec so far
+Iteration 3104: max relative diff=0.000007, 201.75 sec so far
+Iteration 3182: max relative diff=0.000005, 206.80 sec so far
+Iteration 3257: max relative diff=0.000004, 211.82 sec so far
+Iteration 3334: max relative diff=0.000003, 216.85 sec so far
+Iteration 3412: max relative diff=0.000003, 221.92 sec so far
+Iteration 3490: max relative diff=0.000002, 226.97 sec so far
+Iteration 3568: max relative diff=0.000002, 232.02 sec so far
+Iteration 3646: max relative diff=0.000001, 237.07 sec so far
+Iteration 3724: max relative diff=0.000001, 242.13 sec so far
+
+Iterative method: 3759 iterations in 246.70 seconds (average 0.065015, setup 2.31)
+
+Value in the initial state: 0.36362423396240773
+
+Time for model checking: 468.396 seconds.
+
+Result: 0.36362423396240773 (+/- 3.607106234271578E-6 estimated; rel err 9.91987303751732E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_consensus.6-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+Wallclock time: 785.277 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:02 GMT+01:00 2026
+Hostname: n23m0027
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/consensus.6-2/prism.model.umb models/consensus.6-2/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "models/consensus.6-2/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 149 iterations in 2.40 seconds (average 0.016107, setup 0.00)
+
+Time for model construction: 377.242 seconds.
+
+Type:        MDP
+States:      1258240 (1 initial)
+Transitions: 6236736
+
+Transition matrix: 114557 nodes (3 terminal), 6236736 minterms, vars: 21r/21c/6nd
+
+Prob0A: 115 iterations in 10.84 seconds (average 0.094261, setup 0.00)
+
+Prob1E: 1925 iterations in 176.11 seconds (average 0.091486, setup 0.00)
+
+yes = 583956, no = 27270, maybe = 647014
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=21, nodes=232894] [10.7 MB]
+Adding sparse bits... [levels=6-10, num=18580, compact=6/6] [4.2 MB]
+Creating vector for yes... [dist=2, compact] [2.4 MB]
+Allocating iteration vectors... [3 x 9.6 MB]
+TOTAL: [46.0 MB]
+
+Starting iterations...
+Iteration 87: max relative diff=inf, 5.01 sec so far
+Iteration 174: max relative diff=0.219900, 10.03 sec so far
+Iteration 261: max relative diff=0.084459, 15.04 sec so far
+Iteration 348: max relative diff=0.045244, 20.05 sec so far
+Iteration 435: max relative diff=0.027830, 25.06 sec so far
+Iteration 522: max relative diff=0.018382, 30.08 sec so far
+Iteration 608: max relative diff=0.012822, 35.13 sec so far
+Iteration 695: max relative diff=0.009082, 40.16 sec so far
+Iteration 783: max relative diff=0.006510, 45.19 sec so far
+Iteration 871: max relative diff=0.004803, 50.23 sec so far
+Iteration 958: max relative diff=0.003574, 55.24 sec so far
+Iteration 1046: max relative diff=0.002695, 60.29 sec so far
+Iteration 1134: max relative diff=0.002025, 65.33 sec so far
+Iteration 1221: max relative diff=0.001541, 70.38 sec so far
+Iteration 1308: max relative diff=0.001183, 75.41 sec so far
+Iteration 1395: max relative diff=0.000908, 80.42 sec so far
+Iteration 1482: max relative diff=0.000702, 85.43 sec so far
+Iteration 1569: max relative diff=0.000541, 90.47 sec so far
+Iteration 1655: max relative diff=0.000423, 95.51 sec so far
+Iteration 1742: max relative diff=0.000328, 100.55 sec so far
+Iteration 1829: max relative diff=0.000255, 105.57 sec so far
+Iteration 1916: max relative diff=0.000198, 110.60 sec so far
+Iteration 2004: max relative diff=0.000153, 115.63 sec so far
+Iteration 2091: max relative diff=0.000119, 120.65 sec so far
+Iteration 2178: max relative diff=0.000092, 125.67 sec so far
+Iteration 2266: max relative diff=0.000072, 130.73 sec so far
+Iteration 2353: max relative diff=0.000056, 135.75 sec so far
+Iteration 2440: max relative diff=0.000044, 140.76 sec so far
+Iteration 2527: max relative diff=0.000034, 145.77 sec so far
+Iteration 2613: max relative diff=0.000026, 150.81 sec so far
+Iteration 2699: max relative diff=0.000021, 155.84 sec so far
+Iteration 2786: max relative diff=0.000016, 160.88 sec so far
+Iteration 2874: max relative diff=0.000013, 165.93 sec so far
+Iteration 2961: max relative diff=0.000010, 170.94 sec so far
+Iteration 3048: max relative diff=0.000008, 175.96 sec so far
+Iteration 3136: max relative diff=0.000006, 181.01 sec so far
+Iteration 3224: max relative diff=0.000005, 186.07 sec so far
+Iteration 3312: max relative diff=0.000004, 191.12 sec so far
+Iteration 3400: max relative diff=0.000003, 196.18 sec so far
+Iteration 3488: max relative diff=0.000002, 201.24 sec so far
+Iteration 3575: max relative diff=0.000002, 206.27 sec so far
+Iteration 3661: max relative diff=0.000001, 211.30 sec so far
+Iteration 3748: max relative diff=0.000001, 216.35 sec so far
+
+Iterative method: 3759 iterations in 219.19 seconds (average 0.057725, setup 2.20)
+
+Value in the initial state: 0.36362423396240773
+
+Time for model checking: 407.114 seconds.
+
+Result: 0.36362423396240773 (+/- 3.607106234271578E-6 estimated; rel err 9.91987303751732E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

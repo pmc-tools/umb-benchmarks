@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log fms.8_prism_from-prism_to-tra_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/fms.8/index.html" target="_blank">fms.8</a> and tool configuration prism_from-prism_to-tra_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1427153307.0, 1427153307.0, 1427153307.0, 1427153307.0, 1427153307.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_fms.8_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-tra_default/fms.8/model.tra,lab,rew:precision=17
+Wallclock time: 63.982 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:48:05 GMT+01:00 2026
+Hostname: n23m0169
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/fms.8/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 2.92 seconds (average 0.044923, setup 0.00)
+
+Time for model construction: 3.106 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model.trew"...
+Time for exporting: 58.685 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/fms.8/model.tra:	Size of output file is 1197181637 bytes
+out/prism_from-prism_to-tra_default/fms.8/model.lab:	Size of output file is 33 bytes
+out/prism_from-prism_to-tra_default/fms.8/model.srew:	Size of output file is 60 bytes
+out/prism_from-prism_to-tra_default/fms.8/model.trew:	Size of output file is 229971577 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_fms.8_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-tra_default/fms.8/model_rep2.tra,lab,rew:precision=17
+Wallclock time: 75.692 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:16:25 GMT+01:00 2026
+Hostname: r23m0047
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/fms.8/model_rep2.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 4.96 seconds (average 0.076308, setup 0.00)
+
+Time for model construction: 5.209 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep2.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep2.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep2.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep2.trew"...
+Time for exporting: 69.76 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/fms.8/model_rep2.tra:	Size of output file is 1197181637 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_default/fms.8/model_rep2.lab:	Size of output file is 33 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_default/fms.8/model_rep2.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #2
+out/prism_from-prism_to-tra_default/fms.8/model_rep2.trew:	Size of output file is 229971577 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_fms.8_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-tra_default/fms.8/model_rep3.tra,lab,rew:precision=17
+Wallclock time: 62.878 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:00:16 GMT+01:00 2026
+Hostname: r23m0127
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/fms.8/model_rep3.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.56 seconds (average 0.054769, setup 0.00)
+
+Time for model construction: 3.738 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep3.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep3.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep3.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep3.trew"...
+Time for exporting: 58.605 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/fms.8/model_rep3.tra:	Size of output file is 1197181637 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_default/fms.8/model_rep3.lab:	Size of output file is 33 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_default/fms.8/model_rep3.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #3
+out/prism_from-prism_to-tra_default/fms.8/model_rep3.trew:	Size of output file is 229971577 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_fms.8_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-tra_default/fms.8/model_rep4.tra,lab,rew:precision=17
+Wallclock time: 62.539 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:04:04 GMT+01:00 2026
+Hostname: n23m0202
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/fms.8/model_rep4.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.16 seconds (average 0.048615, setup 0.00)
+
+Time for model construction: 3.327 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep4.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep4.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep4.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep4.trew"...
+Time for exporting: 58.558 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/fms.8/model_rep4.tra:	Size of output file is 1197181637 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_default/fms.8/model_rep4.lab:	Size of output file is 33 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_default/fms.8/model_rep4.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #4
+out/prism_from-prism_to-tra_default/fms.8/model_rep4.trew:	Size of output file is 229971577 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_fms.8_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  models/fms.8/model.prism -exportmodel out/prism_from-prism_to-tra_default/fms.8/model_rep5.tra,lab,rew:precision=17
+Wallclock time: 63.712 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:47:43 GMT+01:00 2026
+Hostname: n23m0132
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism models/fms.8/model.prism -exportmodel 'out/prism_from-prism_to-tra_default/fms.8/model_rep5.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "models/fms.8/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 65 iterations in 3.61 seconds (average 0.055538, setup 0.00)
+
+Time for model construction: 3.841 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Rate matrix: 215250 nodes (84 terminal), 38533968 minterms, vars: 70r/70c
+
+Exporting model in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep5.tra"...
+Exporting labels and satisfying states in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep5.lab"...
+Exporting state rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep5.srew"...
+Exporting transition rewards in plain text format to file "out/prism_from-prism_to-tra_default/fms.8/model_rep5.trew"...
+Time for exporting: 59.281 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-tra_default/fms.8/model_rep5.tra:	Size of output file is 1197181637 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_default/fms.8/model_rep5.lab:	Size of output file is 33 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_default/fms.8/model_rep5.srew:	Size of output file is 60 bytes
+Removing output file to save space for repetition #5
+out/prism_from-prism_to-tra_default/fms.8/model_rep5.trew:	Size of output file is 229971577 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

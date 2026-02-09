@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log speed-ind.2100_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/speed-ind.2100/index.html" target="_blank">speed-ind.2100</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[352.983, 307.444, 337.744, 353.955, 307.77]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_speed-ind.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+Wallclock time: 381.599 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:36 GMT+01:00 2026
+Hostname: n23m0069
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+
+Importing model from "models/speed-ind.2100/prism.model.tradir/model.tra", "models/speed-ind.2100/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 41 iterations in 0.01 seconds (average 0.000244, setup 0.00)
+
+Time for model construction: 352.983 seconds.
+
+Type:        DTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Transition matrix: 9389 nodes (187 terminal), 9518080 minterms, vars: 20r/20c
+
+Prob0: 19 iterations in 0.01 seconds (average 0.000526, setup 0.00)
+
+yes = 24576, no = 0, maybe = 718848
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=20, nodes=9533] [446.9 KB]
+Adding explicit sparse matrices... [levels=8, num=171, compact] [430.2 KB]
+Creating vector for yes... [dist=2, compact] [1.4 MB]
+Allocating iteration vectors... [2 x 5.7 MB]
+TOTAL: [13.6 MB]
+
+Starting iterations...
+Iteration 375 (of 2100): 5.01 sec so far
+Iteration 753 (of 2100): 10.02 sec so far
+Iteration 1130 (of 2100): 15.03 sec so far
+Iteration 1508 (of 2100): 20.04 sec so far
+Iteration 1886 (of 2100): 25.05 sec so far
+
+Iterative method: 2100 iterations in 27.92 seconds (average 0.013281, setup 0.03)
+
+Value in the initial state: 3885.4831774021495
+
+Time for model checking: 28.008 seconds.
+
+Result: 3885.4831774021495 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_speed-ind.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+Wallclock time: 337.342 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:49:28 GMT+01:00 2026
+Hostname: n23m0362
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+
+Importing model from "models/speed-ind.2100/prism.model.tradir/model.tra", "models/speed-ind.2100/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 41 iterations in 0.01 seconds (average 0.000244, setup 0.00)
+
+Time for model construction: 307.444 seconds.
+
+Type:        DTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Transition matrix: 9389 nodes (187 terminal), 9518080 minterms, vars: 20r/20c
+
+Prob0: 19 iterations in 0.01 seconds (average 0.000526, setup 0.00)
+
+yes = 24576, no = 0, maybe = 718848
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=20, nodes=9533] [446.9 KB]
+Adding explicit sparse matrices... [levels=8, num=171, compact] [430.2 KB]
+Creating vector for yes... [dist=2, compact] [1.4 MB]
+Allocating iteration vectors... [2 x 5.7 MB]
+TOTAL: [13.6 MB]
+
+Starting iterations...
+Iteration 383 (of 2100): 5.02 sec so far
+Iteration 771 (of 2100): 10.03 sec so far
+Iteration 1158 (of 2100): 15.04 sec so far
+Iteration 1547 (of 2100): 20.05 sec so far
+Iteration 1922 (of 2100): 25.06 sec so far
+
+Iterative method: 2100 iterations in 27.46 seconds (average 0.013067, setup 0.02)
+
+Value in the initial state: 3885.4831774021495
+
+Time for model checking: 27.593 seconds.
+
+Result: 3885.4831774021495 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_speed-ind.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+Wallclock time: 365.812 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:37 GMT+01:00 2026
+Hostname: n23m0071
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+
+Importing model from "models/speed-ind.2100/prism.model.tradir/model.tra", "models/speed-ind.2100/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 41 iterations in 0.02 seconds (average 0.000488, setup 0.00)
+
+Time for model construction: 337.744 seconds.
+
+Type:        DTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Transition matrix: 9389 nodes (187 terminal), 9518080 minterms, vars: 20r/20c
+
+Prob0: 19 iterations in 0.01 seconds (average 0.000526, setup 0.00)
+
+yes = 24576, no = 0, maybe = 718848
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=20, nodes=9533] [446.9 KB]
+Adding explicit sparse matrices... [levels=8, num=171, compact] [430.2 KB]
+Creating vector for yes... [dist=2, compact] [1.4 MB]
+Allocating iteration vectors... [2 x 5.7 MB]
+TOTAL: [13.6 MB]
+
+Starting iterations...
+Iteration 382 (of 2100): 5.01 sec so far
+Iteration 765 (of 2100): 10.02 sec so far
+Iteration 1150 (of 2100): 15.03 sec so far
+Iteration 1535 (of 2100): 20.04 sec so far
+Iteration 1919 (of 2100): 25.06 sec so far
+
+Iterative method: 2100 iterations in 27.43 seconds (average 0.013048, setup 0.03)
+
+Value in the initial state: 3885.4831774021495
+
+Time for model checking: 27.493 seconds.
+
+Result: 3885.4831774021495 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_speed-ind.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+Wallclock time: 392.235 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:24 GMT+01:00 2026
+Hostname: n23m0115
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+
+Importing model from "models/speed-ind.2100/prism.model.tradir/model.tra", "models/speed-ind.2100/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 41 iterations in 0.03 seconds (average 0.000732, setup 0.00)
+
+Time for model construction: 353.955 seconds.
+
+Type:        DTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Transition matrix: 9389 nodes (187 terminal), 9518080 minterms, vars: 20r/20c
+
+Prob0: 19 iterations in 0.01 seconds (average 0.000526, setup 0.00)
+
+yes = 24576, no = 0, maybe = 718848
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=20, nodes=9533] [446.9 KB]
+Adding explicit sparse matrices... [levels=8, num=171, compact] [430.2 KB]
+Creating vector for yes... [dist=2, compact] [1.4 MB]
+Allocating iteration vectors... [2 x 5.7 MB]
+TOTAL: [13.6 MB]
+
+Starting iterations...
+Iteration 280 (of 2100): 5.01 sec so far
+Iteration 562 (of 2100): 10.03 sec so far
+Iteration 843 (of 2100): 15.04 sec so far
+Iteration 1125 (of 2100): 20.05 sec so far
+Iteration 1407 (of 2100): 25.07 sec so far
+Iteration 1688 (of 2100): 30.09 sec so far
+Iteration 1970 (of 2100): 35.11 sec so far
+
+Iterative method: 2100 iterations in 37.41 seconds (average 0.017805, setup 0.02)
+
+Value in the initial state: 3885.4831774021495
+
+Time for model checking: 37.552 seconds.
+
+Result: 3885.4831774021495 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_speed-ind.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+Wallclock time: 335.741 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:58:08 GMT+01:00 2026
+Hostname: r23m0092
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/speed-ind.2100/prism.model.tradir/model.all models/speed-ind.2100/property.props
+
+Importing model from "models/speed-ind.2100/prism.model.tradir/model.tra", "models/speed-ind.2100/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 41 iterations in 0.01 seconds (average 0.000244, setup 0.00)
+
+Time for model construction: 307.77 seconds.
+
+Type:        DTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Transition matrix: 9389 nodes (187 terminal), 9518080 minterms, vars: 20r/20c
+
+Prob0: 19 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 24576, no = 0, maybe = 718848
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=20, nodes=9533] [446.9 KB]
+Adding explicit sparse matrices... [levels=8, num=171, compact] [430.2 KB]
+Creating vector for yes... [dist=2, compact] [1.4 MB]
+Allocating iteration vectors... [2 x 5.7 MB]
+TOTAL: [13.6 MB]
+
+Starting iterations...
+Iteration 383 (of 2100): 5.01 sec so far
+Iteration 768 (of 2100): 10.03 sec so far
+Iteration 1152 (of 2100): 15.04 sec so far
+Iteration 1536 (of 2100): 20.05 sec so far
+Iteration 1924 (of 2100): 25.06 sec so far
+
+Iterative method: 2100 iterations in 27.36 seconds (average 0.013014, setup 0.03)
+
+Value in the initial state: 3885.4831774021495
+
+Time for model checking: 27.447 seconds.
+
+Result: 3885.4831774021495 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

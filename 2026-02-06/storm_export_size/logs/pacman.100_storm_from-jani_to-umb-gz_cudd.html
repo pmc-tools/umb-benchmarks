@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pacman.100_storm_from-jani_to-umb-gz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pacman.100/index.html" target="_blank">pacman.100</a> and tool configuration storm_from-jani_to-umb-gz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[442638061.0, 442638050.0, 442638050.0, 442638061.0, 442638061.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_pacman.100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 351.236 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:09:57 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.023s.
+
+Time for model construction: 187.097s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 52.560s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb.gz'.
+Time for model export: 107.647s.
+
+
+Performance statistics:
+  * peak memory usage: 6772MB
+  * CPU time: 348.307s
+  * wallclock time: 351.179s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb.gz:	Size of output file is 442638061 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_pacman.100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep2.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 318.678 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:47:48 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep2.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.026s.
+
+Time for model construction: 155.052s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 51.609s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep2.gz'.
+Time for model export: 108.396s.
+
+
+Performance statistics:
+  * peak memory usage: 6773MB
+  * CPU time: 315.886s
+  * wallclock time: 318.640s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep2.gz:	Size of output file is 442638050 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_pacman.100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep3.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 317.693 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:17:04 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep3.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.025s.
+
+Time for model construction: 154.385s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 52.066s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep3.gz'.
+Time for model export: 107.578s.
+
+
+Performance statistics:
+  * peak memory usage: 6773MB
+  * CPU time: 314.959s
+  * wallclock time: 317.652s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep3.gz:	Size of output file is 442638050 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_pacman.100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep4.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 321.323 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:06 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep4.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.025s.
+
+Time for model construction: 158.422s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 51.683s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep4.gz'.
+Time for model export: 107.600s.
+
+
+Performance statistics:
+  * peak memory usage: 6773MB
+  * CPU time: 318.503s
+  * wallclock time: 321.279s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep4.gz:	Size of output file is 442638061 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_pacman.100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep5.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 315.052 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:00:04 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep5.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.026s.
+
+Time for model construction: 152.317s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 51.462s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep5.gz'.
+Time for model export: 107.572s.
+
+
+Performance statistics:
+  * peak memory usage: 6773MB
+  * CPU time: 312.155s
+  * wallclock time: 314.906s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/pacman.100/model.umb_rep5.gz:	Size of output file is 442638061 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

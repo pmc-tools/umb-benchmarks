@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log egl.10-2_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[5269.604, 5025.095, 5386.67, 5361.893, 4924.164]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_egl.10-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 5269.604 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:14 GMT+01:00 2026
+Hostname: r23m0055
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 101 iterations in 0.01 seconds (average 0.000099, setup 0.00)
+
+Time for model construction: 5261.825 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Transition matrix: 4882 nodes (3 terminal), 67108861 minterms, vars: 26r/26c
+
+Prob0: 63 iterations in 0.02 seconds (average 0.000317, setup 0.00)
+
+Prob1: 3 iterations in 0.01 seconds (average 0.003333, setup 0.00)
+
+yes = 12628991, no = 53429760, maybe = 1535
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=26, nodes=944] [44.2 KB]
+Adding explicit sparse matrices... [levels=15, num=21, compact] [684.0 KB]
+Creating vector for diagonals... [dist=1, compact] [126.0 MB]
+Creating vector for RHS... [dist=2, compact] [126.0 MB]
+Allocating iteration vectors... [2 x 504.0 MB]
+TOTAL: [1.2 GB]
+
+Starting iterations...
+Iteration 18: max relative diff=inf, 5.03 sec so far
+
+Jacobi: 21 iterations in 7.08 seconds (average 0.279048, setup 1.22)
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 7.195 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_egl.10-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 5025.095 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:13 GMT+01:00 2026
+Hostname: n23m0023
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 101 iterations in 0.01 seconds (average 0.000099, setup 0.00)
+
+Time for model construction: 5017.519 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Transition matrix: 4882 nodes (3 terminal), 67108861 minterms, vars: 26r/26c
+
+Prob0: 63 iterations in 0.02 seconds (average 0.000317, setup 0.00)
+
+Prob1: 3 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 12628991, no = 53429760, maybe = 1535
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=26, nodes=944] [44.2 KB]
+Adding explicit sparse matrices... [levels=15, num=21, compact] [684.0 KB]
+Creating vector for diagonals... [dist=1, compact] [126.0 MB]
+Creating vector for RHS... [dist=2, compact] [126.0 MB]
+Allocating iteration vectors... [2 x 504.0 MB]
+TOTAL: [1.2 GB]
+
+Starting iterations...
+Iteration 19: max relative diff=inf, 5.19 sec so far
+
+Jacobi: 21 iterations in 6.97 seconds (average 0.273333, setup 1.23)
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 7.013 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 5386.670 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:48:38 GMT+01:00 2026
+Hostname: r23m0044
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 101 iterations in 0.01 seconds (average 0.000099, setup 0.00)
+
+Time for model construction: 5378.669 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Transition matrix: 4882 nodes (3 terminal), 67108861 minterms, vars: 26r/26c
+
+Prob0: 63 iterations in 0.03 seconds (average 0.000476, setup 0.00)
+
+Prob1: 3 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 12628991, no = 53429760, maybe = 1535
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=26, nodes=944] [44.2 KB]
+Adding explicit sparse matrices... [levels=15, num=21, compact] [684.0 KB]
+Creating vector for diagonals... [dist=1, compact] [126.0 MB]
+Creating vector for RHS... [dist=2, compact] [126.0 MB]
+Allocating iteration vectors... [2 x 504.0 MB]
+TOTAL: [1.2 GB]
+
+Starting iterations...
+Iteration 18: max relative diff=inf, 5.21 sec so far
+
+Jacobi: 21 iterations in 7.33 seconds (average 0.288571, setup 1.27)
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 7.382 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_egl.10-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 5361.893 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:37 GMT+01:00 2026
+Hostname: r23m0169
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 101 iterations in 0.01 seconds (average 0.000099, setup 0.00)
+
+Time for model construction: 5354.454 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Transition matrix: 4882 nodes (3 terminal), 67108861 minterms, vars: 26r/26c
+
+Prob0: 63 iterations in 0.02 seconds (average 0.000317, setup 0.00)
+
+Prob1: 3 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 12628991, no = 53429760, maybe = 1535
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=26, nodes=944] [44.2 KB]
+Adding explicit sparse matrices... [levels=15, num=21, compact] [684.0 KB]
+Creating vector for diagonals... [dist=1, compact] [126.0 MB]
+Creating vector for RHS... [dist=2, compact] [126.0 MB]
+Allocating iteration vectors... [2 x 504.0 MB]
+TOTAL: [1.2 GB]
+
+Starting iterations...
+Iteration 19: max relative diff=inf, 5.11 sec so far
+
+Jacobi: 21 iterations in 6.85 seconds (average 0.268571, setup 1.21)
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 6.903 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_egl.10-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 4924.164 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:07 GMT+01:00 2026
+Hostname: r23m0037
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 101 iterations in 0.01 seconds (average 0.000099, setup 0.00)
+
+Time for model construction: 4914.292 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Transition matrix: 4882 nodes (3 terminal), 67108861 minterms, vars: 26r/26c
+
+Prob0: 63 iterations in 0.02 seconds (average 0.000317, setup 0.00)
+
+Prob1: 3 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 12628991, no = 53429760, maybe = 1535
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=26, nodes=944] [44.2 KB]
+Adding explicit sparse matrices... [levels=15, num=21, compact] [684.0 KB]
+Creating vector for diagonals... [dist=1, compact] [126.0 MB]
+Creating vector for RHS... [dist=2, compact] [126.0 MB]
+Allocating iteration vectors... [2 x 504.0 MB]
+TOTAL: [1.2 GB]
+
+Starting iterations...
+Iteration 18: max relative diff=inf, 5.10 sec so far
+
+Jacobi: 21 iterations in 7.20 seconds (average 0.283333, setup 1.25)
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 7.282 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

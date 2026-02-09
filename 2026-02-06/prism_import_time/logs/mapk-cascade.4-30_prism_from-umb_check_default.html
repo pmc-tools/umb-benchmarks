@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[38.961, 37.298, 57.376, 38.322, 63.759]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+Wallclock time: 819.743 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:26:00 GMT+01:00 2026
+Hostname: n23m0173
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 10% 20% 28% 38% 46% 54% 62% 70% 78% 86% 92% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.48 seconds (average 0.056364, setup 0.00)
+
+Time for model construction: 38.961 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 189663 nodes (15 terminal), 910872 minterms, vars: 17r/17c
+
+Diagonals vector: 22061 nodes (128 terminal), 99535 minterms
+Embedded Markov chain: 662070 nodes (681 terminal), 910872 minterms
+
+Prob0: 23 iterations in 0.50 seconds (average 0.021739, setup 0.00)
+
+Prob1: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+goal = 1461, inf = 0, maybe = 98074
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=655007] [30.0 MB]
+Adding explicit sparse matrices... [levels=2, num=47802, compact] [729.0 KB]
+Creating vector for diagonals... [dist=1, compact] [194.4 KB]
+Creating vector for RHS... [dist=128, compact] [195.4 KB]
+Allocating iteration vectors... [2 x 777.6 KB]
+TOTAL: [32.6 MB]
+
+Starting iterations...
+Iteration 157: max relative diff=0.010724, 5.01 sec so far
+Iteration 314: max relative diff=0.003096, 10.02 sec so far
+Iteration 471: max relative diff=0.001207, 15.03 sec so far
+Iteration 628: max relative diff=0.000519, 20.05 sec so far
+Iteration 781: max relative diff=0.000235, 25.07 sec so far
+Iteration 938: max relative diff=0.000106, 30.09 sec so far
+Iteration 1096: max relative diff=0.000048, 35.11 sec so far
+Iteration 1255: max relative diff=0.000022, 40.13 sec so far
+Iteration 1413: max relative diff=0.000010, 45.14 sec so far
+Iteration 1572: max relative diff=0.000004, 50.16 sec so far
+Iteration 1729: max relative diff=0.000002, 55.17 sec so far
+
+Jacobi: 1875 iterations in 776.10 seconds (average 0.031936, setup 716.22)
+
+Value in the initial state: 40.67270371188303
+
+Time for model checking: 779.61 seconds.
+
+Result: 40.67270371188303 (+/- 4.0451335066928187E-4 estimated; rel err 9.945573167074662E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+Wallclock time: 807.359 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:11 GMT+01:00 2026
+Hostname: n23m0028
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 10% 20% 30% 40% 48% 56% 66% 74% 82% 88% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.47 seconds (average 0.056136, setup 0.00)
+
+Time for model construction: 37.298 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 189663 nodes (15 terminal), 910872 minterms, vars: 17r/17c
+
+Diagonals vector: 22061 nodes (128 terminal), 99535 minterms
+Embedded Markov chain: 662070 nodes (681 terminal), 910872 minterms
+
+Prob0: 23 iterations in 0.51 seconds (average 0.022174, setup 0.00)
+
+Prob1: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+goal = 1461, inf = 0, maybe = 98074
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=655007] [30.0 MB]
+Adding explicit sparse matrices... [levels=2, num=47802, compact] [729.0 KB]
+Creating vector for diagonals... [dist=1, compact] [194.4 KB]
+Creating vector for RHS... [dist=128, compact] [195.4 KB]
+Allocating iteration vectors... [2 x 777.6 KB]
+TOTAL: [32.6 MB]
+
+Starting iterations...
+Iteration 169: max relative diff=0.009515, 5.01 sec so far
+Iteration 338: max relative diff=0.002652, 10.03 sec so far
+Iteration 507: max relative diff=0.000989, 15.04 sec so far
+Iteration 675: max relative diff=0.000405, 20.05 sec so far
+Iteration 843: max relative diff=0.000172, 25.06 sec so far
+Iteration 1011: max relative diff=0.000074, 30.07 sec so far
+Iteration 1180: max relative diff=0.000032, 35.10 sec so far
+Iteration 1349: max relative diff=0.000014, 40.12 sec so far
+Iteration 1518: max relative diff=0.000006, 45.13 sec so far
+Iteration 1687: max relative diff=0.000003, 50.15 sec so far
+Iteration 1856: max relative diff=0.000001, 55.16 sec so far
+
+Jacobi: 1875 iterations in 766.37 seconds (average 0.029723, setup 710.64)
+
+Value in the initial state: 40.67270371188303
+
+Time for model checking: 768.965 seconds.
+
+Result: 40.67270371188303 (+/- 4.0451335066928187E-4 estimated; rel err 9.945573167074662E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+Wallclock time: 2083.389 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:07:59 GMT+01:00 2026
+Hostname: r23m0160
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 8% 16% 22% 28% 34% 40% 44% 50% 56% 60% 66% 72% 76% 80% 86% 90% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 3.15 seconds (average 0.071591, setup 0.00)
+
+Time for model construction: 57.376 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 189663 nodes (15 terminal), 910872 minterms, vars: 17r/17c
+
+Diagonals vector: 22061 nodes (128 terminal), 99535 minterms
+Embedded Markov chain: 662070 nodes (681 terminal), 910872 minterms
+
+Prob0: 23 iterations in 0.65 seconds (average 0.028261, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 1461, inf = 0, maybe = 98074
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=655007] [30.0 MB]
+Adding explicit sparse matrices... [levels=2, num=47802, compact] [729.0 KB]
+Creating vector for diagonals... [dist=1, compact] [194.4 KB]
+Creating vector for RHS... [dist=128, compact] [195.4 KB]
+Allocating iteration vectors... [2 x 777.6 KB]
+TOTAL: [32.6 MB]
+
+Starting iterations...
+Iteration 127: max relative diff=0.014870, 5.04 sec so far
+Iteration 252: max relative diff=0.004767, 10.06 sec so far
+Iteration 379: max relative diff=0.002055, 15.09 sec so far
+Iteration 507: max relative diff=0.000989, 20.12 sec so far
+Iteration 636: max relative diff=0.000497, 25.14 sec so far
+Iteration 764: max relative diff=0.000257, 30.17 sec so far
+Iteration 890: max relative diff=0.000136, 35.18 sec so far
+Iteration 1019: max relative diff=0.000071, 40.22 sec so far
+Iteration 1147: max relative diff=0.000037, 45.26 sec so far
+Iteration 1274: max relative diff=0.000020, 50.28 sec so far
+Iteration 1402: max relative diff=0.000010, 55.30 sec so far
+Iteration 1530: max relative diff=0.000006, 60.32 sec so far
+Iteration 1658: max relative diff=0.000003, 65.35 sec so far
+Iteration 1786: max relative diff=0.000002, 70.37 sec so far
+
+Jacobi: 1875 iterations in 2017.79 seconds (average 0.039387, setup 1943.94)
+
+Value in the initial state: 40.67270371188303
+
+Time for model checking: 2025.07 seconds.
+
+Result: 40.67270371188303 (+/- 4.0451335066928187E-4 estimated; rel err 9.945573167074662E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+Wallclock time: 954.731 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:24 GMT+01:00 2026
+Hostname: n23m0279
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 10% 20% 30% 38% 46% 56% 64% 72% 80% 86% 94% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.57 seconds (average 0.058409, setup 0.00)
+
+Time for model construction: 38.322 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 189663 nodes (15 terminal), 910872 minterms, vars: 17r/17c
+
+Diagonals vector: 22061 nodes (128 terminal), 99535 minterms
+Embedded Markov chain: 662070 nodes (681 terminal), 910872 minterms
+
+Prob0: 23 iterations in 0.51 seconds (average 0.022174, setup 0.00)
+
+Prob1: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+goal = 1461, inf = 0, maybe = 98074
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=655007] [30.0 MB]
+Adding explicit sparse matrices... [levels=2, num=47802, compact] [729.0 KB]
+Creating vector for diagonals... [dist=1, compact] [194.4 KB]
+Creating vector for RHS... [dist=128, compact] [195.4 KB]
+Allocating iteration vectors... [2 x 777.6 KB]
+TOTAL: [32.6 MB]
+
+Starting iterations...
+Iteration 137: max relative diff=0.013276, 5.01 sec so far
+Iteration 275: max relative diff=0.004028, 10.04 sec so far
+Iteration 413: max relative diff=0.001680, 15.08 sec so far
+Iteration 551: max relative diff=0.000779, 20.11 sec so far
+Iteration 689: max relative diff=0.000377, 25.13 sec so far
+Iteration 827: max relative diff=0.000186, 30.16 sec so far
+Iteration 965: max relative diff=0.000093, 35.19 sec so far
+Iteration 1103: max relative diff=0.000047, 40.22 sec so far
+Iteration 1240: max relative diff=0.000024, 45.23 sec so far
+Iteration 1378: max relative diff=0.000012, 50.26 sec so far
+Iteration 1515: max relative diff=0.000006, 55.28 sec so far
+Iteration 1652: max relative diff=0.000003, 60.30 sec so far
+Iteration 1790: max relative diff=0.000002, 65.32 sec so far
+
+Jacobi: 1875 iterations in 912.21 seconds (average 0.036491, setup 843.79)
+
+Value in the initial state: 40.67270371188303
+
+Time for model checking: 915.286 seconds.
+
+Result: 40.67270371188303 (+/- 4.0451335066928187E-4 estimated; rel err 9.945573167074662E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+Wallclock time: 2249.960 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:15 GMT+01:00 2026
+Hostname: n23m0047
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/mapk-cascade.4-30/prism.model.umb models/mapk-cascade.4-30/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   x
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "models/mapk-cascade.4-30/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 6% 14% 20% 26% 30% 36% 40% 46% 50% 54% 60% 64% 68% 74% 78% 82% 86% 92% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 3.37 seconds (average 0.076591, setup 0.00)
+
+Time for model construction: 63.759 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 189663 nodes (15 terminal), 910872 minterms, vars: 17r/17c
+
+Diagonals vector: 22061 nodes (128 terminal), 99535 minterms
+Embedded Markov chain: 662070 nodes (681 terminal), 910872 minterms
+
+Prob0: 23 iterations in 0.70 seconds (average 0.030435, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 1461, inf = 0, maybe = 98074
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=655007] [30.0 MB]
+Adding explicit sparse matrices... [levels=2, num=47802, compact] [729.0 KB]
+Creating vector for diagonals... [dist=1, compact] [194.4 KB]
+Creating vector for RHS... [dist=128, compact] [195.4 KB]
+Allocating iteration vectors... [2 x 777.6 KB]
+TOTAL: [32.6 MB]
+
+Starting iterations...
+Iteration 115: max relative diff=0.017141, 5.03 sec so far
+Iteration 230: max relative diff=0.005636, 10.05 sec so far
+Iteration 345: max relative diff=0.002533, 15.06 sec so far
+Iteration 460: max relative diff=0.001286, 20.08 sec so far
+Iteration 575: max relative diff=0.000685, 25.09 sec so far
+Iteration 690: max relative diff=0.000376, 30.11 sec so far
+Iteration 805: max relative diff=0.000208, 35.13 sec so far
+Iteration 920: max relative diff=0.000117, 40.15 sec so far
+Iteration 1035: max relative diff=0.000065, 45.16 sec so far
+Iteration 1150: max relative diff=0.000037, 50.18 sec so far
+Iteration 1267: max relative diff=0.000021, 55.20 sec so far
+Iteration 1382: max relative diff=0.000012, 60.21 sec so far
+Iteration 1497: max relative diff=0.000007, 65.23 sec so far
+Iteration 1612: max relative diff=0.000004, 70.25 sec so far
+Iteration 1727: max relative diff=0.000002, 75.26 sec so far
+Iteration 1842: max relative diff=0.000001, 80.28 sec so far
+
+Jacobi: 1875 iterations in 2174.23 seconds (average 0.043579, setup 2092.52)
+
+Value in the initial state: 40.67270371188303
+
+Time for model checking: 2184.93 seconds.
+
+Result: 40.67270371188303 (+/- 4.0451335066928187E-4 estimated; rel err 9.945573167074662E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.6-0_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1214.143, 1020.193, 1077.697, 870.949, 907.733]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.6-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+Wallclock time: 1556.693 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:50:50 GMT+01:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/wlan.6-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 7.13 seconds (average 0.036564, setup 0.00)
+
+Time for model construction: 1214.143 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 374393 nodes (8 terminal), 11475748 minterms, vars: 23r/23c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 340.64 seconds (average 0.107866, setup 0.00)
+
+Prob1A: 1 iterations in 0.02 seconds (average 0.020000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 341.486 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.6-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+Wallclock time: 1317.980 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:33 GMT+01:00 2026
+Hostname: r23m0069
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/wlan.6-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 5.38 seconds (average 0.027590, setup 0.00)
+
+Time for model construction: 1020.193 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 374393 nodes (8 terminal), 11475748 minterms, vars: 23r/23c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 296.24 seconds (average 0.093806, setup 0.00)
+
+Prob1A: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 296.762 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.6-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+Wallclock time: 1432.172 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:17:34 GMT+01:00 2026
+Hostname: n23m0116
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/wlan.6-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 6.29 seconds (average 0.032256, setup 0.00)
+
+Time for model construction: 1077.697 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 374393 nodes (8 terminal), 11475748 minterms, vars: 23r/23c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 352.15 seconds (average 0.111510, setup 0.00)
+
+Prob1A: 1 iterations in 0.02 seconds (average 0.020000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 353.409 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.6-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+Wallclock time: 1151.308 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:13 GMT+01:00 2026
+Hostname: r23m0161
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/wlan.6-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 5.09 seconds (average 0.026103, setup 0.00)
+
+Time for model construction: 870.949 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 374393 nodes (8 terminal), 11475748 minterms, vars: 23r/23c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 278.58 seconds (average 0.088214, setup 0.00)
+
+Prob1A: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 279.308 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.6-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+Wallclock time: 1194.569 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:31 GMT+01:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/wlan.6-0/prism.model.umb models/wlan.6-0/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/wlan.6-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 5.29 seconds (average 0.027128, setup 0.00)
+
+Time for model construction: 907.733 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 374393 nodes (8 terminal), 11475748 minterms, vars: 23r/23c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 285.17 seconds (average 0.090301, setup 0.00)
+
+Prob1A: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 285.883 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

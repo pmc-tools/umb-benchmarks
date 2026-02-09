@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log oscillators.8-10-0.1-1-0.1-1.0_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.26, 0.373, 0.24, 0.319, 0.23]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+Wallclock time: 1.685 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:17:34 GMT+01:00 2026
+Hostname: n23m0355
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+
+Importing model from "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.tra", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.lab", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.srew", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "models/oscillators.8-10-0.1-1-0.1-1.0/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.26 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.011 seconds)
+Starting Prob1...
+Prob1 took 0.015 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.532 seconds.
+Expected reachability took 0.571 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.648 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+Wallclock time: 4.016 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:16 GMT+01:00 2026
+Hostname: r23m0114
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+
+Importing model from "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.tra", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.lab", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.srew", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "models/oscillators.8-10-0.1-1-0.1-1.0/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.373 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.018 seconds)
+Starting Prob1...
+Prob1 took 0.03 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.63 seconds.
+Expected reachability took 0.697 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.763 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+Wallclock time: 1.569 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:48:09 GMT+01:00 2026
+Hostname: n23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+
+Importing model from "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.tra", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.lab", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.srew", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "models/oscillators.8-10-0.1-1-0.1-1.0/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.24 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.01 seconds)
+Starting Prob1...
+Prob1 took 0.011 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.529 seconds.
+Expected reachability took 0.557 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.597 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+Wallclock time: 2.405 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:11 GMT+01:00 2026
+Hostname: n23m0073
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+
+Importing model from "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.tra", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.lab", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.srew", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "models/oscillators.8-10-0.1-1-0.1-1.0/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.319 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.018 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.618 seconds.
+Expected reachability took 0.687 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.761 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+Wallclock time: 1.526 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:51 GMT+01:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.all models/oscillators.8-10-0.1-1-0.1-1.0/property.props
+
+Importing model from "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.tra", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.lab", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.srew", "models/oscillators.8-10-0.1-1-0.1-1.0/prism.model.tradir/model.trew"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "models/oscillators.8-10-0.1-1-0.1-1.0/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.23 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.013 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.587 seconds.
+Expected reachability took 0.623 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.669 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

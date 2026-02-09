@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>prism_import_time Results</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.dataTables.min.css">
+
+  <script type="text/javascript" language="javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" language="javascript" charset="utf8" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.1.2/js/dataTables.fixedHeader.min.js"></script>
+  <script type="text/javascript" language="javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" language="javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.colVis.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Set correct file
+      $("#content").load("data.html");
+    } );
+
+    function updateBest(table) {
+      // Remove old best ones
+      table.cells().every( function() {
+        $(this.node()).removeClass("best");
+      });
+      table.rows().every( function ( rowIdx, tableLoop, rowLoop ) {
+          var bestValue = -1
+          var bestIndex = -1
+          $.each( this.data(), function( index, value ){
+            if (index >= 1 && table.column(index).visible()) {
+                var text = $(value).text()
+                if (["TO", "ERR", "INC", "MO", "NS", "", "-"].indexOf(text) < 0) {
+                    var number = parseFloat(text);
+                    if (bestValue == -1 || bestValue > number) {
+                      // New best value
+                      bestValue = number;
+                      bestIndex = index;
+                    }
+                  }
+              }
+          });
+          // Set new best
+          if (bestIndex >= 0) {
+            $(table.cell(rowIdx, bestIndex).node()).addClass("best");
+          }
+      } );
+  }
+  </script>
+</head>
+<body>
+<div>
+	<h1>Benchmark Results: prism_import_time</h1>
+	<table id="table" class="display">
+		<thead>
+			<tr>
+				<th>Model</th>
+				<th>prism_from-prism_check_default</th>
+				<th>prism_from-prism_check_ex</th>
+				<th>prism_from-prism_import_default</th>
+				<th>prism_from-prism_import_ex</th>
+				<th>prism_from-tra_check_default</th>
+				<th>prism_from-tra_check_ex</th>
+				<th>prism_from-tra_import_default</th>
+				<th>prism_from-tra_import_ex</th>
+				<th>prism_from-umb_check_default</th>
+				<th>prism_from-umb_check_ex</th>
+				<th>prism_from-umb_import_default</th>
+				<th>prism_from-umb_import_ex</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="../models/bluetooth.1/index.html" target="_blank">bluetooth.1</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-prism_check_default.html" target="_blank" >3.37 (±0.24)</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-prism_import_default.html" target="_blank" >3.08 (±0.29)</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-tra_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-tra_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-tra_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-tra_import_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/bluetooth.1_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/cluster.128-2000-20/index.html" target="_blank">cluster.128-2000-20</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-prism_check_default.html" target="_blank" >0.11 (±0.04)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-prism_check_ex.html" target="_blank" >2.80 (±0.05)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-prism_import_default.html" target="_blank" >0.12 (±0.22)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-prism_import_ex.html" target="_blank" >3.10 (±0.39)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-tra_check_default.html" target="_blank" >196.49 (±68.38)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-tra_check_ex.html" target="_blank" >4.37 (±4.75)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-tra_import_default.html" target="_blank" >130.79 (±25.06)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-tra_import_ex.html" target="_blank" >4.71 (±1.66)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-umb_check_default.html" target="_blank" >142.09 (±77.77)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-umb_check_ex.html" target="_blank" >0.45 (±0.05)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-umb_import_default.html" target="_blank" >123.18 (±59.86)</a></td>
+				<td><a href="logs/cluster.128-2000-20_prism_from-umb_import_ex.html" target="_blank" >0.46 (±0.17)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/cluster.64-2000-20/index.html" target="_blank">cluster.64-2000-20</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-prism_check_default.html" target="_blank" >0.05 (±0.08)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-prism_check_ex.html" target="_blank" >0.90 (±0.23)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-prism_import_default.html" target="_blank" >0.05 (±0.01)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-prism_import_ex.html" target="_blank" >0.96 (±0.15)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-tra_check_default.html" target="_blank" >26.83 (±3.87)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-tra_check_ex.html" target="_blank" >1.06 (±0.18)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-tra_import_default.html" target="_blank" >28.87 (±17.07)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-tra_import_ex.html" target="_blank" >1.20 (±0.09)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-umb_check_default.html" target="_blank" >30.35 (±4.01)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-umb_check_ex.html" target="_blank" >0.23 (±0.03)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-umb_import_default.html" target="_blank" >25.29 (±13.58)</a></td>
+				<td><a href="logs/cluster.64-2000-20_prism_from-umb_import_ex.html" target="_blank" >0.21 (±0.03)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/consensus.4-4/index.html" target="_blank">consensus.4-4</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-prism_check_default.html" target="_blank" >0.04 (±0.04)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-prism_check_ex.html" target="_blank" >0.36 (±0.28)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-prism_import_default.html" target="_blank" >0.05 (±0.01)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-prism_import_ex.html" target="_blank" >0.34 (±0.13)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-tra_check_default.html" target="_blank" >4.82 (±0.68)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-tra_check_ex.html" target="_blank" >0.28 (±0.03)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-tra_import_default.html" target="_blank" >4.51 (±0.90)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-tra_import_ex.html" target="_blank" >0.28 (±0.03)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-umb_check_default.html" target="_blank" >4.07 (±0.93)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-umb_check_ex.html" target="_blank" >0.12 (±0.05)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-umb_import_default.html" target="_blank" >4.76 (±2.04)</a></td>
+				<td><a href="logs/consensus.4-4_prism_from-umb_import_ex.html" target="_blank" >0.07 (±0.07)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/consensus.6-2/index.html" target="_blank">consensus.6-2</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-prism_check_default.html" target="_blank" >0.08 (±0.01)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-prism_check_ex.html" target="_blank" >7.85 (±0.23)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-prism_import_default.html" target="_blank" >0.09 (±0.07)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-prism_import_ex.html" target="_blank" >8.02 (±1.12)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-tra_check_default.html" target="_blank" >363.99 (±389.12)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-tra_check_ex.html" target="_blank" >5.95 (±60.33)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-tra_import_default.html" target="_blank" >375.45 (±588.52)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-tra_import_ex.html" target="_blank" >6.54 (±0.80)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-umb_check_default.html" target="_blank" >377.24 (±150.01)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-umb_check_ex.html" target="_blank" >0.52 (±0.12)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-umb_import_default.html" target="_blank" >447.04 (±126.77)</a></td>
+				<td><a href="logs/consensus.6-2_prism_from-umb_import_ex.html" target="_blank" >0.56 (±0.06)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/crowds.5-20/index.html" target="_blank">crowds.5-20</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-prism_check_default.html" target="_blank" >0.19 (±0.05)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-prism_check_ex.html" target="_blank" >13.99 (±1.69)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-prism_import_default.html" target="_blank" >0.21 (±0.15)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-prism_import_ex.html" target="_blank" >14.01 (±1.23)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-tra_check_default.html" target="_blank" >464.97 (±157.00)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-tra_check_ex.html" target="_blank" >10.73 (±2.47)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-tra_import_default.html" target="_blank" >438.65 (±74.75)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-tra_import_ex.html" target="_blank" >10.36 (±1.60)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-umb_check_default.html" target="_blank" >719.56 (±290.73)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-umb_check_ex.html" target="_blank" >0.40 (±0.08)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-umb_import_default.html" target="_blank" >420.86 (±77.51)</a></td>
+				<td><a href="logs/crowds.5-20_prism_from-umb_import_ex.html" target="_blank" >0.45 (±0.16)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/crowds.6-20/index.html" target="_blank">crowds.6-20</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-prism_check_default.html" target="_blank" >0.28 (±0.06)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-prism_check_ex.html" target="_blank" >75.78 (±10.92)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-prism_import_default.html" target="_blank" >0.29 (±0.13)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-prism_import_ex.html" target="_blank" >81.62 (±5.94)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-tra_check_default.html" target="_blank" >4081.04 (±556.01)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-tra_check_ex.html" target="_blank" >57.27 (±3.24)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-tra_import_default.html" target="_blank" class='timeout'>3914.62 (±462.54) & TO</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-tra_import_ex.html" target="_blank" >55.53 (±7.57)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-umb_check_default.html" target="_blank" >4085.49 (±648.78)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-umb_check_ex.html" target="_blank" >1.69 (±0.20)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-umb_import_default.html" target="_blank" >3730.61 (±1322.17)</a></td>
+				<td><a href="logs/crowds.6-20_prism_from-umb_import_ex.html" target="_blank" >1.71 (±1.98)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/csma.3-4/index.html" target="_blank">csma.3-4</a></td>
+				<td><a href="logs/csma.3-4_prism_from-prism_check_default.html" target="_blank" >1.20 (±0.06)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-prism_check_ex.html" target="_blank" >6.80 (±5.98)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-prism_import_default.html" target="_blank" >1.09 (±1.49)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-prism_import_ex.html" target="_blank" >6.91 (±1.11)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-tra_check_default.html" target="_blank" >231.67 (±97.15)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-tra_check_ex.html" target="_blank" >2.99 (±0.36)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-tra_import_default.html" target="_blank" >192.81 (±14.55)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-tra_import_ex.html" target="_blank" >2.92 (±4.98)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-umb_check_default.html" target="_blank" >193.43 (±99.96)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-umb_check_ex.html" target="_blank" >0.36 (±0.04)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-umb_import_default.html" target="_blank" >200.64 (±64.81)</a></td>
+				<td><a href="logs/csma.3-4_prism_from-umb_import_ex.html" target="_blank" >0.36 (±0.14)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/csma.4-2/index.html" target="_blank">csma.4-2</a></td>
+				<td><a href="logs/csma.4-2_prism_from-prism_check_default.html" target="_blank" >1.23 (±0.21)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-prism_check_ex.html" target="_blank" >4.27 (±0.68)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-prism_import_default.html" target="_blank" >1.48 (±0.41)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-prism_import_ex.html" target="_blank" >4.58 (±0.31)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-tra_check_default.html" target="_blank" >100.17 (±37.77)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-tra_check_ex.html" target="_blank" >1.61 (±0.03)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-tra_import_default.html" target="_blank" >109.99 (±36.41)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-tra_import_ex.html" target="_blank" >1.67 (±0.38)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-umb_check_default.html" target="_blank" >104.25 (±35.40)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-umb_check_ex.html" target="_blank" >0.24 (±0.25)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-umb_import_default.html" target="_blank" >95.47 (±17.23)</a></td>
+				<td><a href="logs/csma.4-2_prism_from-umb_import_ex.html" target="_blank" >0.24 (±0.03)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/eajs.5-250-11/index.html" target="_blank">eajs.5-250-11</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-prism_check_default.html" target="_blank" >0.28 (±0.09)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-prism_check_ex.html" target="_blank" >20.34 (±6.93)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-prism_import_default.html" target="_blank" >0.27 (±0.04)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-prism_import_ex.html" target="_blank" >19.80 (±1.21)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-tra_check_default.html" target="_blank" >663.88 (±197.81)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-tra_check_ex.html" target="_blank" >14.26 (±1.94)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-tra_import_default.html" target="_blank" >649.04 (±171.67)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-tra_import_ex.html" target="_blank" >13.32 (±0.82)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-umb_check_default.html" target="_blank" >1609.77 (±850.15)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-umb_check_ex.html" target="_blank" >0.67 (±0.96)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-umb_import_default.html" target="_blank" >1534.50 (±2523.69)</a></td>
+				<td><a href="logs/eajs.5-250-11_prism_from-umb_import_ex.html" target="_blank" >0.67 (±0.38)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-prism_check_default.html" target="_blank" >0.49 (±0.45)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-prism_check_ex.html" target="_blank" >60.87 (±9.57)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-prism_import_default.html" target="_blank" >0.47 (±0.53)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-prism_import_ex.html" target="_blank" >69.95 (±8.23)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-tra_check_default.html" target="_blank" >2215.31 (±1471.09)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-tra_check_ex.html" target="_blank" >43.24 (±4.37)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-tra_import_default.html" target="_blank" >2176.18 (±792.30)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-tra_import_ex.html" target="_blank" >41.78 (±3.27)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-umb_check_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-umb_check_ex.html" target="_blank" >1.33 (±0.10)</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-umb_import_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/eajs.6-300-13_prism_from-umb_import_ex.html" target="_blank" >1.35 (±0.13)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/egl.10-2/index.html" target="_blank">egl.10-2</a></td>
+				<td><a href="logs/egl.10-2_prism_from-prism_check_default.html" target="_blank" >0.18 (±0.04)</a></td>
+				<td><a href="logs/egl.10-2_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/egl.10-2_prism_from-prism_import_default.html" target="_blank" >0.19 (±0.04)</a></td>
+				<td><a href="logs/egl.10-2_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/egl.10-2_prism_from-tra_check_default.html" target="_blank" >5261.82 (±347.53)</a></td>
+				<td><a href="logs/egl.10-2_prism_from-tra_check_ex.html" target="_blank" >110.69 (±21.77)</a></td>
+				<td><a href="logs/egl.10-2_prism_from-tra_import_default.html" target="_blank" >5268.68 (±489.19)</a></td>
+				<td><a href="logs/egl.10-2_prism_from-tra_import_ex.html" target="_blank" >107.72 (±15.43)</a></td>
+				<td><a href="logs/egl.10-2_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/egl.10-2_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/egl.10-2_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/egl.10-2_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/egl.10-8/index.html" target="_blank">egl.10-8</a></td>
+				<td><a href="logs/egl.10-8_prism_from-prism_check_default.html" target="_blank" >3.48 (±1.22)</a></td>
+				<td><a href="logs/egl.10-8_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/egl.10-8_prism_from-prism_import_default.html" target="_blank" >3.49 (±3.02)</a></td>
+				<td><a href="logs/egl.10-8_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/egl.10-8_prism_from-tra_check_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/egl.10-8_prism_from-tra_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/egl.10-8_prism_from-tra_import_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/egl.10-8_prism_from-tra_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/egl.10-8_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/egl.10-8_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/egl.10-8_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/egl.10-8_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/embedded.8-12/index.html" target="_blank">embedded.8-12</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-prism_check_default.html" target="_blank" >0.02 (±0.02)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-prism_check_ex.html" target="_blank" >0.21 (±0.14)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-prism_import_default.html" target="_blank" >0.01 (±0.02)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-prism_import_ex.html" target="_blank" >0.17 (±0.09)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-tra_check_default.html" target="_blank" >0.93 (±0.35)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-tra_check_ex.html" target="_blank" >0.26 (±0.10)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-tra_import_default.html" target="_blank" >1.02 (±0.47)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-tra_import_ex.html" target="_blank" >0.17 (±0.03)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-umb_check_default.html" target="_blank" >0.90 (±0.24)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-umb_check_ex.html" target="_blank" >0.06 (±0.01)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-umb_import_default.html" target="_blank" >0.89 (±0.10)</a></td>
+				<td><a href="logs/embedded.8-12_prism_from-umb_import_ex.html" target="_blank" >0.05 (±0.02)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/firewire.false-36-800/index.html" target="_blank">firewire.false-36-800</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-prism_check_default.html" target="_blank" class='unsupported'>NS</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-prism_check_ex.html" target="_blank" class='unsupported'>NS</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-prism_import_default.html" target="_blank" >1.81 (±5.16)</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-prism_import_ex.html" target="_blank" >1.44 (±1.44)</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-tra_check_default.html" target="_blank" class='unsupported'>NS</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-tra_check_ex.html" target="_blank" class='unsupported'>NS</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-tra_import_default.html" target="_blank" >493.54 (±50.08)</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-tra_import_ex.html" target="_blank" >0.81 (±0.30)</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-umb_check_default.html" target="_blank" class='unsupported'>NS</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-umb_check_ex.html" target="_blank" class='unsupported'>NS</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-umb_import_default.html" target="_blank" >499.01 (±93.87)</a></td>
+				<td><a href="logs/firewire.false-36-800_prism_from-umb_import_ex.html" target="_blank" >0.12 (±0.01)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/fms.8/index.html" target="_blank">fms.8</a></td>
+				<td><a href="logs/fms.8_prism_from-prism_check_default.html" target="_blank" >3.61 (±1.56)</a></td>
+				<td><a href="logs/fms.8_prism_from-prism_check_ex.html" target="_blank" >54.69 (±2.86)</a></td>
+				<td><a href="logs/fms.8_prism_from-prism_import_default.html" target="_blank" >3.71 (±0.84)</a></td>
+				<td><a href="logs/fms.8_prism_from-prism_import_ex.html" target="_blank" >48.90 (±3.89)</a></td>
+				<td><a href="logs/fms.8_prism_from-tra_check_default.html" target="_blank" >5794.85 (±447.08)</a></td>
+				<td><a href="logs/fms.8_prism_from-tra_check_ex.html" target="_blank" >73.39 (±89.52)</a></td>
+				<td><a href="logs/fms.8_prism_from-tra_import_default.html" target="_blank" >5315.27 (±1202.93)</a></td>
+				<td><a href="logs/fms.8_prism_from-tra_import_ex.html" target="_blank" >60.33 (±8.04)</a></td>
+				<td><a href="logs/fms.8_prism_from-umb_check_default.html" target="_blank" class='timeout'>5474.88 (±457.51) & TO</a></td>
+				<td><a href="logs/fms.8_prism_from-umb_check_ex.html" target="_blank" >3.53 (±0.37)</a></td>
+				<td><a href="logs/fms.8_prism_from-umb_import_default.html" target="_blank" class='timeout'>5308.10 (±1317.90) & TO</a></td>
+				<td><a href="logs/fms.8_prism_from-umb_import_ex.html" target="_blank" >3.52 (±0.31)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/haddad-monmege.100-0.7/index.html" target="_blank">haddad-monmege.100-0.7</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-prism_check_default.html" target="_blank" >0.03 (±0.01)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-prism_check_ex.html" target="_blank" >0.03 (±0.02)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-prism_import_default.html" target="_blank" >0.04 (±0.03)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-prism_import_ex.html" target="_blank" >0.03 (±0.00)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-tra_check_default.html" target="_blank" >0.02 (±0.01)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-tra_check_ex.html" target="_blank" >0.02 (±0.01)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-tra_import_default.html" target="_blank" >0.03 (±0.02)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-tra_import_ex.html" target="_blank" >0.03 (±0.01)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-umb_check_default.html" target="_blank" >0.03 (±0.00)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-umb_check_ex.html" target="_blank" >0.03 (±0.01)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-umb_import_default.html" target="_blank" >0.03 (±0.02)</a></td>
+				<td><a href="logs/haddad-monmege.100-0.7_prism_from-umb_import_ex.html" target="_blank" >0.03 (±0.04)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/herman.15/index.html" target="_blank">herman.15</a></td>
+				<td><a href="logs/herman.15_prism_from-prism_check_default.html" target="_blank" >0.01 (±0.01)</a></td>
+				<td><a href="logs/herman.15_prism_from-prism_check_ex.html" target="_blank" >20.93 (±1.82)</a></td>
+				<td><a href="logs/herman.15_prism_from-prism_import_default.html" target="_blank" >0.01 (±0.03)</a></td>
+				<td><a href="logs/herman.15_prism_from-prism_import_ex.html" target="_blank" >22.02 (±2.93)</a></td>
+				<td><a href="logs/herman.15_prism_from-tra_check_default.html" target="_blank" >142.97 (±13.24)</a></td>
+				<td><a href="logs/herman.15_prism_from-tra_check_ex.html" target="_blank" >21.34 (±4.27)</a></td>
+				<td><a href="logs/herman.15_prism_from-tra_import_default.html" target="_blank" >163.16 (±75.16)</a></td>
+				<td><a href="logs/herman.15_prism_from-tra_import_ex.html" target="_blank" >21.93 (±2.05)</a></td>
+				<td><a href="logs/herman.15_prism_from-umb_check_default.html" target="_blank" >134.44 (±6.31)</a></td>
+				<td><a href="logs/herman.15_prism_from-umb_check_ex.html" target="_blank" >0.47 (±0.05)</a></td>
+				<td><a href="logs/herman.15_prism_from-umb_import_default.html" target="_blank" >129.51 (±58.18)</a></td>
+				<td><a href="logs/herman.15_prism_from-umb_import_ex.html" target="_blank" >0.42 (±0.03)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/kanban.5/index.html" target="_blank">kanban.5</a></td>
+				<td><a href="logs/kanban.5_prism_from-prism_check_default.html" target="_blank" >0.13 (±0.02)</a></td>
+				<td><a href="logs/kanban.5_prism_from-prism_check_ex.html" target="_blank" >29.45 (±4.20)</a></td>
+				<td><a href="logs/kanban.5_prism_from-prism_import_default.html" target="_blank" >0.13 (±0.02)</a></td>
+				<td><a href="logs/kanban.5_prism_from-prism_import_ex.html" target="_blank" >27.21 (±2.32)</a></td>
+				<td><a href="logs/kanban.5_prism_from-tra_check_default.html" target="_blank" >1546.50 (±542.48)</a></td>
+				<td><a href="logs/kanban.5_prism_from-tra_check_ex.html" target="_blank" >27.19 (±3.53)</a></td>
+				<td><a href="logs/kanban.5_prism_from-tra_import_default.html" target="_blank" >1349.17 (±1696.24)</a></td>
+				<td><a href="logs/kanban.5_prism_from-tra_import_ex.html" target="_blank" >25.64 (±3.16)</a></td>
+				<td><a href="logs/kanban.5_prism_from-umb_check_default.html" target="_blank" >1485.08 (±394.78)</a></td>
+				<td><a href="logs/kanban.5_prism_from-umb_check_ex.html" target="_blank" >2.17 (±0.41)</a></td>
+				<td><a href="logs/kanban.5_prism_from-umb_import_default.html" target="_blank" >1388.46 (±667.07)</a></td>
+				<td><a href="logs/kanban.5_prism_from-umb_import_ex.html" target="_blank" >2.12 (±0.25)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/majority.2100/index.html" target="_blank">majority.2100</a></td>
+				<td><a href="logs/majority.2100_prism_from-prism_check_default.html" target="_blank" >30.39 (±3.14)</a></td>
+				<td><a href="logs/majority.2100_prism_from-prism_check_ex.html" target="_blank" >1.57 (±0.15)</a></td>
+				<td><a href="logs/majority.2100_prism_from-prism_import_default.html" target="_blank" >31.52 (±2.09)</a></td>
+				<td><a href="logs/majority.2100_prism_from-prism_import_ex.html" target="_blank" >1.54 (±0.35)</a></td>
+				<td><a href="logs/majority.2100_prism_from-tra_check_default.html" target="_blank" >62.80 (±33.42)</a></td>
+				<td><a href="logs/majority.2100_prism_from-tra_check_ex.html" target="_blank" >3.21 (±0.08)</a></td>
+				<td><a href="logs/majority.2100_prism_from-tra_import_default.html" target="_blank" >60.25 (±21.37)</a></td>
+				<td><a href="logs/majority.2100_prism_from-tra_import_ex.html" target="_blank" >3.19 (±0.35)</a></td>
+				<td><a href="logs/majority.2100_prism_from-umb_check_default.html" target="_blank" >57.52 (±21.17)</a></td>
+				<td><a href="logs/majority.2100_prism_from-umb_check_ex.html" target="_blank" >0.30 (±0.09)</a></td>
+				<td><a href="logs/majority.2100_prism_from-umb_import_default.html" target="_blank" >49.79 (±2.00)</a></td>
+				<td><a href="logs/majority.2100_prism_from-umb_import_ex.html" target="_blank" >0.29 (±0.08)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-prism_check_default.html" target="_blank" >1.91 (±1.09)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-prism_check_ex.html" target="_blank" >1.41 (±0.28)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-prism_import_default.html" target="_blank" >1.74 (±0.50)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-prism_import_ex.html" target="_blank" >1.40 (±0.15)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-tra_check_default.html" target="_blank" >47.23 (±8.18)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-tra_check_ex.html" target="_blank" >1.57 (±0.19)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-tra_import_default.html" target="_blank" >51.76 (±12.64)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-tra_import_ex.html" target="_blank" >1.48 (±0.10)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-umb_check_default.html" target="_blank" >38.96 (±24.80)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-umb_check_ex.html" target="_blank" >0.18 (±0.05)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-umb_import_default.html" target="_blank" >40.70 (±17.14)</a></td>
+				<td><a href="logs/mapk-cascade.4-30_prism_from-umb_import_ex.html" target="_blank" >0.21 (±0.08)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/nand.40-4/index.html" target="_blank">nand.40-4</a></td>
+				<td><a href="logs/nand.40-4_prism_from-prism_check_default.html" target="_blank" >2.65 (±0.43)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-prism_check_ex.html" target="_blank" >6.87 (±3.22)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-prism_import_default.html" target="_blank" >2.61 (±1.05)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-prism_import_ex.html" target="_blank" >7.21 (±1.08)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-tra_check_default.html" target="_blank" >492.18 (±381.03)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-tra_check_ex.html" target="_blank" >7.04 (±1.60)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-tra_import_default.html" target="_blank" >506.96 (±42.14)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-tra_import_ex.html" target="_blank" >6.78 (±0.58)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-umb_check_default.html" target="_blank" >545.26 (±1035.06)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-umb_check_ex.html" target="_blank" >0.54 (±0.05)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-umb_import_default.html" target="_blank" >549.38 (±108.08)</a></td>
+				<td><a href="logs/nand.40-4_prism_from-umb_import_ex.html" target="_blank" >0.52 (±0.05)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/nand.60-4/index.html" target="_blank">nand.60-4</a></td>
+				<td><a href="logs/nand.60-4_prism_from-prism_check_default.html" target="_blank" >8.07 (±0.92)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-prism_check_ex.html" target="_blank" >32.35 (±4.02)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-prism_import_default.html" target="_blank" >7.86 (±3.27)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-prism_import_ex.html" target="_blank" >31.93 (±1.84)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-tra_check_default.html" target="_blank" >3251.21 (±621.23)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-tra_check_ex.html" target="_blank" >36.93 (±5.16)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-tra_import_default.html" target="_blank" >3358.66 (±608.63)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-tra_import_ex.html" target="_blank" >36.79 (±4.03)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-umb_check_default.html" target="_blank" >3892.99 (±561.58)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-umb_check_ex.html" target="_blank" >2.11 (±3.71)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-umb_import_default.html" target="_blank" >3239.80 (±916.93)</a></td>
+				<td><a href="logs/nand.60-4_prism_from-umb_import_ex.html" target="_blank" >2.16 (±0.70)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_check_default.html" target="_blank" >22.12 (±3.12)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_check_ex.html" target="_blank" >113.25 (±27.04)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_import_default.html" target="_blank" >22.86 (±3.65)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_import_ex.html" target="_blank" >105.92 (±40.71)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-tra_check_default.html" target="_blank" >2.39 (±1.09)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-tra_check_ex.html" target="_blank" >0.26 (±0.11)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-tra_import_default.html" target="_blank" >2.21 (±0.85)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-tra_import_ex.html" target="_blank" >0.23 (±0.06)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-umb_check_default.html" target="_blank" >2.18 (±0.63)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-umb_check_ex.html" target="_blank" >0.06 (±0.12)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-umb_import_default.html" target="_blank" >2.00 (±0.40)</a></td>
+				<td><a href="logs/oscillators.8-10-0.1-1-0.1-1.0_prism_from-umb_import_ex.html" target="_blank" >0.05 (±0.04)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/pacman.100/index.html" target="_blank">pacman.100</a></td>
+				<td><a href="logs/pacman.100_prism_from-prism_check_default.html" target="_blank" >1174.52 (±1016.64)</a></td>
+				<td><a href="logs/pacman.100_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/pacman.100_prism_from-prism_import_default.html" target="_blank" >1612.96 (±1315.91)</a></td>
+				<td><a href="logs/pacman.100_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/pacman.100_prism_from-tra_check_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/pacman.100_prism_from-tra_check_ex.html" target="_blank" >164.29 (±4.79)</a></td>
+				<td><a href="logs/pacman.100_prism_from-tra_import_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/pacman.100_prism_from-tra_import_ex.html" target="_blank" >163.64 (±16.77)</a></td>
+				<td><a href="logs/pacman.100_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pacman.100_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/pacman.100_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pacman.100_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/pacman.60/index.html" target="_blank">pacman.60</a></td>
+				<td><a href="logs/pacman.60_prism_from-prism_check_default.html" target="_blank" >1523.11 (±451.95)</a></td>
+				<td><a href="logs/pacman.60_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/pacman.60_prism_from-prism_import_default.html" target="_blank" >1371.90 (±1660.65)</a></td>
+				<td><a href="logs/pacman.60_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/pacman.60_prism_from-tra_check_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/pacman.60_prism_from-tra_check_ex.html" target="_blank" >79.94 (±12.33)</a></td>
+				<td><a href="logs/pacman.60_prism_from-tra_import_default.html" target="_blank" class='timeout'>TO</a></td>
+				<td><a href="logs/pacman.60_prism_from-tra_import_ex.html" target="_blank" >88.50 (±16.47)</a></td>
+				<td><a href="logs/pacman.60_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pacman.60_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/pacman.60_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pacman.60_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/pnueli-zuck.10/index.html" target="_blank">pnueli-zuck.10</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-prism_check_default.html" target="_blank" >1.02 (±0.38)</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-prism_import_default.html" target="_blank" >0.72 (±0.37)</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-tra_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-tra_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-tra_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-tra_import_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/pnueli-zuck.10_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-prism_check_default.html" target="_blank" >0.09 (±0.02)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-prism_check_ex.html" target="_blank" >3.18 (±0.90)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-prism_import_default.html" target="_blank" >0.08 (±0.01)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-prism_import_ex.html" target="_blank" >3.26 (±0.44)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-tra_check_default.html" target="_blank" >122.78 (±124.94)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-tra_check_ex.html" target="_blank" >2.23 (±0.12)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-tra_import_default.html" target="_blank" >127.38 (±45.80)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-tra_import_ex.html" target="_blank" >2.54 (±0.39)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-umb_check_default.html" target="_blank" >119.74 (±21.87)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-umb_check_ex.html" target="_blank" >0.31 (±0.11)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-umb_import_default.html" target="_blank" >106.25 (±41.55)</a></td>
+				<td><a href="logs/pnueli-zuck.5_prism_from-umb_import_ex.html" target="_blank" >0.26 (±0.06)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/polling.18-16/index.html" target="_blank">polling.18-16</a></td>
+				<td><a href="logs/polling.18-16_prism_from-prism_check_default.html" target="_blank" >0.06 (±0.02)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-prism_check_ex.html" target="_blank" >119.81 (±49.20)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-prism_import_default.html" target="_blank" >0.05 (±0.01)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-prism_import_ex.html" target="_blank" >106.59 (±58.30)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-tra_check_default.html" target="_blank" >3044.21 (±368.72)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-tra_check_ex.html" target="_blank" >114.25 (±3.85)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-tra_import_default.html" target="_blank" >2956.04 (±902.51)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-tra_import_ex.html" target="_blank" >119.83 (±9.30)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-umb_check_default.html" target="_blank" >3139.09 (±1295.39)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-umb_check_ex.html" target="_blank" >6.34 (±4.70)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-umb_import_default.html" target="_blank" >3577.36 (±1632.20)</a></td>
+				<td><a href="logs/polling.18-16_prism_from-umb_import_ex.html" target="_blank" >6.76 (±15.07)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/rabin.10/index.html" target="_blank">rabin.10</a></td>
+				<td><a href="logs/rabin.10_prism_from-prism_check_default.html" target="_blank" >42.99 (±1.47)</a></td>
+				<td><a href="logs/rabin.10_prism_from-prism_check_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/rabin.10_prism_from-prism_import_default.html" target="_blank" >42.70 (±3.73)</a></td>
+				<td><a href="logs/rabin.10_prism_from-prism_import_ex.html" target="_blank" class='memout'>MO</a></td>
+				<td><a href="logs/rabin.10_prism_from-tra_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-tra_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-tra_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-tra_import_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-umb_check_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-umb_check_ex.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-umb_import_default.html" target="_blank" >-</a></td>
+				<td><a href="logs/rabin.10_prism_from-umb_import_ex.html" target="_blank" >-</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-prism_check_default.html" target="_blank" >0.47 (±0.08)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-prism_check_ex.html" target="_blank" >8.57 (±1.49)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-prism_import_default.html" target="_blank" >0.45 (±0.23)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-prism_import_ex.html" target="_blank" >9.22 (±0.22)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-tra_check_default.html" target="_blank" >181.26 (±46.51)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-tra_check_ex.html" target="_blank" >4.94 (±0.71)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-tra_import_default.html" target="_blank" >191.75 (±28.82)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-tra_import_ex.html" target="_blank" >4.31 (±0.85)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-umb_check_default.html" target="_blank" >267.71 (±85.99)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-umb_check_ex.html" target="_blank" >0.45 (±0.07)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-umb_import_default.html" target="_blank" >212.53 (±30.47)</a></td>
+				<td><a href="logs/resource-gathering.1300-100-100_prism_from-umb_import_ex.html" target="_blank" >0.41 (±0.11)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/speed-ind.2100/index.html" target="_blank">speed-ind.2100</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-prism_check_default.html" target="_blank" >23.44 (±23.43)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-prism_check_ex.html" target="_blank" >7.03 (±3.84)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-prism_import_default.html" target="_blank" >20.85 (±74.89)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-prism_import_ex.html" target="_blank" >7.09 (±0.72)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-tra_check_default.html" target="_blank" >337.74 (±30.30)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-tra_check_ex.html" target="_blank" >14.13 (±1.67)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-tra_import_default.html" target="_blank" >342.99 (±223.91)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-tra_import_ex.html" target="_blank" >13.24 (±2.61)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-umb_check_default.html" target="_blank" >324.93 (±386.50)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-umb_check_ex.html" target="_blank" >0.83 (±0.16)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-umb_import_default.html" target="_blank" >294.91 (±30.54)</a></td>
+				<td><a href="logs/speed-ind.2100_prism_from-umb_import_ex.html" target="_blank" >0.83 (±0.79)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/wlan.4-0/index.html" target="_blank">wlan.4-0</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-prism_check_default.html" target="_blank" >0.20 (±0.02)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-prism_check_ex.html" target="_blank" >1.69 (±0.22)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-prism_import_default.html" target="_blank" >0.20 (±0.02)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-prism_import_ex.html" target="_blank" >1.80 (±0.19)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-tra_check_default.html" target="_blank" >35.05 (±11.54)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-tra_check_ex.html" target="_blank" >0.96 (±0.08)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-tra_import_default.html" target="_blank" >38.62 (±6.65)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-tra_import_ex.html" target="_blank" >1.01 (±0.09)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-umb_check_default.html" target="_blank" >32.50 (±16.46)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-umb_check_ex.html" target="_blank" >0.15 (±0.02)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-umb_import_default.html" target="_blank" >44.76 (±12.99)</a></td>
+				<td><a href="logs/wlan.4-0_prism_from-umb_import_ex.html" target="_blank" >0.15 (±0.03)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/wlan.5-0/index.html" target="_blank">wlan.5-0</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-prism_check_default.html" target="_blank" >0.27 (±0.03)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-prism_check_ex.html" target="_blank" >6.28 (±0.84)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-prism_import_default.html" target="_blank" >0.26 (±0.62)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-prism_import_ex.html" target="_blank" >6.49 (±0.87)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-tra_check_default.html" target="_blank" >172.94 (±35.26)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-tra_check_ex.html" target="_blank" >3.19 (±0.15)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-tra_import_default.html" target="_blank" >244.42 (±101.47)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-tra_import_ex.html" target="_blank" >3.23 (±0.52)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-umb_check_default.html" target="_blank" >155.02 (±89.09)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-umb_check_ex.html" target="_blank" >0.38 (±0.27)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-umb_import_default.html" target="_blank" >237.37 (±81.65)</a></td>
+				<td><a href="logs/wlan.5-0_prism_from-umb_import_ex.html" target="_blank" >0.39 (±0.08)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-prism_check_default.html" target="_blank" >0.34 (±1.64)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-prism_check_ex.html" target="_blank" >27.32 (±0.61)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-prism_import_default.html" target="_blank" >0.37 (±0.98)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-prism_import_ex.html" target="_blank" >23.97 (±1.79)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-tra_check_default.html" target="_blank" >854.16 (±308.36)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-tra_check_ex.html" target="_blank" >13.80 (±1.44)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-tra_import_default.html" target="_blank" >887.39 (±124.09)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-tra_import_ex.html" target="_blank" >12.83 (±0.79)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-umb_check_default.html" target="_blank" >1020.19 (±193.95)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-umb_check_ex.html" target="_blank" >0.94 (±0.13)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-umb_import_default.html" target="_blank" >878.65 (±315.90)</a></td>
+				<td><a href="logs/wlan.6-0_prism_from-umb_import_ex.html" target="_blank" >0.97 (±0.16)</a></td>
+			</tr>
+			<tr>
+				<td><a href="../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-prism_check_default.html" target="_blank" >43.43 (±7.45)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-prism_check_ex.html" target="_blank" >13.67 (±1.92)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-prism_import_default.html" target="_blank" >40.83 (±40.29)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-prism_import_ex.html" target="_blank" >12.94 (±1.31)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-tra_check_default.html" target="_blank" >574.60 (±177.43)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-tra_check_ex.html" target="_blank" >5.49 (±0.55)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-tra_import_default.html" target="_blank" >505.87 (±1484.65)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-tra_import_ex.html" target="_blank" >5.15 (±0.84)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-umb_check_default.html" target="_blank" >554.69 (±88.13)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-umb_check_ex.html" target="_blank" >0.46 (±0.20)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-umb_import_default.html" target="_blank" >613.04 (±68.82)</a></td>
+				<td><a href="logs/zeroconf.1000-8-false_prism_from-umb_import_ex.html" target="_blank" >0.52 (±0.39)</a></td>
+			</tr>
+		</tbody>
+</table>
+<script>
+	var table = $("#table").DataTable( {
+		"paging": false,
+		"autoWidth": false,
+		"info": false,
+		fixedHeader: {
+			"header": true,
+		},
+		"dom": "Bfrtip",
+		buttons: [
+			{
+				extend: "columnsToggle",
+				columns: [1],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [2],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [3],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [4],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [5],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [6],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [7],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [8],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [9],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [10],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [11],
+			},
+			{
+				extend: "columnsToggle",
+				columns: [12],
+			},
+			{
+				extend: "colvisGroup",
+				text: "Show all",
+				show: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+				hide: []
+			},
+			{
+				extend: "colvisGroup",
+				text: "Hide all",
+				show: [],
+				hide: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+			},
+		],
+	});
+
+	table.on("column-sizing.dt", function (e, settings) {
+		updateBest(table);
+	} );
+
+	updateBest(table);
+</script>
+</div>
+</body>
+</html>

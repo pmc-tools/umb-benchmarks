@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.6-0_storm_from-jani_to-umb-xz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a> and tool configuration storm_from-jani_to-umb-xz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[4705228.0, 5543808.0, 4705228.0, 4705228.0, 5527852.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_wlan.6-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 59.951 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:00:32 2026
+Command line arguments: --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.011s.
+
+Time for model construction: 0.238s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	5007548 (3680 nodes)
+Transitions: 	11475748 (22292 nodes)
+Choices: 	6350470
+Reward Models:  none
+Variables: 	rows: 16 meta variables (50 DD variables), columns: 16 meta variables (50 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (51 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 7.185s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	5007548
+Transitions: 	11475748
+Choices: 	6350470
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb.xz'.
+Time for model export: 52.451s.
+
+
+Performance statistics:
+  * peak memory usage: 657MB
+  * CPU time: 59.528s
+  * wallclock time: 59.909s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb.xz:	Size of output file is 4705228 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_wlan.6-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep2.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 57.539 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:31:15 2026
+Command line arguments: --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep2.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.009s.
+
+Time for model construction: 0.223s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	5007548 (3680 nodes)
+Transitions: 	11475748 (22292 nodes)
+Choices: 	6350470
+Reward Models:  none
+Variables: 	rows: 16 meta variables (50 DD variables), columns: 16 meta variables (50 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (51 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 6.098s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	5007548
+Transitions: 	11475748
+Choices: 	6350470
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep2.xz'.
+Time for model export: 51.145s.
+
+
+Performance statistics:
+  * peak memory usage: 656MB
+  * CPU time: 57.219s
+  * wallclock time: 57.497s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep2.xz:	Size of output file is 5543808 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_wlan.6-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep3.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 61.920 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:17:05 2026
+Command line arguments: --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep3.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.197s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	5007548 (3680 nodes)
+Transitions: 	11475748 (22292 nodes)
+Choices: 	6350470
+Reward Models:  none
+Variables: 	rows: 16 meta variables (50 DD variables), columns: 16 meta variables (50 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (51 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 6.308s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	5007548
+Transitions: 	11475748
+Choices: 	6350470
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep3.xz'.
+Time for model export: 55.342s.
+
+
+Performance statistics:
+  * peak memory usage: 657MB
+  * CPU time: 61.382s
+  * wallclock time: 61.884s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep3.xz:	Size of output file is 4705228 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_wlan.6-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep4.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 59.010 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:16:56 2026
+Command line arguments: --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep4.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.198s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	5007548 (3680 nodes)
+Transitions: 	11475748 (22292 nodes)
+Choices: 	6350470
+Reward Models:  none
+Variables: 	rows: 16 meta variables (50 DD variables), columns: 16 meta variables (50 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (51 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 6.425s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	5007548
+Transitions: 	11475748
+Choices: 	6350470
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep4.xz'.
+Time for model export: 52.309s.
+
+
+Performance statistics:
+  * peak memory usage: 657MB
+  * CPU time: 58.350s
+  * wallclock time: 58.965s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep4.xz:	Size of output file is 4705228 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_wlan.6-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep5.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 52.785 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:25:15 2026
+Command line arguments: --timemem --buildfull --jani models/wlan.6-0/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep5.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.009s.
+
+Time for model construction: 0.186s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	5007548 (3680 nodes)
+Transitions: 	11475748 (22292 nodes)
+Choices: 	6350470
+Reward Models:  none
+Variables: 	rows: 16 meta variables (50 DD variables), columns: 16 meta variables (50 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (51 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 6.071s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	5007548
+Transitions: 	11475748
+Choices: 	6350470
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep5.xz'.
+Time for model export: 46.461s.
+
+
+Performance statistics:
+  * peak memory usage: 657MB
+  * CPU time: 52.516s
+  * wallclock time: 52.748s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/wlan.6-0/model.umb_rep5.xz:	Size of output file is 5527852 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

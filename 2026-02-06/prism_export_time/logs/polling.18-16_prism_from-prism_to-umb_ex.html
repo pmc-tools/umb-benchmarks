@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log polling.18-16_prism_from-prism_to-umb_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/polling.18-16/index.html" target="_blank">polling.18-16</a> and tool configuration prism_from-prism_to-umb_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[9.972, 9.641, 10.019, 10.47, 11.027]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_polling.18-16_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/polling.18-16/model.prism -exportmodel out/prism_from-prism_to-umb_ex/polling.18-16/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 111.643 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:59:57 GMT+01:00 2026
+Hostname: n23m0116
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/polling.18-16/model.prism -exportmodel 'out/prism_from-prism_to-umb_ex/polling.18-16/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/polling.18-16/model.prism"...
+
+Type:        CTMC
+Modules:     server station1 station2 station3 station4 station5 station6 station7 station8 station9 station10 station11 station12 station13 station14 station15 station16 station17 station18
+Actions:     [] [loop1a] [loop1b] [serve1] [loop2a] [loop2b] [serve2] [loop3a] [loop3b] [serve3] [loop4a] [loop4b] [serve4] [loop5a] [loop5b] [serve5] [loop6a] [loop6b] [serve6] [loop7a] [loop7b] [serve7] [loop8a] [loop8b] [serve8] [loop9a] [loop9b] [serve9] [loop10a] [loop10b] [serve10] [loop11a] [loop11b] [serve11] [loop12a] [loop12b] [serve12] [loop13a] [loop13b] [serve13] [loop14a] [loop14b] [serve14] [loop15a] [loop15b] [serve15] [loop16a] [loop16b] [serve16] [loop17a] [loop17b] [serve17] [loop18a] [loop18b] [serve18]
+Variables:   s a s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18
+Labels:      "serve_s2" "serve_s1"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 209935 434327 668171 905286 1150706 1372861 1625222 1864138 2086632 2336516 2544651 2796882 3017394 3230707 3453848 3664181 3890036 4086421 4319086 4508854 4739093 4941934 5146923 5338695 5567971 5796505 6014829 6253709 6464140 6708804 6954523 7077888 states
+Reachable states exploration and model construction done in 94.63 secs.
+Sorting reachable states list...
+
+Time for model construction: 101.032 seconds.
+
+Type:        CTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_ex/polling.18-16/model.umb"...
+Model export size: 1472553 Kb
+Time for exporting: 9.972 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_ex/polling.18-16/model.umb:	Size of output file is 1507894272 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_polling.18-16_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/polling.18-16/model.prism -exportmodel out/prism_from-prism_to-umb_ex/polling.18-16/model_rep2.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 110.335 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:04:04 GMT+01:00 2026
+Hostname: r23m0142
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/polling.18-16/model.prism -exportmodel 'out/prism_from-prism_to-umb_ex/polling.18-16/model_rep2.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/polling.18-16/model.prism"...
+
+Type:        CTMC
+Modules:     server station1 station2 station3 station4 station5 station6 station7 station8 station9 station10 station11 station12 station13 station14 station15 station16 station17 station18
+Actions:     [] [loop1a] [loop1b] [serve1] [loop2a] [loop2b] [serve2] [loop3a] [loop3b] [serve3] [loop4a] [loop4b] [serve4] [loop5a] [loop5b] [serve5] [loop6a] [loop6b] [serve6] [loop7a] [loop7b] [serve7] [loop8a] [loop8b] [serve8] [loop9a] [loop9b] [serve9] [loop10a] [loop10b] [serve10] [loop11a] [loop11b] [serve11] [loop12a] [loop12b] [serve12] [loop13a] [loop13b] [serve13] [loop14a] [loop14b] [serve14] [loop15a] [loop15b] [serve15] [loop16a] [loop16b] [serve16] [loop17a] [loop17b] [serve17] [loop18a] [loop18b] [serve18]
+Variables:   s a s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18
+Labels:      "serve_s2" "serve_s1"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 212328 441449 679000 921320 1165665 1385010 1645878 1888824 2117880 2345999 2556310 2810835 3032483 3252135 3475847 3670443 3885414 4086600 4316370 4511568 4743862 4955229 5175943 5391852 5596940 5816586 6046055 6285043 6533220 6787873 7077888 states
+Reachable states exploration and model construction done in 93.163 secs.
+Sorting reachable states list...
+
+Time for model construction: 100.119 seconds.
+
+Type:        CTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_ex/polling.18-16/model_rep2.umb"...
+Model export size: 1472553 Kb
+Time for exporting: 9.641 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_ex/polling.18-16/model_rep2.umb:	Size of output file is 1507894272 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_polling.18-16_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/polling.18-16/model.prism -exportmodel out/prism_from-prism_to-umb_ex/polling.18-16/model_rep3.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 110.110 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:09:54 GMT+01:00 2026
+Hostname: r23m0207
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/polling.18-16/model.prism -exportmodel 'out/prism_from-prism_to-umb_ex/polling.18-16/model_rep3.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/polling.18-16/model.prism"...
+
+Type:        CTMC
+Modules:     server station1 station2 station3 station4 station5 station6 station7 station8 station9 station10 station11 station12 station13 station14 station15 station16 station17 station18
+Actions:     [] [loop1a] [loop1b] [serve1] [loop2a] [loop2b] [serve2] [loop3a] [loop3b] [serve3] [loop4a] [loop4b] [serve4] [loop5a] [loop5b] [serve5] [loop6a] [loop6b] [serve6] [loop7a] [loop7b] [serve7] [loop8a] [loop8b] [serve8] [loop9a] [loop9b] [serve9] [loop10a] [loop10b] [serve10] [loop11a] [loop11b] [serve11] [loop12a] [loop12b] [serve12] [loop13a] [loop13b] [serve13] [loop14a] [loop14b] [serve14] [loop15a] [loop15b] [serve15] [loop16a] [loop16b] [serve16] [loop17a] [loop17b] [serve17] [loop18a] [loop18b] [serve18]
+Variables:   s a s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18
+Labels:      "serve_s2" "serve_s1"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 212435 438065 658326 902876 1138305 1368027 1623691 1854939 2090773 2335169 2546257 2799872 3011033 3237495 3453514 3667106 3902779 4104945 4344916 4553835 4781702 4992619 5198998 5414080 5612679 5847352 6079418 6314882 6568820 6823398 7071057 7077888 states
+Reachable states exploration and model construction done in 93.422 secs.
+Sorting reachable states list...
+
+Time for model construction: 99.429 seconds.
+
+Type:        CTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_ex/polling.18-16/model_rep3.umb"...
+Model export size: 1472553 Kb
+Time for exporting: 10.019 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_ex/polling.18-16/model_rep3.umb:	Size of output file is 1507894272 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_polling.18-16_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/polling.18-16/model.prism -exportmodel out/prism_from-prism_to-umb_ex/polling.18-16/model_rep4.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 122.449 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:09:54 GMT+01:00 2026
+Hostname: r23m0203
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/polling.18-16/model.prism -exportmodel 'out/prism_from-prism_to-umb_ex/polling.18-16/model_rep4.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/polling.18-16/model.prism"...
+
+Type:        CTMC
+Modules:     server station1 station2 station3 station4 station5 station6 station7 station8 station9 station10 station11 station12 station13 station14 station15 station16 station17 station18
+Actions:     [] [loop1a] [loop1b] [serve1] [loop2a] [loop2b] [serve2] [loop3a] [loop3b] [serve3] [loop4a] [loop4b] [serve4] [loop5a] [loop5b] [serve5] [loop6a] [loop6b] [serve6] [loop7a] [loop7b] [serve7] [loop8a] [loop8b] [serve8] [loop9a] [loop9b] [serve9] [loop10a] [loop10b] [serve10] [loop11a] [loop11b] [serve11] [loop12a] [loop12b] [serve12] [loop13a] [loop13b] [serve13] [loop14a] [loop14b] [serve14] [loop15a] [loop15b] [serve15] [loop16a] [loop16b] [serve16] [loop17a] [loop17b] [serve17] [loop18a] [loop18b] [serve18]
+Variables:   s a s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18
+Labels:      "serve_s2" "serve_s1"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 209950 421523 628637 859529 1032135 1267176 1444928 1693053 1922523 2127785 2347078 2524622 2740996 2919886 3147727 3330516 3552859 3720794 3944602 4107852 4317027 4489539 4697530 4877818 5084795 5260891 5463904 5653379 5858792 6050040 6251866 6482359 6725292 6991687 7077888 states
+Reachable states exploration and model construction done in 103.14 secs.
+Sorting reachable states list...
+
+Time for model construction: 111.028 seconds.
+
+Type:        CTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_ex/polling.18-16/model_rep4.umb"...
+Model export size: 1472553 Kb
+Time for exporting: 10.47 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_ex/polling.18-16/model_rep4.umb:	Size of output file is 1507894272 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_polling.18-16_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/polling.18-16/model.prism -exportmodel out/prism_from-prism_to-umb_ex/polling.18-16/model_rep5.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 127.131 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:48:05 GMT+01:00 2026
+Hostname: r23m0047
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/polling.18-16/model.prism -exportmodel 'out/prism_from-prism_to-umb_ex/polling.18-16/model_rep5.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "models/polling.18-16/model.prism"...
+
+Type:        CTMC
+Modules:     server station1 station2 station3 station4 station5 station6 station7 station8 station9 station10 station11 station12 station13 station14 station15 station16 station17 station18
+Actions:     [] [loop1a] [loop1b] [serve1] [loop2a] [loop2b] [serve2] [loop3a] [loop3b] [serve3] [loop4a] [loop4b] [serve4] [loop5a] [loop5b] [serve5] [loop6a] [loop6b] [serve6] [loop7a] [loop7b] [serve7] [loop8a] [loop8b] [serve8] [loop9a] [loop9b] [serve9] [loop10a] [loop10b] [serve10] [loop11a] [loop11b] [serve11] [loop12a] [loop12b] [serve12] [loop13a] [loop13b] [serve13] [loop14a] [loop14b] [serve14] [loop15a] [loop15b] [serve15] [loop16a] [loop16b] [serve16] [loop17a] [loop17b] [serve17] [loop18a] [loop18b] [serve18]
+Variables:   s a s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 s17 s18
+Labels:      "serve_s2" "serve_s1"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 180535 375138 583619 786788 985983 1209809 1394059 1618682 1809607 2027662 2222008 2433767 2624575 2827632 3016833 3212414 3392146 3588758 3758498 3961097 4120524 4324528 4490945 4688650 4855886 5052649 5225929 5411007 5581426 5790103 5984882 6192882 6404332 6612367 6842807 7077888 states
+Reachable states exploration and model construction done in 107.893 secs.
+Sorting reachable states list...
+
+Time for model construction: 115.378 seconds.
+
+Type:        CTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Exporting model in UMB format to file "out/prism_from-prism_to-umb_ex/polling.18-16/model_rep5.umb"...
+Model export size: 1472553 Kb
+Time for exporting: 11.027 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb_ex/polling.18-16/model_rep5.umb:	Size of output file is 1507894272 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

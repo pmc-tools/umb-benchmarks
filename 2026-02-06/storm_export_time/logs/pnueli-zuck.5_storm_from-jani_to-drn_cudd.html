@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pnueli-zuck.5_storm_from-jani_to-drn_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration storm_from-jani_to-drn_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.747, 0.751, 0.738, 0.911, 0.904]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn_cudd_pnueli-zuck.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model.drn drn --compression none  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.424 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:48:03 2026
+Command line arguments: --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model.drn drn --compression none --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.054s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.497s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model.drn'.
+Write to file out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model.drn.
+Time for model export: 0.747s.
+
+
+Performance statistics:
+  * peak memory usage: 162MB
+  * CPU time: 1.257s
+  * wallclock time: 1.309s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model.drn:	Size of output file is 60709606 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn_cudd_pnueli-zuck.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep2.drn drn --compression none  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.355 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:16:47 2026
+Command line arguments: --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep2.drn drn --compression none --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.056s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.502s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep2.drn'.
+Write to file out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep2.drn.
+Time for model export: 0.751s.
+
+
+Performance statistics:
+  * peak memory usage: 163MB
+  * CPU time: 1.264s
+  * wallclock time: 1.317s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep2.drn:	Size of output file is 60709606 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn_cudd_pnueli-zuck.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep3.drn drn --compression none  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.338 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:00:03 2026
+Command line arguments: --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep3.drn drn --compression none --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.054s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.502s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep3.drn'.
+Write to file out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep3.drn.
+Time for model export: 0.738s.
+
+
+Performance statistics:
+  * peak memory usage: 163MB
+  * CPU time: 1.246s
+  * wallclock time: 1.305s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep3.drn:	Size of output file is 60709606 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn_cudd_pnueli-zuck.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep4.drn drn --compression none  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.626 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:22:35 2026
+Command line arguments: --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep4.drn drn --compression none --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.067s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.593s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep4.drn'.
+Write to file out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep4.drn.
+Time for model export: 0.911s.
+
+
+Performance statistics:
+  * peak memory usage: 163MB
+  * CPU time: 1.507s
+  * wallclock time: 1.581s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep4.drn:	Size of output file is 60709606 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn_cudd_pnueli-zuck.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep5.drn drn --compression none  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.612 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:23:20 2026
+Command line arguments: --timemem --buildfull --jani models/pnueli-zuck.5/model.jani --exportbuild out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep5.drn drn --compression none --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.066s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.598s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep5.drn'.
+Write to file out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep5.drn.
+Time for model export: 0.904s.
+
+
+Performance statistics:
+  * peak memory usage: 163MB
+  * CPU time: 1.501s
+  * wallclock time: 1.578s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn_cudd/pnueli-zuck.5/model_rep5.drn:	Size of output file is 60709606 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log speed-ind.2100_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/speed-ind.2100/index.html" target="_blank">speed-ind.2100</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1745.489, 2564.461, 1723.226, 2535.99, 1752.683]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+Wallclock time: 1745.489 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:07:39 GMT+01:00 2026
+Hostname: n23m0382
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+
+Parsing PRISM model file "models/speed-ind.2100/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 353565 710741 743424 states
+Reachable states exploration and model construction done in 6.265 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.916 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 1737.881 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 1737.912 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+Wallclock time: 2564.461 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:22 GMT+01:00 2026
+Hostname: r23m0028
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+
+Parsing PRISM model file "models/speed-ind.2100/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 270782 531359 743424 states
+Reachable states exploration and model construction done in 8.432 secs.
+Sorting reachable states list...
+
+Time for model construction: 9.358 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 2552.167 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 2552.214 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+Wallclock time: 1723.226 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:31 GMT+01:00 2026
+Hostname: n23m0297
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+
+Parsing PRISM model file "models/speed-ind.2100/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 351388 693641 743424 states
+Reachable states exploration and model construction done in 6.386 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.029 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 1715.507 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 1715.538 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+Wallclock time: 2535.990 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:13 GMT+01:00 2026
+Hostname: n23m0346
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+
+Parsing PRISM model file "models/speed-ind.2100/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 240381 451582 692534 743424 states
+Reachable states exploration and model construction done in 9.851 secs.
+Sorting reachable states list...
+
+Time for model construction: 10.866 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 2523.719 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 2523.76 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+Wallclock time: 1752.683 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:00 GMT+01:00 2026
+Hostname: n23m0141
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/speed-ind.2100/model.prism models/speed-ind.2100/property.props
+
+Parsing PRISM model file "models/speed-ind.2100/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "models/speed-ind.2100/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 352714 732522 743424 states
+Reachable states exploration and model construction done in 6.08 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.703 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 1745.258 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 1745.293 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

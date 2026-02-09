@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[74.231, 62.29, 60.767, 68.65, 68.617]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 74.231 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:08:01 GMT+01:00 2026
+Hostname: r23m0017
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 47.06 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 25.679 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 1 iterations, 19651307 multiplications and 0.26 seconds.
+Expected reachability took 25.97 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 26.46 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 62.290 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:23 GMT+01:00 2026
+Hostname: r23m0217
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 39.688 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 21.456 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 1 iterations, 19651307 multiplications and 0.236 seconds.
+Expected reachability took 21.726 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 21.967 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 60.767 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:29 GMT+01:00 2026
+Hostname: r23m0155
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 38.877 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 20.797 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 1 iterations, 19651307 multiplications and 0.214 seconds.
+Expected reachability took 21.037 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 21.26 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 68.650 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:49:27 GMT+01:00 2026
+Hostname: n23m0191
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 43.56 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 23.905 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 1 iterations, 19651307 multiplications and 0.251 seconds.
+Expected reachability took 24.187 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 24.423 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+Wallclock time: 68.617 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:07 GMT+01:00 2026
+Hostname: r23m0034
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/eajs.6-300-13/prism.model.tradir/model.all models/eajs.6-300-13/property.props
+
+Importing model from "models/eajs.6-300-13/prism.model.tradir/model.tra", "models/eajs.6-300-13/prism.model.tradir/model.lab", "models/eajs.6-300-13/prism.model.tradir/model.srew"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "models/eajs.6-300-13/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 43.243 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 22.752 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 1 iterations, 19651307 multiplications and 0.23 seconds.
+Expected reachability took 23.035 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 23.262 seconds.
+
+Result: 0.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log egl.10-2_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[105.258, 132.454, 113.804, 110.688, 107.542]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_egl.10-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 150.396 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:47:43 GMT+01:00 2026
+Hostname: n23m0176
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 105.258 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (7.851 seconds)
+Starting Prob0...
+Prob0 took 3.324 seconds.
+Starting Prob1...
+Prob1 took 30.532 seconds.
+target=1077741, yes=12628991, no=53429760, maybe=1535
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 21 iterations, 64470 multiplications and 0.369 seconds.
+Probabilistic reachability took 42.202 seconds.
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 44.414 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_egl.10-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 219.204 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:48:18 GMT+01:00 2026
+Hostname: n23m0218
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 132.454 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (10.2 seconds)
+Starting Prob0...
+Prob0 took 3.122 seconds.
+Starting Prob1...
+Prob1 took 68.822 seconds.
+target=1077741, yes=12628991, no=53429760, maybe=1535
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 21 iterations, 64470 multiplications and 0.291 seconds.
+Probabilistic reachability took 82.602 seconds.
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 85.016 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 157.972 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:18:57 GMT+01:00 2026
+Hostname: n23m0100
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 113.804 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (6.366 seconds)
+Starting Prob0...
+Prob0 took 2.456 seconds.
+Starting Prob1...
+Prob1 took 30.995 seconds.
+target=1077741, yes=12628991, no=53429760, maybe=1535
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 21 iterations, 64470 multiplications and 0.691 seconds.
+Probabilistic reachability took 40.636 seconds.
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 43.318 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_egl.10-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 152.034 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:50 GMT+01:00 2026
+Hostname: n23m0027
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 110.688 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (5.094 seconds)
+Starting Prob0...
+Prob0 took 2.409 seconds.
+Starting Prob1...
+Prob1 took 29.414 seconds.
+target=1077741, yes=12628991, no=53429760, maybe=1535
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 21 iterations, 64470 multiplications and 0.649 seconds.
+Probabilistic reachability took 37.693 seconds.
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 40.589 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_egl.10-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+Wallclock time: 158.435 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:21:17 GMT+01:00 2026
+Hostname: n23m0100
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/egl.10-2/prism.model.tradir/model.all models/egl.10-2/property.props
+
+Importing model from "models/egl.10-2/prism.model.tradir/model.tra", "models/egl.10-2/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 107.542 seconds.
+
+Type:        DTMC
+States:      66060286 (1 initial)
+Transitions: 67108861
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (9.05 seconds)
+Starting Prob0...
+Prob0 took 2.514 seconds.
+Starting Prob1...
+Prob1 took 35.071 seconds.
+target=1077741, yes=12628991, no=53429760, maybe=1535
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 21 iterations, 64470 multiplications and 0.579 seconds.
+Probabilistic reachability took 47.354 seconds.
+
+Value in the initial state: 0.50048828125
+
+Time for model checking: 49.882 seconds.
+
+Result: 0.50048828125 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

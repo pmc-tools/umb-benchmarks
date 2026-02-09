@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log cluster.64-2000-20_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/cluster.64-2000-20/index.html" target="_blank">cluster.64-2000-20</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[579.599, 723.386, 541.828, 575.685, 599.417]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_cluster.64-2000-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+Wallclock time: 579.599 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:04:34 GMT+01:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+
+Importing model from "models/cluster.64-2000-20/prism.model.tradir/model.tra", "models/cluster.64-2000-20/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "minimum"
+
+Parsing properties file "models/cluster.64-2000-20/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.059 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 41.057295 x 2000.0 = 82114.59000000001
+Fox-Glynn (1.25E-7): left = 80105, right = 84548
+Backwards transient probability computation took 84549 iters and 577.786 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 577.813 seconds.
+
+Result: 1.0
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_cluster.64-2000-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+Wallclock time: 723.386 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:16 GMT+01:00 2026
+Hostname: n23m0049
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+
+Importing model from "models/cluster.64-2000-20/prism.model.tradir/model.tra", "models/cluster.64-2000-20/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "minimum"
+
+Parsing properties file "models/cluster.64-2000-20/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.219 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 41.057295 x 2000.0 = 82114.59000000001
+Fox-Glynn (1.25E-7): left = 80105, right = 84548
+Backwards transient probability computation took 84549 iters and 721.369 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 721.403 seconds.
+
+Result: 1.0
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_cluster.64-2000-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+Wallclock time: 541.828 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:15 GMT+01:00 2026
+Hostname: n23m0363
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+
+Importing model from "models/cluster.64-2000-20/prism.model.tradir/model.tra", "models/cluster.64-2000-20/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "minimum"
+
+Parsing properties file "models/cluster.64-2000-20/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.049 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 41.057295 x 2000.0 = 82114.59000000001
+Fox-Glynn (1.25E-7): left = 80105, right = 84548
+Backwards transient probability computation took 84549 iters and 540.162 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 540.19 seconds.
+
+Result: 1.0
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_cluster.64-2000-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+Wallclock time: 575.685 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:48:56 GMT+01:00 2026
+Hostname: n23m0066
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+
+Importing model from "models/cluster.64-2000-20/prism.model.tradir/model.tra", "models/cluster.64-2000-20/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "minimum"
+
+Parsing properties file "models/cluster.64-2000-20/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.238 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 41.057295 x 2000.0 = 82114.59000000001
+Fox-Glynn (1.25E-7): left = 80105, right = 84548
+Backwards transient probability computation took 84549 iters and 573.743 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 573.776 seconds.
+
+Result: 1.0
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_cluster.64-2000-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+Wallclock time: 599.417 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:32 GMT+01:00 2026
+Hostname: r23m0152
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/cluster.64-2000-20/prism.model.tradir/model.all models/cluster.64-2000-20/property.props
+
+Importing model from "models/cluster.64-2000-20/prism.model.tradir/model.tra", "models/cluster.64-2000-20/prism.model.tradir/model.lab"...
+
+Type:        CTMC (auto-detected)
+Variables:   x
+Labels:      "minimum"
+
+Parsing properties file "models/cluster.64-2000-20/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.062 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 41.057295 x 2000.0 = 82114.59000000001
+Fox-Glynn (1.25E-7): left = 80105, right = 84548
+Backwards transient probability computation took 84549 iters and 597.744 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 597.77 seconds.
+
+Result: 1.0
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

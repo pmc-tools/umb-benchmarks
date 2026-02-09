@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pacman.100_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pacman.100/index.html" target="_blank">pacman.100</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1075.881, 1071.354, 1057.459, 1098.22, 1067.744]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_pacman.100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+Wallclock time: 1075.881 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:57:41 GMT+01:00 2026
+Hostname: n23m0291
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+
+Importing model from "models/pacman.100/prism.model.tradir/model.tra", "models/pacman.100/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "Crash"
+
+Parsing properties file "models/pacman.100/property.props"...
+
+1 property:
+(1) "crash": Pmin=? [ F "Crash" ]
+
+---------------------------------------------------------------------
+
+Model checking: "crash": Pmin=? [ F "Crash" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 164.293 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+Choices:     100215175
+Max/avg:     5/1.26
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 248 iterations and 208.827 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 576 iterations and 540.516 seconds.
+target=3641587, yes=12459554, no=23968103, maybe=43013264
+Starting value iteration (min, with Power method)...
+Iteration 10: 5.34 sec so far
+Iteration 20: 10.74 sec so far
+Iteration 30: 16.06 sec so far
+Iteration 40: 21.32 sec so far
+Iteration 50: 26.58 sec so far
+Iteration 60: 31.94 sec so far
+Iteration 70: 37.20 sec so far
+Iteration 80: 42.50 sec so far
+Iteration 90: 47.82 sec so far
+Iteration 100: 53.10 sec so far
+Iteration 110: 58.37 sec so far
+Iteration 120: 63.74 sec so far
+Iteration 130: 69.24 sec so far
+Iteration 140: 74.53 sec so far
+Iteration 150: 79.92 sec so far
+Iteration 160: 85.18 sec so far
+Iteration 170: 90.42 sec so far
+Iteration 180: 95.73 sec so far
+Iteration 190: 100.97 sec so far
+Iteration 200: 106.18 sec so far
+Iteration 210: 111.47 sec so far
+Iteration 220: 116.73 sec so far
+Iteration 230: 121.98 sec so far
+Iteration 240: 127.50 sec so far
+Iteration 250: 132.77 sec so far
+Iteration 260: 138.05 sec so far
+Iteration 270: 143.31 sec so far
+Iteration 280: 148.50 sec so far
+Iteration 290: 153.71 sec so far
+Value iteration (min, with Power method) took 298 iterations, 17801501138 multiplications and 159.005 seconds.
+Probabilistic reachability took 908.491 seconds.
+
+Value in the initial state: 0.5511176035172203
+
+Time for model checking: 910.906 seconds.
+
+Result: 0.5511176035172203 (+/- 4.7512321272787155E-7 estimated; rel err 8.621085766370839E-7)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_pacman.100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+Wallclock time: 1071.354 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:08:10 GMT+01:00 2026
+Hostname: r23m0092
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+
+Importing model from "models/pacman.100/prism.model.tradir/model.tra", "models/pacman.100/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "Crash"
+
+Parsing properties file "models/pacman.100/property.props"...
+
+1 property:
+(1) "crash": Pmin=? [ F "Crash" ]
+
+---------------------------------------------------------------------
+
+Model checking: "crash": Pmin=? [ F "Crash" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 164.577 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+Choices:     100215175
+Max/avg:     5/1.26
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 248 iterations and 216.975 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 576 iterations and 527.885 seconds.
+target=3641587, yes=12459554, no=23968103, maybe=43013264
+Starting value iteration (min, with Power method)...
+Iteration 10: 5.45 sec so far
+Iteration 20: 10.88 sec so far
+Iteration 30: 16.41 sec so far
+Iteration 40: 21.85 sec so far
+Iteration 50: 27.32 sec so far
+Iteration 60: 32.93 sec so far
+Iteration 70: 38.38 sec so far
+Iteration 79: 43.48 sec so far
+Iteration 89: 48.99 sec so far
+Iteration 99: 54.48 sec so far
+Iteration 109: 59.70 sec so far
+Iteration 119: 65.03 sec so far
+Iteration 129: 70.23 sec so far
+Iteration 139: 75.44 sec so far
+Iteration 149: 80.58 sec so far
+Iteration 159: 85.73 sec so far
+Iteration 169: 90.81 sec so far
+Iteration 179: 95.92 sec so far
+Iteration 189: 101.19 sec so far
+Iteration 199: 106.33 sec so far
+Iteration 209: 111.47 sec so far
+Iteration 219: 116.69 sec so far
+Iteration 229: 121.82 sec so far
+Iteration 239: 126.96 sec so far
+Iteration 249: 132.15 sec so far
+Iteration 259: 137.29 sec so far
+Iteration 269: 142.43 sec so far
+Iteration 279: 147.64 sec so far
+Iteration 289: 152.79 sec so far
+Value iteration (min, with Power method) took 298 iterations, 17801501138 multiplications and 158.6 seconds.
+Probabilistic reachability took 903.601 seconds.
+
+Value in the initial state: 0.5511176035172203
+
+Time for model checking: 906.126 seconds.
+
+Result: 0.5511176035172203 (+/- 4.7512321272787155E-7 estimated; rel err 8.621085766370839E-7)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_pacman.100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+Wallclock time: 1057.459 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:50:35 GMT+01:00 2026
+Hostname: r23m0217
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+
+Importing model from "models/pacman.100/prism.model.tradir/model.tra", "models/pacman.100/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "Crash"
+
+Parsing properties file "models/pacman.100/property.props"...
+
+1 property:
+(1) "crash": Pmin=? [ F "Crash" ]
+
+---------------------------------------------------------------------
+
+Model checking: "crash": Pmin=? [ F "Crash" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 161.127 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+Choices:     100215175
+Max/avg:     5/1.26
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 248 iterations and 206.361 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 576 iterations and 523.785 seconds.
+target=3641587, yes=12459554, no=23968103, maybe=43013264
+Starting value iteration (min, with Power method)...
+Iteration 10: 5.30 sec so far
+Iteration 20: 10.62 sec so far
+Iteration 30: 16.04 sec so far
+Iteration 40: 21.37 sec so far
+Iteration 50: 26.70 sec so far
+Iteration 60: 32.16 sec so far
+Iteration 69: 37.25 sec so far
+Iteration 79: 42.62 sec so far
+Iteration 89: 47.99 sec so far
+Iteration 99: 53.44 sec so far
+Iteration 109: 58.86 sec so far
+Iteration 119: 64.21 sec so far
+Iteration 129: 69.62 sec so far
+Iteration 139: 74.94 sec so far
+Iteration 149: 80.28 sec so far
+Iteration 159: 85.68 sec so far
+Iteration 169: 90.99 sec so far
+Iteration 178: 96.05 sec so far
+Iteration 188: 101.39 sec so far
+Iteration 198: 106.82 sec so far
+Iteration 208: 112.16 sec so far
+Iteration 218: 117.49 sec so far
+Iteration 228: 122.91 sec so far
+Iteration 238: 128.24 sec so far
+Iteration 248: 133.54 sec so far
+Iteration 258: 138.92 sec so far
+Iteration 268: 144.23 sec so far
+Iteration 278: 149.53 sec so far
+Iteration 288: 155.03 sec so far
+Iteration 297: 160.12 sec so far
+Value iteration (min, with Power method) took 298 iterations, 17801501138 multiplications and 161.489 seconds.
+Probabilistic reachability took 891.786 seconds.
+
+Value in the initial state: 0.5511176035172203
+
+Time for model checking: 895.468 seconds.
+
+Result: 0.5511176035172203 (+/- 4.7512321272787155E-7 estimated; rel err 8.621085766370839E-7)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_pacman.100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+Wallclock time: 1098.220 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:12 GMT+01:00 2026
+Hostname: r23m0011
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+
+Importing model from "models/pacman.100/prism.model.tradir/model.tra", "models/pacman.100/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "Crash"
+
+Parsing properties file "models/pacman.100/property.props"...
+
+1 property:
+(1) "crash": Pmin=? [ F "Crash" ]
+
+---------------------------------------------------------------------
+
+Model checking: "crash": Pmin=? [ F "Crash" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 159.506 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+Choices:     100215175
+Max/avg:     5/1.26
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 248 iterations and 224.088 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 576 iterations and 549.692 seconds.
+target=3641587, yes=12459554, no=23968103, maybe=43013264
+Starting value iteration (min, with Power method)...
+Iteration 10: 5.15 sec so far
+Iteration 20: 10.42 sec so far
+Iteration 30: 15.99 sec so far
+Iteration 40: 21.32 sec so far
+Iteration 50: 26.68 sec so far
+Iteration 60: 32.12 sec so far
+Iteration 70: 37.45 sec so far
+Iteration 80: 42.80 sec so far
+Iteration 90: 48.25 sec so far
+Iteration 100: 53.61 sec so far
+Iteration 110: 58.99 sec so far
+Iteration 120: 64.46 sec so far
+Iteration 130: 69.83 sec so far
+Iteration 140: 75.35 sec so far
+Iteration 150: 80.85 sec so far
+Iteration 160: 86.24 sec so far
+Iteration 170: 91.61 sec so far
+Iteration 180: 97.04 sec so far
+Iteration 190: 102.39 sec so far
+Iteration 200: 107.75 sec so far
+Iteration 210: 113.18 sec so far
+Iteration 220: 118.53 sec so far
+Iteration 230: 123.91 sec so far
+Iteration 240: 129.33 sec so far
+Iteration 250: 134.81 sec so far
+Iteration 260: 140.25 sec so far
+Iteration 270: 145.72 sec so far
+Iteration 280: 151.09 sec so far
+Iteration 290: 156.45 sec so far
+Value iteration (min, with Power method) took 298 iterations, 17801501138 multiplications and 161.835 seconds.
+Probabilistic reachability took 935.761 seconds.
+
+Value in the initial state: 0.5511176035172203
+
+Time for model checking: 937.89 seconds.
+
+Result: 0.5511176035172203 (+/- 4.7512321272787155E-7 estimated; rel err 8.621085766370839E-7)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_pacman.100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+Wallclock time: 1067.744 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:29 GMT+01:00 2026
+Hostname: r23m0145
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/pacman.100/prism.model.tradir/model.all models/pacman.100/property.props
+
+Importing model from "models/pacman.100/prism.model.tradir/model.tra", "models/pacman.100/prism.model.tradir/model.lab"...
+
+Type:        MDP (auto-detected)
+Variables:   x
+Labels:      "Crash"
+
+Parsing properties file "models/pacman.100/property.props"...
+
+1 property:
+(1) "crash": Pmin=? [ F "Crash" ]
+
+---------------------------------------------------------------------
+
+Model checking: "crash": Pmin=? [ F "Crash" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 164.307 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+Choices:     100215175
+Max/avg:     5/1.26
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 248 iterations and 209.076 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 576 iterations and 536.202 seconds.
+target=3641587, yes=12459554, no=23968103, maybe=43013264
+Starting value iteration (min, with Power method)...
+Iteration 10: 5.04 sec so far
+Iteration 20: 10.16 sec so far
+Iteration 30: 15.38 sec so far
+Iteration 40: 20.61 sec so far
+Iteration 50: 25.82 sec so far
+Iteration 60: 31.20 sec so far
+Iteration 70: 36.37 sec so far
+Iteration 80: 41.52 sec so far
+Iteration 90: 46.74 sec so far
+Iteration 100: 51.88 sec so far
+Iteration 110: 57.01 sec so far
+Iteration 120: 62.23 sec so far
+Iteration 130: 67.36 sec so far
+Iteration 140: 72.46 sec so far
+Iteration 150: 77.67 sec so far
+Iteration 160: 82.84 sec so far
+Iteration 170: 88.00 sec so far
+Iteration 180: 93.23 sec so far
+Iteration 190: 98.38 sec so far
+Iteration 200: 103.54 sec so far
+Iteration 210: 108.72 sec so far
+Iteration 220: 113.86 sec so far
+Iteration 230: 118.98 sec so far
+Iteration 240: 124.16 sec so far
+Iteration 250: 129.24 sec so far
+Iteration 260: 134.38 sec so far
+Iteration 270: 139.63 sec so far
+Iteration 280: 144.85 sec so far
+Iteration 290: 150.02 sec so far
+Value iteration (min, with Power method) took 298 iterations, 17801501138 multiplications and 155.194 seconds.
+Probabilistic reachability took 900.605 seconds.
+
+Value in the initial state: 0.5511176035172203
+
+Time for model checking: 902.798 seconds.
+
+Result: 0.5511176035172203 (+/- 4.7512321272787155E-7 estimated; rel err 8.621085766370839E-7)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

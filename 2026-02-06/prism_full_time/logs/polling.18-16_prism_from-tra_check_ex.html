@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log polling.18-16_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/polling.18-16/index.html" target="_blank">polling.18-16</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[131.745, 137.066, 131.14, 130.792, 128.874]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_polling.18-16_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+Wallclock time: 131.745 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:57:18 GMT+01:00 2026
+Hostname: n23m0398
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+
+Importing model from "models/polling.18-16/prism.model.tradir/model.tra", "models/polling.18-16/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "serve_s2" "serve_s1"
+
+Parsing properties file "models/polling.18-16/property.props"...
+
+1 property:
+(1) "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+---------------------------------------------------------------------
+
+Model checking: "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 115.312 seconds.
+
+Type:        DTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.751 seconds)
+Starting Prob0...
+Prob0 took 2.28 seconds.
+Starting Prob1...
+Prob1 took 3.679 seconds.
+target=131072, yes=3407872, no=262144, maybe=3407872
+Starting value iteration (with Jacobi)...
+Iteration 118: 5.01 sec so far
+Value iteration (with Jacobi) took 154 iterations, 5429788672 multiplications and 6.624 seconds.
+Probabilistic reachability took 15.363 seconds.
+
+Value in the initial state: Infinity
+
+Time for model checking: 15.576 seconds.
+
+Result: Infinity (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_polling.18-16_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+Wallclock time: 137.066 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:40:39 GMT+01:00 2026
+Hostname: n23m0393
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+
+Importing model from "models/polling.18-16/prism.model.tradir/model.tra", "models/polling.18-16/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "serve_s2" "serve_s1"
+
+Parsing properties file "models/polling.18-16/property.props"...
+
+1 property:
+(1) "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+---------------------------------------------------------------------
+
+Model checking: "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 118.094 seconds.
+
+Type:        DTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.969 seconds)
+Starting Prob0...
+Prob0 took 2.307 seconds.
+Starting Prob1...
+Prob1 took 3.486 seconds.
+target=131072, yes=3407872, no=262144, maybe=3407872
+Starting value iteration (with Jacobi)...
+Iteration 104: 5.03 sec so far
+Value iteration (with Jacobi) took 154 iterations, 5429788672 multiplications and 7.515 seconds.
+Probabilistic reachability took 16.309 seconds.
+
+Value in the initial state: Infinity
+
+Time for model checking: 16.555 seconds.
+
+Result: Infinity (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_polling.18-16_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+Wallclock time: 131.140 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:34:31 GMT+01:00 2026
+Hostname: n23m0054
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+
+Importing model from "models/polling.18-16/prism.model.tradir/model.tra", "models/polling.18-16/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "serve_s2" "serve_s1"
+
+Parsing properties file "models/polling.18-16/property.props"...
+
+1 property:
+(1) "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+---------------------------------------------------------------------
+
+Model checking: "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 113.712 seconds.
+
+Type:        DTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.867 seconds)
+Starting Prob0...
+Prob0 took 2.757 seconds.
+Starting Prob1...
+Prob1 took 3.422 seconds.
+target=131072, yes=3407872, no=262144, maybe=3407872
+Starting value iteration (with Jacobi)...
+Iteration 107: 5.04 sec so far
+Value iteration (with Jacobi) took 154 iterations, 5429788672 multiplications and 7.315 seconds.
+Probabilistic reachability took 16.388 seconds.
+
+Value in the initial state: Infinity
+
+Time for model checking: 16.598 seconds.
+
+Result: Infinity (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_polling.18-16_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+Wallclock time: 130.792 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:51:23 GMT+01:00 2026
+Hostname: r23m0044
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+
+Importing model from "models/polling.18-16/prism.model.tradir/model.tra", "models/polling.18-16/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "serve_s2" "serve_s1"
+
+Parsing properties file "models/polling.18-16/property.props"...
+
+1 property:
+(1) "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+---------------------------------------------------------------------
+
+Model checking: "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 114.246 seconds.
+
+Type:        DTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.943 seconds)
+Starting Prob0...
+Prob0 took 2.529 seconds.
+Starting Prob1...
+Prob1 took 3.198 seconds.
+target=131072, yes=3407872, no=262144, maybe=3407872
+Starting value iteration (with Jacobi)...
+Iteration 112: 5.04 sec so far
+Value iteration (with Jacobi) took 154 iterations, 5429788672 multiplications and 7.022 seconds.
+Probabilistic reachability took 15.718 seconds.
+
+Value in the initial state: Infinity
+
+Time for model checking: 15.914 seconds.
+
+Result: Infinity (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_polling.18-16_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+Wallclock time: 128.874 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:04:38 GMT+01:00 2026
+Hostname: r23m0172
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/polling.18-16/prism.model.tradir/model.all models/polling.18-16/property.props
+
+Importing model from "models/polling.18-16/prism.model.tradir/model.tra", "models/polling.18-16/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "serve_s2" "serve_s1"
+
+Parsing properties file "models/polling.18-16/property.props"...
+
+1 property:
+(1) "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+---------------------------------------------------------------------
+
+Model checking: "s1_before_s2": P=? [ !"serve_s2" U "serve_s1" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 113.435 seconds.
+
+Type:        DTMC
+States:      7077888 (1 initial)
+Transitions: 69599232
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.821 seconds)
+Starting Prob0...
+Prob0 took 2.462 seconds.
+Starting Prob1...
+Prob1 took 3.079 seconds.
+target=131072, yes=3407872, no=262144, maybe=3407872
+Starting value iteration (with Jacobi)...
+Iteration 126: 5.04 sec so far
+Value iteration (with Jacobi) took 154 iterations, 5429788672 multiplications and 6.235 seconds.
+Probabilistic reachability took 14.62 seconds.
+
+Value in the initial state: Infinity
+
+Time for model checking: 14.822 seconds.
+
+Result: Infinity (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

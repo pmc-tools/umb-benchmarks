@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pacman.100_storm_from-jani_to-drn-xz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pacman.100/index.html" target="_blank">pacman.100</a> and tool configuration storm_from-jani_to-drn-xz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[95734428.0, 95697288.0, 95830972.0, 95753904.0, 95669032.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_pacman.100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1181.005 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:22:22 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.025s.
+
+Time for model construction: 173.147s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 50.979s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn.xz'.
+Time for model export: 953.312s.
+
+
+Performance statistics:
+  * peak memory usage: 11067MB
+  * CPU time: 1175.959s
+  * wallclock time: 1180.940s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn.xz:	Size of output file is 95734428 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_pacman.100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep2.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1338.880 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:22:29 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep2.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.023s.
+
+Time for model construction: 174.738s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 55.534s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep2.xz'.
+Time for model export: 1104.414s.
+
+
+Performance statistics:
+  * peak memory usage: 11067MB
+  * CPU time: 1332.880s
+  * wallclock time: 1338.825s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep2.xz:	Size of output file is 95697288 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_pacman.100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep3.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1159.110 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:00:15 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep3.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.023s.
+
+Time for model construction: 151.645s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 51.987s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep3.xz'.
+Time for model export: 951.927s.
+
+
+Performance statistics:
+  * peak memory usage: 11067MB
+  * CPU time: 1154.344s
+  * wallclock time: 1159.038s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep3.xz:	Size of output file is 95830972 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_pacman.100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep4.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1185.102 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:31:13 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep4.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.022s.
+
+Time for model construction: 158.167s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 56.763s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep4.xz'.
+Time for model export: 966.292s.
+
+
+Performance statistics:
+  * peak memory usage: 11068MB
+  * CPU time: 1175.395s
+  * wallclock time: 1185.052s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep4.xz:	Size of output file is 95753904 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_pacman.100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep5.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1180.755 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:26 2026
+Command line arguments: --timemem --buildfull --jani models/pacman.100/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep5.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.024s.
+
+Time for model construction: 154.566s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	79440921 (773429 nodes)
+Transitions: 	109963876 (3803440 nodes)
+Choices: 	100215175
+Reward Models:  none
+Variables: 	rows: 15 meta variables (40 DD variables), columns: 15 meta variables (40 DD variables), nondeterminism: 9 meta variables (9 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (41 nodes)
+   * Crash
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 52.010s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	79440921
+Transitions: 	109963876
+Choices: 	100215175
+Reward Models:  none
+State Labels: 	3 labels
+   * Crash -> 3641587 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep5.xz'.
+Time for model export: 970.579s.
+
+
+Performance statistics:
+  * peak memory usage: 11067MB
+  * CPU time: 1175.029s
+  * wallclock time: 1180.701s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/pacman.100/model.drn_rep5.xz:	Size of output file is 95669032 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[22829859.0, 22829859.0, 22829859.0, 22829859.0, 22829859.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/mapk-cascade.4-30/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.755 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:30:22 GMT+01:00 2026
+Hostname: n23m0249
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/mapk-cascade.4-30/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/mapk-cascade.4-30/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.164 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.282 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb.gz"...
+Time for exporting: 0.938 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb.gz:	Size of output file is 22829859 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/mapk-cascade.4-30/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.808 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:46 GMT+01:00 2026
+Hostname: n23m0243
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/mapk-cascade.4-30/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/mapk-cascade.4-30/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.193 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.311 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep2.gz"...
+Time for exporting: 0.944 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep2.gz:	Size of output file is 22829859 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/mapk-cascade.4-30/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 3.170 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:31:14 GMT+01:00 2026
+Hostname: r23m0147
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/mapk-cascade.4-30/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/mapk-cascade.4-30/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.229 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.413 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep3.gz"...
+Time for exporting: 0.97 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep3.gz:	Size of output file is 22829859 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/mapk-cascade.4-30/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.781 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:22:20 GMT+01:00 2026
+Hostname: r23m0142
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/mapk-cascade.4-30/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/mapk-cascade.4-30/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.16 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.277 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep4.gz"...
+Time for exporting: 0.96 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep4.gz:	Size of output file is 22829859 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/mapk-cascade.4-30/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 3.558 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:16:24 GMT+01:00 2026
+Hostname: n23m0109
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/mapk-cascade.4-30/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/mapk-cascade.4-30/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.67 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.84 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep5.gz"...
+Time for exporting: 1.061 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/mapk-cascade.4-30/model.umb_rep5.gz:	Size of output file is 22829859 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

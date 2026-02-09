@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log egl.10-2_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[MO, MO, MO, MO, MO]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_egl.10-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 140.620 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:31:15 GMT+01:00 2026
+Hostname: r23m0160
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 403278 778370 1168515 1688630 2212155 2739580 3310490 3881778 4413190 4931961 5445250 6005995 6532799 7085675 7611397 8164704 8730159 8842479 9369627 9884905 10392569 10936996 11455517 12025026 12554710 13105093 13647050 14161164 14645565 15169024 15666448 16202049 16722089 17272972 17810098 18412589 18953400 19505505 20043902 20588257 21087105 21627740 22130920 22675905 23158596 23665024
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb.gz:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_egl.10-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 146.670 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:25:31 GMT+01:00 2026
+Hostname: n23m0259
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep2.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 384081 762308 1179920 1716817 2254567 2775426 3303086 3852091 4380237 4930584 5455111 5953310 6463815 7005113 7518413 8021804 8204630 8753092 9237675 9750900 10278644 10810208 11271902 11802220 12300994 12817784 13357450 13842593 14330999 14827881 15306708 15765912 16282086 16804799 17358362 17869365 18409232 18924113 19454784 19973005 20516246 21028342 21612820 21631572 22205712 22694932 23196061
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep2.gz:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 137.834 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:55:19 GMT+01:00 2026
+Hostname: n23m0094
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep3.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 402154 790208 1198067 1749058 2279109 2847540 3392173 3961088 4478233 5025899 5531358 6072070 6597702 7137181 7678661 8221401 8354517 8901236 9395107 9923953 10446022 11021241 11563914 12113092 12620717 13189440 13712596 14219441 14728284 15254668 15744077 16283822 16831290 17394694 17935022 18484092 19026501 19567118 20103316 20646419 21155180 21724846 22255470 22760102 23261647
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep3.gz:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_egl.10-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 157.266 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 08:10:50 GMT+01:00 2026
+Hostname: n23m0397
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep4.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 344278 677491 1013832 1424148 1882332 2347235 2794062 3272874 3738977 4197184 4687629 5180916 5667077 6088839 6543316 7048839 7511963 8032148 8564507 8674065 9201195 9704158 10181556 10674123 11158219 11660061 12184773 12705607 13257186 13801217 14291177 14826049 15298975 15794195 16297748 16805693 17261881 17712413 18226377 18723922 19288821 19789397 20299083 20793723 21306662 21793105 22323679 22874237 23329950 23805697
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep4.gz:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_egl.10-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism -exportmodel out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 140.873 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 07:48:05 GMT+01:00 2026
+Hostname: n23m0053
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism -exportmodel 'out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep5.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 390558 780911 1186991 1734595 2275675 2833322 3370646 3923541 4445083 4987989 5492346 6024280 6565843 7118907 7650569 7891281 8417591 8925253 9390293 9950182 10469961 11041730 11590594 12131922 12677270 13203862 13680954 14173683 14667290 15209821 15743480 16302421 16832164 17346021 17868924 18441045 19023870 19558660 20085325 20626764 21109908 21598344 22082506 22588253 23120048
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+out/prism_from-prism_to-umb-gz_ex/egl.10-2/model.umb_rep5.gz:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

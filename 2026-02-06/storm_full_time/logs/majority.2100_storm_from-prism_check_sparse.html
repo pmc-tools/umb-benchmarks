@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log majority.2100_storm_from-prism_check_sparse</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/majority.2100/index.html" target="_blank">majority.2100</a> and tool configuration storm_from-prism_check_sparse</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[15.026, 15.86, 14.742, 19.009, 32.437]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_majority.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Wallclock time: 15.026 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 14:48:42 2026
+Command line arguments: --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.013s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.806s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+Result (for initial states): 0.05429919317
+Time for model checking: 14.167s.
+
+Performance statistics:
+  * peak memory usage: 218MB
+  * CPU time: 14.931s
+  * wallclock time: 14.992s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_majority.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Wallclock time: 15.860 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:51:09 2026
+Command line arguments: --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.005s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.852s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+Result (for initial states): 0.05429919317
+Time for model checking: 14.962s.
+
+Performance statistics:
+  * peak memory usage: 219MB
+  * CPU time: 15.759s
+  * wallclock time: 15.824s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_majority.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Wallclock time: 14.742 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:48:05 2026
+Command line arguments: --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.021s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.903s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+Result (for initial states): 0.05429919317
+Time for model checking: 13.773s.
+
+Performance statistics:
+  * peak memory usage: 219MB
+  * CPU time: 14.624s
+  * wallclock time: 14.703s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_majority.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Wallclock time: 19.009 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:57:30 2026
+Command line arguments: --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.023s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.947s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+Result (for initial states): 0.05429919317
+Time for model checking: 17.977s.
+
+Performance statistics:
+  * peak memory usage: 219MB
+  * CPU time: 18.823s
+  * wallclock time: 18.972s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_majority.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Wallclock time: 32.437 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 14:58:16 2026
+Command line arguments: --timemem --buildfull --prism models/majority.2100/model.prism --prismcompat --prop models/majority.2100/property.props
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.007s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 1.029s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+Result (for initial states): 0.05429919317
+Time for model checking: 31.331s.
+
+Performance statistics:
+  * peak memory usage: 217MB
+  * CPU time: 32.193s
+  * wallclock time: 32.374s
+</pre>
+</div>
+</body>
+</html>

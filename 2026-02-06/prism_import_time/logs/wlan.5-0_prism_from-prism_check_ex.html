@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.5-0_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.5-0/index.html" target="_blank">wlan.5-0</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[7.034, 5.983, 6.277, 7.12, 6.25]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.5-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+Wallclock time: 49.905 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:35:12 GMT+01:00 2026
+Hostname: n23m0041
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+
+Parsing PRISM model file "models/wlan.5-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "models/wlan.5-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 541808 1256682 1295218 states
+Reachable states exploration and model construction done in 6.187 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.034 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 1622 iterations and 18.701 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 1622 iterations and 23.316 seconds.
+target=1, yes=1295218, no=0, maybe=0
+Probabilistic reachability took 42.037 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 42.097 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.5-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+Wallclock time: 42.556 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:14 GMT+01:00 2026
+Hostname: n23m0341
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+
+Parsing PRISM model file "models/wlan.5-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "models/wlan.5-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 651194 1295218 states
+Reachable states exploration and model construction done in 5.273 secs.
+Sorting reachable states list...
+
+Time for model construction: 5.983 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 1622 iterations and 15.883 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 1622 iterations and 19.888 seconds.
+target=1, yes=1295218, no=0, maybe=0
+Probabilistic reachability took 35.79 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 35.837 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.5-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+Wallclock time: 43.149 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:39 GMT+01:00 2026
+Hostname: r23m0184
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+
+Parsing PRISM model file "models/wlan.5-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "models/wlan.5-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 649373 1295218 states
+Reachable states exploration and model construction done in 5.399 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.277 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 1622 iterations and 15.778 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 1622 iterations and 20.382 seconds.
+target=1, yes=1295218, no=0, maybe=0
+Probabilistic reachability took 36.18 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 36.232 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.5-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+Wallclock time: 51.678 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:47:54 GMT+01:00 2026
+Hostname: n23m0111
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+
+Parsing PRISM model file "models/wlan.5-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "models/wlan.5-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 535228 1243371 1295218 states
+Reachable states exploration and model construction done in 6.215 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.12 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 1622 iterations and 19.232 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 1622 iterations and 24.264 seconds.
+target=1, yes=1295218, no=0, maybe=0
+Probabilistic reachability took 43.523 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 43.582 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.5-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+Wallclock time: 40.511 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:25:11 GMT+01:00 2026
+Hostname: n23m0249
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/wlan.5-0/model.prism models/wlan.5-0/property.props
+
+Parsing PRISM model file "models/wlan.5-0/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "models/wlan.5-0/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 608219 1295218 states
+Reachable states exploration and model construction done in 5.54 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.25 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 1622 iterations and 14.396 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 1622 iterations and 18.525 seconds.
+target=1, yes=1295218, no=0, maybe=0
+Probabilistic reachability took 32.944 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 32.993 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

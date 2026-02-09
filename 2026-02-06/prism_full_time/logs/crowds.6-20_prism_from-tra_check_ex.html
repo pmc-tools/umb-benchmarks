@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log crowds.6-20_prism_from-tra_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/crowds.6-20/index.html" target="_blank">crowds.6-20</a> and tool configuration prism_from-tra_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[72.522, 64.76, 65.973, 76.562, 67.533]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_crowds.6-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+Wallclock time: 72.522 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:51:09 GMT+01:00 2026
+Hostname: r23m0169
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+
+Importing model from "models/crowds.6-20/prism.model.tradir/model.tra", "models/crowds.6-20/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 59.807 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.382 seconds)
+Starting Prob0...
+Prob0 took 0.596 seconds.
+Starting Prob1...
+Prob1 took 4.329 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 4.488 seconds.
+Probabilistic reachability took 11.833 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 12.086 seconds.
+
+Result: 0.0 (+/- 0.0 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_crowds.6-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+Wallclock time: 64.760 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:34:31 GMT+01:00 2026
+Hostname: n23m0293
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+
+Importing model from "models/crowds.6-20/prism.model.tradir/model.tra", "models/crowds.6-20/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 54.622 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.002 seconds)
+Starting Prob0...
+Prob0 took 0.506 seconds.
+Starting Prob1...
+Prob1 took 2.441 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 3.77 seconds.
+Probabilistic reachability took 8.759 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 9.184 seconds.
+
+Result: 0.0 (+/- 0.0 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_crowds.6-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+Wallclock time: 65.973 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:37 GMT+01:00 2026
+Hostname: r23m0152
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+
+Importing model from "models/crowds.6-20/prism.model.tradir/model.tra", "models/crowds.6-20/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 55.792 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.316 seconds)
+Starting Prob0...
+Prob0 took 0.525 seconds.
+Starting Prob1...
+Prob1 took 2.605 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 3.871 seconds.
+Probabilistic reachability took 9.356 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 9.571 seconds.
+
+Result: 0.0 (+/- 0.0 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_crowds.6-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+Wallclock time: 76.562 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:05 GMT+01:00 2026
+Hostname: r23m0073
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+
+Importing model from "models/crowds.6-20/prism.model.tradir/model.tra", "models/crowds.6-20/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 60.517 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.235 seconds)
+Starting Prob0...
+Prob0 took 0.854 seconds.
+Starting Prob1...
+Prob1 took 5.477 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Iteration 180: 5.01 sec so far
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 6.058 seconds.
+Probabilistic reachability took 14.675 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 15.103 seconds.
+
+Result: 0.0 (+/- 0.0 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_ex_crowds.6-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+Wallclock time: 67.533 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:04:45 GMT+01:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel models/crowds.6-20/prism.model.tradir/model.all models/crowds.6-20/property.props
+
+Importing model from "models/crowds.6-20/prism.model.tradir/model.tra", "models/crowds.6-20/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/crowds.6-20/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 57.275 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.088 seconds)
+Starting Prob0...
+Prob0 took 0.754 seconds.
+Starting Prob1...
+Prob1 took 2.549 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 3.948 seconds.
+Probabilistic reachability took 9.379 seconds.
+
+Value in the initial state: 0.0
+
+Time for model checking: 9.602 seconds.
+
+Result: 0.0 (+/- 0.0 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

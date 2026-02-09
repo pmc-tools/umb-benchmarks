@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_storm_from-jani_to-drn-xz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration storm_from-jani_to-drn-xz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[177.743, 247.568, 220.581, 198.338, 178.066]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 203.929 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:48:01 2026
+Command line arguments: --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.299s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 25.787s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn.xz'.
+Time for model export: 177.743s.
+
+
+Performance statistics:
+  * peak memory usage: 2001MB
+  * CPU time: 203.045s
+  * wallclock time: 203.884s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn.xz:	Size of output file is 24423040 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep2.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 280.556 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:47:37 2026
+Command line arguments: --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep2.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 0.374s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 32.434s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep2.xz'.
+Time for model export: 247.568s.
+
+
+Performance statistics:
+  * peak memory usage: 2001MB
+  * CPU time: 278.974s
+  * wallclock time: 280.442s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep2.xz:	Size of output file is 24448328 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep3.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 246.938 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:07 2026
+Command line arguments: --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep3.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.361s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 25.884s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep3.xz'.
+Time for model export: 220.581s.
+
+
+Performance statistics:
+  * peak memory usage: 2001MB
+  * CPU time: 245.850s
+  * wallclock time: 246.884s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep3.xz:	Size of output file is 24448328 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep4.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 224.423 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:10:05 2026
+Command line arguments: --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep4.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.276s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 25.720s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep4.xz'.
+Time for model export: 198.338s.
+
+
+Performance statistics:
+  * peak memory usage: 2001MB
+  * CPU time: 223.517s
+  * wallclock time: 224.389s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep4.xz:	Size of output file is 24342988 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep5.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 204.025 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:55:10 2026
+Command line arguments: --timemem --buildfull --jani models/eajs.6-300-13/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep5.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.241s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 25.627s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep5.xz'.
+Time for model export: 178.066s.
+
+
+Performance statistics:
+  * peak memory usage: 2001MB
+  * CPU time: 203.059s
+  * wallclock time: 203.986s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/eajs.6-300-13/model.drn_rep5.xz:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

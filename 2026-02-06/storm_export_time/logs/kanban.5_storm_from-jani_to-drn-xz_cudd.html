@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log kanban.5_storm_from-jani_to-drn-xz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/kanban.5/index.html" target="_blank">kanban.5</a> and tool configuration storm_from-jani_to-drn-xz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[261.276, 283.802, 230.398, 366.395, 230.267]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_kanban.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 271.563 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:16:35 2026
+Command line arguments: --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.055s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2546432 (323 nodes)
+Transitions: 	24460016 (6316 nodes)
+Reward Models:  throughput
+Variables: 	rows: 20 meta variables (52 DD variables), columns: 20 meta variables (52 DD variables)
+Labels: 	2
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (53 nodes)
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 10.173s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2546432
+Transitions: 	24460016
+Reward Models:  throughput
+State Labels: 	2 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn.xz'.
+Time for model export: 261.276s.
+
+
+Performance statistics:
+  * peak memory usage: 1535MB
+  * CPU time: 270.501s
+  * wallclock time: 271.516s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn.xz:	Size of output file is 27661820 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_kanban.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep2.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 292.596 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:25:07 2026
+Command line arguments: --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep2.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.047s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2546432 (323 nodes)
+Transitions: 	24460016 (6316 nodes)
+Reward Models:  throughput
+Variables: 	rows: 20 meta variables (52 DD variables), columns: 20 meta variables (52 DD variables)
+Labels: 	2
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (53 nodes)
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 8.574s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2546432
+Transitions: 	24460016
+Reward Models:  throughput
+State Labels: 	2 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep2.xz'.
+Time for model export: 283.802s.
+
+
+Performance statistics:
+  * peak memory usage: 1535MB
+  * CPU time: 291.380s
+  * wallclock time: 292.435s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep2.xz:	Size of output file is 27594992 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_kanban.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep3.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 239.191 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:47:51 2026
+Command line arguments: --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep3.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.048s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2546432 (323 nodes)
+Transitions: 	24460016 (6316 nodes)
+Reward Models:  throughput
+Variables: 	rows: 20 meta variables (52 DD variables), columns: 20 meta variables (52 DD variables)
+Labels: 	2
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (53 nodes)
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 8.686s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2546432
+Transitions: 	24460016
+Reward Models:  throughput
+State Labels: 	2 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep3.xz'.
+Time for model export: 230.398s.
+
+
+Performance statistics:
+  * peak memory usage: 1535MB
+  * CPU time: 238.339s
+  * wallclock time: 239.144s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep3.xz:	Size of output file is 27600820 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_kanban.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep4.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 375.242 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:17 2026
+Command line arguments: --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep4.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.062s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2546432 (323 nodes)
+Transitions: 	24460016 (6316 nodes)
+Reward Models:  throughput
+Variables: 	rows: 20 meta variables (52 DD variables), columns: 20 meta variables (52 DD variables)
+Labels: 	2
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (53 nodes)
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 8.717s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2546432
+Transitions: 	24460016
+Reward Models:  throughput
+State Labels: 	2 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep4.xz'.
+Time for model export: 366.395s.
+
+
+Performance statistics:
+  * peak memory usage: 1536MB
+  * CPU time: 373.755s
+  * wallclock time: 375.190s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep4.xz:	Size of output file is 27600820 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-drn-xz_cudd_kanban.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep5.xz drn --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 238.844 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:26:10 2026
+Command line arguments: --timemem --buildfull --jani models/kanban.5/model.jani --exportbuild out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep5.xz drn --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.047s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2546432 (323 nodes)
+Transitions: 	24460016 (6316 nodes)
+Reward Models:  throughput
+Variables: 	rows: 20 meta variables (52 DD variables), columns: 20 meta variables (52 DD variables)
+Labels: 	2
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (53 nodes)
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 8.474s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2546432
+Transitions: 	24460016
+Reward Models:  throughput
+State Labels: 	2 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep5.xz'.
+Time for model export: 230.267s.
+
+
+Performance statistics:
+  * peak memory usage: 1536MB
+  * CPU time: 237.974s
+  * wallclock time: 238.799s
+
+############################## Output files ##############################
+out/storm_from-jani_to-drn-xz_cudd/kanban.5/model.drn_rep5.xz:	Size of output file is 27600820 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

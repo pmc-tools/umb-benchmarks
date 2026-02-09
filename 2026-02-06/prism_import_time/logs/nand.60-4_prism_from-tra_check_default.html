@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.60-4_prism_from-tra_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.60-4/index.html" target="_blank">nand.60-4</a> and tool configuration prism_from-tra_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3435.079, 3251.207, 3872.44, 3167.937, 3197.819]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_nand.60-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+Wallclock time: 7200.334 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:50:56 GMT+01:00 2026
+Hostname: r23m0062
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+
+Importing model from "models/nand.60-4/prism.model.tradir/model.tra", "models/nand.60-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 86.03 seconds (average 0.039792, setup 0.00)
+
+Time for model construction: 3435.079 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 93.42 seconds (average 0.043210, setup 0.00)
+
+Prob1: 1945 iterations in 79.27 seconds (average 0.040756, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_nand.60-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+Wallclock time: 7200.328 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:44:52 GMT+01:00 2026
+Hostname: n23m0165
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+
+Importing model from "models/nand.60-4/prism.model.tradir/model.tra", "models/nand.60-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 80.98 seconds (average 0.037456, setup 0.00)
+
+Time for model construction: 3251.207 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 86.66 seconds (average 0.040083, setup 0.00)
+
+Prob1: 1945 iterations in 72.70 seconds (average 0.037378, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_nand.60-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+Wallclock time: 7200.323 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:26:00 GMT+01:00 2026
+Hostname: n23m0327
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+
+Importing model from "models/nand.60-4/prism.model.tradir/model.tra", "models/nand.60-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 129.84 seconds (average 0.060056, setup 0.00)
+
+Time for model construction: 3872.44 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 114.51 seconds (average 0.052965, setup 0.00)
+
+Prob1: 1945 iterations in 72.43 seconds (average 0.037239, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_nand.60-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+Wallclock time: 7200.329 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:48:14 GMT+01:00 2026
+Hostname: r23m0185
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+
+Importing model from "models/nand.60-4/prism.model.tradir/model.tra", "models/nand.60-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 76.59 seconds (average 0.035426, setup 0.00)
+
+Time for model construction: 3167.937 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 82.21 seconds (average 0.038025, setup 0.00)
+
+Prob1: 1945 iterations in 69.51 seconds (average 0.035738, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-tra_check_default_nand.60-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+Wallclock time: 7200.323 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:09 GMT+01:00 2026
+Hostname: n23m0178
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel models/nand.60-4/prism.model.tradir/model.all models/nand.60-4/property.props
+
+Importing model from "models/nand.60-4/prism.model.tradir/model.tra", "models/nand.60-4/prism.model.tradir/model.lab"...
+
+Type:        DTMC (auto-detected)
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "models/nand.60-4/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 77.94 seconds (average 0.036050, setup 0.00)
+
+Time for model construction: 3197.819 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 82.85 seconds (average 0.038321, setup 0.00)
+
+Prob1: 1945 iterations in 70.06 seconds (average 0.036021, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... 
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

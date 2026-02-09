@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log egl.10-2_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[MO, MO, MO, MO, MO]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+Wallclock time: 168.660 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:05:10 GMT+01:00 2026
+Hostname: n23m0343
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 335756 652525 973276 1390475 1835505 2265452 2736075 3192096 3639976 4078173 4494162 4940038 5379424 5835168 6264004 6737409 7164663 7455775 7913267 8321090 8754044 9184639 9637108 10099623 10538683 11002099 11450738 11920306 12368981 12796226 13218900 13627314 14056295 14510283 14965712 15422469 15872536 16329403 16804199 17264260 17710065 18166600 18616552 19102610 19558543 19974817 20388685 20802012 21203559 21609180 22039842 22488100
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+Wallclock time: 141.221 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:45:18 GMT+01:00 2026
+Hostname: n23m0167
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 377094 761120 1131195 1647789 2186029 2746943 3280533 3840017 4371188 4937034 5455609 5960687 6525122 7040785 7588613 8093454 8639585 9139221 9634834 10177333 10732424 11263121 11829245 12384102 12919634 13453560 13954970 14463970 14977759 15477562 16046562 16574789 17090656 17611183 18152104 18674494 19212400 19759214 20352028 20776945 21307457 21785861 22275111 22771544 23284750
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+Wallclock time: 191.103 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 15:48:17 GMT+01:00 2026
+Hostname: n23m0235
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 229802 493980 761599 980610 1265891 1637664 1994574 2314223 2706655 3056099 3395831 3718793 4045725 4437619 4829513 5195414 5528597 5915928 6227054 6614352 6945698 7285546 7659580 8027610 8409732 8812613 9213088 9604162 10031595 10438947 10888688 11277504 11705605 12144112 12566858 13030239 13450112 13885194 14383800 14396825 14886759 15308899 15673117 16064073 16507552 16932413 17365209 17732212 18182686 18583495 19024177 19497230 19991627 20429232 20855081 21332944 21828546 22289947 22749660 23198985 23721041
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+Wallclock time: 140.711 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:45:02 GMT+01:00 2026
+Hostname: r23m0155
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 393439 780635 1175522 1727782 2269032 2808299 3347163 3908841 4418922 4921919 5467941 6025012 6522603 7058403 7535431 8081120 8589699 9102761 9630779 10167058 10724519 11276209 11790508 12306962 12812615 13319892 13834293 14351178 14897458 15448280 16003540 16553082 17090094 17628384 18185101 18713748 19251588 19732483 20276301 20759822 21231005 21705878 22167218 22706374 23263851 23855884
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+Wallclock time: 160.779 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:17 GMT+01:00 2026
+Hostname: r23m0113
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/egl.10-2/model.prism models/egl.10-2/property.props
+
+Parsing PRISM model file "models/egl.10-2/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "models/egl.10-2/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 349957 681946 998324 1449040 1933767 2384389 2812866 3267380 3740574 4202320 4709060 5224827 5668060 6142499 6591041 6982917 7468339 7976507 8433451 8916983 9380183 9780843 10260476 10666379 11118678 11569956 12017082 12497760 13028926 13513145 14027913 14540680 15064059 15563696 16052914 16506943 16964331 17451799 17928953 18370577 18873296 19359623 19864215 20394514 20876631 21391747 21934111 22448852 22951201 23470663
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

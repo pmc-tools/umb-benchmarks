@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[6.734, 6.794, 7.035, 12.79, 6.805]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+Wallclock time: 17.954 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:57:29 GMT+01:00 2026
+Hostname: n23m0133
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+
+Parsing PRISM model file "models/csma.3-4/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 773647 1460287 states
+Reachable states exploration and model construction done in 5.615 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.734 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 133 iterations and 1.459 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 662 iterations and 8.402 seconds.
+target=13, yes=710317, no=31622, maybe=718348
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 97 iterations, 141758031 multiplications and 0.654 seconds.
+Probabilistic reachability took 10.531 seconds.
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 10.601 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784718669938797E-6 estimated; rel err 4.058912565356696E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+Wallclock time: 17.578 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:51:22 GMT+01:00 2026
+Hostname: n23m0398
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+
+Parsing PRISM model file "models/csma.3-4/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 772694 1460287 states
+Reachable states exploration and model construction done in 5.584 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.794 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 133 iterations and 1.417 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 662 iterations and 7.985 seconds.
+target=13, yes=710317, no=31622, maybe=718348
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 97 iterations, 141758031 multiplications and 0.647 seconds.
+Probabilistic reachability took 10.064 seconds.
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 10.128 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784718669938797E-6 estimated; rel err 4.058912565356696E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+Wallclock time: 19.356 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 12:41:10 GMT+01:00 2026
+Hostname: n23m0172
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+
+Parsing PRISM model file "models/csma.3-4/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 754934 1460287 states
+Reachable states exploration and model construction done in 5.971 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.035 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 133 iterations and 1.548 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 662 iterations and 9.248 seconds.
+target=13, yes=710317, no=31622, maybe=718348
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 97 iterations, 141758031 multiplications and 0.712 seconds.
+Probabilistic reachability took 11.529 seconds.
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 11.605 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784718669938797E-6 estimated; rel err 4.058912565356696E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+Wallclock time: 30.740 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 14:58:12 GMT+01:00 2026
+Hostname: r23m0029
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+
+Parsing PRISM model file "models/csma.3-4/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 375614 837652 1250265 1460287 states
+Reachable states exploration and model construction done in 10.415 secs.
+Sorting reachable states list...
+
+Time for model construction: 12.79 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 133 iterations and 1.993 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 662 iterations and 11.569 seconds.
+target=13, yes=710317, no=31622, maybe=718348
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 97 iterations, 141758031 multiplications and 1.34 seconds.
+Probabilistic reachability took 14.942 seconds.
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 15.062 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784718669938797E-6 estimated; rel err 4.058912565356696E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+Wallclock time: 17.680 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.9.dev
+Date: Sat Feb 07 13:52:11 GMT+01:00 2026
+Hostname: n23m0310
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex models/csma.3-4/model.prism models/csma.3-4/property.props
+
+Parsing PRISM model file "models/csma.3-4/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "models/csma.3-4/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 774151 1460287 states
+Reachable states exploration and model construction done in 5.602 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.805 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 133 iterations and 1.37 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 662 iterations and 8.119 seconds.
+target=13, yes=710317, no=31622, maybe=718348
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 97 iterations, 141758031 multiplications and 0.665 seconds.
+Probabilistic reachability took 10.171 seconds.
+
+Value in the initial state: 0.9324464641692023
+
+Time for model checking: 10.237 seconds.
+
+Result: 0.9324464641692023 (+/- 3.784718669938797E-6 estimated; rel err 4.058912565356696E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

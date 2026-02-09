@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log zeroconf.1000-8-false_storm_from-jani_to-umb-gz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration storm_from-jani_to-umb-gz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.331, 3.292, 3.299, 3.283, 3.93]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_zeroconf.1000-8-false_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 19.472 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:04:44 2026
+Command line arguments: --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 12.850s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1870338 (11778 nodes)
+Transitions: 	4245554 (100585 nodes)
+Choices: 	3443961
+Reward Models:  none
+Variables: 	rows: 24 meta variables (60 DD variables), columns: 24 meta variables (60 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (61 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 3.115s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1870338
+Transitions: 	4245554
+Choices: 	3443961
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 16523 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb.gz'.
+Time for model export: 3.331s.
+
+
+Performance statistics:
+  * peak memory usage: 465MB
+  * CPU time: 19.286s
+  * wallclock time: 19.420s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb.gz:	Size of output file is 16383690 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep2.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 15.899 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:54:25 2026
+Command line arguments: --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep2.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 9.428s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1870338 (11778 nodes)
+Transitions: 	4245554 (100585 nodes)
+Choices: 	3443961
+Reward Models:  none
+Variables: 	rows: 24 meta variables (60 DD variables), columns: 24 meta variables (60 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (61 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 3.028s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1870338
+Transitions: 	4245554
+Choices: 	3443961
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 16523 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep2.gz'.
+Time for model export: 3.292s.
+
+
+Performance statistics:
+  * peak memory usage: 465MB
+  * CPU time: 15.713s
+  * wallclock time: 15.836s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep2.gz:	Size of output file is 16383690 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep3.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 20.475 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:30:24 2026
+Command line arguments: --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep3.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 13.965s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1870338 (11778 nodes)
+Transitions: 	4245554 (100585 nodes)
+Choices: 	3443961
+Reward Models:  none
+Variables: 	rows: 24 meta variables (60 DD variables), columns: 24 meta variables (60 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (61 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 3.075s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1870338
+Transitions: 	4245554
+Choices: 	3443961
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 16523 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep3.gz'.
+Time for model export: 3.299s.
+
+
+Performance statistics:
+  * peak memory usage: 466MB
+  * CPU time: 20.254s
+  * wallclock time: 20.432s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep3.gz:	Size of output file is 16383689 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_zeroconf.1000-8-false_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep4.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 16.210 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:31:07 2026
+Command line arguments: --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep4.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 9.762s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1870338 (11778 nodes)
+Transitions: 	4245554 (100585 nodes)
+Choices: 	3443961
+Reward Models:  none
+Variables: 	rows: 24 meta variables (60 DD variables), columns: 24 meta variables (60 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (61 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 3.036s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1870338
+Transitions: 	4245554
+Choices: 	3443961
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 16523 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep4.gz'.
+Time for model export: 3.283s.
+
+
+Performance statistics:
+  * peak memory usage: 466MB
+  * CPU time: 16.064s
+  * wallclock time: 16.171s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep4.gz:	Size of output file is 16383687 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-gz_cudd_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep5.gz umb --compression gzip  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 26.463 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:59:51 2026
+Command line arguments: --timemem --buildfull --jani models/zeroconf.1000-8-false/model.jani --exportbuild out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep5.gz umb --compression gzip --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 18.534s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1870338 (11778 nodes)
+Transitions: 	4245554 (100585 nodes)
+Choices: 	3443961
+Reward Models:  none
+Variables: 	rows: 24 meta variables (60 DD variables), columns: 24 meta variables (60 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (61 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 3.785s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1870338
+Transitions: 	4245554
+Choices: 	3443961
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 16523 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep5.gz'.
+Time for model export: 3.930s.
+
+
+Performance statistics:
+  * peak memory usage: 465MB
+  * CPU time: 26.093s
+  * wallclock time: 26.389s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-gz_cudd/zeroconf.1000-8-false/model.umb_rep5.gz:	Size of output file is 16383719 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

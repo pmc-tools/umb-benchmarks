@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log polling.18-16_storm_from-jani_to-umb-xz_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/polling.18-16/index.html" target="_blank">polling.18-16</a> and tool configuration storm_from-jani_to-umb-xz_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[330.463, 195.468, 190.483, 196.453, 194.462]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_polling.18-16_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 471.503 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:30:36 2026
+Command line arguments: --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 133.125s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	7077888 (76 nodes)
+Transitions: 	69599232 (2783 nodes)
+Reward Models:  none
+Variables: 	rows: 39 meta variables (43 DD variables), columns: 39 meta variables (43 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (44 nodes)
+   * serve_s1
+   * serve_s2
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 7.814s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	7077888
+Transitions: 	69599232
+Reward Models:  none
+State Labels: 	4 labels
+   * serve_s1 -> 131072 item(s)
+   * deadlock -> 0 item(s)
+   * serve_s2 -> 131072 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb.xz'.
+Time for model export: 330.463s.
+
+
+Performance statistics:
+  * peak memory usage: 3064MB
+  * CPU time: 468.457s
+  * wallclock time: 471.442s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb.xz:	Size of output file is 28780032 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_polling.18-16_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep2.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 284.518 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:00:04 2026
+Command line arguments: --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep2.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 83.120s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	7077888 (76 nodes)
+Transitions: 	69599232 (2783 nodes)
+Reward Models:  none
+Variables: 	rows: 39 meta variables (43 DD variables), columns: 39 meta variables (43 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (44 nodes)
+   * serve_s1
+   * serve_s2
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 5.856s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	7077888
+Transitions: 	69599232
+Reward Models:  none
+State Labels: 	4 labels
+   * serve_s1 -> 131072 item(s)
+   * deadlock -> 0 item(s)
+   * serve_s2 -> 131072 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep2.xz'.
+Time for model export: 195.468s.
+
+
+Performance statistics:
+  * peak memory usage: 3063MB
+  * CPU time: 283.328s
+  * wallclock time: 284.479s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep2.xz:	Size of output file is 28656520 bytes
+Removing output file to save space for repetition #2
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_polling.18-16_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep3.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 277.861 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:10:04 2026
+Command line arguments: --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep3.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 81.532s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	7077888 (76 nodes)
+Transitions: 	69599232 (2783 nodes)
+Reward Models:  none
+Variables: 	rows: 39 meta variables (43 DD variables), columns: 39 meta variables (43 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (44 nodes)
+   * serve_s1
+   * serve_s2
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 5.766s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	7077888
+Transitions: 	69599232
+Reward Models:  none
+State Labels: 	4 labels
+   * serve_s1 -> 131072 item(s)
+   * deadlock -> 0 item(s)
+   * serve_s2 -> 131072 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep3.xz'.
+Time for model export: 190.483s.
+
+
+Performance statistics:
+  * peak memory usage: 3064MB
+  * CPU time: 276.810s
+  * wallclock time: 277.817s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep3.xz:	Size of output file is 31261220 bytes
+Removing output file to save space for repetition #3
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_polling.18-16_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep4.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 285.458 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 08:10:43 2026
+Command line arguments: --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep4.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 83.105s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	7077888 (76 nodes)
+Transitions: 	69599232 (2783 nodes)
+Reward Models:  none
+Variables: 	rows: 39 meta variables (43 DD variables), columns: 39 meta variables (43 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (44 nodes)
+   * serve_s1
+   * serve_s2
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 5.827s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	7077888
+Transitions: 	69599232
+Reward Models:  none
+State Labels: 	4 labels
+   * serve_s1 -> 131072 item(s)
+   * deadlock -> 0 item(s)
+   * serve_s2 -> 131072 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep4.xz'.
+Time for model export: 196.453s.
+
+
+Performance statistics:
+  * peak memory usage: 3064MB
+  * CPU time: 284.372s
+  * wallclock time: 285.419s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep4.xz:	Size of output file is 29347544 bytes
+Removing output file to save space for repetition #4
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_to-umb-xz_cudd_polling.18-16_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep5.xz umb --compression xz  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 283.672 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 07:30:53 2026
+Command line arguments: --timemem --buildfull --jani models/polling.18-16/model.jani --exportbuild out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep5.xz umb --compression xz --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 83.358s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	7077888 (76 nodes)
+Transitions: 	69599232 (2783 nodes)
+Reward Models:  none
+Variables: 	rows: 39 meta variables (43 DD variables), columns: 39 meta variables (43 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (44 nodes)
+   * serve_s1
+   * serve_s2
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 5.785s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	7077888
+Transitions: 	69599232
+Reward Models:  none
+State Labels: 	4 labels
+   * serve_s1 -> 131072 item(s)
+   * deadlock -> 0 item(s)
+   * serve_s2 -> 131072 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Exporting model to 'out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep5.xz'.
+Time for model export: 194.462s.
+
+
+Performance statistics:
+  * peak memory usage: 3064MB
+  * CPU time: 282.560s
+  * wallclock time: 283.635s
+
+############################## Output files ##############################
+out/storm_from-jani_to-umb-xz_cudd/polling.18-16/model.umb_rep5.xz:	Size of output file is 28984516 bytes
+Removing output file to save space for repetition #5
+</pre>
+</div>
+</body>
+</html>

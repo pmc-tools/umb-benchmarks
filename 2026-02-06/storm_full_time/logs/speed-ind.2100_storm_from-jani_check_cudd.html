@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log speed-ind.2100_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/speed-ind.2100/index.html" target="_blank">speed-ind.2100</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[307.843, 325.698, 318.017, 323.667, 369.359]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_speed-ind.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 307.843 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:57:52 2026
+Command line arguments: --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.010s.
+
+Time for model construction: 232.648s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	743424 (165 nodes)
+Transitions: 	9518080 (46954 nodes)
+Reward Models:  none
+Variables: 	rows: 16 meta variables (66 DD variables), columns: 16 meta variables (66 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (67 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 4.541s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	743424
+Transitions: 	9518080
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 24576 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": Pmin=? [true U<=2100 "target"] ...
+Result (for initial states): 0.04229449798
+Time for model checking: 70.560s.
+
+Performance statistics:
+  * peak memory usage: 1522MB
+  * CPU time: 306.535s
+  * wallclock time: 307.794s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_speed-ind.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 325.698 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 15:35:12 2026
+Command line arguments: --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.040s.
+
+Time for model construction: 244.162s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	743424 (165 nodes)
+Transitions: 	9518080 (46954 nodes)
+Reward Models:  none
+Variables: 	rows: 16 meta variables (66 DD variables), columns: 16 meta variables (66 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (67 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 5.221s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	743424
+Transitions: 	9518080
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 24576 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": Pmin=? [true U<=2100 "target"] ...
+Result (for initial states): 0.04229449798
+Time for model checking: 76.177s.
+
+Performance statistics:
+  * peak memory usage: 1522MB
+  * CPU time: 323.950s
+  * wallclock time: 325.641s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_speed-ind.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 318.017 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 14:48:27 2026
+Command line arguments: --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.011s.
+
+Time for model construction: 237.693s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	743424 (165 nodes)
+Transitions: 	9518080 (46954 nodes)
+Reward Models:  none
+Variables: 	rows: 16 meta variables (66 DD variables), columns: 16 meta variables (66 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (67 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 4.535s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	743424
+Transitions: 	9518080
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 24576 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": Pmin=? [true U<=2100 "target"] ...
+Result (for initial states): 0.04229449798
+Time for model checking: 75.682s.
+
+Performance statistics:
+  * peak memory usage: 1521MB
+  * CPU time: 316.817s
+  * wallclock time: 317.956s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_speed-ind.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 323.667 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 14:49:33 2026
+Command line arguments: --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.015s.
+
+Time for model construction: 246.176s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	743424 (165 nodes)
+Transitions: 	9518080 (46954 nodes)
+Reward Models:  none
+Variables: 	rows: 16 meta variables (66 DD variables), columns: 16 meta variables (66 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (67 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 4.585s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	743424
+Transitions: 	9518080
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 24576 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": Pmin=? [true U<=2100 "target"] ...
+Result (for initial states): 0.04229449798
+Time for model checking: 72.812s.
+
+Performance statistics:
+  * peak memory usage: 1521MB
+  * CPU time: 322.288s
+  * wallclock time: 323.620s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_speed-ind.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 369.359 seconds
+Return code: 0
+##############################
+Storm 1.11.1 (dev)
+
+Date: Sat Feb  7 12:47:18 2026
+Command line arguments: --timemem --buildfull --jani models/speed-ind.2100/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.031s.
+
+Time for model construction: 276.252s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	743424 (165 nodes)
+Transitions: 	9518080 (46954 nodes)
+Reward Models:  none
+Variables: 	rows: 16 meta variables (66 DD variables), columns: 16 meta variables (66 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (67 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 4.640s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	743424
+Transitions: 	9518080
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 24576 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": Pmin=? [true U<=2100 "target"] ...
+Result (for initial states): 0.04229449798
+Time for model checking: 88.312s.
+
+Performance statistics:
+  * peak memory usage: 1522MB
+  * CPU time: 367.589s
+  * wallclock time: 369.267s
+</pre>
+</div>
+</body>
+</html>
