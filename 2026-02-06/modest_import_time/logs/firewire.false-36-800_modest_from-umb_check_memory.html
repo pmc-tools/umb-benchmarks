@@ -9,14 +9,14 @@
 <h3>Log files for model <a href="../../models/firewire.false-36-800/index.html" target="_blank">firewire.false-36-800</a> and tool configuration modest_from-umb_check_memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, 0.2]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.4, 1.6, 0.3, 0.3, 0.8]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 11.810 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
@@ -24,23 +24,64 @@ Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firew
 
 
 
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-   at Modest.ModelChecking.ValueIteration.PerformUnboundedValueIteration(Modest.ModelChecking.PropertyAnalysisTask, Partition, System.Nullable`1<UInt64>, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken, Boolean, Int64 ByRef, Double ByRef, Boolean ByRef)
-   at Modest.ModelChecking.ValueIteration.PerformPartitionUnboundedValueIteration(Modest.ModelChecking.PropertyAnalysisTask, Partition, Int64, UnboundedValueIterationPartitionData, System.String, Modest.Modularity.LocationErrorHandler, Modest.Modularity.OperationState)
+Peak memory usage: 62 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            212268
+  Choices:           478756
+  Branches:          481792
+  Time (decompress): 0.1 s
+  Time (validate):   0.4 s
+  Time (load):       0.4 s
+
++ Property deadline
+  Probability: 0.939453125
+  Bounds:      [0.939453125, 1]
+  CDF:         { (0, 0), ..., (202, 0), (203, 0.5), ..., (323, 0.5), (324, 0.625), ..., (405, 0.625), (406, 0.75), ..., (444, 0.75), (445, 0.78125), ..., (526, 0.78125), (527, 0.84375), ..., (565, 0.84375), (566, 0.8515625), ..., (608, 0.8515625), (609, 0.8828125), ..., (647, 0.8828125), (648, 0.90625), ..., (686, 0.90625), (687, 0.908203125), ..., (729, 0.908203125), (730, 0.931640625), ..., (768, 0.931640625), (769, 0.939453125), ..., (800, 0.939453125) }
+  Time:        11.2 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2374
+    Time:        11.2 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 6.592 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 65 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            212268
+  Choices:           478756
+  Branches:          481792
+  Time (decompress): 0.0 s
+  Time (validate):   1.5 s
+  Time (load):       1.6 s
+
++ Property deadline
+  Probability: 0.939453125
+  Bounds:      [0.939453125, 1]
+  CDF:         { (0, 0), ..., (202, 0), (203, 0.5), ..., (323, 0.5), (324, 0.625), ..., (405, 0.625), (406, 0.75), ..., (444, 0.75), (445, 0.78125), ..., (526, 0.78125), (527, 0.84375), ..., (565, 0.84375), (566, 0.8515625), ..., (608, 0.8515625), (609, 0.8828125), ..., (647, 0.8828125), (648, 0.90625), ..., (686, 0.90625), (687, 0.908203125), ..., (729, 0.908203125), (730, 0.931640625), ..., (768, 0.931640625), (769, 0.939453125), ..., (800, 0.939453125) }
+  Time:        4.9 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2374
+    Time:        4.9 s
 
 </pre>
 </div>
@@ -48,38 +89,7 @@ Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firew
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-
-
-
-
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.032 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-
-
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep5.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 6.427 seconds
+Wallclock time: 8.472 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -96,19 +106,93 @@ Analysis results for UMB
   Choices:           478756
   Branches:          481792
   Time (decompress): 0.0 s
-  Time (validate):   0.1 s
-  Time (load):       0.2 s
+  Time (validate):   0.3 s
+  Time (load):       0.3 s
 
 + Property deadline
   Probability: 0.939453125
   Bounds:      [0.939453125, 1]
   CDF:         { (0, 0), ..., (202, 0), (203, 0.5), ..., (323, 0.5), (324, 0.625), ..., (405, 0.625), (406, 0.75), ..., (444, 0.75), (445, 0.78125), ..., (526, 0.78125), (527, 0.84375), ..., (565, 0.84375), (566, 0.8515625), ..., (608, 0.8515625), (609, 0.8828125), ..., (647, 0.8828125), (648, 0.90625), ..., (686, 0.90625), (687, 0.908203125), ..., (729, 0.908203125), (730, 0.931640625), ..., (768, 0.931640625), (769, 0.939453125), ..., (800, 0.939453125) }
-  Time:        6.1 s
+  Time:        8.0 s
 
   + Value iteration
     Final error: 0
     Iterations:  2374
-    Time:        6.1 s
+    Time:        8.0 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
+Wallclock time: 6.221 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
+
+
+
+
+Peak memory usage: 60 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            212268
+  Choices:           478756
+  Branches:          481792
+  Time (decompress): 0.0 s
+  Time (validate):   0.3 s
+  Time (load):       0.3 s
+
++ Property deadline
+  Probability: 0.939453125
+  Bounds:      [0.939453125, 1]
+  CDF:         { (0, 0), ..., (202, 0), (203, 0.5), ..., (323, 0.5), (324, 0.625), ..., (405, 0.625), (406, 0.75), ..., (444, 0.75), (445, 0.78125), ..., (526, 0.78125), (527, 0.84375), ..., (565, 0.84375), (566, 0.8515625), ..., (608, 0.8515625), (609, 0.8828125), ..., (647, 0.8828125), (648, 0.90625), ..., (686, 0.90625), (687, 0.908203125), ..., (729, 0.908203125), (730, 0.931640625), ..., (768, 0.931640625), (769, 0.939453125), ..., (800, 0.939453125) }
+  Time:        5.7 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2374
+    Time:        5.7 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_firewire.false-36-800_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
+Wallclock time: 10.526 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/firewire.false-36-800/modest.model.umb models/firewire.false-36-800/modest.umb.properties.txt -S Memory -D -Y --exhaustive
+
+
+
+
+Peak memory usage: 61 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            212268
+  Choices:           478756
+  Branches:          481792
+  Time (decompress): 0.1 s
+  Time (validate):   0.8 s
+  Time (load):       0.8 s
+
++ Property deadline
+  Probability: 0.939453125
+  Bounds:      [0.939453125, 1]
+  CDF:         { (0, 0), ..., (202, 0), (203, 0.5), ..., (323, 0.5), (324, 0.625), ..., (405, 0.625), (406, 0.75), ..., (444, 0.75), (445, 0.78125), ..., (526, 0.78125), (527, 0.84375), ..., (565, 0.84375), (566, 0.8515625), ..., (608, 0.8515625), (609, 0.8828125), ..., (647, 0.8828125), (648, 0.90625), ..., (686, 0.90625), (687, 0.908203125), ..., (729, 0.908203125), (730, 0.931640625), ..., (768, 0.931640625), (769, 0.939453125), ..., (800, 0.939453125) }
+  Time:        9.6 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2374
+    Time:        9.5 s
 
 </pre>
 </div>

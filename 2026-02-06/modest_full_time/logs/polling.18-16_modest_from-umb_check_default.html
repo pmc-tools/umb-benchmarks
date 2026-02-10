@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/polling.18-16/index.html" target="_blank">polling.18-16</a> and tool configuration modest_from-umb_check_default</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, TO]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, 66.277, TO, TO, TO]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_polling.18-16_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.010 seconds
+Wallclock time: 7200.017 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -31,8 +31,8 @@ UMB: warning: Encountered a value greater than 1 during value iteration. The fin
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_polling.18-16_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.008 seconds
-Return code: None (timeout)
+Wallclock time: 66.277 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16/modest.umb.properties.txt -D -Y --exhaustive
@@ -41,13 +41,35 @@ Command: modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16
 
 
 UMB: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
+
+Peak memory usage: 1314 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            7077888
+  Choices:           7077888
+  Branches:          69599232
+  Time (decompress): 0.1 s
+  Time (validate):   1.0 s
+  Time (load):       1.1 s
+
++ Property s1_before_s2
+  Probability: 0.5389863190184031
+  Bounds:      [0.5389863190184031, 1]
+  Time:        65.0 s
+
+  + Value iteration
+    Final error: 9.911481067918133E-07
+    Iterations:  417
+    Time:        65.0 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_polling.18-16_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.010 seconds
+Wallclock time: 7200.044 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -63,7 +85,7 @@ UMB: warning: Encountered a value greater than 1 during value iteration. The fin
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_polling.18-16_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.020 seconds
+Wallclock time: 7200.046 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -79,7 +101,7 @@ UMB: warning: Encountered a value greater than 1 during value iteration. The fin
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_polling.18-16_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/modest.model.umb models/polling.18-16/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.008 seconds
+Wallclock time: 7200.009 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.

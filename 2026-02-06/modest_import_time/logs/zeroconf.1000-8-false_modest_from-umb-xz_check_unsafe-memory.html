@@ -9,86 +9,10 @@
 <h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration modest_from-umb-xz_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[0.7, 0.9, 0.7, 0.7, 0.8]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.8, 0.8, 0.8, 1.0, 0.7]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep1.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.506 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 156 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            1862970
-  Choices:           3431320
-  Branches:          4229631
-  Time (decompress): 0.7 s
-  Time (validate):   0.0 s
-  Time (load):       0.7 s
-
-+ Property correct_max
-  Probability: 4.801413635072429E-08
-  Bounds:      [4.801413635072429E-08, 1]
-  Time:        0.6 s
-
-  + Value iteration
-    Final error: 1.682816104324629E-07
-    Iterations:  26
-    Time:        0.6 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 3.432 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 154 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            1862970
-  Choices:           3431320
-  Branches:          4229631
-  Time (decompress): 0.9 s
-  Time (validate):   0.0 s
-  Time (load):       0.9 s
-
-+ Property correct_max
-  Probability: 4.801413635072429E-08
-  Bounds:      [4.801413635072429E-08, 1]
-  Time:        2.2 s
-
-  + Value iteration
-    Final error: 1.682816104324629E-07
-    Iterations:  26
-    Time:        2.2 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
 Wallclock time: 1.554 seconds
@@ -111,7 +35,45 @@ Analysis results for UMB
   Branches:          4229631
   Time (decompress): 0.7 s
   Time (validate):   0.0 s
-  Time (load):       0.7 s
+  Time (load):       0.8 s
+
++ Property correct_max
+  Probability: 4.801413635072429E-08
+  Bounds:      [4.801413635072429E-08, 1]
+  Time:        0.6 s
+
+  + Value iteration
+    Final error: 1.682816104324629E-07
+    Iterations:  26
+    Time:        0.6 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 1.691 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 156 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1862970
+  Choices:           3431320
+  Branches:          4229631
+  Time (decompress): 0.8 s
+  Time (validate):   0.0 s
+  Time (load):       0.8 s
 
 + Property correct_max
   Probability: 4.801413635072429E-08
@@ -126,10 +88,86 @@ Analysis results for UMB
 </pre>
 </div>
 <div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 1.806 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 158 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1862970
+  Choices:           3431320
+  Branches:          4229631
+  Time (decompress): 0.8 s
+  Time (validate):   0.0 s
+  Time (load):       0.8 s
+
++ Property correct_max
+  Probability: 4.801413635072429E-08
+  Bounds:      [4.801413635072429E-08, 1]
+  Time:        0.8 s
+
+  + Value iteration
+    Final error: 1.682816104324629E-07
+    Iterations:  26
+    Time:        0.8 s
+
+</pre>
+</div>
+<div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.416 seconds
+Wallclock time: 1.952 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 156 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1862970
+  Choices:           3431320
+  Branches:          4229631
+  Time (decompress): 1.0 s
+  Time (validate):   0.0 s
+  Time (load):       1.0 s
+
++ Property correct_max
+  Probability: 4.801413635072429E-08
+  Bounds:      [4.801413635072429E-08, 1]
+  Time:        0.8 s
+
+  + Value iteration
+    Final error: 1.682816104324629E-07
+    Iterations:  26
+    Time:        0.8 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 1.422 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -159,45 +197,7 @@ Analysis results for UMB
   + Value iteration
     Final error: 1.682816104324629E-07
     Iterations:  26
-    Time:        0.6 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_zeroconf.1000-8-false_rep5.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.745 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/zeroconf.1000-8-false/modest.model.umb.xz models/zeroconf.1000-8-false/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 158 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            1862970
-  Choices:           3431320
-  Branches:          4229631
-  Time (decompress): 0.7 s
-  Time (validate):   0.0 s
-  Time (load):       0.8 s
-
-+ Property correct_max
-  Probability: 4.801413635072429E-08
-  Bounds:      [4.801413635072429E-08, 1]
-  Time:        0.8 s
-
-  + Value iteration
-    Final error: 1.682816104324629E-07
-    Iterations:  26
-    Time:        0.7 s
+    Time:        0.5 s
 
 </pre>
 </div>

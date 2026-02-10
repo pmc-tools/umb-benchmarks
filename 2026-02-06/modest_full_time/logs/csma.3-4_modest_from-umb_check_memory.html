@@ -9,14 +9,14 @@
 <h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration modest_from-umb_check_memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, TO]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.243, 0.961, 1.218, 1.4, 1.277]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_csma.3-4_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 1.243 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
@@ -24,16 +24,35 @@ Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.um
 
 
 
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+Peak memory usage: 104 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1460287
+  Choices:           1471059
+  Branches:          2396727
+  Time (decompress): 0.0 s
+  Time (validate):   0.4 s
+  Time (load):       0.4 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.7 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.6 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_csma.3-4_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 0.961 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
@@ -41,21 +60,62 @@ Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.um
 
 
 
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+Peak memory usage: 104 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1460287
+  Choices:           1471059
+  Branches:          2396727
+  Time (decompress): 0.0 s
+  Time (validate):   0.2 s
+  Time (load):       0.2 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.6 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.5 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_csma.3-4_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.194 seconds
-Return code: None (timeout)
+Wallclock time: 1.218 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 105 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1460287
+  Choices:           1471059
+  Branches:          2396727
+  Time (decompress): 0.1 s
+  Time (validate):   0.4 s
+  Time (load):       0.4 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.6 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.6 s
 
 </pre>
 </div>
@@ -63,13 +123,35 @@ Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.um
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_csma.3-4_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.043 seconds
-Return code: None (timeout)
+Wallclock time: 1.400 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 107 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1460287
+  Choices:           1471059
+  Branches:          2396727
+  Time (decompress): 0.1 s
+  Time (validate):   0.5 s
+  Time (load):       0.5 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.7 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.7 s
 
 </pre>
 </div>
@@ -77,8 +159,8 @@ Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.um
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_csma.3-4_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 1.277 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.umb.properties.txt -S Memory -D -Y --exhaustive
@@ -86,8 +168,27 @@ Command: modest mcsta models/csma.3-4/modest.model.umb models/csma.3-4/modest.um
 
 
 
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+Peak memory usage: 104 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1460287
+  Choices:           1471059
+  Branches:          2396727
+  Time (decompress): 0.1 s
+  Time (validate):   0.5 s
+  Time (load):       0.5 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.6 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.6 s
+
 </pre>
 </div>
 </body>

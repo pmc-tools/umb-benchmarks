@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a> and tool configuration modest_from-jani_check_memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[7.5, 9.0, 7.5, 8.0, 9.1]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[7.2, 7.5, 8.899999999999999, 8.0, 7.6000000000000005]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 22.797 seconds
+Wallclock time: 22.220 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -38,20 +38,20 @@ Analysis results for model.jani
   States:             5007548
   Choices:            6350470
   Branches:           11475748
-  Rate:               686059 states/s
-  Peak memory:        593.52 MB
+  Rate:               720407 states/s
+  Peak memory:        593.54 MB
   Final size:         38.80 MB
-  Time (exploration): 7.3 s
+  Time (exploration): 7.0 s
   Time (merging):     0.2 s
 
 + Property sent
   Result: True
   Bounds: [1, 1]
-  Time:   15.0 s
+  Time:   14.8 s
 
   + Precomputations
     Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 15.0 s
+    Time for min. prob. 0 states: 14.7 s
     Min. prob. 1 states:          5007548
     Time for min. prob. 1 states: 0.0 s
 
@@ -61,99 +61,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 31.666 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[3]: info: Expanding variable "s1" into 12 locations in automaton "station1".
-model.jani:variables[4]: info: Expanding variable "s2" into 12 locations in automaton "station2".
-model.jani: info: Need 16 bytes per state.
-model.jani: info: Explored 5007548 states.
-
-Peak memory usage: 1584 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         16 bytes
-  States:             5007548
-  Choices:            6350470
-  Branches:           11475748
-  Rate:               571247 states/s
-  Peak memory:        593.53 MB
-  Final size:         38.80 MB
-  Time (exploration): 8.8 s
-  Time (merging):     0.2 s
-
-+ Property sent
-  Result: True
-  Bounds: [1, 1]
-  Time:   22.2 s
-
-  + Precomputations
-    Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 22.2 s
-    Min. prob. 1 states:          5007548
-    Time for min. prob. 1 states: 0.0 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 22.811 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[3]: info: Expanding variable "s1" into 12 locations in automaton "station1".
-model.jani:variables[4]: info: Expanding variable "s2" into 12 locations in automaton "station2".
-model.jani: info: Need 16 bytes per state.
-model.jani: info: Explored 5007548 states.
-
-Peak memory usage: 1587 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         16 bytes
-  States:             5007548
-  Choices:            6350470
-  Branches:           11475748
-  Rate:               689935 states/s
-  Peak memory:        593.51 MB
-  Final size:         38.80 MB
-  Time (exploration): 7.3 s
-  Time (merging):     0.2 s
-
-+ Property sent
-  Result: True
-  Bounds: [1, 1]
-  Time:   15.1 s
-
-  + Precomputations
-    Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 15.0 s
-    Min. prob. 1 states:          5007548
-    Time for min. prob. 1 states: 0.0 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 23.930 seconds
+Wallclock time: 22.671 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -176,30 +84,30 @@ Analysis results for model.jani
   States:             5007548
   Choices:            6350470
   Branches:           11475748
-  Rate:               643396 states/s
-  Peak memory:        593.51 MB
+  Rate:               687472 states/s
+  Peak memory:        593.53 MB
   Final size:         38.80 MB
-  Time (exploration): 7.8 s
+  Time (exploration): 7.3 s
   Time (merging):     0.2 s
 
 + Property sent
   Result: True
   Bounds: [1, 1]
-  Time:   15.6 s
+  Time:   14.9 s
 
   + Precomputations
     Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 15.5 s
+    Time for min. prob. 0 states: 14.9 s
     Min. prob. 1 states:          5007548
     Time for min. prob. 1 states: 0.0 s
 
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep5.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 31.491 seconds
+Wallclock time: 28.309 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -222,20 +130,112 @@ Analysis results for model.jani
   States:             5007548
   Choices:            6350470
   Branches:           11475748
-  Rate:               562583 states/s
-  Peak memory:        640.12 MB
+  Rate:               580383 states/s
+  Peak memory:        640.10 MB
   Final size:         38.80 MB
-  Time (exploration): 8.9 s
+  Time (exploration): 8.7 s
   Time (merging):     0.2 s
 
 + Property sent
   Result: True
   Bounds: [1, 1]
-  Time:   21.9 s
+  Time:   19.1 s
 
   + Precomputations
     Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 21.9 s
+    Time for min. prob. 0 states: 19.0 s
+    Min. prob. 1 states:          5007548
+    Time for min. prob. 1 states: 0.0 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
+Wallclock time: 24.228 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[3]: info: Expanding variable "s1" into 12 locations in automaton "station1".
+model.jani:variables[4]: info: Expanding variable "s2" into 12 locations in automaton "station2".
+model.jani: info: Need 16 bytes per state.
+model.jani: info: Explored 5007548 states.
+
+Peak memory usage: 1584 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         16 bytes
+  States:             5007548
+  Choices:            6350470
+  Branches:           11475748
+  Rate:               646469 states/s
+  Peak memory:        593.51 MB
+  Final size:         38.80 MB
+  Time (exploration): 7.8 s
+  Time (merging):     0.2 s
+
++ Property sent
+  Result: True
+  Bounds: [1, 1]
+  Time:   15.9 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 15.9 s
+    Min. prob. 1 states:          5007548
+    Time for min. prob. 1 states: 0.0 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_wlan.6-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
+Wallclock time: 23.761 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/wlan.6-0/model.jani -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[3]: info: Expanding variable "s1" into 12 locations in automaton "station1".
+model.jani:variables[4]: info: Expanding variable "s2" into 12 locations in automaton "station2".
+model.jani: info: Need 16 bytes per state.
+model.jani: info: Explored 5007548 states.
+
+Peak memory usage: 1588 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         16 bytes
+  States:             5007548
+  Choices:            6350470
+  Branches:           11475748
+  Rate:               677795 states/s
+  Peak memory:        593.52 MB
+  Final size:         38.80 MB
+  Time (exploration): 7.4 s
+  Time (merging):     0.2 s
+
++ Property sent
+  Result: True
+  Bounds: [1, 1]
+  Time:   15.9 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 15.9 s
     Min. prob. 1 states:          5007548
     Time for min. prob. 1 states: 0.0 s
 

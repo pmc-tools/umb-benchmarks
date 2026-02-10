@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/polling.18-16/index.html" target="_blank">polling.18-16</a> and tool configuration modest_from-jani_check_unsafe</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[65.0, 75.10000000000001, 70.2, 70.7, 70.2]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[77.6, 67.5, 72.30000000000001, 74.4, 71.60000000000001]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 124.150 seconds
+Wallclock time: 143.966 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -48,7 +48,7 @@ model.jani: info: Need 24 bytes per state.
 model.jani: info: Explored 7077888 states.
 model.jani: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
 
-Peak memory usage: 1706 MB
+Peak memory usage: 1707 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -56,22 +56,22 @@ Analysis results for model.jani
   States:             7077888
   Choices:            7077888
   Branches:           69599232
-  Rate:               115735 states/s
-  Peak memory:        360.17 MB
+  Rate:               96992 states/s
+  Peak memory:        361.20 MB
   Final size:         1116.00 MB
   Size on disk:       223.88 MB
-  Time (exploration): 61.2 s
-  Time (merging):     3.8 s
+  Time (exploration): 73.0 s
+  Time (merging):     4.6 s
 
 + Property s1_before_s2
   Probability: 0.5389863190184031
   Bounds:      [0.5389863190184031, 1]
-  Time:        58.9 s
+  Time:        66.0 s
 
   + Value iteration
     Final error: 9.911481067918133E-07
     Iterations:  417
-    Time:        58.9 s
+    Time:        66.0 s
 
 </pre>
 </div>
@@ -79,135 +79,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 143.705 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is a CTMC model.
-model.jani:variables[3]: info: Expanding variable "a" into 2 locations in automaton "server".
-model.jani:automata[1].variables[0]: info: Expanding variable "s1" into 2 locations in automaton "station1".
-model.jani:automata[2].variables[0]: info: Expanding variable "s2" into 2 locations in automaton "station2".
-model.jani:automata[3].variables[0]: info: Expanding variable "s3" into 2 locations in automaton "station3".
-model.jani:automata[4].variables[0]: info: Expanding variable "s4" into 2 locations in automaton "station4".
-model.jani:automata[5].variables[0]: info: Expanding variable "s5" into 2 locations in automaton "station5".
-model.jani:automata[6].variables[0]: info: Expanding variable "s6" into 2 locations in automaton "station6".
-model.jani:automata[7].variables[0]: info: Expanding variable "s7" into 2 locations in automaton "station7".
-model.jani:automata[8].variables[0]: info: Expanding variable "s8" into 2 locations in automaton "station8".
-model.jani:automata[9].variables[0]: info: Expanding variable "s9" into 2 locations in automaton "station9".
-model.jani:automata[10].variables[0]: info: Expanding variable "s10" into 2 locations in automaton "station10".
-model.jani:automata[11].variables[0]: info: Expanding variable "s11" into 2 locations in automaton "station11".
-model.jani:automata[12].variables[0]: info: Expanding variable "s12" into 2 locations in automaton "station12".
-model.jani:automata[13].variables[0]: info: Expanding variable "s13" into 2 locations in automaton "station13".
-model.jani:automata[14].variables[0]: info: Expanding variable "s14" into 2 locations in automaton "station14".
-model.jani:automata[15].variables[0]: info: Expanding variable "s15" into 2 locations in automaton "station15".
-model.jani:automata[16].variables[0]: info: Expanding variable "s16" into 2 locations in automaton "station16".
-model.jani:automata[17].variables[0]: info: Expanding variable "s17" into 2 locations in automaton "station17".
-model.jani:automata[18].variables[0]: info: Expanding variable "s18" into 2 locations in automaton "station18".
-model.jani: info: Need 24 bytes per state.
-model.jani: info: Explored 7077888 states.
-model.jani: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
-
-Peak memory usage: 1707 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         24 bytes
-  States:             7077888
-  Choices:            7077888
-  Branches:           69599232
-  Rate:               100146 states/s
-  Peak memory:        361.11 MB
-  Final size:         1116.00 MB
-  Size on disk:       223.88 MB
-  Time (exploration): 70.7 s
-  Time (merging):     4.4 s
-
-+ Property s1_before_s2
-  Probability: 0.5389863190184031
-  Bounds:      [0.5389863190184031, 1]
-  Time:        68.2 s
-
-  + Value iteration
-    Final error: 9.911481067918133E-07
-    Iterations:  417
-    Time:        68.2 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 133.096 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is a CTMC model.
-model.jani:variables[3]: info: Expanding variable "a" into 2 locations in automaton "server".
-model.jani:automata[1].variables[0]: info: Expanding variable "s1" into 2 locations in automaton "station1".
-model.jani:automata[2].variables[0]: info: Expanding variable "s2" into 2 locations in automaton "station2".
-model.jani:automata[3].variables[0]: info: Expanding variable "s3" into 2 locations in automaton "station3".
-model.jani:automata[4].variables[0]: info: Expanding variable "s4" into 2 locations in automaton "station4".
-model.jani:automata[5].variables[0]: info: Expanding variable "s5" into 2 locations in automaton "station5".
-model.jani:automata[6].variables[0]: info: Expanding variable "s6" into 2 locations in automaton "station6".
-model.jani:automata[7].variables[0]: info: Expanding variable "s7" into 2 locations in automaton "station7".
-model.jani:automata[8].variables[0]: info: Expanding variable "s8" into 2 locations in automaton "station8".
-model.jani:automata[9].variables[0]: info: Expanding variable "s9" into 2 locations in automaton "station9".
-model.jani:automata[10].variables[0]: info: Expanding variable "s10" into 2 locations in automaton "station10".
-model.jani:automata[11].variables[0]: info: Expanding variable "s11" into 2 locations in automaton "station11".
-model.jani:automata[12].variables[0]: info: Expanding variable "s12" into 2 locations in automaton "station12".
-model.jani:automata[13].variables[0]: info: Expanding variable "s13" into 2 locations in automaton "station13".
-model.jani:automata[14].variables[0]: info: Expanding variable "s14" into 2 locations in automaton "station14".
-model.jani:automata[15].variables[0]: info: Expanding variable "s15" into 2 locations in automaton "station15".
-model.jani:automata[16].variables[0]: info: Expanding variable "s16" into 2 locations in automaton "station16".
-model.jani:automata[17].variables[0]: info: Expanding variable "s17" into 2 locations in automaton "station17".
-model.jani:automata[18].variables[0]: info: Expanding variable "s18" into 2 locations in automaton "station18".
-model.jani: info: Need 24 bytes per state.
-model.jani: info: Explored 7077888 states.
-model.jani: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
-
-Peak memory usage: 1707 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         24 bytes
-  States:             7077888
-  Choices:            7077888
-  Branches:           69599232
-  Rate:               107231 states/s
-  Peak memory:        360.35 MB
-  Final size:         1116.00 MB
-  Size on disk:       223.88 MB
-  Time (exploration): 66.0 s
-  Time (merging):     4.2 s
-
-+ Property s1_before_s2
-  Probability: 0.5389863190184031
-  Bounds:      [0.5389863190184031, 1]
-  Time:        62.5 s
-
-  + Value iteration
-    Final error: 9.911481067918133E-07
-    Iterations:  417
-    Time:        62.5 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 133.880 seconds
+Wallclock time: 131.026 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -248,30 +120,30 @@ Analysis results for model.jani
   States:             7077888
   Choices:            7077888
   Branches:           69599232
-  Rate:               106899 states/s
-  Peak memory:        360.36 MB
+  Rate:               111475 states/s
+  Peak memory:        360.26 MB
   Final size:         1116.00 MB
   Size on disk:       223.88 MB
-  Time (exploration): 66.2 s
-  Time (merging):     4.5 s
+  Time (exploration): 63.5 s
+  Time (merging):     4.0 s
 
 + Property s1_before_s2
   Probability: 0.5389863190184031
   Bounds:      [0.5389863190184031, 1]
-  Time:        62.9 s
+  Time:        63.2 s
 
   + Value iteration
     Final error: 9.911481067918133E-07
     Iterations:  417
-    Time:        62.9 s
+    Time:        63.1 s
 
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep5.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 135.295 seconds
+Wallclock time: 144.342 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -304,7 +176,7 @@ model.jani: info: Need 24 bytes per state.
 model.jani: info: Explored 7077888 states.
 model.jani: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
 
-Peak memory usage: 1709 MB
+Peak memory usage: 1701 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -312,22 +184,150 @@ Analysis results for model.jani
   States:             7077888
   Choices:            7077888
   Branches:           69599232
-  Rate:               107590 states/s
-  Peak memory:        360.34 MB
+  Rate:               104343 states/s
+  Peak memory:        360.41 MB
   Final size:         1116.00 MB
   Size on disk:       223.88 MB
-  Time (exploration): 65.8 s
+  Time (exploration): 67.9 s
   Time (merging):     4.4 s
 
 + Property s1_before_s2
   Probability: 0.5389863190184031
   Bounds:      [0.5389863190184031, 1]
-  Time:        64.8 s
+  Time:        71.6 s
 
   + Value iteration
     Final error: 9.911481067918133E-07
     Iterations:  417
-    Time:        64.7 s
+    Time:        71.6 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
+Wallclock time: 140.676 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is a CTMC model.
+model.jani:variables[3]: info: Expanding variable "a" into 2 locations in automaton "server".
+model.jani:automata[1].variables[0]: info: Expanding variable "s1" into 2 locations in automaton "station1".
+model.jani:automata[2].variables[0]: info: Expanding variable "s2" into 2 locations in automaton "station2".
+model.jani:automata[3].variables[0]: info: Expanding variable "s3" into 2 locations in automaton "station3".
+model.jani:automata[4].variables[0]: info: Expanding variable "s4" into 2 locations in automaton "station4".
+model.jani:automata[5].variables[0]: info: Expanding variable "s5" into 2 locations in automaton "station5".
+model.jani:automata[6].variables[0]: info: Expanding variable "s6" into 2 locations in automaton "station6".
+model.jani:automata[7].variables[0]: info: Expanding variable "s7" into 2 locations in automaton "station7".
+model.jani:automata[8].variables[0]: info: Expanding variable "s8" into 2 locations in automaton "station8".
+model.jani:automata[9].variables[0]: info: Expanding variable "s9" into 2 locations in automaton "station9".
+model.jani:automata[10].variables[0]: info: Expanding variable "s10" into 2 locations in automaton "station10".
+model.jani:automata[11].variables[0]: info: Expanding variable "s11" into 2 locations in automaton "station11".
+model.jani:automata[12].variables[0]: info: Expanding variable "s12" into 2 locations in automaton "station12".
+model.jani:automata[13].variables[0]: info: Expanding variable "s13" into 2 locations in automaton "station13".
+model.jani:automata[14].variables[0]: info: Expanding variable "s14" into 2 locations in automaton "station14".
+model.jani:automata[15].variables[0]: info: Expanding variable "s15" into 2 locations in automaton "station15".
+model.jani:automata[16].variables[0]: info: Expanding variable "s16" into 2 locations in automaton "station16".
+model.jani:automata[17].variables[0]: info: Expanding variable "s17" into 2 locations in automaton "station17".
+model.jani:automata[18].variables[0]: info: Expanding variable "s18" into 2 locations in automaton "station18".
+model.jani: info: Need 24 bytes per state.
+model.jani: info: Explored 7077888 states.
+model.jani: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
+
+Peak memory usage: 1707 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         24 bytes
+  States:             7077888
+  Choices:            7077888
+  Branches:           69599232
+  Rate:               101157 states/s
+  Peak memory:        360.49 MB
+  Final size:         1116.00 MB
+  Size on disk:       223.88 MB
+  Time (exploration): 70.0 s
+  Time (merging):     4.4 s
+
++ Property s1_before_s2
+  Probability: 0.5389863190184031
+  Bounds:      [0.5389863190184031, 1]
+  Time:        65.9 s
+
+  + Value iteration
+    Final error: 9.911481067918133E-07
+    Iterations:  417
+    Time:        65.9 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_polling.18-16_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
+Wallclock time: 137.918 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/polling.18-16/model.jani --unsafe -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is a CTMC model.
+model.jani:variables[3]: info: Expanding variable "a" into 2 locations in automaton "server".
+model.jani:automata[1].variables[0]: info: Expanding variable "s1" into 2 locations in automaton "station1".
+model.jani:automata[2].variables[0]: info: Expanding variable "s2" into 2 locations in automaton "station2".
+model.jani:automata[3].variables[0]: info: Expanding variable "s3" into 2 locations in automaton "station3".
+model.jani:automata[4].variables[0]: info: Expanding variable "s4" into 2 locations in automaton "station4".
+model.jani:automata[5].variables[0]: info: Expanding variable "s5" into 2 locations in automaton "station5".
+model.jani:automata[6].variables[0]: info: Expanding variable "s6" into 2 locations in automaton "station6".
+model.jani:automata[7].variables[0]: info: Expanding variable "s7" into 2 locations in automaton "station7".
+model.jani:automata[8].variables[0]: info: Expanding variable "s8" into 2 locations in automaton "station8".
+model.jani:automata[9].variables[0]: info: Expanding variable "s9" into 2 locations in automaton "station9".
+model.jani:automata[10].variables[0]: info: Expanding variable "s10" into 2 locations in automaton "station10".
+model.jani:automata[11].variables[0]: info: Expanding variable "s11" into 2 locations in automaton "station11".
+model.jani:automata[12].variables[0]: info: Expanding variable "s12" into 2 locations in automaton "station12".
+model.jani:automata[13].variables[0]: info: Expanding variable "s13" into 2 locations in automaton "station13".
+model.jani:automata[14].variables[0]: info: Expanding variable "s14" into 2 locations in automaton "station14".
+model.jani:automata[15].variables[0]: info: Expanding variable "s15" into 2 locations in automaton "station15".
+model.jani:automata[16].variables[0]: info: Expanding variable "s16" into 2 locations in automaton "station16".
+model.jani:automata[17].variables[0]: info: Expanding variable "s17" into 2 locations in automaton "station17".
+model.jani:automata[18].variables[0]: info: Expanding variable "s18" into 2 locations in automaton "station18".
+model.jani: info: Need 24 bytes per state.
+model.jani: info: Explored 7077888 states.
+model.jani: warning: Encountered a value greater than 1 during value iteration. The final result for property "s1_before_s2" is likely affected by floating-point errors.
+
+Peak memory usage: 1706 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         24 bytes
+  States:             7077888
+  Choices:            7077888
+  Branches:           69599232
+  Rate:               105071 states/s
+  Peak memory:        360.39 MB
+  Final size:         1116.00 MB
+  Size on disk:       223.88 MB
+  Time (exploration): 67.4 s
+  Time (merging):     4.2 s
+
++ Property s1_before_s2
+  Probability: 0.5389863190184031
+  Bounds:      [0.5389863190184031, 1]
+  Time:        66.0 s
+
+  + Value iteration
+    Final error: 9.911481067918133E-07
+    Iterations:  417
+    Time:        66.0 s
 
 </pre>
 </div>

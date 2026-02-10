@@ -9,57 +9,13 @@
 <h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration modest_from-jani_check_unsafe</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[3.404, 3.206, 3.47, 3.161, 3.418]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.247, 3.38, 3.826, 3.399, 3.955]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 3.404 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani: info: Need 24 bytes per state.
-model.jani: info: Explored 1460287 states.
-
-Peak memory usage: 243 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         24 bytes
-  States:             1460287
-  Choices:            1471059
-  Branches:           2396727
-  Rate:               610743 states/s
-  Peak memory:        105.03 MB
-  Final size:         47.79 MB
-  Size on disk:       7.94 MB
-  Time (exploration): 2.4 s
-  Time (merging):     0.2 s
-
-+ Property all_before_max
-  Probability: 0.9324469288458123
-  Bounds:      [0.9324469288458123, 1]
-  Time:        0.5 s
-
-  + Value iteration
-    Final error: 3.001709289030008E-07
-    Iterations:  55
-    Time:        0.5 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 3.206 seconds
+Wallclock time: 3.247 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -100,10 +56,10 @@ Analysis results for model.jani
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep3.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 3.470 seconds
+Wallclock time: 3.380 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -116,7 +72,7 @@ model.jani:model: info: model is an MDP model.
 model.jani: info: Need 24 bytes per state.
 model.jani: info: Explored 1460287 states.
 
-Peak memory usage: 243 MB
+Peak memory usage: 245 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -124,11 +80,99 @@ Analysis results for model.jani
   States:             1460287
   Choices:            1471059
   Branches:           2396727
-  Rate:               597743 states/s
+  Rate:               616155 states/s
   Peak memory:        105.04 MB
   Final size:         47.79 MB
   Size on disk:       7.94 MB
-  Time (exploration): 2.5 s
+  Time (exploration): 2.4 s
+  Time (merging):     0.2 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.5 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.5 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
+Wallclock time: 3.826 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani: info: Need 24 bytes per state.
+model.jani: info: Explored 1460287 states.
+
+Peak memory usage: 245 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         24 bytes
+  States:             1460287
+  Choices:            1471059
+  Branches:           2396727
+  Rate:               539050 states/s
+  Peak memory:        105.04 MB
+  Final size:         47.79 MB
+  Size on disk:       7.94 MB
+  Time (exploration): 2.7 s
+  Time (merging):     0.2 s
+
++ Property all_before_max
+  Probability: 0.9324469288458123
+  Bounds:      [0.9324469288458123, 1]
+  Time:        0.6 s
+
+  + Value iteration
+    Final error: 3.001709289030008E-07
+    Iterations:  55
+    Time:        0.6 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
+Wallclock time: 3.399 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani: info: Need 24 bytes per state.
+model.jani: info: Explored 1460287 states.
+
+Peak memory usage: 247 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         24 bytes
+  States:             1460287
+  Choices:            1471059
+  Branches:           2396727
+  Rate:               612023 states/s
+  Peak memory:        105.03 MB
+  Final size:         47.79 MB
+  Size on disk:       7.94 MB
+  Time (exploration): 2.4 s
   Time (merging):     0.2 s
 
 + Property all_before_max
@@ -144,54 +188,10 @@ Analysis results for model.jani
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 3.161 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani: info: Need 24 bytes per state.
-model.jani: info: Explored 1460287 states.
-
-Peak memory usage: 243 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         24 bytes
-  States:             1460287
-  Choices:            1471059
-  Branches:           2396727
-  Rate:               658380 states/s
-  Peak memory:        105.03 MB
-  Final size:         47.79 MB
-  Size on disk:       7.94 MB
-  Time (exploration): 2.2 s
-  Time (merging):     0.2 s
-
-+ Property all_before_max
-  Probability: 0.9324469288458123
-  Bounds:      [0.9324469288458123, 1]
-  Time:        0.5 s
-
-  + Value iteration
-    Final error: 3.001709289030008E-07
-    Iterations:  55
-    Time:        0.5 s
-
-</pre>
-</div>
-<div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe_csma.3-4_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/csma.3-4/model.jani --unsafe -D -Y --exhaustive
-Wallclock time: 3.418 seconds
+Wallclock time: 3.955 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -204,7 +204,7 @@ model.jani:model: info: model is an MDP model.
 model.jani: info: Need 24 bytes per state.
 model.jani: info: Explored 1460287 states.
 
-Peak memory usage: 244 MB
+Peak memory usage: 246 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -212,22 +212,22 @@ Analysis results for model.jani
   States:             1460287
   Choices:            1471059
   Branches:           2396727
-  Rate:               617980 states/s
-  Peak memory:        105.03 MB
+  Rate:               523213 states/s
+  Peak memory:        105.04 MB
   Final size:         47.79 MB
   Size on disk:       7.94 MB
-  Time (exploration): 2.4 s
+  Time (exploration): 2.8 s
   Time (merging):     0.2 s
 
 + Property all_before_max
   Probability: 0.9324469288458123
   Bounds:      [0.9324469288458123, 1]
-  Time:        0.5 s
+  Time:        0.6 s
 
   + Value iteration
     Final error: 3.001709289030008E-07
     Iterations:  55
-    Time:        0.5 s
+    Time:        0.6 s
 
 </pre>
 </div>

@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/pacman.100/index.html" target="_blank">pacman.100</a> and tool configuration modest_from-jani_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[176.3, 183.2, 180.29999999999998, 185.9, 202.0]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[208.4, 189.20000000000002, 176.20000000000002, 210.5, 182.1]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 178.898 seconds
+Wallclock time: 211.262 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -29,7 +29,7 @@ model.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in au
 model.jani: info: Need 16 bytes per state.
 model.jani: info: Explored 79440921 states.
 
-Peak memory usage: 18317 MB
+Peak memory usage: 18291 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -37,21 +37,21 @@ Analysis results for model.jani
   States:             79440921
   Choices:            100215175
   Branches:           109963876
-  Rate:               455800 states/s
-  Peak memory:        8415.34 MB
+  Rate:               385426 states/s
+  Peak memory:        7803.90 MB
   Final size:         615.56 MB
-  Time (exploration): 174.3 s
-  Time (merging):     2.0 s
+  Time (exploration): 206.1 s
+  Time (merging):     2.3 s
 
 + Property crash
   Probability: 0.5511176224662503
   Bounds:      [0.5511176224662503, 0.5511176224662503]
-  Time:        2.1 s
+  Time:        2.4 s
 
   + Value iteration
     Final error: 0
     Iterations:  2
-    Time:        2.1 s
+    Time:        2.3 s
 
 </pre>
 </div>
@@ -59,7 +59,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 186.151 seconds
+Wallclock time: 192.030 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -73,7 +73,7 @@ model.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in au
 model.jani: info: Need 16 bytes per state.
 model.jani: info: Explored 79440921 states.
 
-Peak memory usage: 18308 MB
+Peak memory usage: 18318 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -81,11 +81,11 @@ Analysis results for model.jani
   States:             79440921
   Choices:            100215175
   Branches:           109963876
-  Rate:               439665 states/s
-  Peak memory:        8415.35 MB
+  Rate:               425041 states/s
+  Peak memory:        8415.39 MB
   Final size:         615.56 MB
-  Time (exploration): 180.7 s
-  Time (merging):     2.5 s
+  Time (exploration): 186.9 s
+  Time (merging):     2.3 s
 
 + Property crash
   Probability: 0.5511176224662503
@@ -103,7 +103,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 182.981 seconds
+Wallclock time: 178.648 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -117,7 +117,7 @@ model.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in au
 model.jani: info: Need 16 bytes per state.
 model.jani: info: Explored 79440921 states.
 
-Peak memory usage: 18308 MB
+Peak memory usage: 18306 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -125,11 +125,55 @@ Analysis results for model.jani
   States:             79440921
   Choices:            100215175
   Branches:           109963876
-  Rate:               446099 states/s
-  Peak memory:        8415.36 MB
+  Rate:               455716 states/s
+  Peak memory:        8415.33 MB
   Final size:         615.56 MB
-  Time (exploration): 178.1 s
-  Time (merging):     2.2 s
+  Time (exploration): 174.3 s
+  Time (merging):     1.9 s
+
++ Property crash
+  Probability: 0.5511176224662503
+  Bounds:      [0.5511176224662503, 0.5511176224662503]
+  Time:        1.9 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        1.9 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 213.243 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in automaton "arbiter".
+model.jani: info: Need 16 bytes per state.
+model.jani: info: Explored 79440921 states.
+
+Peak memory usage: 18290 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         16 bytes
+  States:             79440921
+  Choices:            100215175
+  Branches:           109963876
+  Rate:               381575 states/s
+  Peak memory:        7803.90 MB
+  Final size:         615.56 MB
+  Time (exploration): 208.2 s
+  Time (merging):     2.3 s
 
 + Property crash
   Probability: 0.5511176224662503
@@ -144,10 +188,10 @@ Analysis results for model.jani
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep4.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 188.224 seconds
+Wallclock time: 184.811 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -169,65 +213,21 @@ Analysis results for model.jani
   States:             79440921
   Choices:            100215175
   Branches:           109963876
-  Rate:               431977 states/s
-  Peak memory:        8415.40 MB
+  Rate:               441716 states/s
+  Peak memory:        8415.36 MB
   Final size:         615.56 MB
-  Time (exploration): 183.9 s
-  Time (merging):     2.0 s
+  Time (exploration): 179.9 s
+  Time (merging):     2.2 s
 
 + Property crash
   Probability: 0.5511176224662503
   Bounds:      [0.5511176224662503, 0.5511176224662503]
-  Time:        1.9 s
+  Time:        2.2 s
 
   + Value iteration
     Final error: 0
     Iterations:  2
-    Time:        1.9 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pacman.100_rep5.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 204.955 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/pacman.100/model.jani --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in automaton "arbiter".
-model.jani: info: Need 16 bytes per state.
-model.jani: info: Explored 79440921 states.
-
-Peak memory usage: 18309 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         16 bytes
-  States:             79440921
-  Choices:            100215175
-  Branches:           109963876
-  Rate:               398112 states/s
-  Peak memory:        8438.43 MB
-  Final size:         615.56 MB
-  Time (exploration): 199.6 s
-  Time (merging):     2.4 s
-
-+ Property crash
-  Probability: 0.5511176224662503
-  Bounds:      [0.5511176224662503, 0.5511176224662503]
-  Time:        2.5 s
-
-  + Value iteration
-    Final error: 0
-    Iterations:  2
-    Time:        2.5 s
+    Time:        2.2 s
 
 </pre>
 </div>

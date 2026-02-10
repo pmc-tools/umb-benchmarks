@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/nand.60-4/index.html" target="_blank">nand.60-4</a> and tool configuration modest_from-jani_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[8.007, 8.098, 8.024, 8.962, 8.371]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[8.519, 8.879, 8.203, 8.897, 8.622]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 8.007 seconds
+Wallclock time: 8.519 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -37,10 +37,10 @@ Analysis results for model.jani
   States:             18826082
   Choices:            18826082
   Branches:           29772212
-  Rate:               2637814 states/s
-  Peak memory:        2079.61 MB
+  Rate:               2470939 states/s
+  Peak memory:        2079.62 MB
   Final size:         145.88 MB
-  Time (exploration): 7.2 s
+  Time (exploration): 7.6 s
   Time (merging):     0.4 s
 
 + Property reliable
@@ -59,51 +59,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 8.098 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is a DTMC model.
-model.jani:variables[1]: info: Expanding variable "s" into 5 locations in automaton "multiplex".
-model.jani: info: Need 16 bytes per state.
-model.jani: info: Explored 18826082 states.
-
-Peak memory usage: 4533 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         16 bytes
-  States:             18826082
-  Choices:            18826082
-  Branches:           29772212
-  Rate:               2618006 states/s
-  Peak memory:        2079.61 MB
-  Final size:         145.88 MB
-  Time (exploration): 7.2 s
-  Time (merging):     0.4 s
-
-+ Property reliable
-  Probability: 0.6867214589192275
-  Bounds:      [0.6867214589192275, 0.6867214589192275]
-  Time:        0.2 s
-
-  + Value iteration
-    Final error: 0
-    Iterations:  2
-    Time:        0.2 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 8.024 seconds
+Wallclock time: 8.879 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -125,29 +81,29 @@ Analysis results for model.jani
   States:             18826082
   Choices:            18826082
   Branches:           29772212
-  Rate:               2628240 states/s
-  Peak memory:        2079.61 MB
+  Rate:               2384860 states/s
+  Peak memory:        2079.63 MB
   Final size:         145.88 MB
-  Time (exploration): 7.2 s
-  Time (merging):     0.4 s
+  Time (exploration): 7.9 s
+  Time (merging):     0.5 s
 
 + Property reliable
   Probability: 0.6867214589192275
   Bounds:      [0.6867214589192275, 0.6867214589192275]
-  Time:        0.2 s
+  Time:        0.3 s
 
   + Value iteration
     Final error: 0
     Iterations:  2
-    Time:        0.2 s
+    Time:        0.3 s
 
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep4.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 8.962 seconds
+Wallclock time: 8.203 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -169,8 +125,52 @@ Analysis results for model.jani
   States:             18826082
   Choices:            18826082
   Branches:           29772212
-  Rate:               2350616 states/s
-  Peak memory:        2079.63 MB
+  Rate:               2572924 states/s
+  Peak memory:        2079.62 MB
+  Final size:         145.88 MB
+  Time (exploration): 7.3 s
+  Time (merging):     0.4 s
+
++ Property reliable
+  Probability: 0.6867214589192275
+  Bounds:      [0.6867214589192275, 0.6867214589192275]
+  Time:        0.2 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        0.2 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 8.897 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is a DTMC model.
+model.jani:variables[1]: info: Expanding variable "s" into 5 locations in automaton "multiplex".
+model.jani: info: Need 16 bytes per state.
+model.jani: info: Explored 18826082 states.
+
+Peak memory usage: 4529 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         16 bytes
+  States:             18826082
+  Choices:            18826082
+  Branches:           29772212
+  Rate:               2372537 states/s
+  Peak memory:        2079.64 MB
   Final size:         145.88 MB
   Time (exploration): 8.0 s
   Time (merging):     0.5 s
@@ -191,7 +191,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_nand.60-4_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/nand.60-4/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 8.371 seconds
+Wallclock time: 8.622 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -213,16 +213,16 @@ Analysis results for model.jani
   States:             18826082
   Choices:            18826082
   Branches:           29772212
-  Rate:               2523942 states/s
-  Peak memory:        2079.61 MB
+  Rate:               2449081 states/s
+  Peak memory:        2079.62 MB
   Final size:         145.88 MB
-  Time (exploration): 7.5 s
+  Time (exploration): 7.7 s
   Time (merging):     0.5 s
 
 + Property reliable
   Probability: 0.6867214589192275
   Bounds:      [0.6867214589192275, 0.6867214589192275]
-  Time:        0.2 s
+  Time:        0.3 s
 
   + Value iteration
     Final error: 0

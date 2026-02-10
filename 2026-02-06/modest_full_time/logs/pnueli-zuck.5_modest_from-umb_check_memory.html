@@ -9,14 +9,14 @@
 <h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration modest_from-umb_check_memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, TO]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2.305, 1.196, 0.968, 2.076, 202.283]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_pnueli-zuck.5_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 2.305 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
@@ -24,26 +24,62 @@ Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5
 
 
 
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-   at Modest.ModelChecking.ValueIteration.PerformUnboundedValueIteration(Modest.ModelChecking.PropertyAnalysisTask, Partition, System.Nullable`1<UInt64>, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken, Boolean, Int64 ByRef, Double ByRef, Boolean ByRef)
-   at Modest.ModelChecking.ValueIteration.PerformPartitionUnboundedValueIteration(Modest.ModelChecking.PropertyAnalysisTask, Partition, Int64, UnboundedValueIterationPartitionData, System.String, Modest.Modularity.LocationErrorHandler, Modest.Modularity.OperationState)
-   at Modest.ModelChecking.ValueIteration+<>c__DisplayClass7_0.<IterateUnbounded>g__FixpointStep|1(Int32, Int32, Modest.Modularity.OperationState)
-   at Modest.StateSpace.Helpers.IteratePartitions(Modest.StateSpace.StateSpace, System.Action`2<Int32,Modest.Modularity.OperationState>, System.Func`4<Int32,Int32,Modest.Modularity.OperationState,Boolean>, System.Action`2<Int32,Modest.Modularity.OperationState>, Modest.Modularity.OperationState)
-   at Modest.ModelChecking.ValueIteration.IterateUnbounded(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Modest.Modularity.AnalysisDataSet, System.String, Modest.Modularity.LocationErrorHandler, Modest.Modularity.OperationState)
+Peak memory usage: 97 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.1 s
+  Time (validate):   1.7 s
+  Time (load):       1.8 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.4 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.4 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_pnueli-zuck.5_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.011 seconds
-Return code: None (timeout)
+Wallclock time: 1.196 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 97 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.1 s
+  Time (validate):   0.5 s
+  Time (load):       0.6 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.5 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.5 s
 
 </pre>
 </div>
@@ -51,13 +87,35 @@ Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_pnueli-zuck.5_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.006 seconds
-Return code: None (timeout)
+Wallclock time: 0.968 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 96 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.1 s
+  Time (validate):   0.5 s
+  Time (load):       0.5 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.3 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.3 s
 
 </pre>
 </div>
@@ -65,13 +123,35 @@ Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_pnueli-zuck.5_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.188 seconds
-Return code: None (timeout)
+Wallclock time: 2.076 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 96 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.2 s
+  Time (validate):   0.7 s
+  Time (load):       0.7 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.3 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.3 s
 
 </pre>
 </div>
@@ -79,13 +159,35 @@ Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_pnueli-zuck.5_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.031 seconds
-Return code: None (timeout)
+Wallclock time: 202.283 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 77 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.0 s
+  Time (validate):   0.8 s
+  Time (load):       1.1 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        201.1 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        201.1 s
 
 </pre>
 </div>

@@ -15,7 +15,7 @@
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 0.939 seconds
+Wallclock time: 1.039 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -32,7 +32,7 @@ model.jani:variables[9]: info: Expanding variable "pc4" into 4 locations in auto
 model.jani: info: Need 16 bytes per state.
 model.jani: info: Explored 43136 states.
 
-Peak memory usage: 103 MB
+Peak memory usage: 111 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -40,7 +40,7 @@ Analysis results for model.jani
   States:             43136
   Choices:            115840
   Branches:           144352
-  Rate:               221210 states/s
+  Rate:               203472 states/s
   Peak memory:        71.05 MB
   Final size:         0.33 MB
   Time (exploration): 0.2 s
@@ -49,12 +49,12 @@ Analysis results for model.jani
 + Property disagree
   Probability: 0.15605633046939615
   Bounds:      [0.15605633046939615, 1]
-  Time:        0.5 s
+  Time:        0.6 s
 
   + Value iteration
     Final error: 9.981462390211186E-07
     Iterations:  1246
-    Time:        0.5 s
+    Time:        0.6 s
 
 </pre>
 </div>
@@ -62,7 +62,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 0.917 seconds
+Wallclock time: 0.943 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -79,7 +79,7 @@ model.jani:variables[9]: info: Expanding variable "pc4" into 4 locations in auto
 model.jani: info: Need 16 bytes per state.
 model.jani: info: Explored 43136 states.
 
-Peak memory usage: 109 MB
+Peak memory usage: 111 MB
 Analysis results for model.jani
 
 + State space exploration
@@ -87,7 +87,7 @@ Analysis results for model.jani
   States:             43136
   Choices:            115840
   Branches:           144352
-  Rate:               231914 states/s
+  Rate:               223503 states/s
   Peak memory:        71.05 MB
   Final size:         0.33 MB
   Time (exploration): 0.2 s
@@ -109,7 +109,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 0.897 seconds
+Wallclock time: 1.101 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -134,54 +134,7 @@ Analysis results for model.jani
   States:             43136
   Choices:            115840
   Branches:           144352
-  Rate:               233168 states/s
-  Peak memory:        71.03 MB
-  Final size:         0.33 MB
-  Time (exploration): 0.2 s
-  Time (merging):     0.0 s
-
-+ Property disagree
-  Probability: 0.15605633046939615
-  Bounds:      [0.15605633046939615, 1]
-  Time:        0.5 s
-
-  + Value iteration
-    Final error: 9.981462390211186E-07
-    Iterations:  1246
-    Time:        0.5 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 1.094 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[3]: info: Expanding variable "pc1" into 4 locations in automaton "process1".
-model.jani:variables[5]: info: Expanding variable "pc2" into 4 locations in automaton "process2".
-model.jani:variables[7]: info: Expanding variable "pc3" into 4 locations in automaton "process3".
-model.jani:variables[9]: info: Expanding variable "pc4" into 4 locations in automaton "process4".
-model.jani: info: Need 16 bytes per state.
-model.jani: info: Explored 43136 states.
-
-Peak memory usage: 110 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         16 bytes
-  States:             43136
-  Choices:            115840
-  Branches:           144352
-  Rate:               192571 states/s
+  Rate:               188367 states/s
   Peak memory:        71.05 MB
   Final size:         0.33 MB
   Time (exploration): 0.2 s
@@ -200,10 +153,10 @@ Analysis results for model.jani
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep5.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
-Wallclock time: 1.065 seconds
+Wallclock time: 0.905 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -228,7 +181,54 @@ Analysis results for model.jani
   States:             43136
   Choices:            115840
   Branches:           144352
-  Rate:               197872 states/s
+  Rate:               233168 states/s
+  Peak memory:        71.05 MB
+  Final size:         0.33 MB
+  Time (exploration): 0.2 s
+  Time (merging):     0.0 s
+
++ Property disagree
+  Probability: 0.15605633046939615
+  Bounds:      [0.15605633046939615, 1]
+  Time:        0.5 s
+
+  + Value iteration
+    Final error: 9.981462390211186E-07
+    Iterations:  1246
+    Time:        0.5 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_memory_consensus.4-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
+Wallclock time: 1.174 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/consensus.4-4/model.jani -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[3]: info: Expanding variable "pc1" into 4 locations in automaton "process1".
+model.jani:variables[5]: info: Expanding variable "pc2" into 4 locations in automaton "process2".
+model.jani:variables[7]: info: Expanding variable "pc3" into 4 locations in automaton "process3".
+model.jani:variables[9]: info: Expanding variable "pc4" into 4 locations in automaton "process4".
+model.jani: info: Need 16 bytes per state.
+model.jani: info: Explored 43136 states.
+
+Peak memory usage: 109 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         16 bytes
+  States:             43136
+  Choices:            115840
+  Branches:           144352
+  Rate:               191716 states/s
   Peak memory:        71.05 MB
   Final size:         0.33 MB
   Time (exploration): 0.2 s

@@ -15,7 +15,7 @@
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe-memory_cluster.128-2000-20_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
+Wallclock time: 7200.048 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -28,20 +28,13 @@ UMB: warning: Skipping UMB file validation as requested. This is a security vuln
 
 ##############################Output to stderr##############################
 Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-   at Modest.ModelChecking.UnifPlus.CalculateBound(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Double, Double, Boolean, Int32 ByRef, Int32 ByRef, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken)
-   at Modest.ModelChecking.UnifPlus.CalculateOuterBound(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Double, Double, Int32 ByRef, Int32 ByRef, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken)
-   at Modest.ModelChecking.UnifPlus.Calculate(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Modest.Modularity.AnalysisDataSet, System.String, Modest.Modularity.OperationState, Modest.Modularity.LocationErrorHandler)
-   at Modest.ModelChecking.MAModelChecker`1[[Modest.StateSpace.UnifiedBinaryFormat+UmbState, Modest.StateSpace, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null]].CheckProperty(Modest.StateSpace.StateSpace, Modest.ModelChecking.ReachabilityPropertyInfo, System.String, System.String, Modest.StateSpace.StateSet`1<UmbState>, System.IDisposable ByRef, System.Func`3<Boolean,Boolean,Boolean>, System.String, Modest.Modularity.AnalysisDataSet, Modest.Modularity.OperationState, Modest.Modularity.ComponentErrorHandler)
-   at Modest.ModelChecking.MAModelChecker`1[[Modest.StateSpace.UnifiedBinaryFormat+UmbState, Modest.StateSpace, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null]].CheckProperties(Modest.StateSpace.StateSpace, Modest.StateSpace.StateSet`1<UmbState>, Boolean[], System.String, Modest.Modularity.OperationState, Modest.Modularity.ComponentErrorHandler)
-   at Modest.ModelChecking.MAModelChecker`1[[Modest.StateSpace.UnifiedBinaryFormat+UmbState, Modest.StateSpace, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null]].ModelCheck(System.String, Modest.Modularity.OperationState, Modest.Modularity.ComponentErrorHandler)
-   at Modest.ModelChecking.ModelCheckingAnalysisEngine.ModelCheckGeneric[[Modest.StateSpace.UnifiedBinaryFormat+UmbState, Modest.StateSpace, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null]](Modest.Exploration.Network`1<UmbState>, Modest.StateSpace.UmbModel, System.Object, System.String, System.Object, System.Object, Modest.Modularity.ILocation, Modest.Modularity.OperationState, Modest.Modularity.ComponentErrorHandler)
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe-memory_cluster.128-2000-20_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7200.006 seconds
+Wallclock time: 7200.019 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -51,13 +44,16 @@ Command: modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+##############################Output to stderr##############################
+Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe-memory_cluster.128-2000-20_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7200.013 seconds
+Wallclock time: 7200.012 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -73,6 +69,22 @@ UMB: warning: Skipping UMB file validation as requested. This is a security vuln
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe-memory_cluster.128-2000-20_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 7200.036 seconds
+Return code: None (timeout)
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe-memory_cluster.128-2000-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
 Wallclock time: 7200.006 seconds
 Return code: None (timeout)
 ##############################
@@ -86,23 +98,9 @@ UMB: warning: Skipping UMB file validation as requested. This is a security vuln
 
 ##############################Output to stderr##############################
 Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-   at Modest.ModelChecking.IntervalIteration.PerformUnboundedIntervalIteration(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, System.Nullable`1<UInt64>, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken, Boolean, Int64 ByRef, Double ByRef)
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe-memory_cluster.128-2000-20_rep5.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7200.042 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/cluster.128-2000-20/modest.model.umb models/cluster.128-2000-20/modest.umb.properties.txt --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+   at Modest.ModelChecking.UnifPlus.CalculateBound(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Double, Double, Boolean, Int32 ByRef, Int32 ByRef, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken)
+   at Modest.ModelChecking.UnifPlus.CalculateOuterBound(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Double, Double, Int32 ByRef, Int32 ByRef, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken)
+   at Modest.ModelChecking.UnifPlus.Calculate(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Modest.Modularity.AnalysisDataSet, System.String, Modest.Modularity.OperationState, Modest.Modularity.LocationErrorHandler)
 </pre>
 </div>
 </body>

@@ -9,13 +9,57 @@
 <h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration modest_from-umb-xz_check_unsafe</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[2.1, 2.3, 2.2, 2.1, 2.6]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2.5, 2.1, 2.6, 2.2, 2.4]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe_eajs.6-300-13_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
-Wallclock time: 4.884 seconds
+Wallclock time: 5.561 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 704 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            7901694
+  Choices:           11897412
+  Branches:          19722777
+  Time (decompress): 2.4 s
+  Time (validate):   0.0 s
+  Time (load):       2.5 s
+
++ Property ExpUtil
+  Value:  12.05111082306636
+  Bounds: [12.05111082306636, infinity)
+  Time:   2.7 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.6 s
+    Min. prob. 1 states:          7901694
+    Time for min. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 8.54690416100535E-07
+    Iterations:  24
+    Time:        2.0 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
+Wallclock time: 4.972 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -40,7 +84,7 @@ Analysis results for UMB
 + Property ExpUtil
   Value:  12.05111082306636
   Bounds: [12.05111082306636, infinity)
-  Time:   2.4 s
+  Time:   2.5 s
 
   + Precomputations
     Min. prob. 0 states:          0
@@ -56,54 +100,10 @@ Analysis results for UMB
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe_eajs.6-300-13_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
-Wallclock time: 5.275 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 702 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            7901694
-  Choices:           11897412
-  Branches:          19722777
-  Time (decompress): 2.3 s
-  Time (validate):   0.0 s
-  Time (load):       2.3 s
-
-+ Property ExpUtil
-  Value:  12.05111082306636
-  Bounds: [12.05111082306636, infinity)
-  Time:   2.6 s
-
-  + Precomputations
-    Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 0.6 s
-    Min. prob. 1 states:          7901694
-    Time for min. prob. 1 states: 0.0 s
-
-  + Value iteration
-    Final error: 8.54690416100535E-07
-    Iterations:  24
-    Time:        1.9 s
-
-</pre>
-</div>
-<div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe_eajs.6-300-13_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
-Wallclock time: 5.155 seconds
+Wallclock time: 5.842 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -121,25 +121,25 @@ Analysis results for UMB
   States:            7901694
   Choices:           11897412
   Branches:          19722777
-  Time (decompress): 2.2 s
+  Time (decompress): 2.6 s
   Time (validate):   0.0 s
-  Time (load):       2.2 s
+  Time (load):       2.6 s
 
 + Property ExpUtil
   Value:  12.05111082306636
   Bounds: [12.05111082306636, infinity)
-  Time:   2.5 s
+  Time:   2.8 s
 
   + Precomputations
     Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 0.6 s
+    Time for min. prob. 0 states: 0.7 s
     Min. prob. 1 states:          7901694
     Time for min. prob. 1 states: 0.0 s
 
   + Value iteration
     Final error: 8.54690416100535E-07
     Iterations:  24
-    Time:        1.9 s
+    Time:        2.1 s
 
 </pre>
 </div>
@@ -147,7 +147,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe_eajs.6-300-13_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
-Wallclock time: 4.887 seconds
+Wallclock time: 4.997 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -165,9 +165,9 @@ Analysis results for UMB
   States:            7901694
   Choices:           11897412
   Branches:          19722777
-  Time (decompress): 2.1 s
+  Time (decompress): 2.2 s
   Time (validate):   0.0 s
-  Time (load):       2.1 s
+  Time (load):       2.2 s
 
 + Property ExpUtil
   Value:  12.05111082306636
@@ -191,7 +191,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe_eajs.6-300-13_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.6-300-13/modest.model.umb.xz models/eajs.6-300-13/modest.umbxz.properties.txt -I UMB --unsafe -D -Y --exhaustive
-Wallclock time: 5.977 seconds
+Wallclock time: 5.441 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -209,25 +209,25 @@ Analysis results for UMB
   States:            7901694
   Choices:           11897412
   Branches:          19722777
-  Time (decompress): 2.6 s
+  Time (decompress): 2.3 s
   Time (validate):   0.0 s
-  Time (load):       2.6 s
+  Time (load):       2.4 s
 
 + Property ExpUtil
   Value:  12.05111082306636
   Bounds: [12.05111082306636, infinity)
-  Time:   2.9 s
+  Time:   2.7 s
 
   + Precomputations
     Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 0.7 s
+    Time for min. prob. 0 states: 0.6 s
     Min. prob. 1 states:          7901694
     Time for min. prob. 1 states: 0.0 s
 
   + Value iteration
     Final error: 8.54690416100535E-07
     Iterations:  24
-    Time:        2.1 s
+    Time:        1.9 s
 
 </pre>
 </div>

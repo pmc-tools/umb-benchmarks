@@ -9,19 +9,41 @@
 <h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration modest_from-umb_check_default</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, 1.7, TO]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2.6, 1.6, 3.2, 0.5, 0.6]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.054 seconds
-Return code: None (timeout)
+Wallclock time: 181.944 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 59 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.0 s
+  Time (validate):   1.6 s
+  Time (load):       2.6 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        179.3 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        179.3 s
 
 </pre>
 </div>
@@ -29,38 +51,7 @@ Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.010 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -D -Y --exhaustive
-
-
-
-
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.006 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -D -Y --exhaustive
-
-
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 2.315 seconds
+Wallclock time: 2.034 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -76,9 +67,81 @@ Analysis results for UMB
   States:            397435
   Choices:           2323315
   Branches:          2492035
-  Time (decompress): 1.0 s
-  Time (validate):   1.7 s
-  Time (load):       1.7 s
+  Time (decompress): 0.1 s
+  Time (validate):   1.6 s
+  Time (load):       1.6 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.3 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.3 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
+Wallclock time: 181.637 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -D -Y --exhaustive
+
+
+
+
+Peak memory usage: 52 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.0 s
+  Time (validate):   2.4 s
+  Time (load):       3.2 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        178.3 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        178.3 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
+Wallclock time: 0.920 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -D -Y --exhaustive
+
+
+
+
+Peak memory usage: 96 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.1 s
+  Time (validate):   0.4 s
+  Time (load):       0.5 s
 
 + Property live
   Probability: 1
@@ -96,13 +159,35 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_default_pnueli-zuck.5_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt  -D -Y --exhaustive
-Wallclock time: 7200.356 seconds
-Return code: None (timeout)
+Wallclock time: 1.060 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/pnueli-zuck.5/modest.model.umb models/pnueli-zuck.5/modest.umb.properties.txt -D -Y --exhaustive
 
 
+
+
+Peak memory usage: 98 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            397435
+  Choices:           2323315
+  Branches:          2492035
+  Time (decompress): 0.1 s
+  Time (validate):   0.5 s
+  Time (load):       0.6 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.4 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.3 s
 
 </pre>
 </div>

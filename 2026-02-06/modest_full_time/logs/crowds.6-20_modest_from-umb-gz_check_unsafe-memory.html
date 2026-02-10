@@ -9,13 +9,51 @@
 <h3>Log files for model <a href="../../models/crowds.6-20/index.html" target="_blank">crowds.6-20</a> and tool configuration modest_from-umb-gz_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[6.932, 7.289, 7.225, 8.705, 7.019]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[7.54, 7.632, 7.366, 7.632, 7.113]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-gz_check_unsafe-memory_crowds.6-20_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 6.932 seconds
+Wallclock time: 7.540 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 863 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            10633591
+  Choices:           10633591
+  Branches:          38261191
+  Time (decompress): 0.6 s
+  Time (validate):   0.0 s
+  Time (load):       0.6 s
+
++ Property positive
+  Probability: 0.1204761609299478
+  Bounds:      [0.1204761609299478, 1]
+  Time:        6.5 s
+
+  + Value iteration
+    Final error: 8.778542281008603E-07
+    Iterations:  63
+    Time:        6.5 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-gz_check_unsafe-memory_crowds.6-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 7.632 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -40,50 +78,12 @@ Analysis results for UMB
 + Property positive
   Probability: 0.1204761609299478
   Bounds:      [0.1204761609299478, 1]
-  Time:        6.1 s
+  Time:        6.6 s
 
   + Value iteration
     Final error: 8.778542281008603E-07
     Iterations:  63
-    Time:        6.1 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-gz_check_unsafe-memory_crowds.6-20_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7.289 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 863 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            10633591
-  Choices:           10633591
-  Branches:          38261191
-  Time (decompress): 0.5 s
-  Time (validate):   0.0 s
-  Time (load):       0.6 s
-
-+ Property positive
-  Probability: 0.1204761609299478
-  Bounds:      [0.1204761609299478, 1]
-  Time:        6.3 s
-
-  + Value iteration
-    Final error: 8.778542281008603E-07
-    Iterations:  63
-    Time:        6.3 s
+    Time:        6.6 s
 
 </pre>
 </div>
@@ -91,7 +91,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-gz_check_unsafe-memory_crowds.6-20_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7.225 seconds
+Wallclock time: 7.366 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -102,7 +102,7 @@ Command: modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
 
-Peak memory usage: 862 MB
+Peak memory usage: 864 MB
 Analysis results for UMB
 
 + State space (UMB)
@@ -116,12 +116,12 @@ Analysis results for UMB
 + Property positive
   Probability: 0.1204761609299478
   Bounds:      [0.1204761609299478, 1]
-  Time:        6.3 s
+  Time:        6.4 s
 
   + Value iteration
     Final error: 8.778542281008603E-07
     Iterations:  63
-    Time:        6.3 s
+    Time:        6.4 s
 
 </pre>
 </div>
@@ -129,7 +129,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-gz_check_unsafe-memory_crowds.6-20_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 8.705 seconds
+Wallclock time: 7.632 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -149,17 +149,17 @@ Analysis results for UMB
   Branches:          38261191
   Time (decompress): 0.6 s
   Time (validate):   0.0 s
-  Time (load):       0.7 s
+  Time (load):       0.6 s
 
 + Property positive
   Probability: 0.1204761609299478
   Bounds:      [0.1204761609299478, 1]
-  Time:        7.6 s
+  Time:        6.6 s
 
   + Value iteration
     Final error: 8.778542281008603E-07
     Iterations:  63
-    Time:        7.6 s
+    Time:        6.6 s
 
 </pre>
 </div>
@@ -167,7 +167,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-gz_check_unsafe-memory_crowds.6-20_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/modest.umbgz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7.019 seconds
+Wallclock time: 7.113 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -178,26 +178,26 @@ Command: modest mcsta models/crowds.6-20/modest.model.umb.gz models/crowds.6-20/
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
 
-Peak memory usage: 865 MB
+Peak memory usage: 863 MB
 Analysis results for UMB
 
 + State space (UMB)
   States:            10633591
   Choices:           10633591
   Branches:          38261191
-  Time (decompress): 0.5 s
+  Time (decompress): 0.6 s
   Time (validate):   0.0 s
   Time (load):       0.6 s
 
 + Property positive
   Probability: 0.1204761609299478
   Bounds:      [0.1204761609299478, 1]
-  Time:        6.0 s
+  Time:        6.1 s
 
   + Value iteration
     Final error: 8.778542281008603E-07
     Iterations:  63
-    Time:        6.0 s
+    Time:        6.1 s
 
 </pre>
 </div>

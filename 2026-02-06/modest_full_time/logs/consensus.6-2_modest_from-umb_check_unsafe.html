@@ -9,14 +9,14 @@
 <h3>Log files for model <a href="../../models/consensus.6-2/index.html" target="_blank">consensus.6-2</a> and tool configuration modest_from-umb_check_unsafe</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, TO]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[16.319, TO, 18.582, 17.67, 16.792]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_consensus.6-2_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.005 seconds
-Return code: None (timeout)
+Wallclock time: 16.319 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
@@ -25,13 +25,35 @@ Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 188 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1258240
+  Choices:           5008128
+  Branches:          6236736
+  Time (decompress): 0.1 s
+  Time (validate):   0.0 s
+  Time (load):       0.5 s
+
++ Property disagree
+  Probability: 0.36362422496221386
+  Bounds:      [0.36362422496221386, 1]
+  Time:        15.7 s
+
+  + Value iteration
+    Final error: 9.857326206509403E-07
+    Iterations:  736
+    Time:        15.6 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_consensus.6-2_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.006 seconds
+Wallclock time: 7200.111 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -41,22 +63,14 @@ Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-   at Modest.ModelChecking.ValueIteration.PerformUnboundedValueIteration(Modest.ModelChecking.PropertyAnalysisTask, Partition, System.Nullable`1<UInt64>, Modest.Modularity.LocationErrorHandler, System.Threading.CancellationToken, Boolean, Int64 ByRef, Double ByRef, Boolean ByRef)
-   at Modest.ModelChecking.ValueIteration.PerformPartitionUnboundedValueIteration(Modest.ModelChecking.PropertyAnalysisTask, Partition, Int64, UnboundedValueIterationPartitionData, System.String, Modest.Modularity.LocationErrorHandler, Modest.Modularity.OperationState)
-   at Modest.ModelChecking.ValueIteration+<>c__DisplayClass7_0.<IterateUnbounded>g__FixpointStep|1(Int32, Int32, Modest.Modularity.OperationState)
-   at Modest.StateSpace.Helpers.IteratePartitions(Modest.StateSpace.StateSpace, System.Action`2<Int32,Modest.Modularity.OperationState>, System.Func`4<Int32,Int32,Modest.Modularity.OperationState,Boolean>, System.Action`2<Int32,Modest.Modularity.OperationState>, Modest.Modularity.OperationState)
-   at Modest.ModelChecking.ValueIteration.IterateUnbounded(Modest.ModelChecking.PropertyAnalysisTask, Modest.StateSpace.StateSpace, Modest.Modularity.AnalysisDataSet, System.String, Modest.Modularity.LocationErrorHandler, Modest.Modularity.OperationState)
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_consensus.6-2_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.006 seconds
-Return code: None (timeout)
+Wallclock time: 18.582 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
@@ -65,14 +79,36 @@ Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 188 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1258240
+  Choices:           5008128
+  Branches:          6236736
+  Time (decompress): 0.1 s
+  Time (validate):   0.0 s
+  Time (load):       0.7 s
+
++ Property disagree
+  Probability: 0.36362422496221386
+  Bounds:      [0.36362422496221386, 1]
+  Time:        17.8 s
+
+  + Value iteration
+    Final error: 9.857326206509403E-07
+    Iterations:  736
+    Time:        17.7 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_consensus.6-2_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.007 seconds
-Return code: None (timeout)
+Wallclock time: 17.670 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
@@ -81,14 +117,36 @@ Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 189 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1258240
+  Choices:           5008128
+  Branches:          6236736
+  Time (decompress): 0.1 s
+  Time (validate):   0.0 s
+  Time (load):       0.4 s
+
++ Property disagree
+  Probability: 0.36362422496221386
+  Bounds:      [0.36362422496221386, 1]
+  Time:        17.1 s
+
+  + Value iteration
+    Final error: 9.857326206509403E-07
+    Iterations:  736
+    Time:        17.1 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_consensus.6-2_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.006 seconds
-Return code: None (timeout)
+Wallclock time: 16.792 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
@@ -97,6 +155,28 @@ Command: modest mcsta models/consensus.6-2/modest.model.umb models/consensus.6-2
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 188 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            1258240
+  Choices:           5008128
+  Branches:          6236736
+  Time (decompress): 0.1 s
+  Time (validate):   0.0 s
+  Time (load):       0.5 s
+
++ Property disagree
+  Probability: 0.36362422496221386
+  Bounds:      [0.36362422496221386, 1]
+  Time:        16.2 s
+
+  + Value iteration
+    Final error: 9.857326206509403E-07
+    Iterations:  736
+    Time:        16.1 s
+
 </pre>
 </div>
 </body>

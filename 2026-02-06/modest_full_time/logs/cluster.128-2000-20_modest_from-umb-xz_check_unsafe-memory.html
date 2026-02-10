@@ -9,13 +9,56 @@
 <h3>Log files for model <a href="../../models/cluster.128-2000-20/index.html" target="_blank">cluster.128-2000-20</a> and tool configuration modest_from-umb-xz_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, 6736.947, 6935.055, 6858.063, 6687.935]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[7077.429, TO, 6171.486, 6209.703, TO]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_cluster.128-2000-20_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 7200.008 seconds
+Wallclock time: 7077.429 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 171 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            597012
+  Choices:           597012
+  Branches:          2908192
+  Time (decompress): 0.4 s
+  Time (validate):   0.0 s
+  Time (load):       0.4 s
+
++ Property qos1
+  Probability: 0.0010974025337729253
+  Bounds:      [0.0010724025337729205, 0.0011224025337729301]
+  Time:        7076.8 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+
+  + Unif+
+    Time:             7076.8 s
+    Max. exit rate:   50.507999999999996
+    Iterations:       1
+    Final unif. rate: 50.507999999999996
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_cluster.128-2000-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 7200.011 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -28,53 +71,10 @@ UMB: warning: Skipping UMB file validation as requested. This is a security vuln
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_cluster.128-2000-20_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 6736.947 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 168 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            597012
-  Choices:           597012
-  Branches:          2908192
-  Time (decompress): 0.4 s
-  Time (validate):   0.0 s
-  Time (load):       0.4 s
-
-+ Property qos1
-  Probability: 0.0010974025337729253
-  Bounds:      [0.0010724025337729205, 0.0011224025337729301]
-  Time:        6736.4 s
-
-  + Precomputations
-    Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 0.0 s
-
-  + Unif+
-    Time:             6736.4 s
-    Max. exit rate:   50.507999999999996
-    Iterations:       1
-    Final unif. rate: 50.507999999999996
-
-</pre>
-</div>
-<div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_cluster.128-2000-20_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 6935.055 seconds
+Wallclock time: 6171.486 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -92,21 +92,21 @@ Analysis results for UMB
   States:            597012
   Choices:           597012
   Branches:          2908192
-  Time (decompress): 0.3 s
+  Time (decompress): 0.4 s
   Time (validate):   0.0 s
-  Time (load):       0.3 s
+  Time (load):       0.4 s
 
 + Property qos1
   Probability: 0.0010974025337729253
   Bounds:      [0.0010724025337729205, 0.0011224025337729301]
-  Time:        6934.6 s
+  Time:        6171.0 s
 
   + Precomputations
     Min. prob. 0 states:          0
     Time for min. prob. 0 states: 0.0 s
 
   + Unif+
-    Time:             6934.6 s
+    Time:             6171.0 s
     Max. exit rate:   50.507999999999996
     Iterations:       1
     Final unif. rate: 50.507999999999996
@@ -117,7 +117,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_cluster.128-2000-20_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 6858.063 seconds
+Wallclock time: 6209.703 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -128,7 +128,7 @@ Command: modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/clus
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
 
-Peak memory usage: 168 MB
+Peak memory usage: 169 MB
 Analysis results for UMB
 
 + State space (UMB)
@@ -142,14 +142,14 @@ Analysis results for UMB
 + Property qos1
   Probability: 0.0010974025337729253
   Bounds:      [0.0010724025337729205, 0.0011224025337729301]
-  Time:        6857.3 s
+  Time:        6209.2 s
 
   + Precomputations
     Min. prob. 0 states:          0
     Time for min. prob. 0 states: 0.0 s
 
   + Unif+
-    Time:             6857.3 s
+    Time:             6209.2 s
     Max. exit rate:   50.507999999999996
     Iterations:       1
     Final unif. rate: 50.507999999999996
@@ -160,8 +160,8 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_cluster.128-2000-20_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 6687.935 seconds
-Return code: 0
+Wallclock time: 7200.007 seconds
+Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/cluster.128-2000-20/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
@@ -170,33 +170,6 @@ Command: modest mcsta models/cluster.128-2000-20/modest.model.umb.xz models/clus
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 170 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            597012
-  Choices:           597012
-  Branches:          2908192
-  Time (decompress): 0.4 s
-  Time (validate):   0.0 s
-  Time (load):       0.4 s
-
-+ Property qos1
-  Probability: 0.0010974025337729253
-  Bounds:      [0.0010724025337729205, 0.0011224025337729301]
-  Time:        6687.4 s
-
-  + Precomputations
-    Min. prob. 0 states:          0
-    Time for min. prob. 0 states: 0.0 s
-
-  + Unif+
-    Time:             6687.4 s
-    Max. exit rate:   50.507999999999996
-    Iterations:       1
-    Final unif. rate: 50.507999999999996
-
 </pre>
 </div>
 </body>

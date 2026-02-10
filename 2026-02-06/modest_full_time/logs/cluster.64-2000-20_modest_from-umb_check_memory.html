@@ -15,7 +15,7 @@
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.007 seconds
+Wallclock time: 7200.031 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -29,7 +29,7 @@ Command: modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.084 seconds
+Wallclock time: 7200.016 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -37,24 +37,13 @@ Command: modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.
 
 
 
+
+##############################Output to stderr##############################
+Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.007 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-
-
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
 Wallclock time: 7200.006 seconds
@@ -80,16 +69,13 @@ Fatal error. System.AccessViolationException: Attempted to read or write protect
    at Modest.ModelChecking.ModelCheckingAnalysisEngine.ModelCheck(Modest.Modularity.IModel, CompilationParameters<AnalysisParams>, System.Object, Modest.Modularity.OperationState, Modest.Modularity.IErrorHandler)
    at Modest.ModelChecking.ModelCheckingAnalysisEngine.Analyze(AnalysisParams, Modest.Modularity.IModel[], Int32, Boolean, Boolean, Boolean, Modest.Modularity.OperationState, Modest.Modularity.IErrorHandler)
    at Modest.ModelChecking.AnalysisEngine`1[[System.__Canon, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].Analyze(System.__Canon, Modest.Modularity.IModel, Int32, Boolean, Modest.Modularity.IExperiment[], Modest.Modularity.OperationState, Modest.Modularity.IErrorHandler)
-   at Modest.ModelChecking.AnalysisEngine`1[[System.__Canon, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].Analyze(Modest.Modularity.IParameterObject, Modest.Modularity.IModel[], Modest.Modularity.IExperiment[][], Modest.Modularity.OperationState, Modest.Modularity.IErrorHandler)
-   at Modest.Executable.ModelChecker.Run(Modest.Modularity.IParameterObject, System.Diagnostics.Stopwatch, Modest.Modularity.Tools.IOutputHandler, System.Threading.CancellationToken)
-   at Modest.Executable.Program.Main(System.String[])
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep5.log</div></div>
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
-Wallclock time: 7200.012 seconds
+Wallclock time: 7200.010 seconds
 Return code: None (timeout)
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -97,6 +83,23 @@ Command: modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.
 
 
 
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_memory_cluster.64-2000-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
+Wallclock time: 7200.037 seconds
+Return code: None (timeout)
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/cluster.64-2000-20/modest.model.umb models/cluster.64-2000-20/modest.umb.properties.txt -S Memory -D -Y --exhaustive
+
+
+
+
+##############################Output to stderr##############################
+Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
 </pre>
 </div>
 </body>

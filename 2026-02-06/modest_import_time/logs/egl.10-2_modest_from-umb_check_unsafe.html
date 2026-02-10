@@ -9,48 +9,13 @@
 <h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration modest_from-umb_check_unsafe</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, 9.0, TO, TO]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.0, 3.8, 6.6, 10.2, 9.3]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.019 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.138 seconds
-Return code: None (timeout)
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 3693.850 seconds
+Wallclock time: 3697.463 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -61,7 +26,45 @@ Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.um
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
 
-Peak memory usage: 1236 MB
+Peak memory usage: 1489 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            66060286
+  Choices:           66060286
+  Branches:          67108861
+  Time (decompress): 0.0 s
+  Time (validate):   0.0 s
+  Time (load):       3.0 s
+
++ Property unfairA
+  Probability: 0.50048828125
+  Bounds:      [0.50048828125, 0.50048828125]
+  Time:        3694.3 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        3694.3 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
+Wallclock time: 4401.396 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 1537 MB
 Analysis results for UMB
 
 + State space (UMB)
@@ -70,17 +73,55 @@ Analysis results for UMB
   Branches:          67108861
   Time (decompress): 0.1 s
   Time (validate):   0.0 s
-  Time (load):       9.0 s
+  Time (load):       3.8 s
 
 + Property unfairA
   Probability: 0.50048828125
   Bounds:      [0.50048828125, 0.50048828125]
-  Time:        3684.7 s
+  Time:        4397.4 s
 
   + Value iteration
     Final error: 0
     Iterations:  2
-    Time:        3684.6 s
+    Time:        4397.4 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
+Wallclock time: 3725.448 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 1096 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            66060286
+  Choices:           66060286
+  Branches:          67108861
+  Time (decompress): 0.0 s
+  Time (validate):   0.0 s
+  Time (load):       6.6 s
+
++ Property unfairA
+  Probability: 0.50048828125
+  Bounds:      [0.50048828125, 0.50048828125]
+  Time:        3718.7 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        3718.6 s
 
 </pre>
 </div>
@@ -88,8 +129,8 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.022 seconds
-Return code: None (timeout)
+Wallclock time: 2122.928 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
@@ -99,16 +140,35 @@ Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.um
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
 
-##############################Output to stderr##############################
-Fatal error. System.AccessViolationException: Attempted to read or write protected memory. This is often an indication that other memory is corrupt.
+Peak memory usage: 1539 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            66060286
+  Choices:           66060286
+  Branches:          67108861
+  Time (decompress): 0.1 s
+  Time (validate):   0.0 s
+  Time (load):       10.2 s
+
++ Property unfairA
+  Probability: 0.50048828125
+  Bounds:      [0.50048828125, 0.50048828125]
+  Time:        2112.5 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        2112.5 s
+
 </pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb_check_unsafe_egl.10-2_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
-Wallclock time: 7200.024 seconds
-Return code: None (timeout)
+Wallclock time: 1894.680 seconds
+Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
 Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.umb.properties.txt --unsafe -D -Y --exhaustive
@@ -117,6 +177,28 @@ Command: modest mcsta models/egl.10-2/modest.model.umb models/egl.10-2/modest.um
 
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 1517 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            66060286
+  Choices:           66060286
+  Branches:          67108861
+  Time (decompress): 0.1 s
+  Time (validate):   0.0 s
+  Time (load):       9.3 s
+
++ Property unfairA
+  Probability: 0.50048828125
+  Bounds:      [0.50048828125, 0.50048828125]
+  Time:        1885.2 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        1885.2 s
+
 </pre>
 </div>
 </body>

@@ -9,13 +9,61 @@
 <h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration modest_from-jani_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[1.662, 1.698, 1.578, 1.754, 1.562]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.659, 3.487, 1.67, 1.579, 1.855]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pnueli-zuck.5_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.662 seconds
+Wallclock time: 1.659 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[1]: info: Expanding variable "p0" into 16 locations in automaton "process0".
+model.jani:variables[2]: info: Expanding variable "p1" into 16 locations in automaton "process1".
+model.jani:variables[3]: info: Expanding variable "p2" into 16 locations in automaton "process2".
+model.jani:variables[4]: info: Expanding variable "p3" into 16 locations in automaton "process3".
+model.jani:variables[5]: info: Expanding variable "p4" into 16 locations in automaton "process4".
+model.jani: info: Need 16 bytes per state.
+model.jani: info: Explored 397435 states.
+
+Peak memory usage: 416 MB
+Analysis results for model.jani
+
++ State space exploration
+  State size:         16 bytes
+  States:             397435
+  Choices:            2323315
+  Branches:           2492035
+  Rate:               393500 states/s
+  Peak memory:        113.90 MB
+  Final size:         3.08 MB
+  Time (exploration): 1.0 s
+  Time (merging):     0.0 s
+
++ Property live
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.4 s
+
+  + Value iteration
+    Final error: 5.774204007950579E-07
+    Iterations:  37
+    Time:        0.3 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pnueli-zuck.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 3.487 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -41,58 +89,10 @@ Analysis results for model.jani
   States:             397435
   Choices:            2323315
   Branches:           2492035
-  Rate:               366976 states/s
+  Rate:               391948 states/s
   Peak memory:        113.90 MB
   Final size:         3.08 MB
-  Time (exploration): 1.1 s
-  Time (merging):     0.0 s
-
-+ Property live
-  Probability: 1
-  Bounds:      [1, 1]
-  Time:        0.3 s
-
-  + Value iteration
-    Final error: 5.774204007950579E-07
-    Iterations:  37
-    Time:        0.3 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pnueli-zuck.5_rep2.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.698 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[1]: info: Expanding variable "p0" into 16 locations in automaton "process0".
-model.jani:variables[2]: info: Expanding variable "p1" into 16 locations in automaton "process1".
-model.jani:variables[3]: info: Expanding variable "p2" into 16 locations in automaton "process2".
-model.jani:variables[4]: info: Expanding variable "p3" into 16 locations in automaton "process3".
-model.jani:variables[5]: info: Expanding variable "p4" into 16 locations in automaton "process4".
-model.jani: info: Need 16 bytes per state.
-model.jani: info: Explored 397435 states.
-
-Peak memory usage: 417 MB
-Analysis results for model.jani
-
-+ State space exploration
-  State size:         16 bytes
-  States:             397435
-  Choices:            2323315
-  Branches:           2492035
-  Rate:               365962 states/s
-  Peak memory:        113.90 MB
-  Final size:         3.08 MB
-  Time (exploration): 1.1 s
+  Time (exploration): 1.0 s
   Time (merging):     0.0 s
 
 + Property live
@@ -111,7 +111,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pnueli-zuck.5_rep3.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.578 seconds
+Wallclock time: 1.670 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -137,10 +137,10 @@ Analysis results for model.jani
   States:             397435
   Choices:            2323315
   Branches:           2492035
-  Rate:               387741 states/s
+  Rate:               374233 states/s
   Peak memory:        113.90 MB
   Final size:         3.08 MB
-  Time (exploration): 1.0 s
+  Time (exploration): 1.1 s
   Time (merging):     0.0 s
 
 + Property live
@@ -159,7 +159,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pnueli-zuck.5_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.754 seconds
+Wallclock time: 1.579 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -185,10 +185,10 @@ Analysis results for model.jani
   States:             397435
   Choices:            2323315
   Branches:           2492035
-  Rate:               350472 states/s
+  Rate:               388500 states/s
   Peak memory:        113.90 MB
   Final size:         3.08 MB
-  Time (exploration): 1.2 s
+  Time (exploration): 1.0 s
   Time (merging):     0.0 s
 
 + Property live
@@ -207,7 +207,7 @@ Analysis results for model.jani
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_check_unsafe-memory_pnueli-zuck.5_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/pnueli-zuck.5/model.jani --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 1.562 seconds
+Wallclock time: 1.855 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -233,10 +233,10 @@ Analysis results for model.jani
   States:             397435
   Choices:            2323315
   Branches:           2492035
-  Rate:               397038 states/s
+  Rate:               331196 states/s
   Peak memory:        113.90 MB
   Final size:         3.08 MB
-  Time (exploration): 1.0 s
+  Time (exploration): 1.2 s
   Time (merging):     0.0 s
 
 + Property live

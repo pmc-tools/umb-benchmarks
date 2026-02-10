@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration modest_from-umb-xz_check_unsafe-memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[11.129, 11.184, 9.567, 10.042, 11.848]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[11.17, 11.182, 11.156, 10.008, 10.058]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_egl.10-2_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 11.129 seconds
+Wallclock time: 11.170 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -33,14 +33,14 @@ Analysis results for UMB
   States:            66060286
   Choices:           66060286
   Branches:          67108861
-  Time (decompress): 9.3 s
+  Time (decompress): 9.2 s
   Time (validate):   0.0 s
-  Time (load):       9.8 s
+  Time (load):       9.7 s
 
 + Property unfairA
   Probability: 0.50048828125
   Bounds:      [0.50048828125, 0.50048828125]
-  Time:        0.9 s
+  Time:        0.8 s
 
   + Value iteration
     Final error: 0
@@ -53,7 +53,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_egl.10-2_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 11.184 seconds
+Wallclock time: 11.182 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -64,7 +64,45 @@ Command: modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest
 
 UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
 
-Peak memory usage: 2567 MB
+Peak memory usage: 2566 MB
+Analysis results for UMB
+
++ State space (UMB)
+  States:            66060286
+  Choices:           66060286
+  Branches:          67108861
+  Time (decompress): 9.5 s
+  Time (validate):   0.0 s
+  Time (load):       10.0 s
+
++ Property unfairA
+  Probability: 0.50048828125
+  Bounds:      [0.50048828125, 0.50048828125]
+  Time:        0.8 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        0.8 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+Wallclock time: 11.156 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
+
+
+
+
+UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
+
+Peak memory usage: 2566 MB
 Analysis results for UMB
 
 + State space (UMB)
@@ -88,48 +126,10 @@ Analysis results for UMB
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_egl.10-2_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 9.567 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-
-
-
-
-UMB: warning: Skipping UMB file validation as requested. This is a security vulnerability when used with UMB files from untrusted sources.
-
-Peak memory usage: 2566 MB
-Analysis results for UMB
-
-+ State space (UMB)
-  States:            66060286
-  Choices:           66060286
-  Branches:          67108861
-  Time (decompress): 8.2 s
-  Time (validate):   0.0 s
-  Time (load):       8.7 s
-
-+ Property unfairA
-  Probability: 0.50048828125
-  Bounds:      [0.50048828125, 0.50048828125]
-  Time:        0.8 s
-
-  + Value iteration
-    Final error: 0
-    Iterations:  2
-    Time:        0.7 s
-
-</pre>
-</div>
-<div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_egl.10-2_rep4.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 10.042 seconds
+Wallclock time: 10.008 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -147,9 +147,9 @@ Analysis results for UMB
   States:            66060286
   Choices:           66060286
   Branches:          67108861
-  Time (decompress): 8.2 s
+  Time (decompress): 8.1 s
   Time (validate):   0.0 s
-  Time (load):       8.6 s
+  Time (load):       8.5 s
 
 + Property unfairA
   Probability: 0.50048828125
@@ -167,7 +167,7 @@ Analysis results for UMB
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-umb-xz_check_unsafe-memory_egl.10-2_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/egl.10-2/modest.model.umb.xz models/egl.10-2/modest.umbxz.properties.txt -I UMB --unsafe -S Memory -D -Y --exhaustive
-Wallclock time: 11.848 seconds
+Wallclock time: 10.058 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -185,19 +185,19 @@ Analysis results for UMB
   States:            66060286
   Choices:           66060286
   Branches:          67108861
-  Time (decompress): 9.8 s
+  Time (decompress): 8.4 s
   Time (validate):   0.0 s
-  Time (load):       10.3 s
+  Time (load):       8.9 s
 
 + Property unfairA
   Probability: 0.50048828125
   Bounds:      [0.50048828125, 0.50048828125]
-  Time:        0.9 s
+  Time:        0.8 s
 
   + Value iteration
     Final error: 0
     Iterations:  2
-    Time:        0.9 s
+    Time:        0.7 s
 
 </pre>
 </div>

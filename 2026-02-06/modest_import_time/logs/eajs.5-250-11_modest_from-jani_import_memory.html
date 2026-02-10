@@ -9,13 +9,13 @@
 <h3>Log files for model <a href="../../models/eajs.5-250-11/index.html" target="_blank">eajs.5-250-11</a> and tool configuration modest_from-jani_import_memory</h3>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">[3.9, 4.0, 3.8000000000000003, 3.9, 4.0]</pre>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.9, 4.3999999999999995, 4.199999999999999, 3.8000000000000003, 4.5]</pre>
 </div>
 <div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep1.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-Wallclock time: 4.128 seconds
+Wallclock time: 4.115 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -42,7 +42,7 @@ State size:         24 bytes
 States:             3049471
 Choices:            4256193
 Branches:           6977654
-Rate:               811461 states/s
+Rate:               809522 states/s
 Peak memory:        500.49 MB
 Final size:         23.63 MB
 Time (exploration): 3.8 s
@@ -54,7 +54,85 @@ Time (merging):     0.1 s
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep2.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-Wallclock time: 4.306 seconds
+Wallclock time: 4.731 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[3]: info: Expanding variable "loc_1" into 3 locations in automaton "Process_1".
+model.jani:variables[7]: info: Expanding variable "loc_2" into 3 locations in automaton "Process_2".
+model.jani:variables[9]: info: Expanding variable "user_1" into 6 locations in automaton "Resources".
+model.jani:variables[11]: info: Expanding variable "loc_3" into 3 locations in automaton "Process_3".
+model.jani:variables[12]: info: Expanding variable "loc_5" into 3 locations in automaton "Process_5".
+model.jani:variables[15]: info: Expanding variable "loc_4" into 3 locations in automaton "Process_4".
+model.jani: info: Need 24 bytes per state.
+model.jani: warning: The probabilities for a transition labelled "tick" with 4 branches in state (Battery.location = l, Process_1.location = Process_1_loc_1_2, Process_2.location = Process_2_loc_2_0, Resources.location = Resources_user_1_4, Process_3.location = Process_3_loc_3_0, Process_5.location = Process_5_loc_5_2, Process_4.location = Process_4_loc_4_0, battery_load = 220, loc_1 = 2, t_1 = 0, t_2 = 0, loc_2 = 0, boost_1 = 0, user_1 = 4, t_3 = 0, loc_3 = 0, loc_5 = 2, t_5 = 4, t_4 = 0, loc_4 = 0, failure_1 = False) do not sum up to the expected value of 1 (actual sum: 0.99999999999999989). Results will likely be affected by floating-point errors.
+model.jani: info: Explored 3049471 states.
+
+Peak memory usage: 1285 MB
+Analysis results for model.jani
+State space exploration
+State size:         24 bytes
+States:             3049471
+Choices:            4256193
+Branches:           6977654
+Rate:               708356 states/s
+Peak memory:        550.69 MB
+Final size:         23.63 MB
+Time (exploration): 4.3 s
+Time (merging):     0.1 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
+Wallclock time: 4.429 seconds
+Return code: 0
+##############################
+The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
+Command: modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
+
+
+
+
+model.jani:model: info: model is an MDP model.
+model.jani:variables[3]: info: Expanding variable "loc_1" into 3 locations in automaton "Process_1".
+model.jani:variables[7]: info: Expanding variable "loc_2" into 3 locations in automaton "Process_2".
+model.jani:variables[9]: info: Expanding variable "user_1" into 6 locations in automaton "Resources".
+model.jani:variables[11]: info: Expanding variable "loc_3" into 3 locations in automaton "Process_3".
+model.jani:variables[12]: info: Expanding variable "loc_5" into 3 locations in automaton "Process_5".
+model.jani:variables[15]: info: Expanding variable "loc_4" into 3 locations in automaton "Process_4".
+model.jani: info: Need 24 bytes per state.
+model.jani: warning: The probabilities for a transition labelled "tick" with 4 branches in state (Battery.location = l, Process_1.location = Process_1_loc_1_2, Process_2.location = Process_2_loc_2_0, Resources.location = Resources_user_1_4, Process_3.location = Process_3_loc_3_0, Process_5.location = Process_5_loc_5_2, Process_4.location = Process_4_loc_4_0, battery_load = 220, loc_1 = 2, t_1 = 0, t_2 = 0, loc_2 = 0, boost_1 = 0, user_1 = 4, t_3 = 0, loc_3 = 0, loc_5 = 2, t_5 = 4, t_4 = 0, loc_4 = 0, failure_1 = False) do not sum up to the expected value of 1 (actual sum: 0.99999999999999989). Results will likely be affected by floating-point errors.
+model.jani: info: Explored 3049471 states.
+
+Peak memory usage: 1280 MB
+Analysis results for model.jani
+State space exploration
+State size:         24 bytes
+States:             3049471
+Choices:            4256193
+Branches:           6977654
+Rate:               755942 states/s
+Peak memory:        500.49 MB
+Final size:         23.63 MB
+Time (exploration): 4.1 s
+Time (merging):     0.1 s
+
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
+Wallclock time: 4.013 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -81,46 +159,7 @@ State size:         24 bytes
 States:             3049471
 Choices:            4256193
 Branches:           6977654
-Rate:               778125 states/s
-Peak memory:        500.49 MB
-Final size:         23.63 MB
-Time (exploration): 3.9 s
-Time (merging):     0.1 s
-
-</pre>
-</div>
-<div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep3.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-Wallclock time: 4.044 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[3]: info: Expanding variable "loc_1" into 3 locations in automaton "Process_1".
-model.jani:variables[7]: info: Expanding variable "loc_2" into 3 locations in automaton "Process_2".
-model.jani:variables[9]: info: Expanding variable "user_1" into 6 locations in automaton "Resources".
-model.jani:variables[11]: info: Expanding variable "loc_3" into 3 locations in automaton "Process_3".
-model.jani:variables[12]: info: Expanding variable "loc_5" into 3 locations in automaton "Process_5".
-model.jani:variables[15]: info: Expanding variable "loc_4" into 3 locations in automaton "Process_4".
-model.jani: info: Need 24 bytes per state.
-model.jani: warning: The probabilities for a transition labelled "tick" with 4 branches in state (Battery.location = l, Process_1.location = Process_1_loc_1_2, Process_2.location = Process_2_loc_2_0, Resources.location = Resources_user_1_4, Process_3.location = Process_3_loc_3_0, Process_5.location = Process_5_loc_5_2, Process_4.location = Process_4_loc_4_0, battery_load = 220, loc_1 = 2, t_1 = 0, t_2 = 0, loc_2 = 0, boost_1 = 0, user_1 = 4, t_3 = 0, loc_3 = 0, loc_5 = 2, t_5 = 4, t_4 = 0, loc_4 = 0, failure_1 = False) do not sum up to the expected value of 1 (actual sum: 0.99999999999999989). Results will likely be affected by floating-point errors.
-model.jani: info: Explored 3049471 states.
-
-Peak memory usage: 1282 MB
-Analysis results for model.jani
-State space exploration
-State size:         24 bytes
-States:             3049471
-Choices:            4256193
-Branches:           6977654
-Rate:               823736 states/s
+Rate:               833189 states/s
 Peak memory:        500.49 MB
 Final size:         23.63 MB
 Time (exploration): 3.7 s
@@ -129,49 +168,10 @@ Time (merging):     0.1 s
 </pre>
 </div>
 <div class="box">
-<div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep4.log</div></div>
-<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
-../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-Wallclock time: 4.152 seconds
-Return code: 0
-##############################
-The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
-Command: modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-
-
-
-
-model.jani:model: info: model is an MDP model.
-model.jani:variables[3]: info: Expanding variable "loc_1" into 3 locations in automaton "Process_1".
-model.jani:variables[7]: info: Expanding variable "loc_2" into 3 locations in automaton "Process_2".
-model.jani:variables[9]: info: Expanding variable "user_1" into 6 locations in automaton "Resources".
-model.jani:variables[11]: info: Expanding variable "loc_3" into 3 locations in automaton "Process_3".
-model.jani:variables[12]: info: Expanding variable "loc_5" into 3 locations in automaton "Process_5".
-model.jani:variables[15]: info: Expanding variable "loc_4" into 3 locations in automaton "Process_4".
-model.jani: info: Need 24 bytes per state.
-model.jani: warning: The probabilities for a transition labelled "tick" with 4 branches in state (Battery.location = l, Process_1.location = Process_1_loc_1_2, Process_2.location = Process_2_loc_2_0, Resources.location = Resources_user_1_4, Process_3.location = Process_3_loc_3_0, Process_5.location = Process_5_loc_5_2, Process_4.location = Process_4_loc_4_0, battery_load = 220, loc_1 = 2, t_1 = 0, t_2 = 0, loc_2 = 0, boost_1 = 0, user_1 = 4, t_3 = 0, loc_3 = 0, loc_5 = 2, t_5 = 4, t_4 = 0, loc_4 = 0, failure_1 = False) do not sum up to the expected value of 1 (actual sum: 0.99999999999999989). Results will likely be affected by floating-point errors.
-model.jani: info: Explored 3049471 states.
-
-Peak memory usage: 1282 MB
-Analysis results for model.jani
-State space exploration
-State size:         24 bytes
-States:             3049471
-Choices:            4256193
-Branches:           6977654
-Rate:               799966 states/s
-Peak memory:        500.49 MB
-Final size:         23.63 MB
-Time (exploration): 3.8 s
-Time (merging):     0.1 s
-
-</pre>
-</div>
-<div class="box">
 <div class="boxlabelo"><div class="boxlabelc">Log file: modest_from-jani_import_memory_eajs.5-250-11_rep5.log</div></div>
 <pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
 ../bin/modest mcsta models/eajs.5-250-11/model.jani --stop-after Exploration -S Memory -D -Y --exhaustive
-Wallclock time: 4.247 seconds
+Wallclock time: 4.789 seconds
 Return code: 0
 ##############################
 The Modest Toolset (www.modestchecker.net), version v3.1.309-gc50f44578+fbf9665bcdba2a52f889044b798eed3fff9893b6.
@@ -191,17 +191,17 @@ model.jani: info: Need 24 bytes per state.
 model.jani: warning: The probabilities for a transition labelled "tick" with 4 branches in state (Battery.location = l, Process_1.location = Process_1_loc_1_2, Process_2.location = Process_2_loc_2_0, Resources.location = Resources_user_1_4, Process_3.location = Process_3_loc_3_0, Process_5.location = Process_5_loc_5_2, Process_4.location = Process_4_loc_4_0, battery_load = 220, loc_1 = 2, t_1 = 0, t_2 = 0, loc_2 = 0, boost_1 = 0, user_1 = 4, t_3 = 0, loc_3 = 0, loc_5 = 2, t_5 = 4, t_4 = 0, loc_4 = 0, failure_1 = False) do not sum up to the expected value of 1 (actual sum: 0.99999999999999989). Results will likely be affected by floating-point errors.
 model.jani: info: Explored 3049471 states.
 
-Peak memory usage: 1282 MB
+Peak memory usage: 1280 MB
 Analysis results for model.jani
 State space exploration
 State size:         24 bytes
 States:             3049471
 Choices:            4256193
 Branches:           6977654
-Rate:               787773 states/s
-Peak memory:        500.50 MB
+Rate:               696226 states/s
+Peak memory:        550.69 MB
 Final size:         23.63 MB
-Time (exploration): 3.9 s
+Time (exploration): 4.4 s
 Time (merging):     0.1 s
 
 </pre>
