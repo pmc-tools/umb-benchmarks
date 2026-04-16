@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pnueli-zuck.5_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.208, 0.224, 0.346, 0.269, 0.293]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_pnueli-zuck.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.939 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:54:46 GMT+02:00 2026
+Hostname: n23m0176
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66772537/tmpenqevvfaprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66772537/tmpenqevvfaprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772537/tmpenqevvfaprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.208 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.215 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.267 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.492 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.512 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_pnueli-zuck.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.507 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:50:27 GMT+02:00 2026
+Hostname: n23m0062
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66768879/tmplaz81p4zprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768879/tmplaz81p4zprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768879/tmplaz81p4zprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.224 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.261 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.309 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.585 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.615 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_pnueli-zuck.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 3.860 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:38:37 GMT+02:00 2026
+Hostname: n23m0089
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66768280/tmpxdsz_ppbprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768280/tmpxdsz_ppbprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768280/tmpxdsz_ppbprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.346 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.218 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.239 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.471 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.515 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_pnueli-zuck.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.940 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:21:58 GMT+02:00 2026
+Hostname: r23m0129
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66785518/tmp3onkcuwmprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66785518/tmp3onkcuwmprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785518/tmp3onkcuwmprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.269 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.244 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.321 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.583 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.609 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_pnueli-zuck.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.527 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:08:02 GMT+02:00 2026
+Hostname: n23m0165
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66784666/tmpyz65_9obprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66784666/tmpyz65_9obprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784666/tmpyz65_9obprism_from-umb_check_ex_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.293 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2313746
+Choices:     2145026
+Max/avg:     10/5.40
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 45 iterations and 0.256 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 45 iterations and 0.291 seconds.
+target=10000, yes=397435, no=0, maybe=0
+Probabilistic reachability took 0.562 seconds.
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.59 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[3.463, 4.163, 3.884, 3.51, 4.114]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 10.764 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:48:29 GMT+02:00 2026
+Hostname: n23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66757385/tmpr219inxdprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757385/tmpplxqkor7prism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757385/tmpr219inxdprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 769768 1460287 states
+Reachable states exploration and model construction done in 5.637 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.766 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757385/tmpplxqkor7prism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz"...
+Time for exporting: 3.463 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 55807758 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 12.749 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:48:29 GMT+02:00 2026
+Hostname: r23m0207
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66757380/tmp_wil91nzprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757380/tmpxu6rr_nzprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757380/tmp_wil91nzprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 653016 1312190 1460287 states
+Reachable states exploration and model construction done in 6.736 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.902 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757380/tmpxu6rr_nzprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz"...
+Time for exporting: 4.163 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 55807758 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 11.306 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:57:08 GMT+02:00 2026
+Hostname: n23m0063
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66757729/tmp24g0dn33prism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757729/tmpm8yjlbc0prism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757729/tmp24g0dn33prism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 786692 1460287 states
+Reachable states exploration and model construction done in 5.551 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.84 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757729/tmpm8yjlbc0prism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz"...
+Time for exporting: 3.884 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 55807758 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 12.444 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 01:59:51 GMT+02:00 2026
+Hostname: r23m0095
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66754065/tmpyihtymjuprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754065/tmpkh5feuhyprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754065/tmpyihtymjuprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 683938 1389530 1460287 states
+Reachable states exploration and model construction done in 6.308 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.809 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754065/tmpkh5feuhyprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz"...
+Time for exporting: 3.51 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 55807758 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 12.688 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:40:10 GMT+02:00 2026
+Hostname: r23m0075
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66757112/tmpfkvqabgtprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757112/tmp73sfl1nrprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757112/tmpfkvqabgtprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 667102 1319551 1460287 states
+Reachable states exploration and model construction done in 6.675 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.896 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757112/tmp73sfl1nrprism_from-prism_to-umb-gz_ex_csma.3-4_tmp_outdir_/model.umb.gz"...
+Time for exporting: 4.114 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 55807758 bytes
+</pre>
+</div>
+</body>
+</html>

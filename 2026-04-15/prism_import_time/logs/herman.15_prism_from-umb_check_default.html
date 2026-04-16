@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log herman.15_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/herman.15/index.html" target="_blank">herman.15</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[119.309, 160.296, 201.524, 159.932, 175.305]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_herman.15_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 122.622 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:00:57 GMT+02:00 2026
+Hostname: n23m0275
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66776263/tmplk8r_dhmprism_from-umb_check_default_herman.15_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66776263/tmplk8r_dhmprism_from-umb_check_default_herman.15_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66776263/tmplk8r_dhmprism_from-umb_check_default_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 8% 10% 12% 16% 18% 22% 24% 28% 30% 32% 36% 38% 40% 42% 44% 46% 50% 52% 54% 56% 58% 62% 64% 66% 68% 70% 72% 76% 78% 80% 82% 84% 88% 90% 92% 94% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 119.309 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+
+Transition matrix: 810 nodes (9 terminal), 14348908 minterms, vars: 15r/15c
+
+Prob0: 6 iterations in 0.03 seconds (average 0.005000, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 30, inf = 0, maybe = 32738
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=1212] [56.8 KB]
+Adding explicit sparse matrices... [levels=8, num=30, compact] [587.7 KB]
+Creating vector for diagonals... [dist=2, compact] [64.0 KB]
+Creating vector for RHS... [dist=2, compact] [64.0 KB]
+Allocating iteration vectors... [2 x 256.0 KB]
+TOTAL: [1.3 MB]
+
+Starting iterations...
+
+Jacobi: 245 iterations in 2.78 seconds (average 0.011306, setup 0.01)
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(5285)
+9513:(9513)
+10570:(10570)
+11627:(11627)
+13741:(13741)
+19026:(19026)
+21140:(21140)
+22197:(22197)
+23254:(23254)
+27482:(27482)
+
+Time for model checking: 2.841 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_herman.15_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 164.364 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:48:45 GMT+02:00 2026
+Hostname: n23m0128
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66768790/tmp4allhjiuprism_from-umb_check_default_herman.15_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768790/tmp4allhjiuprism_from-umb_check_default_herman.15_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768790/tmp4allhjiuprism_from-umb_check_default_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 160.296 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+
+Transition matrix: 810 nodes (9 terminal), 14348908 minterms, vars: 15r/15c
+
+Prob0: 6 iterations in 0.04 seconds (average 0.006667, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 30, inf = 0, maybe = 32738
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=1212] [56.8 KB]
+Adding explicit sparse matrices... [levels=8, num=30, compact] [587.7 KB]
+Creating vector for diagonals... [dist=2, compact] [64.0 KB]
+Creating vector for RHS... [dist=2, compact] [64.0 KB]
+Allocating iteration vectors... [2 x 256.0 KB]
+TOTAL: [1.3 MB]
+
+Starting iterations...
+
+Jacobi: 245 iterations in 3.45 seconds (average 0.014041, setup 0.01)
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(5285)
+9513:(9513)
+10570:(10570)
+11627:(11627)
+13741:(13741)
+19026:(19026)
+21140:(21140)
+22197:(22197)
+23254:(23254)
+27482:(27482)
+
+Time for model checking: 3.503 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_herman.15_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 205.785 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:37:30 GMT+02:00 2026
+Hostname: r23m0172
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66768227/tmp58pyap1gprism_from-umb_check_default_herman.15_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768227/tmp58pyap1gprism_from-umb_check_default_herman.15_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768227/tmp58pyap1gprism_from-umb_check_default_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 201.524 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+
+Transition matrix: 810 nodes (9 terminal), 14348908 minterms, vars: 15r/15c
+
+Prob0: 6 iterations in 0.03 seconds (average 0.005000, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 30, inf = 0, maybe = 32738
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=1212] [56.8 KB]
+Adding explicit sparse matrices... [levels=8, num=30, compact] [587.7 KB]
+Creating vector for diagonals... [dist=2, compact] [64.0 KB]
+Creating vector for RHS... [dist=2, compact] [64.0 KB]
+Allocating iteration vectors... [2 x 256.0 KB]
+TOTAL: [1.3 MB]
+
+Starting iterations...
+
+Jacobi: 245 iterations in 3.31 seconds (average 0.013510, setup 0.00)
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(5285)
+9513:(9513)
+10570:(10570)
+11627:(11627)
+13741:(13741)
+19026:(19026)
+21140:(21140)
+22197:(22197)
+23254:(23254)
+27482:(27482)
+
+Time for model checking: 3.404 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_herman.15_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 163.367 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:23:24 GMT+02:00 2026
+Hostname: n23m0237
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66770487/tmpvn42pe16prism_from-umb_check_default_herman.15_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66770487/tmpvn42pe16prism_from-umb_check_default_herman.15_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66770487/tmpvn42pe16prism_from-umb_check_default_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 159.932 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+
+Transition matrix: 810 nodes (9 terminal), 14348908 minterms, vars: 15r/15c
+
+Prob0: 6 iterations in 0.05 seconds (average 0.008333, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 30, inf = 0, maybe = 32738
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=1212] [56.8 KB]
+Adding explicit sparse matrices... [levels=8, num=30, compact] [587.7 KB]
+Creating vector for diagonals... [dist=2, compact] [64.0 KB]
+Creating vector for RHS... [dist=2, compact] [64.0 KB]
+Allocating iteration vectors... [2 x 256.0 KB]
+TOTAL: [1.3 MB]
+
+Starting iterations...
+
+Jacobi: 245 iterations in 2.79 seconds (average 0.011347, setup 0.01)
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(5285)
+9513:(9513)
+10570:(10570)
+11627:(11627)
+13741:(13741)
+19026:(19026)
+21140:(21140)
+22197:(22197)
+23254:(23254)
+27482:(27482)
+
+Time for model checking: 2.909 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_herman.15_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 179.347 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:19:39 GMT+02:00 2026
+Hostname: n23m0167
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66767228/tmp3e9lk4x1prism_from-umb_check_default_herman.15_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66767228/tmp3e9lk4x1prism_from-umb_check_default_herman.15_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66767228/tmp3e9lk4x1prism_from-umb_check_default_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 175.305 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+
+Transition matrix: 810 nodes (9 terminal), 14348908 minterms, vars: 15r/15c
+
+Prob0: 6 iterations in 0.03 seconds (average 0.005000, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 30, inf = 0, maybe = 32738
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=1212] [56.8 KB]
+Adding explicit sparse matrices... [levels=8, num=30, compact] [587.7 KB]
+Creating vector for diagonals... [dist=2, compact] [64.0 KB]
+Creating vector for RHS... [dist=2, compact] [64.0 KB]
+Allocating iteration vectors... [2 x 256.0 KB]
+TOTAL: [1.3 MB]
+
+Starting iterations...
+
+Jacobi: 245 iterations in 3.30 seconds (average 0.013429, setup 0.01)
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(5285)
+9513:(9513)
+10570:(10570)
+11627:(11627)
+13741:(13741)
+19026:(19026)
+21140:(21140)
+22197:(22197)
+23254:(23254)
+27482:(27482)
+
+Time for model checking: 3.391 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

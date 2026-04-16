@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log egl.10-2_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/egl.10-2/index.html" target="_blank">egl.10-2</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[MO, MO, MO, MO, MO]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 157.216 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:11:31 GMT+02:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66788914/tmphtavz6pyprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66788914/tmphtavz6pyprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66788914/tmphtavz6pyprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66788914/tmphtavz6pyprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 354297 715054 1044606 1539377 2038781 2529601 3037017 3541601 4035315 4491980 4940320 5443505 5939112 6397375 6868127 7359566 7509624 8009084 8446635 8912192 9369666 9889069 10388483 10883254 11367766 11875928 12331033 12769649 13221749 13663048 14136210 14584489 15078861 15562751 16055825 16525325 16982047 17463615 17985819 18465457 18853011 19291101 19723323 20199998 20674625 21104528 21529920 22042587 22589395 23077417 23582416
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 158.453 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:24:04 GMT+02:00 2026
+Hostname: r23m0026
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66785639/tmpzqrq37z2prism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66785639/tmpzqrq37z2prism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66785639/tmpzqrq37z2prism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785639/tmpzqrq37z2prism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 360526 720679 1078497 1594427 2081024 2583332 3083266 3619109 4102268 4580061 5034740 5548043 6010695 6449619 6734967 7149186 7554284 8022060 8537344 9038260 9503487 10018416 10495106 10983742 11412576 11887016 12351790 12797726 13270024 13778175 14290280 14791264 15302568 15800338 16324045 16830368 17277133 17694772 18100905 18521425 18980065 19410146 19831369 20282290 20705438 21224263 21714937 22201162 22680497 23159628 23649034 24188824
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 140.626 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:20:26 GMT+02:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66789390/tmp37xkgvmcprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789390/tmp37xkgvmcprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789390/tmp37xkgvmcprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789390/tmp37xkgvmcprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 397911 779955 1197031 1747070 2276086 2805862 3372473 3935635 4423097 4930598 5472865 6022719 6531160 7078032 7637278 7908718 8448205 8941093 9443729 9988665 10526640 11084566 11638701 12198406 12705190 13241344 13725711 14229048 14721303 15181987 15725751 16253988 16769797 17270330 17769272 18300254 18803683 19332356 19887384 20419636 20859734 21346887 21814939 22306229 22841456 23374110
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 170.971 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:12:54 GMT+02:00 2026
+Hostname: n23m0256
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66773385/tmpez0cvs9bprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66773385/tmpez0cvs9bprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66773385/tmpez0cvs9bprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66773385/tmpez0cvs9bprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 319874 642776 954481 1367539 1814896 2277245 2735011 3192243 3650553 4101214 4531559 4945062 5402253 5840378 6283513 6760040 6867125 7274890 7696708 8117798 8556288 9018697 9469735 9926396 10379401 10766108 11191829 11571232 11985115 12392262 12860059 13317833 13773910 14216077 14637328 15092369 15538071 15986717 16440749 16889410 17331416 17740478 18162484 18579093 19019567 19490996 19919178 20384818 20814759 21302007 21743513 22191794 22644650 23126906 23574218
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_egl.10-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 184.756 seconds
+Return code: -9
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:25:31 GMT+02:00 2026
+Hostname: n23m0107
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66785765/tmpp6acp_pzprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66785765/tmpp6acp_pzprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66785765/tmpp6acp_pzprism_from-prism_check_ex_egl.10-2_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     counter partyA partyB
+Actions:     [] [receiveB] [receiveA]
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39
+Labels:      "knowB" "knowA"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785765/tmpp6acp_pzprism_from-prism_check_ex_egl.10-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+---------------------------------------------------------------------
+
+Model checking: "unfairA": P=? [ F !"knowA"&"knowB" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 297096 585399 880561 1215488 1605242 2020369 2464836 2838045 3268759 3682980 4097611 4517515 4917065 5330823 5722309 6128017 6562337 6960490 7381224 7797401 8206256 8224706 8634666 9015278 9370413 9761408 10152147 10565487 10982904 11379282 11801321 12216890 12627821 13063471 13441994 13813219 14184487 14593088 14978676 15346180 15777539 16208917 16617745 17058377 17518431 17915301 18331043 18770320 19172776 19571833 20020435 20429441 20777896 21180008 21532151 21912168 22258526 22622986 23002568 23379332 23835460
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

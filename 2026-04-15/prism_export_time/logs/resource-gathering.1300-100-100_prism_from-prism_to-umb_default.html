@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_prism_from-prism_to-umb_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration prism_from-prism_to-umb_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[4.838, 4.647, 5.332, 6.64, 4.65]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 6.295 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:13:29 GMT+02:00 2026
+Hostname: n23m0270
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754626/tmp72qq5he6prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754626/tmpy_3bdqdvprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754626/tmp72qq5he6prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.36 seconds (average 0.000296, setup 0.00)
+
+Time for model construction: 0.415 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66754626/tmpy_3bdqdvprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb"...
+Time for exporting: 4.838 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 98097664 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 5.447 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:34:18 GMT+02:00 2026
+Hostname: n23m0358
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755429/tmpoakqfn8gprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755429/tmp9agxpjw9prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755429/tmpoakqfn8gprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.36 seconds (average 0.000296, setup 0.00)
+
+Time for model construction: 0.387 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66755429/tmp9agxpjw9prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb"...
+Time for exporting: 4.647 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 98097664 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 6.301 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:08:09 GMT+02:00 2026
+Hostname: n23m0181
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754391/tmp122930cjprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754391/tmp32oqcrksprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754391/tmp122930cjprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.42 seconds (average 0.000346, setup 0.00)
+
+Time for model construction: 0.468 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66754391/tmp32oqcrksprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb"...
+Time for exporting: 5.332 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 98097664 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 7.977 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:18:38 GMT+02:00 2026
+Hostname: n23m0098
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758664/tmpdl5blwu3prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758664/tmp5hgvnb3rprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758664/tmpdl5blwu3prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.66 seconds (average 0.000543, setup 0.00)
+
+Time for model construction: 0.714 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66758664/tmp5hgvnb3rprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb"...
+Time for exporting: 6.64 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 98097664 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 5.474 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:34:18 GMT+02:00 2026
+Hostname: r23m0057
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755431/tmppji53s3zprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755431/tmpzdx44_m2prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755431/tmppji53s3zprism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.38 seconds (average 0.000313, setup 0.00)
+
+Time for model construction: 0.412 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66755431/tmpzdx44_m2prism_from-prism_to-umb_default_resource-gathering.1300-100-100_tmp_outdir_/model.umb"...
+Time for exporting: 4.65 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 98097664 bytes
+</pre>
+</div>
+</body>
+</html>

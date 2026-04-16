@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.457, 0.552, 0.619, 0.458, 0.51]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 18.978 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:57:34 GMT+02:00 2026
+Hostname: n23m0331
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66772685/tmppwrq0t7pprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66772685/tmppwrq0t7pprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66772685/tmppwrq0t7pprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772685/tmppwrq0t7pprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.42 seconds (average 0.000346, setup 0.00)
+
+Time for model construction: 0.457 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Prob0A: 1203 iterations in 0.66 seconds (average 0.000549, setup 0.00)
+
+yes = 94, no = 0, maybe = 958800
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=23, nodes=2605] [122.1 KB]
+Adding sparse bits... [levels=15-16, num=44, compact=4/4] [2.8 MB]
+Creating vector for yes... [dist=2, compact] [1.8 MB]
+Allocating iteration vectors... [3 x 7.3 MB]
+TOTAL: [26.7 MB]
+
+Starting iterations...
+Iteration 374 (of 1300): 5.02 sec so far
+Iteration 750 (of 1300): 10.04 sec so far
+Iteration 1124 (of 1300): 15.05 sec so far
+
+Iterative method: 1300 iterations in 17.40 seconds (average 0.013369, setup 0.02)
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 18.085 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 19.806 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:37:48 GMT+02:00 2026
+Hostname: n23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66765378/tmp2xx_exyjprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66765378/tmp2xx_exyjprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66765378/tmp2xx_exyjprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66765378/tmp2xx_exyjprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.39 seconds (average 0.000321, setup 0.00)
+
+Time for model construction: 0.552 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Prob0A: 1203 iterations in 0.60 seconds (average 0.000499, setup 0.00)
+
+yes = 94, no = 0, maybe = 958800
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=23, nodes=2605] [122.1 KB]
+Adding sparse bits... [levels=15-16, num=44, compact=4/4] [2.8 MB]
+Creating vector for yes... [dist=2, compact] [1.8 MB]
+Allocating iteration vectors... [3 x 7.3 MB]
+TOTAL: [26.7 MB]
+
+Starting iterations...
+Iteration 383 (of 1300): 5.01 sec so far
+Iteration 762 (of 1300): 10.02 sec so far
+Iteration 1143 (of 1300): 15.03 sec so far
+
+Iterative method: 1300 iterations in 17.10 seconds (average 0.013138, setup 0.02)
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 17.838 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 24.139 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:38:48 GMT+02:00 2026
+Hostname: r23m0218
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66790373/tmp7e3v4cruprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66790373/tmp7e3v4cruprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66790373/tmp7e3v4cruprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66790373/tmp7e3v4cruprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.48 seconds (average 0.000395, setup 0.00)
+
+Time for model construction: 0.619 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Prob0A: 1203 iterations in 0.76 seconds (average 0.000632, setup 0.00)
+
+yes = 94, no = 0, maybe = 958800
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=23, nodes=2605] [122.1 KB]
+Adding sparse bits... [levels=15-16, num=44, compact=4/4] [2.8 MB]
+Creating vector for yes... [dist=2, compact] [1.8 MB]
+Allocating iteration vectors... [3 x 7.3 MB]
+TOTAL: [26.7 MB]
+
+Starting iterations...
+Iteration 314 (of 1300): 5.02 sec so far
+Iteration 623 (of 1300): 10.03 sec so far
+Iteration 933 (of 1300): 15.05 sec so far
+Iteration 1242 (of 1300): 20.06 sec so far
+
+Iterative method: 1300 iterations in 21.00 seconds (average 0.016138, setup 0.02)
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 21.869 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 21.140 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:41:56 GMT+02:00 2026
+Hostname: n23m0165
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66783303/tmpc1ettpm0prism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66783303/tmpc1ettpm0prism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66783303/tmpc1ettpm0prism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783303/tmpc1ettpm0prism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.40 seconds (average 0.000329, setup 0.00)
+
+Time for model construction: 0.458 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Prob0A: 1203 iterations in 0.56 seconds (average 0.000466, setup 0.00)
+
+yes = 94, no = 0, maybe = 958800
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=23, nodes=2605] [122.1 KB]
+Adding sparse bits... [levels=15-16, num=44, compact=4/4] [2.8 MB]
+Creating vector for yes... [dist=2, compact] [1.8 MB]
+Allocating iteration vectors... [3 x 7.3 MB]
+TOTAL: [26.7 MB]
+
+Starting iterations...
+Iteration 353 (of 1300): 5.01 sec so far
+Iteration 710 (of 1300): 10.02 sec so far
+Iteration 1067 (of 1300): 15.03 sec so far
+
+Iterative method: 1300 iterations in 18.29 seconds (average 0.014054, setup 0.02)
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 18.942 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 21.943 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:44:38 GMT+02:00 2026
+Hostname: n23m0381
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66772113/tmpkcf5q33jprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66772113/tmpkcf5q33jprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66772113/tmpkcf5q33jprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772113/tmpkcf5q33jprism_from-prism_check_default_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 1215 iterations in 0.43 seconds (average 0.000354, setup 0.00)
+
+Time for model construction: 0.51 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+
+Transition matrix: 898 nodes (4 terminal), 3325526 minterms, vars: 23r/23c/4nd
+
+Prob0A: 1203 iterations in 0.62 seconds (average 0.000515, setup 0.00)
+
+yes = 94, no = 0, maybe = 958800
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=23, nodes=2605] [122.1 KB]
+Adding sparse bits... [levels=15-16, num=44, compact=4/4] [2.8 MB]
+Creating vector for yes... [dist=2, compact] [1.8 MB]
+Allocating iteration vectors... [3 x 7.3 MB]
+TOTAL: [26.7 MB]
+
+Starting iterations...
+Iteration 326 (of 1300): 5.02 sec so far
+Iteration 654 (of 1300): 10.04 sec so far
+Iteration 978 (of 1300): 15.05 sec so far
+
+Iterative method: 1300 iterations in 19.98 seconds (average 0.015362, setup 0.01)
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 20.728 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

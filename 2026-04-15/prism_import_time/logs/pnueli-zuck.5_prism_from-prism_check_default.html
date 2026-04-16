@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pnueli-zuck.5_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.211, 0.212, 0.134, 0.189, 0.127]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 1.730 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:57:04 GMT+02:00 2026
+Hostname: r23m0142
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66791208/tmp3s338dlrprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66791208/tmp3s338dlrprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66791208/tmp3s338dlrprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66791208/tmp3s338dlrprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.06 seconds (average 0.001579, setup 0.00)
+
+Time for model construction: 0.211 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2492035
+
+Transition matrix: 5161 nodes (3 terminal), 2492035 minterms, vars: 20r/20c/5nd
+
+Prob0A: 45 iterations in 0.41 seconds (average 0.009111, setup 0.00)
+
+Prob1E: 46 iterations in 0.18 seconds (average 0.003913, setup 0.00)
+
+yes = 397435, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.591 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 1.153 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:47:09 GMT+02:00 2026
+Hostname: r23m0012
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66772261/tmpdeljispfprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66772261/tmpdeljispfprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66772261/tmpdeljispfprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772261/tmpdeljispfprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.06 seconds (average 0.001579, setup 0.00)
+
+Time for model construction: 0.212 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2492035
+
+Transition matrix: 5161 nodes (3 terminal), 2492035 minterms, vars: 20r/20c/5nd
+
+Prob0A: 45 iterations in 0.12 seconds (average 0.002667, setup 0.00)
+
+Prob1E: 46 iterations in 0.09 seconds (average 0.001957, setup 0.00)
+
+yes = 397435, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.24 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 1.245 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:12:28 GMT+02:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66777351/tmpooc3ovdlprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66777351/tmpooc3ovdlprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66777351/tmpooc3ovdlprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66777351/tmpooc3ovdlprism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.05 seconds (average 0.001316, setup 0.00)
+
+Time for model construction: 0.134 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2492035
+
+Transition matrix: 5161 nodes (3 terminal), 2492035 minterms, vars: 20r/20c/5nd
+
+Prob0A: 45 iterations in 0.13 seconds (average 0.002889, setup 0.00)
+
+Prob1E: 46 iterations in 0.09 seconds (average 0.001957, setup 0.00)
+
+yes = 397435, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.234 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 2.547 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:18:54 GMT+02:00 2026
+Hostname: r23m0038
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66773699/tmpai3kw928prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66773699/tmpai3kw928prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66773699/tmpai3kw928prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66773699/tmpai3kw928prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.05 seconds (average 0.001316, setup 0.00)
+
+Time for model construction: 0.189 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2492035
+
+Transition matrix: 5161 nodes (3 terminal), 2492035 minterms, vars: 20r/20c/5nd
+
+Prob0A: 45 iterations in 0.17 seconds (average 0.003778, setup 0.00)
+
+Prob1E: 46 iterations in 0.12 seconds (average 0.002609, setup 0.00)
+
+yes = 397435, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.308 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 1.434 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:10:23 GMT+02:00 2026
+Hostname: n23m0098
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66764184/tmp_igpb958prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66764184/tmp_igpb958prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66764184/tmp_igpb958prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4
+Actions:     []
+Variables:   p0 p1 p2 p3 p4
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66764184/tmp_igpb958prism_from-prism_check_default_pnueli-zuck.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.05 seconds (average 0.001316, setup 0.00)
+
+Time for model construction: 0.127 seconds.
+
+Type:        MDP
+States:      397435 (1 initial)
+Transitions: 2492035
+
+Transition matrix: 5161 nodes (3 terminal), 2492035 minterms, vars: 20r/20c/5nd
+
+Prob0A: 45 iterations in 0.12 seconds (average 0.002667, setup 0.00)
+
+Prob1E: 46 iterations in 0.09 seconds (average 0.001957, setup 0.00)
+
+yes = 397435, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.214 seconds.
+
+Result: 1.0 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

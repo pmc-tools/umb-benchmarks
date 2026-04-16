@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_prism_from-prism_to-umb_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration prism_from-prism_to-umb_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[20643328.0, 20643328.0, 20643328.0, 20643328.0, 20643328.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 13.037 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:11:44 GMT+02:00 2026
+Hostname: n23m0195
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754545/tmp9lyd_bg8prism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754545/tmpqhi_jazqprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754545/tmp9lyd_bg8prism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 3.33 seconds (average 0.075682, setup 0.00)
+
+Time for model construction: 3.813 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 111563 nodes (14 terminal), 910872 minterms, vars: 58r/58c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66754545/tmpqhi_jazqprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb"...
+Time for exporting: 7.028 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 20643328 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 9.447 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:24:11 GMT+02:00 2026
+Hostname: n23m0327
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755025/tmp4ixz0uxuprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755025/tmpmu6rnjtfprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755025/tmp4ixz0uxuprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.91 seconds (average 0.066136, setup 0.00)
+
+Time for model construction: 3.092 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 111563 nodes (14 terminal), 910872 minterms, vars: 58r/58c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66755025/tmpmu6rnjtfprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb"...
+Time for exporting: 5.853 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 20643328 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 9.298 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:49:02 GMT+02:00 2026
+Hostname: r23m0207
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757404/tmpe6chtw1wprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757404/tmpu0rj6lkhprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757404/tmpe6chtw1wprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.16 seconds (average 0.049091, setup 0.00)
+
+Time for model construction: 2.328 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 111563 nodes (14 terminal), 910872 minterms, vars: 58r/58c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757404/tmpu0rj6lkhprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb"...
+Time for exporting: 6.36 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 20643328 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 8.451 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:46:18 GMT+02:00 2026
+Hostname: r23m0057
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757286/tmpw2rqz6nfprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757286/tmptwngrif6prism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757286/tmpw2rqz6nfprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.69 seconds (average 0.061136, setup 0.00)
+
+Time for model construction: 2.834 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 111563 nodes (14 terminal), 910872 minterms, vars: 58r/58c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757286/tmptwngrif6prism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb"...
+Time for exporting: 5.158 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 20643328 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 9.492 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:24:28 GMT+02:00 2026
+Hostname: n23m0062
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758856/tmp0bid51g6prism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758856/tmp37mnp9nmprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758856/tmp0bid51g6prism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 44 iterations in 2.40 seconds (average 0.054545, setup 0.00)
+
+Time for model construction: 2.576 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Rate matrix: 111563 nodes (14 terminal), 910872 minterms, vars: 58r/58c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66758856/tmp37mnp9nmprism_from-prism_to-umb_default_mapk-cascade.4-30_tmp_outdir_/model.umb"...
+Time for exporting: 6.299 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 20643328 bytes
+</pre>
+</div>
+</body>
+</html>

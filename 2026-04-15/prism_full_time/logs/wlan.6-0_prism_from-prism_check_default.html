@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.6-0_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[81.619, 129.855, 50.471, 89.63, 69.91]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_wlan.6-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 81.619 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:15:37 GMT+02:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66789076/tmpziix7weeprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789076/tmpziix7weeprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789076/tmpziix7weeprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789076/tmpziix7weeprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.32 seconds (average 0.001641, setup 0.00)
+
+Time for model construction: 0.417 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 20377 nodes (8 terminal), 11475748 minterms, vars: 47r/47c/7nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 80.40 seconds (average 0.025459, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 80.622 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_wlan.6-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 129.855 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:04:12 GMT+02:00 2026
+Hostname: n23m0242
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66776575/tmpsv_n7_gnprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66776575/tmpsv_n7_gnprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66776575/tmpsv_n7_gnprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66776575/tmpsv_n7_gnprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.54 seconds (average 0.002769, setup 0.00)
+
+Time for model construction: 0.936 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 20377 nodes (8 terminal), 11475748 minterms, vars: 47r/47c/7nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 126.48 seconds (average 0.040051, setup 0.00)
+
+Prob1A: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 126.864 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_wlan.6-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 50.471 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:45:19 GMT+02:00 2026
+Hostname: n23m0047
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66765827/tmp1gw52d_pprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66765827/tmp1gw52d_pprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66765827/tmp1gw52d_pprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66765827/tmp1gw52d_pprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.25 seconds (average 0.001282, setup 0.00)
+
+Time for model construction: 0.362 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 20377 nodes (8 terminal), 11475748 minterms, vars: 47r/47c/7nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 49.47 seconds (average 0.015665, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 49.562 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_wlan.6-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 89.630 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:30:40 GMT+02:00 2026
+Hostname: n23m0165
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66789936/tmpyyv42psmprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789936/tmpyyv42psmprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789936/tmpyyv42psmprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789936/tmpyyv42psmprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.33 seconds (average 0.001692, setup 0.00)
+
+Time for model construction: 0.445 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 20377 nodes (8 terminal), 11475748 minterms, vars: 47r/47c/7nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 88.14 seconds (average 0.027910, setup 0.00)
+
+Prob1A: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 88.404 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_wlan.6-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 69.910 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:44:00 GMT+02:00 2026
+Hostname: n23m0062
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66783377/tmpbq_f57jkprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66783377/tmpbq_f57jkprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66783377/tmpbq_f57jkprism_from-prism_check_default_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783377/tmpbq_f57jkprism_from-prism_check_default_wlan.6-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 195 iterations in 0.34 seconds (average 0.001744, setup 0.00)
+
+Time for model construction: 0.42 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+
+Transition matrix: 20377 nodes (8 terminal), 11475748 minterms, vars: 47r/47c/7nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 3158 iterations in 68.77 seconds (average 0.021776, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 5007548, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 68.944 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

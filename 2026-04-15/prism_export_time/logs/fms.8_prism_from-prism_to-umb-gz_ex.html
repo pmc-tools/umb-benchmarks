@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log fms.8_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/fms.8/index.html" target="_blank">fms.8</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[47.724, 58.571, 45.688, 48.553, 47.708]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_fms.8_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 97.683 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:32:28 GMT+02:00 2026
+Hostname: n23m0061
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66755337/tmp6prljv7kprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755337/tmpzma0vcq1prism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755337/tmp6prljv7kprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 348543 676131 991575 1304572 1604067 1902962 2199533 2488121 2777740 3046307 3325177 3590258 3842069 4109495 4373654 4459455 states
+Reachable states exploration and model construction done in 45.993 secs.
+Sorting reachable states list...
+
+Time for model construction: 49.402 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755337/tmpzma0vcq1prism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz"...
+Time for exporting: 47.724 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1054984529 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_fms.8_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 123.360 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:00:53 GMT+02:00 2026
+Hostname: r23m0049
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66757877/tmpyxqkfgqmprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757877/tmp7odivp9yprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757877/tmpyxqkfgqmprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 265844 526738 780267 1015871 1266867 1500121 1737519 1976760 2200432 2416452 2592644 2807344 3018084 3228665 3435877 3649809 3850145 4064704 4271196 4459455 states
+Reachable states exploration and model construction done in 59.867 secs.
+Sorting reachable states list...
+
+Time for model construction: 63.913 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757877/tmp7odivp9yprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz"...
+Time for exporting: 58.571 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1054984529 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_fms.8_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 105.645 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:37:17 GMT+02:00 2026
+Hostname: n23m0279
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66755548/tmpixzm_k8eprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755548/tmpjaiau1_wprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755548/tmpixzm_k8eprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 300399 575105 852935 1107737 1343955 1606851 1853002 2095945 2342870 2575328 2813206 3035596 3262697 3476830 3697488 3934075 4163636 4390794 4459455 states
+Reachable states exploration and model construction done in 55.244 secs.
+Sorting reachable states list...
+
+Time for model construction: 59.153 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755548/tmpjaiau1_wprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz"...
+Time for exporting: 45.688 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1054984529 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_fms.8_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 98.528 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:31:39 GMT+02:00 2026
+Hostname: n23m0327
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66759136/tmp38_djk4rprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759136/tmpdbsvtujzprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759136/tmp38_djk4rprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 346198 672338 980289 1300878 1581273 1875930 2173298 2462894 2734846 3009502 3277949 3558446 3831603 4100600 4347552 4459455 states
+Reachable states exploration and model construction done in 46.25 secs.
+Sorting reachable states list...
+
+Time for model construction: 49.404 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759136/tmpdbsvtujzprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz"...
+Time for exporting: 48.553 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1054984529 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_fms.8_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 96.759 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:50:07 GMT+02:00 2026
+Hostname: r23m0057
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66757439/tmpo5yfqlalprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757439/tmp2wbrhd4gprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757439/tmpo5yfqlalprism_from-prism_to-umb-gz_ex_fms.8_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     machine1 machine2 machine3 machine12
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   P1 P1wM1 P1M1 P1d P1s P1wP2 M1 P2 P2wM2 P2M2 P2s P2wP1 M2 P3 P3M2 P3s P12 P12wM3 P12M3 P12s M3
+Rewards:     "productivity"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 349446 676865 995217 1322647 1609526 1914313 2217608 2500792 2782544 3068744 3350606 3616455 3895108 4163741 4429035 4459455 states
+Reachable states exploration and model construction done in 45.514 secs.
+Sorting reachable states list...
+
+Time for model construction: 48.495 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757439/tmp2wbrhd4gprism_from-prism_to-umb-gz_ex_fms.8_tmp_outdir_/model.umb.gz"...
+Time for exporting: 47.708 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1054984529 bytes
+</pre>
+</div>
+</body>
+</html>

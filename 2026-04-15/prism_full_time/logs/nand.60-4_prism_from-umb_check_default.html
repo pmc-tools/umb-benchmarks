@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.60-4_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.60-4/index.html" target="_blank">nand.60-4</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[TO, TO, TO, TO, TO]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.60-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7200.338 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:04:11 GMT+02:00 2026
+Hostname: r23m0152
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66776572/tmpcylbr01wprism_from-umb_check_default_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66776572/tmpcylbr01wprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66776572/tmpcylbr01wprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 76.81 seconds (average 0.035527, setup 0.00)
+
+Time for model construction: 3087.035 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 82.50 seconds (average 0.038159, setup 0.00)
+
+Prob1: 1945 iterations in 69.71 seconds (average 0.035841, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.60-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7200.357 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:17:39 GMT+02:00 2026
+Hostname: n23m0107
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66773617/tmpbafbnx6jprism_from-umb_check_default_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66773617/tmpbafbnx6jprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66773617/tmpbafbnx6jprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 114.70 seconds (average 0.053053, setup 0.00)
+
+Time for model construction: 3750.893 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 119.44 seconds (average 0.055245, setup 0.00)
+
+Prob1: 1945 iterations in 100.45 seconds (average 0.051645, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.60-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7200.369 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:53:52 GMT+02:00 2026
+Hostname: n23m0014
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66769059/tmpt8fn4k2sprism_from-umb_check_default_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66769059/tmpt8fn4k2sprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66769059/tmpt8fn4k2sprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 97.05 seconds (average 0.044889, setup 0.00)
+
+Time for model construction: 3685.94 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 102.81 seconds (average 0.047553, setup 0.00)
+
+Prob1: 1945 iterations in 86.94 seconds (average 0.044699, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.60-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7200.371 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:48:14 GMT+02:00 2026
+Hostname: n23m0275
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66790801/tmptbz34ykeprism_from-umb_check_default_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66790801/tmptbz34ykeprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66790801/tmptbz34ykeprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 170.34 seconds (average 0.078788, setup 0.00)
+
+Time for model construction: 5193.91 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 178.66 seconds (average 0.082636, setup 0.00)
+
+Prob1: 1945 iterations in 151.20 seconds (average 0.077738, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.60-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7200.345 seconds
+Return code: None (timeout)
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:51:34 GMT+02:00 2026
+Hostname: n23m0393
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66772408/tmpgo9l4k0fprism_from-umb_check_default_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66772408/tmpgo9l4k0fprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772408/tmpgo9l4k0fprism_from-umb_check_default_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2162 iterations in 99.39 seconds (average 0.045971, setup 0.00)
+
+Time for model construction: 3530.819 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Transition matrix: 2590097 nodes (1103 terminal), 29772212 minterms, vars: 25r/25c
+
+Prob0: 2162 iterations in 104.17 seconds (average 0.048182, setup 0.00)
+
+Prob1: 1945 iterations in 88.34 seconds (average 0.045419, setup 0.00)
+
+yes = 547, no = 1757695, maybe = 17067840
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

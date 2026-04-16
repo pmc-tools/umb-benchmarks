@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log cluster.64-2000-20_prism_from-prism_to-tra_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/cluster.64-2000-20/index.html" target="_blank">cluster.64-2000-20</a> and tool configuration prism_from-prism_to-tra_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[22452031.0, 22452031.0, 22452031.0, 22452031.0, 22452031.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_cluster.64-2000-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 0.802 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:55:00 GMT+02:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757629/tmpnqwkdp2sprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757629/tmpncfmdeawprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757629/tmpnqwkdp2sprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.049 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757629/tmpncfmdeawprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66757629/tmpncfmdeawprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757629/tmpncfmdeawprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757629/tmpncfmdeawprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.trew"...
+Time for exporting: 0.345 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 22105902 bytes
+model.lab:	Size of output file is 346129 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_cluster.64-2000-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 1.267 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 01:59:15 GMT+02:00 2026
+Hostname: r23m0049
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754048/tmpmhniq2wqprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754048/tmp19uv8hgaprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754048/tmpmhniq2wqprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.03 seconds (average 0.000226, setup 0.00)
+
+Time for model construction: 0.092 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754048/tmp19uv8hgaprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754048/tmp19uv8hgaprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754048/tmp19uv8hgaprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754048/tmp19uv8hgaprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.trew"...
+Time for exporting: 0.453 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 22105902 bytes
+model.lab:	Size of output file is 346129 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_cluster.64-2000-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 0.920 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:47:56 GMT+02:00 2026
+Hostname: n23m0134
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757346/tmpp54khysyprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757346/tmpsgi1qq9iprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757346/tmpp54khysyprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.059 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757346/tmpsgi1qq9iprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66757346/tmpsgi1qq9iprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757346/tmpsgi1qq9iprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757346/tmpsgi1qq9iprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.trew"...
+Time for exporting: 0.35 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 22105902 bytes
+model.lab:	Size of output file is 346129 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_cluster.64-2000-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 0.930 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:10:29 GMT+02:00 2026
+Hostname: r23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758319/tmplbg49p9cprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758319/tmpm6j5115_prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758319/tmplbg49p9cprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.058 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66758319/tmpm6j5115_prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66758319/tmpm6j5115_prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758319/tmpm6j5115_prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758319/tmpm6j5115_prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.trew"...
+Time for exporting: 0.359 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 22105902 bytes
+model.lab:	Size of output file is 346129 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_cluster.64-2000-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 0.917 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:12:36 GMT+02:00 2026
+Hostname: n23m0181
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758416/tmpr439nsp8prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758416/tmpz4dn8gdzprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758416/tmpr439nsp8prism_from-prism_to-tra_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.057 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66758416/tmpz4dn8gdzprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66758416/tmpz4dn8gdzprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758416/tmpz4dn8gdzprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758416/tmpz4dn8gdzprism_from-prism_to-tra_default_cluster.64-2000-20_tmp_outdir_/model.trew"...
+Time for exporting: 0.362 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 22105902 bytes
+model.lab:	Size of output file is 346129 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

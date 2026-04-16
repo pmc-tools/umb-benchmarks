@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log rabin.10_prism_from-prism_to-umb_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/rabin.10/index.html" target="_blank">rabin.10</a> and tool configuration prism_from-prism_to-umb_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[ERR, ERR, ERR, ERR, ERR]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_rabin.10_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 47.756 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:40:43 GMT+02:00 2026
+Hostname: n23m0328
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757122/tmpjbzbzbdtprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757122/tmpbya5pzceprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757122/tmpjbzbzbdtprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 43.65 seconds (average 1.039286, setup 0.00)
+
+Time for model construction: 46.402 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757122/tmpbya5pzceprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.MDPSimple.initialise(MDPSimple.java:208)
+    at explicit.MDPSimple.<init>(MDPSimple.java:80)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:102)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_rabin.10_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 45.337 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:15:21 GMT+02:00 2026
+Hostname: n23m0177
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758526/tmprer7mnhuprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758526/tmp207iy6v1prism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758526/tmprer7mnhuprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 41.99 seconds (average 0.999762, setup 0.00)
+
+Time for model construction: 44.638 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66758526/tmp207iy6v1prism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.MDPSimple.initialise(MDPSimple.java:208)
+    at explicit.MDPSimple.<init>(MDPSimple.java:80)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:102)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_rabin.10_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 49.870 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:58:11 GMT+02:00 2026
+Hostname: n23m0040
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757765/tmpcumupat5prism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757765/tmp8_auzq1iprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757765/tmpcumupat5prism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 46.48 seconds (average 1.106667, setup 0.00)
+
+Time for model construction: 49.276 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757765/tmp8_auzq1iprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.MDPSimple.initialise(MDPSimple.java:208)
+    at explicit.MDPSimple.<init>(MDPSimple.java:80)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:102)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_rabin.10_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 43.062 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:26:32 GMT+02:00 2026
+Hostname: n23m0040
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755112/tmpct5g5v8rprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755112/tmpy3wdoihnprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755112/tmpct5g5v8rprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 40.10 seconds (average 0.954762, setup 0.00)
+
+Time for model construction: 42.519 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66755112/tmpy3wdoihnprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.MDPSimple.initialise(MDPSimple.java:208)
+    at explicit.MDPSimple.<init>(MDPSimple.java:80)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:102)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_rabin.10_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 43.955 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:50:07 GMT+02:00 2026
+Hostname: n23m0398
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757433/tmpziqk69xjprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757433/tmpj72bdy1fprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757433/tmpziqk69xjprism_from-prism_to-umb_default_rabin.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10
+Actions:     []
+Variables:   c b r p1 b1 r1 draw1 p2 b2 r2 draw2 p3 b3 r3 draw3 p4 b4 r4 draw4 p5 b5 r5 draw5 p6 b6 r6 draw6 p7 b7 r7 draw7 p8 b8 r8 draw8 p9 b9 r9 draw9 p10 b10 r10 draw10
+Labels:      "target"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 42 iterations in 40.80 seconds (average 0.971429, setup 0.00)
+
+Time for model construction: 43.411 seconds.
+
+Type:        MDP
+States:      358055586147376 (1 initial)
+Transitions: 2908346849726720
+
+Transition matrix: 894897 nodes (9 terminal), 2908346849726720 minterms, vars: 96r/96c/10nd
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757433/tmpj72bdy1fprism_from-prism_to-umb_default_rabin.10_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.MDPSimple.initialise(MDPSimple.java:208)
+    at explicit.MDPSimple.<init>(MDPSimple.java:80)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:102)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log firewire.false-36-800_prism_from-prism_to-tra_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/firewire.false-36-800/index.html" target="_blank">firewire.false-36-800</a> and tool configuration prism_from-prism_to-tra_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.992, 0.925, 0.906, 1.129, 0.893]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_firewire.false-36-800_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 7.807 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:36:05 GMT+02:00 2026
+Hostname: r23m0204
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755501/tmpym4za5dgprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755501/tmp3mnx7nmoprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755501/tmpym4za5dgprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 5.19 seconds (average 0.018211, setup 0.00)
+
+Time for model construction: 6.089 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755501/tmp3mnx7nmoprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66755501/tmp3mnx7nmoprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66755501/tmp3mnx7nmoprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66755501/tmp3mnx7nmoprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.trew"...
+Time for exporting: 0.992 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 12179076 bytes
+model.lab:	Size of output file is 52 bytes
+model.srew:	Size of output file is 51 bytes
+model.trew:	Size of output file is 3519268 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_firewire.false-36-800_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 4.224 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:49:19 GMT+02:00 2026
+Hostname: n23m0053
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759953/tmp6t9ag0xbprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759953/tmpdua_ip9mprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759953/tmp6t9ag0xbprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 2.49 seconds (average 0.008737, setup 0.00)
+
+Time for model construction: 2.847 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759953/tmpdua_ip9mprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66759953/tmpdua_ip9mprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759953/tmpdua_ip9mprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759953/tmpdua_ip9mprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.trew"...
+Time for exporting: 0.925 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 12179076 bytes
+model.lab:	Size of output file is 52 bytes
+model.srew:	Size of output file is 51 bytes
+model.trew:	Size of output file is 3519268 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_firewire.false-36-800_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 3.169 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:51:36 GMT+02:00 2026
+Hostname: n23m0398
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66760050/tmpx9vpghbtprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66760050/tmpw2j2sbgcprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66760050/tmpx9vpghbtprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.54 seconds (average 0.005404, setup 0.00)
+
+Time for model construction: 1.813 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66760050/tmpw2j2sbgcprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66760050/tmpw2j2sbgcprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66760050/tmpw2j2sbgcprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66760050/tmpw2j2sbgcprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.trew"...
+Time for exporting: 0.906 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 12179076 bytes
+model.lab:	Size of output file is 52 bytes
+model.srew:	Size of output file is 51 bytes
+model.trew:	Size of output file is 3519268 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_firewire.false-36-800_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 5.321 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:40:30 GMT+02:00 2026
+Hostname: n23m0207
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759591/tmp3jsv4cakprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759591/tmpzhqycjzuprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759591/tmp3jsv4cakprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 3.17 seconds (average 0.011123, setup 0.00)
+
+Time for model construction: 3.607 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759591/tmpzhqycjzuprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66759591/tmpzhqycjzuprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759591/tmpzhqycjzuprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759591/tmpzhqycjzuprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.trew"...
+Time for exporting: 1.129 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 12179076 bytes
+model.lab:	Size of output file is 52 bytes
+model.srew:	Size of output file is 51 bytes
+model.trew:	Size of output file is 3519268 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_firewire.false-36-800_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 3.056 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:26:32 GMT+02:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755109/tmpggozoibiprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755109/tmp3krfaqycprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755109/tmpggozoibiprism_from-prism_to-tra_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.47 seconds (average 0.005158, setup 0.00)
+
+Time for model construction: 1.723 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755109/tmp3krfaqycprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66755109/tmp3krfaqycprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66755109/tmp3krfaqycprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66755109/tmp3krfaqycprism_from-prism_to-tra_default_firewire.false-36-800_tmp_outdir_/model.trew"...
+Time for exporting: 0.893 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 12179076 bytes
+model.lab:	Size of output file is 52 bytes
+model.srew:	Size of output file is 51 bytes
+model.trew:	Size of output file is 3519268 bytes
+</pre>
+</div>
+</body>
+</html>

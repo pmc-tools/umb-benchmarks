@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.4-2_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.4-2/index.html" target="_blank">csma.4-2</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2.1029999999999998, 2.136, 2.5389999999999997, 2.063, 2.2960000000000003]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_csma.4-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 2.757 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 19:26:13 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66785807/tmpl5a_yl64storm_from-jani_check_cudd_csma.4-2_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 1.181s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	761962 (17838 nodes)
+Transitions: 	1327068 (122419 nodes)
+Choices: 	825504
+Reward Models:  none
+Variables: 	rows: 24 meta variables (59 DD variables), columns: 24 meta variables (59 DD variables), nondeterminism: 16 meta variables (16 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (60 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.919s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	761962
+Transitions: 	1327068
+Choices: 	825504
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 3444 item(s)
+   * all_delivered -> 9 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.7764601493
+Time for model checking: 0.458s.
+
+Performance statistics:
+  * peak memory usage: 249MB
+  * CPU time: 2.653s
+  * wallclock time: 2.712s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_csma.4-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 2.784 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 18:50:32 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66783605/tmpi98r88qystorm_from-jani_check_cudd_csma.4-2_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 1.293s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	761962 (17838 nodes)
+Transitions: 	1327068 (122419 nodes)
+Choices: 	825504
+Reward Models:  none
+Variables: 	rows: 24 meta variables (59 DD variables), columns: 24 meta variables (59 DD variables), nondeterminism: 16 meta variables (16 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (60 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.841s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	761962
+Transitions: 	1327068
+Choices: 	825504
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 3444 item(s)
+   * all_delivered -> 9 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.7764601493
+Time for model checking: 0.465s.
+
+Performance statistics:
+  * peak memory usage: 249MB
+  * CPU time: 2.708s
+  * wallclock time: 2.744s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_csma.4-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 3.317 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:53:50 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66775798/tmp_jrnlqk6storm_from-jani_check_cudd_csma.4-2_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 1.504s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	761962 (17838 nodes)
+Transitions: 	1327068 (122419 nodes)
+Choices: 	825504
+Reward Models:  none
+Variables: 	rows: 24 meta variables (59 DD variables), columns: 24 meta variables (59 DD variables), nondeterminism: 16 meta variables (16 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (60 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.032s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	761962
+Transitions: 	1327068
+Choices: 	825504
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 3444 item(s)
+   * all_delivered -> 9 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.7764601493
+Time for model checking: 0.558s.
+
+Performance statistics:
+  * peak memory usage: 249MB
+  * CPU time: 3.211s
+  * wallclock time: 3.265s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_csma.4-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 2.734 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:42:46 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66771971/tmpiu165ftustorm_from-jani_check_cudd_csma.4-2_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 1.197s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	761962 (17838 nodes)
+Transitions: 	1327068 (122419 nodes)
+Choices: 	825504
+Reward Models:  none
+Variables: 	rows: 24 meta variables (59 DD variables), columns: 24 meta variables (59 DD variables), nondeterminism: 16 meta variables (16 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (60 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.864s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	761962
+Transitions: 	1327068
+Choices: 	825504
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 3444 item(s)
+   * all_delivered -> 9 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.7764601493
+Time for model checking: 0.482s.
+
+Performance statistics:
+  * peak memory usage: 249MB
+  * CPU time: 2.641s
+  * wallclock time: 2.692s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_csma.4-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 3.014 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:49:16 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66766070/tmpfhc_6i5gstorm_from-jani_check_cudd_csma.4-2_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 1.399s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	761962 (17838 nodes)
+Transitions: 	1327068 (122419 nodes)
+Choices: 	825504
+Reward Models:  none
+Variables: 	rows: 24 meta variables (59 DD variables), columns: 24 meta variables (59 DD variables), nondeterminism: 16 meta variables (16 DD variables)
+Labels: 	4
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (60 nodes)
+   * all_delivered
+   * collision_max_backoff
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.895s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	761962
+Transitions: 	1327068
+Choices: 	825504
+Reward Models:  none
+State Labels: 	4 labels
+   * collision_max_backoff -> 3444 item(s)
+   * all_delivered -> 9 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.7764601493
+Time for model checking: 0.524s.
+
+Performance statistics:
+  * peak memory usage: 249MB
+  * CPU time: 2.930s
+  * wallclock time: 2.971s
+</pre>
+</div>
+</body>
+</html>

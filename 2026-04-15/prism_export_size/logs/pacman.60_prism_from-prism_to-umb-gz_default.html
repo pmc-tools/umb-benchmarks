@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pacman.60_prism_from-prism_to-umb-gz_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pacman.60/index.html" target="_blank">pacman.60</a> and tool configuration prism_from-prism_to-umb-gz_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1352241669.0, 1352241669.0, 1352241669.0, 1352241669.0, 1352241669.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_pacman.60_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 1059.624 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:31:19 GMT+02:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755304/tmphtlsw9r7prism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755304/tmpzv52b3imprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755304/tmphtlsw9r7prism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 183 iterations in 44.57 seconds (average 0.243552, setup 0.00)
+
+Time for model construction: 1019.193 seconds.
+
+Type:        MDP
+States:      38786521 (1 initial)
+Transitions: 53648196
+
+Transition matrix: 3640092 nodes (44 terminal), 53648196 minterms, vars: 35r/35c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755304/tmpzv52b3imprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz"...
+Time for exporting: 38.962 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1352241669 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_pacman.60_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 1221.762 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:42:20 GMT+02:00 2026
+Hostname: n23m0096
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757155/tmpa_9otmuiprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757155/tmptq_rxclqprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757155/tmpa_9otmuiprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 183 iterations in 49.55 seconds (average 0.270765, setup 0.00)
+
+Time for model construction: 1173.401 seconds.
+
+Type:        MDP
+States:      38786521 (1 initial)
+Transitions: 53648196
+
+Transition matrix: 3640092 nodes (44 terminal), 53648196 minterms, vars: 35r/35c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757155/tmptq_rxclqprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz"...
+Time for exporting: 46.744 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1352241669 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_pacman.60_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 1112.653 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:12:05 GMT+02:00 2026
+Hostname: n23m0249
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758394/tmpg_ra9ieyprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758394/tmphhpxvi4qprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758394/tmpg_ra9ieyprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 183 iterations in 44.85 seconds (average 0.245082, setup 0.00)
+
+Time for model construction: 1072.091 seconds.
+
+Type:        MDP
+States:      38786521 (1 initial)
+Transitions: 53648196
+
+Transition matrix: 3640092 nodes (44 terminal), 53648196 minterms, vars: 35r/35c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66758394/tmphhpxvi4qprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz"...
+Time for exporting: 39.124 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1352241669 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_pacman.60_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 1059.876 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:02:48 GMT+02:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754196/tmpckbmcmgpprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754196/tmpncahdlcqprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754196/tmpckbmcmgpprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 183 iterations in 47.66 seconds (average 0.260437, setup 0.00)
+
+Time for model construction: 1019.492 seconds.
+
+Type:        MDP
+States:      38786521 (1 initial)
+Transitions: 53648196
+
+Transition matrix: 3640092 nodes (44 terminal), 53648196 minterms, vars: 35r/35c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754196/tmpncahdlcqprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz"...
+Time for exporting: 38.963 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1352241669 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_pacman.60_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2513.653 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:33:19 GMT+02:00 2026
+Hostname: n23m0096
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759206/tmpw_4scc8hprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759206/tmpq_zhi_apprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759206/tmpw_4scc8hprism_from-prism_to-umb-gz_default_pacman.60_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 183 iterations in 55.17 seconds (average 0.301475, setup 0.00)
+
+Time for model construction: 2463.925 seconds.
+
+Type:        MDP
+States:      38786521 (1 initial)
+Transitions: 53648196
+
+Transition matrix: 3640092 nodes (44 terminal), 53648196 minterms, vars: 35r/35c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759206/tmpq_zhi_apprism_from-prism_to-umb-gz_default_pacman.60_tmp_outdir_/model.umb.gz"...
+Time for exporting: 48.002 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 1352241669 bytes
+</pre>
+</div>
+</body>
+</html>

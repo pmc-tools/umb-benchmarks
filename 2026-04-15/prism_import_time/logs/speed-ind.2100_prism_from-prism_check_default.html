@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log speed-ind.2100_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/speed-ind.2100/index.html" target="_blank">speed-ind.2100</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[22.018, 37.016, 19.708, 24.22, 25.202]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_speed-ind.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 155.243 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:26:18 GMT+02:00 2026
+Hostname: n23m0361
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66770757/tmp5ae8l8q5prism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66770757/tmp5ae8l8q5prism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66770757/tmp5ae8l8q5prism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66770757/tmp5ae8l8q5prism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.70 seconds (average 0.018421, setup 0.00)
+
+Time for model construction: 22.018 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Rate matrix: 33024 nodes (187 terminal), 9518080 minterms, vars: 58r/58c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 718848 of 743424 (96.7%)
+
+Building hybrid MTBDD matrix... [levels=58, nodes=33162] [1.5 MB]
+Adding explicit sparse matrices... [levels=33, num=428, compact] [756.5 KB]
+Creating vector for diagonals... [5.7 MB]
+Allocating iteration vectors... [3 x 5.7 MB]
+TOTAL: [24.9 MB]
+
+Uniformisation: q.t = 2.797911 x 2100.000000 = 5875.612619
+Fox-Glynn: left = 5336, right = 6527
+
+Starting iterations...
+Iteration 270 (of 6527): max relative diff=0.039909, 5.02 sec so far
+Iteration 538 (of 6527): max relative diff=0.014294, 10.04 sec so far
+Iteration 809 (of 6527): max relative diff=0.006438, 15.05 sec so far
+Iteration 1079 (of 6527): max relative diff=0.003540, 20.07 sec so far
+Iteration 1346 (of 6527): max relative diff=0.002373, 25.08 sec so far
+Iteration 1622 (of 6527): max relative diff=0.001678, 30.09 sec so far
+Iteration 1890 (of 6527): max relative diff=0.001260, 35.10 sec so far
+Iteration 2159 (of 6527): max relative diff=0.000984, 40.11 sec so far
+Iteration 2422 (of 6527): max relative diff=0.000799, 45.13 sec so far
+Iteration 2673 (of 6527): max relative diff=0.000672, 50.15 sec so far
+Iteration 2924 (of 6527): max relative diff=0.000578, 55.17 sec so far
+Iteration 3170 (of 6527): max relative diff=0.000507, 60.18 sec so far
+Iteration 3422 (of 6527): max relative diff=0.000449, 65.19 sec so far
+Iteration 3695 (of 6527): max relative diff=0.000400, 70.20 sec so far
+Iteration 3967 (of 6527): max relative diff=0.000360, 75.23 sec so far
+Iteration 4231 (of 6527): max relative diff=0.000328, 80.24 sec so far
+Iteration 4462 (of 6527): max relative diff=0.000304, 85.26 sec so far
+Iteration 4688 (of 6527): max relative diff=0.000284, 90.28 sec so far
+Iteration 4920 (of 6527): max relative diff=0.000266, 95.30 sec so far
+Iteration 5153 (of 6527): max relative diff=0.000250, 100.32 sec so far
+Iteration 5381 (of 6527): max relative diff=0.000236, 105.33 sec so far
+Iteration 5598 (of 6527): max relative diff=0.000224, 110.35 sec so far
+Iteration 5827 (of 6527): max relative diff=0.000213, 115.36 sec so far
+Iteration 6058 (of 6527): max relative diff=0.000202, 120.38 sec so far
+Iteration 6297 (of 6527): max relative diff=0.000193, 125.39 sec so far
+
+Iterative method: 6527 iterations in 131.76 seconds (average 0.019928, setup 1.69)
+
+Value in the initial state: 0.042294497978464705
+
+Time for model checking: 132.324 seconds.
+
+Result: 0.042294497978464705
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_speed-ind.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 208.192 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:55:00 GMT+02:00 2026
+Hostname: n23m0110
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66791104/tmpyafqh1wwprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66791104/tmpyafqh1wwprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66791104/tmpyafqh1wwprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66791104/tmpyafqh1wwprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 1.05 seconds (average 0.027632, setup 0.00)
+
+Time for model construction: 37.016 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Rate matrix: 33024 nodes (187 terminal), 9518080 minterms, vars: 58r/58c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 718848 of 743424 (96.7%)
+
+Building hybrid MTBDD matrix... [levels=58, nodes=33162] [1.5 MB]
+Adding explicit sparse matrices... [levels=33, num=428, compact] [756.5 KB]
+Creating vector for diagonals... [5.7 MB]
+Allocating iteration vectors... [3 x 5.7 MB]
+TOTAL: [24.9 MB]
+
+Uniformisation: q.t = 2.797911 x 2100.000000 = 5875.612619
+Fox-Glynn: left = 5336, right = 6527
+
+Starting iterations...
+Iteration 200 (of 6527): max relative diff=0.058623, 5.02 sec so far
+Iteration 394 (of 6527): max relative diff=0.023563, 10.04 sec so far
+Iteration 594 (of 6527): max relative diff=0.011979, 15.05 sec so far
+Iteration 793 (of 6527): max relative diff=0.006725, 20.06 sec so far
+Iteration 988 (of 6527): max relative diff=0.004134, 25.08 sec so far
+Iteration 1185 (of 6527): max relative diff=0.002993, 30.09 sec so far
+Iteration 1384 (of 6527): max relative diff=0.002255, 35.10 sec so far
+Iteration 1582 (of 6527): max relative diff=0.001758, 40.12 sec so far
+Iteration 1778 (of 6527): max relative diff=0.001413, 45.15 sec so far
+Iteration 1979 (of 6527): max relative diff=0.001156, 50.18 sec so far
+Iteration 2178 (of 6527): max relative diff=0.000968, 55.20 sec so far
+Iteration 2374 (of 6527): max relative diff=0.000828, 60.22 sec so far
+Iteration 2572 (of 6527): max relative diff=0.000719, 65.23 sec so far
+Iteration 2772 (of 6527): max relative diff=0.000632, 70.27 sec so far
+Iteration 2970 (of 6527): max relative diff=0.000563, 75.28 sec so far
+Iteration 3165 (of 6527): max relative diff=0.000508, 80.30 sec so far
+Iteration 3366 (of 6527): max relative diff=0.000461, 85.34 sec so far
+Iteration 3564 (of 6527): max relative diff=0.000422, 90.35 sec so far
+Iteration 3762 (of 6527): max relative diff=0.000389, 95.38 sec so far
+Iteration 3963 (of 6527): max relative diff=0.000360, 100.40 sec so far
+Iteration 4161 (of 6527): max relative diff=0.000336, 105.41 sec so far
+Iteration 4357 (of 6527): max relative diff=0.000314, 110.42 sec so far
+Iteration 4557 (of 6527): max relative diff=0.000295, 115.43 sec so far
+Iteration 4756 (of 6527): max relative diff=0.000278, 120.44 sec so far
+Iteration 4954 (of 6527): max relative diff=0.000263, 125.47 sec so far
+Iteration 5159 (of 6527): max relative diff=0.000250, 130.49 sec so far
+Iteration 5351 (of 6527): max relative diff=0.000238, 135.50 sec so far
+Iteration 5527 (of 6527): max relative diff=0.000228, 140.52 sec so far
+Iteration 5713 (of 6527): max relative diff=0.000218, 145.53 sec so far
+Iteration 5897 (of 6527): max relative diff=0.000209, 150.54 sec so far
+Iteration 6084 (of 6527): max relative diff=0.000201, 155.55 sec so far
+Iteration 6273 (of 6527): max relative diff=0.000193, 160.57 sec so far
+Iteration 6456 (of 6527): max relative diff=0.000187, 165.58 sec so far
+
+Iterative method: 6527 iterations in 169.31 seconds (average 0.025657, setup 1.85)
+
+Value in the initial state: 0.042294497978464705
+
+Time for model checking: 170.029 seconds.
+
+Result: 0.042294497978464705
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_speed-ind.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 126.330 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:02:26 GMT+02:00 2026
+Hostname: n23m0270
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66784233/tmpy72hv0wsprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66784233/tmpy72hv0wsprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66784233/tmpy72hv0wsprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784233/tmpy72hv0wsprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.63 seconds (average 0.016579, setup 0.00)
+
+Time for model construction: 19.708 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Rate matrix: 33024 nodes (187 terminal), 9518080 minterms, vars: 58r/58c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 718848 of 743424 (96.7%)
+
+Building hybrid MTBDD matrix... [levels=58, nodes=33162] [1.5 MB]
+Adding explicit sparse matrices... [levels=33, num=428, compact] [756.5 KB]
+Creating vector for diagonals... [5.7 MB]
+Allocating iteration vectors... [3 x 5.7 MB]
+TOTAL: [24.9 MB]
+
+Uniformisation: q.t = 2.797911 x 2100.000000 = 5875.612619
+Fox-Glynn: left = 5336, right = 6527
+
+Starting iterations...
+Iteration 316 (of 6527): max relative diff=0.032297, 5.02 sec so far
+Iteration 632 (of 6527): max relative diff=0.010668, 10.04 sec so far
+Iteration 946 (of 6527): max relative diff=0.004498, 15.05 sec so far
+Iteration 1261 (of 6527): max relative diff=0.002674, 20.07 sec so far
+Iteration 1576 (of 6527): max relative diff=0.001771, 25.08 sec so far
+Iteration 1889 (of 6527): max relative diff=0.001261, 30.10 sec so far
+Iteration 2206 (of 6527): max relative diff=0.000946, 35.12 sec so far
+Iteration 2524 (of 6527): max relative diff=0.000743, 40.14 sec so far
+Iteration 2841 (of 6527): max relative diff=0.000606, 45.15 sec so far
+Iteration 3158 (of 6527): max relative diff=0.000510, 50.17 sec so far
+Iteration 3475 (of 6527): max relative diff=0.000439, 55.18 sec so far
+Iteration 3792 (of 6527): max relative diff=0.000384, 60.19 sec so far
+Iteration 4108 (of 6527): max relative diff=0.000342, 65.20 sec so far
+Iteration 4425 (of 6527): max relative diff=0.000308, 70.22 sec so far
+Iteration 4739 (of 6527): max relative diff=0.000280, 75.23 sec so far
+Iteration 5054 (of 6527): max relative diff=0.000256, 80.24 sec so far
+Iteration 5368 (of 6527): max relative diff=0.000237, 85.25 sec so far
+Iteration 5676 (of 6527): max relative diff=0.000220, 90.26 sec so far
+Iteration 5983 (of 6527): max relative diff=0.000206, 95.27 sec so far
+Iteration 6291 (of 6527): max relative diff=0.000193, 100.28 sec so far
+
+Iterative method: 6527 iterations in 105.63 seconds (average 0.015954, setup 1.50)
+
+Value in the initial state: 0.042294497978464705
+
+Time for model checking: 105.978 seconds.
+
+Result: 0.042294497978464705
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_speed-ind.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 160.282 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:26:19 GMT+02:00 2026
+Hostname: r23m0191
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66770768/tmpxyfke1maprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66770768/tmpxyfke1maprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66770768/tmpxyfke1maprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66770768/tmpxyfke1maprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.81 seconds (average 0.021316, setup 0.00)
+
+Time for model construction: 24.22 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Rate matrix: 33024 nodes (187 terminal), 9518080 minterms, vars: 58r/58c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 718848 of 743424 (96.7%)
+
+Building hybrid MTBDD matrix... [levels=58, nodes=33162] [1.5 MB]
+Adding explicit sparse matrices... [levels=33, num=428, compact] [756.5 KB]
+Creating vector for diagonals... [5.7 MB]
+Allocating iteration vectors... [3 x 5.7 MB]
+TOTAL: [24.9 MB]
+
+Uniformisation: q.t = 2.797911 x 2100.000000 = 5875.612619
+Fox-Glynn: left = 5336, right = 6527
+
+Starting iterations...
+Iteration 251 (of 6527): max relative diff=0.043905, 5.01 sec so far
+Iteration 491 (of 6527): max relative diff=0.016688, 10.03 sec so far
+Iteration 752 (of 6527): max relative diff=0.007533, 15.05 sec so far
+Iteration 1015 (of 6527): max relative diff=0.003943, 20.06 sec so far
+Iteration 1254 (of 6527): max relative diff=0.002702, 25.07 sec so far
+Iteration 1501 (of 6527): max relative diff=0.001940, 30.09 sec so far
+Iteration 1750 (of 6527): max relative diff=0.001455, 35.11 sec so far
+Iteration 1989 (of 6527): max relative diff=0.001145, 40.13 sec so far
+Iteration 2219 (of 6527): max relative diff=0.000936, 45.15 sec so far
+Iteration 2473 (of 6527): max relative diff=0.000770, 50.16 sec so far
+Iteration 2725 (of 6527): max relative diff=0.000651, 55.17 sec so far
+Iteration 2980 (of 6527): max relative diff=0.000560, 60.19 sec so far
+Iteration 3231 (of 6527): max relative diff=0.000491, 65.22 sec so far
+Iteration 3485 (of 6527): max relative diff=0.000437, 70.23 sec so far
+Iteration 3746 (of 6527): max relative diff=0.000391, 75.25 sec so far
+Iteration 4006 (of 6527): max relative diff=0.000355, 80.26 sec so far
+Iteration 4262 (of 6527): max relative diff=0.000324, 85.28 sec so far
+Iteration 4504 (of 6527): max relative diff=0.000300, 90.29 sec so far
+Iteration 4761 (of 6527): max relative diff=0.000278, 95.31 sec so far
+Iteration 5008 (of 6527): max relative diff=0.000260, 100.32 sec so far
+Iteration 5265 (of 6527): max relative diff=0.000243, 105.33 sec so far
+Iteration 5516 (of 6527): max relative diff=0.000228, 110.36 sec so far
+Iteration 5747 (of 6527): max relative diff=0.000216, 115.38 sec so far
+Iteration 5995 (of 6527): max relative diff=0.000205, 120.39 sec so far
+Iteration 6229 (of 6527): max relative diff=0.000195, 125.40 sec so far
+Iteration 6475 (of 6527): max relative diff=0.000186, 130.41 sec so far
+
+Iterative method: 6527 iterations in 133.23 seconds (average 0.020136, setup 1.80)
+
+Value in the initial state: 0.042294497978464705
+
+Time for model checking: 133.713 seconds.
+
+Result: 0.042294497978464705
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_speed-ind.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 145.783 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:37:28 GMT+02:00 2026
+Hostname: n23m0270
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66768241/tmpfj31zzbiprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66768241/tmpfj31zzbiprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66768241/tmpfj31zzbiprism_from-prism_check_default_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768241/tmpfj31zzbiprism_from-prism_check_default_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 38 iterations in 0.76 seconds (average 0.020000, setup 0.00)
+
+Time for model construction: 25.202 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Rate matrix: 33024 nodes (187 terminal), 9518080 minterms, vars: 58r/58c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 718848 of 743424 (96.7%)
+
+Building hybrid MTBDD matrix... [levels=58, nodes=33162] [1.5 MB]
+Adding explicit sparse matrices... [levels=33, num=428, compact] [756.5 KB]
+Creating vector for diagonals... [5.7 MB]
+Allocating iteration vectors... [3 x 5.7 MB]
+TOTAL: [24.9 MB]
+
+Uniformisation: q.t = 2.797911 x 2100.000000 = 5875.612619
+Fox-Glynn: left = 5336, right = 6527
+
+Starting iterations...
+Iteration 280 (of 6527): max relative diff=0.038033, 5.02 sec so far
+Iteration 560 (of 6527): max relative diff=0.013323, 10.04 sec so far
+Iteration 838 (of 6527): max relative diff=0.005955, 15.05 sec so far
+Iteration 1118 (of 6527): max relative diff=0.003323, 20.07 sec so far
+Iteration 1398 (of 6527): max relative diff=0.002213, 25.08 sec so far
+Iteration 1679 (of 6527): max relative diff=0.001573, 30.10 sec so far
+Iteration 1960 (of 6527): max relative diff=0.001177, 35.12 sec so far
+Iteration 2240 (of 6527): max relative diff=0.000920, 40.14 sec so far
+Iteration 2520 (of 6527): max relative diff=0.000745, 45.15 sec so far
+Iteration 2800 (of 6527): max relative diff=0.000621, 50.16 sec so far
+Iteration 3081 (of 6527): max relative diff=0.000530, 55.18 sec so far
+Iteration 3361 (of 6527): max relative diff=0.000462, 60.20 sec so far
+Iteration 3641 (of 6527): max relative diff=0.000408, 65.22 sec so far
+Iteration 3921 (of 6527): max relative diff=0.000366, 70.24 sec so far
+Iteration 4198 (of 6527): max relative diff=0.000331, 75.25 sec so far
+Iteration 4478 (of 6527): max relative diff=0.000303, 80.26 sec so far
+Iteration 4758 (of 6527): max relative diff=0.000278, 85.27 sec so far
+Iteration 5039 (of 6527): max relative diff=0.000257, 90.29 sec so far
+Iteration 5320 (of 6527): max relative diff=0.000240, 95.31 sec so far
+Iteration 5589 (of 6527): max relative diff=0.000224, 100.32 sec so far
+Iteration 5856 (of 6527): max relative diff=0.000211, 105.33 sec so far
+Iteration 6124 (of 6527): max relative diff=0.000199, 110.35 sec so far
+Iteration 6392 (of 6527): max relative diff=0.000189, 115.36 sec so far
+
+Iterative method: 6527 iterations in 119.45 seconds (average 0.018062, setup 1.56)
+
+Value in the initial state: 0.042294497978464705
+
+Time for model checking: 119.769 seconds.
+
+Result: 0.042294497978464705
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

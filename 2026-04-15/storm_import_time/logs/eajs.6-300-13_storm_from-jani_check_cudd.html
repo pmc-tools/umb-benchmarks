@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[30.567, 26.061, 27.165, 26.947, 26.383000000000003]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 32.569 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:36:10 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66774532/tmpa2v6lpq0storm_from-jani_check_cudd_eajs.6-300-13_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.273s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 30.290s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "ExpUtil": R{"utilityLocal"}max=? [F "emptyBattery"] ...
+Result (for initial states): inf
+Time for model checking: 1.888s.
+
+Performance statistics:
+  * peak memory usage: 1170MB
+  * CPU time: 32.000s
+  * wallclock time: 32.516s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 27.639 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:32:03 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66774264/tmplsjvi817storm_from-jani_check_cudd_eajs.6-300-13_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.246s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 25.811s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "ExpUtil": R{"utilityLocal"}max=? [F "emptyBattery"] ...
+Result (for initial states): inf
+Time for model checking: 1.491s.
+
+Performance statistics:
+  * peak memory usage: 1170MB
+  * CPU time: 27.284s
+  * wallclock time: 27.601s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 29.123 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:30:42 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66765073/tmpdrjd1r44storm_from-jani_check_cudd_eajs.6-300-13_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.363s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 26.798s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "ExpUtil": R{"utilityLocal"}max=? [F "emptyBattery"] ...
+Result (for initial states): inf
+Time for model checking: 1.860s.
+
+Performance statistics:
+  * peak memory usage: 1170MB
+  * CPU time: 28.661s
+  * wallclock time: 29.087s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 28.954 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:50:56 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66790938/tmpruq52t7astorm_from-jani_check_cudd_eajs.6-300-13_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.390s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 26.553s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "ExpUtil": R{"utilityLocal"}max=? [F "emptyBattery"] ...
+Result (for initial states): inf
+Time for model checking: 1.909s.
+
+Performance statistics:
+  * peak memory usage: 1170MB
+  * CPU time: 28.408s
+  * wallclock time: 28.913s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 28.214 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:46:39 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66765939/tmpwkixuoctstorm_from-jani_check_cudd_eajs.6-300-13_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.314s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	7901694 (4897 nodes)
+Transitions: 	19722777 (43029 nodes)
+Choices: 	11897412
+Reward Models:  utilityLocal
+Variables: 	rows: 24 meta variables (58 DD variables), columns: 24 meta variables (58 DD variables), nondeterminism: 5 meta variables (5 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (59 nodes)
+   * emptyBattery
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 26.065s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	7901694
+Transitions: 	19722777
+Choices: 	12068996
+Reward Models:  utilityLocal
+State Labels: 	3 labels
+   * emptyBattery -> 28620 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "ExpUtil": R{"utilityLocal"}max=? [F "emptyBattery"] ...
+Result (for initial states): inf
+Time for model checking: 1.725s.
+
+Performance statistics:
+  * peak memory usage: 1170MB
+  * CPU time: 27.786s
+  * wallclock time: 28.165s
+</pre>
+</div>
+</body>
+</html>

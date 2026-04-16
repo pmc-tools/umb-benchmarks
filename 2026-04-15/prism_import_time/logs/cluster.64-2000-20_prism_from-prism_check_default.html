@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log cluster.64-2000-20_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/cluster.64-2000-20/index.html" target="_blank">cluster.64-2000-20</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.076, 0.061, 0.069, 0.079, 0.121]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_cluster.64-2000-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 81.443 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:55:28 GMT+02:00 2026
+Hostname: r23m0152
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66766468/tmpt2t1l4q6prism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66766468/tmpt2t1l4q6prism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66766468/tmpt2t1l4q6prism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66766468/tmpt2t1l4q6prism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.076 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 36133 of 151060 (23.9%)
+
+Building hybrid MTBDD matrix... [levels=23, nodes=16782] [786.7 KB]
+Adding explicit sparse matrices... [levels=16, num=164, compact] [838.5 KB]
+Creating vector for diagonals... [dist=1298, compact] [305.2 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+TOTAL: [5.3 MB]
+
+Uniformisation: q.t = 41.057295 x 2000.000000 = 82114.590000
+Fox-Glynn: left = 80105, right = 84548
+
+Starting iterations...
+Iteration 5292 (of 84548): max relative diff=0.000195, 5.01 sec so far
+Iteration 10612 (of 84548): max relative diff=0.000096, 10.02 sec so far
+Iteration 15917 (of 84548): max relative diff=0.000063, 15.03 sec so far
+Iteration 21231 (of 84548): max relative diff=0.000047, 20.04 sec so far
+Iteration 26540 (of 84548): max relative diff=0.000038, 25.05 sec so far
+Iteration 31862 (of 84548): max relative diff=0.000032, 30.06 sec so far
+Iteration 37088 (of 84548): max relative diff=0.000027, 35.07 sec so far
+Iteration 42326 (of 84548): max relative diff=0.000024, 40.08 sec so far
+Iteration 47605 (of 84548): max relative diff=0.000021, 45.09 sec so far
+Iteration 52897 (of 84548): max relative diff=0.000019, 50.10 sec so far
+Iteration 58187 (of 84548): max relative diff=0.000017, 55.11 sec so far
+Iteration 63480 (of 84548): max relative diff=0.000016, 60.12 sec so far
+Iteration 68774 (of 84548): max relative diff=0.000015, 65.13 sec so far
+Iteration 74023 (of 84548): max relative diff=0.000014, 70.14 sec so far
+Iteration 79261 (of 84548): max relative diff=0.000013, 75.15 sec so far
+Iteration 84271 (of 84548): max relative diff=0.000012, 80.16 sec so far
+
+Iterative method: 84548 iterations in 80.50 seconds (average 0.000951, setup 0.07)
+
+Value in the initial state: 0.0010445396729789396
+
+Time for model checking: 80.777 seconds.
+
+Result: 0.0010445396729789396
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_cluster.64-2000-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 84.821 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:40:55 GMT+02:00 2026
+Hostname: n23m0270
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66771834/tmp08ef4outprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66771834/tmp08ef4outprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66771834/tmp08ef4outprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66771834/tmp08ef4outprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.03 seconds (average 0.000226, setup 0.00)
+
+Time for model construction: 0.061 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 36133 of 151060 (23.9%)
+
+Building hybrid MTBDD matrix... [levels=23, nodes=16782] [786.7 KB]
+Adding explicit sparse matrices... [levels=16, num=164, compact] [838.5 KB]
+Creating vector for diagonals... [dist=1298, compact] [305.2 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+TOTAL: [5.3 MB]
+
+Uniformisation: q.t = 41.057295 x 2000.000000 = 82114.590000
+Fox-Glynn: left = 80105, right = 84548
+
+Starting iterations...
+Iteration 5070 (of 84548): max relative diff=0.000204, 5.01 sec so far
+Iteration 10177 (of 84548): max relative diff=0.000100, 10.02 sec so far
+Iteration 15221 (of 84548): max relative diff=0.000066, 15.03 sec so far
+Iteration 20312 (of 84548): max relative diff=0.000050, 20.04 sec so far
+Iteration 25407 (of 84548): max relative diff=0.000040, 25.05 sec so far
+Iteration 30506 (of 84548): max relative diff=0.000033, 30.06 sec so far
+Iteration 35615 (of 84548): max relative diff=0.000028, 35.07 sec so far
+Iteration 40722 (of 84548): max relative diff=0.000025, 40.08 sec so far
+Iteration 45834 (of 84548): max relative diff=0.000022, 45.09 sec so far
+Iteration 50939 (of 84548): max relative diff=0.000020, 50.10 sec so far
+Iteration 56047 (of 84548): max relative diff=0.000018, 55.11 sec so far
+Iteration 61160 (of 84548): max relative diff=0.000016, 60.12 sec so far
+Iteration 66248 (of 84548): max relative diff=0.000015, 65.13 sec so far
+Iteration 71364 (of 84548): max relative diff=0.000014, 70.14 sec so far
+Iteration 76433 (of 84548): max relative diff=0.000013, 75.15 sec so far
+Iteration 81347 (of 84548): max relative diff=0.000012, 80.16 sec so far
+
+Iterative method: 84548 iterations in 83.90 seconds (average 0.000991, setup 0.08)
+
+Value in the initial state: 0.0010445396729789396
+
+Time for model checking: 84.157 seconds.
+
+Result: 0.0010445396729789396
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_cluster.64-2000-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 96.104 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:41:30 GMT+02:00 2026
+Hostname: r23m0098
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66790495/tmpx06652bsprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66790495/tmpx06652bsprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66790495/tmpx06652bsprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66790495/tmpx06652bsprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.069 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 36133 of 151060 (23.9%)
+
+Building hybrid MTBDD matrix... [levels=23, nodes=16782] [786.7 KB]
+Adding explicit sparse matrices... [levels=16, num=164, compact] [838.5 KB]
+Creating vector for diagonals... [dist=1298, compact] [305.2 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+TOTAL: [5.3 MB]
+
+Uniformisation: q.t = 41.057295 x 2000.000000 = 82114.590000
+Fox-Glynn: left = 80105, right = 84548
+
+Starting iterations...
+Iteration 4458 (of 84548): max relative diff=0.000233, 5.01 sec so far
+Iteration 8922 (of 84548): max relative diff=0.000114, 10.02 sec so far
+Iteration 13380 (of 84548): max relative diff=0.000076, 15.03 sec so far
+Iteration 17842 (of 84548): max relative diff=0.000057, 20.04 sec so far
+Iteration 22309 (of 84548): max relative diff=0.000045, 25.05 sec so far
+Iteration 26765 (of 84548): max relative diff=0.000038, 30.06 sec so far
+Iteration 31159 (of 84548): max relative diff=0.000032, 35.07 sec so far
+Iteration 35645 (of 84548): max relative diff=0.000028, 40.08 sec so far
+Iteration 40117 (of 84548): max relative diff=0.000025, 45.09 sec so far
+Iteration 44588 (of 84548): max relative diff=0.000023, 50.10 sec so far
+Iteration 49065 (of 84548): max relative diff=0.000020, 55.11 sec so far
+Iteration 53536 (of 84548): max relative diff=0.000019, 60.12 sec so far
+Iteration 58016 (of 84548): max relative diff=0.000017, 65.13 sec so far
+Iteration 62492 (of 84548): max relative diff=0.000016, 70.14 sec so far
+Iteration 66962 (of 84548): max relative diff=0.000015, 75.15 sec so far
+Iteration 71430 (of 84548): max relative diff=0.000014, 80.16 sec so far
+Iteration 75913 (of 84548): max relative diff=0.000013, 85.17 sec so far
+Iteration 80359 (of 84548): max relative diff=0.000012, 90.18 sec so far
+
+Iterative method: 84548 iterations in 95.23 seconds (average 0.001126, setup 0.07)
+
+Value in the initial state: 0.0010445396729789396
+
+Time for model checking: 95.504 seconds.
+
+Result: 0.0010445396729789396
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_cluster.64-2000-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 98.207 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:21:15 GMT+02:00 2026
+Hostname: n23m0203
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66785451/tmp_o6wlr5nprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66785451/tmp_o6wlr5nprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66785451/tmp_o6wlr5nprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785451/tmp_o6wlr5nprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.079 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 36133 of 151060 (23.9%)
+
+Building hybrid MTBDD matrix... [levels=23, nodes=16782] [786.7 KB]
+Adding explicit sparse matrices... [levels=16, num=164, compact] [838.5 KB]
+Creating vector for diagonals... [dist=1298, compact] [305.2 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+TOTAL: [5.3 MB]
+
+Uniformisation: q.t = 41.057295 x 2000.000000 = 82114.590000
+Fox-Glynn: left = 80105, right = 84548
+
+Starting iterations...
+Iteration 4376 (of 84548): max relative diff=0.000238, 5.01 sec so far
+Iteration 8765 (of 84548): max relative diff=0.000116, 10.02 sec so far
+Iteration 13158 (of 84548): max relative diff=0.000077, 15.03 sec so far
+Iteration 17549 (of 84548): max relative diff=0.000058, 20.04 sec so far
+Iteration 21936 (of 84548): max relative diff=0.000046, 25.05 sec so far
+Iteration 26331 (of 84548): max relative diff=0.000038, 30.06 sec so far
+Iteration 30723 (of 84548): max relative diff=0.000033, 35.07 sec so far
+Iteration 35111 (of 84548): max relative diff=0.000029, 40.08 sec so far
+Iteration 39506 (of 84548): max relative diff=0.000025, 45.09 sec so far
+Iteration 43891 (of 84548): max relative diff=0.000023, 50.10 sec so far
+Iteration 48283 (of 84548): max relative diff=0.000021, 55.11 sec so far
+Iteration 52679 (of 84548): max relative diff=0.000019, 60.12 sec so far
+Iteration 57064 (of 84548): max relative diff=0.000018, 65.13 sec so far
+Iteration 61457 (of 84548): max relative diff=0.000016, 70.14 sec so far
+Iteration 65852 (of 84548): max relative diff=0.000015, 75.15 sec so far
+Iteration 70234 (of 84548): max relative diff=0.000014, 80.16 sec so far
+Iteration 74627 (of 84548): max relative diff=0.000013, 85.17 sec so far
+Iteration 78992 (of 84548): max relative diff=0.000013, 90.18 sec so far
+Iteration 83183 (of 84548): max relative diff=0.000012, 95.19 sec so far
+
+Iterative method: 84548 iterations in 96.91 seconds (average 0.001145, setup 0.07)
+
+Value in the initial state: 0.0010445396729789396
+
+Time for model checking: 97.163 seconds.
+
+Result: 0.0010445396729789396
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_cluster.64-2000-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 98.370 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:21:57 GMT+02:00 2026
+Hostname: n23m0314
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66785513/tmpzvkgsbtzprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66785513/tmpzvkgsbtzprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66785513/tmpzvkgsbtzprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785513/tmpzvkgsbtzprism_from-prism_check_default_cluster.64-2000-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "qos1": P=? [ F<=2000 !"minimum" ]
+
+---------------------------------------------------------------------
+
+Model checking: "qos1": P=? [ F<=2000 !"minimum" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 133 iterations in 0.02 seconds (average 0.000150, setup 0.00)
+
+Time for model construction: 0.121 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 36133 of 151060 (23.9%)
+
+Building hybrid MTBDD matrix... [levels=23, nodes=16782] [786.7 KB]
+Adding explicit sparse matrices... [levels=16, num=164, compact] [838.5 KB]
+Creating vector for diagonals... [dist=1298, compact] [305.2 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+TOTAL: [5.3 MB]
+
+Uniformisation: q.t = 41.057295 x 2000.000000 = 82114.590000
+Fox-Glynn: left = 80105, right = 84548
+
+Starting iterations...
+Iteration 4366 (of 84548): max relative diff=0.000238, 5.01 sec so far
+Iteration 8736 (of 84548): max relative diff=0.000117, 10.02 sec so far
+Iteration 13101 (of 84548): max relative diff=0.000077, 15.03 sec so far
+Iteration 17481 (of 84548): max relative diff=0.000058, 20.04 sec so far
+Iteration 21847 (of 84548): max relative diff=0.000046, 25.05 sec so far
+Iteration 26229 (of 84548): max relative diff=0.000038, 30.06 sec so far
+Iteration 30604 (of 84548): max relative diff=0.000033, 35.07 sec so far
+Iteration 34989 (of 84548): max relative diff=0.000029, 40.08 sec so far
+Iteration 39365 (of 84548): max relative diff=0.000026, 45.09 sec so far
+Iteration 43741 (of 84548): max relative diff=0.000023, 50.10 sec so far
+Iteration 48125 (of 84548): max relative diff=0.000021, 55.11 sec so far
+Iteration 52500 (of 84548): max relative diff=0.000019, 60.12 sec so far
+Iteration 56882 (of 84548): max relative diff=0.000018, 65.13 sec so far
+Iteration 61265 (of 84548): max relative diff=0.000016, 70.14 sec so far
+Iteration 65640 (of 84548): max relative diff=0.000015, 75.15 sec so far
+Iteration 70008 (of 84548): max relative diff=0.000014, 80.16 sec so far
+Iteration 74393 (of 84548): max relative diff=0.000013, 85.17 sec so far
+Iteration 78771 (of 84548): max relative diff=0.000013, 90.18 sec so far
+Iteration 82975 (of 84548): max relative diff=0.000012, 95.19 sec so far
+
+Iterative method: 84548 iterations in 97.17 seconds (average 0.001148, setup 0.07)
+
+Value in the initial state: 0.0010445396729789396
+
+Time for model checking: 97.422 seconds.
+
+Result: 0.0010445396729789396
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_prism_from-prism_to-tra_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration prism_from-prism_to-tra_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[76769932.0, 76769932.0, 76769932.0, 76769932.0, 76769932.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 13.120 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:27:09 GMT+02:00 2026
+Hostname: n23m0268
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66755141/tmpurwps459prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755141/tmp521t9332prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755141/tmpurwps459prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 442338 853185 958894 states
+Reachable states exploration and model construction done in 6.81 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.274 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755141/tmp521t9332prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66755141/tmp521t9332prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66755141/tmp521t9332prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66755141/tmp521t9332prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.trew"...
+Time for exporting: 4.318 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 76768962 bytes
+model.lab:	Size of output file is 970 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 17.207 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:11:07 GMT+02:00 2026
+Hostname: n23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66754524/tmpunj15zvsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754524/tmpnnvbjhu2prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754524/tmpunj15zvsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 351977 693400 958894 states
+Reachable states exploration and model construction done in 8.583 secs.
+Sorting reachable states list...
+
+Time for model construction: 10.287 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754524/tmpnnvbjhu2prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754524/tmpnnvbjhu2prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754524/tmpnnvbjhu2prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754524/tmpnnvbjhu2prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.trew"...
+Time for exporting: 6.132 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 76768962 bytes
+model.lab:	Size of output file is 970 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 13.369 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:14:04 GMT+02:00 2026
+Hostname: n23m0270
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66754646/tmp70o052_1prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754646/tmpypn2kfkdprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754646/tmp70o052_1prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 424783 819985 958894 states
+Reachable states exploration and model construction done in 7.064 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.642 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754646/tmpypn2kfkdprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754646/tmpypn2kfkdprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754646/tmpypn2kfkdprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754646/tmpypn2kfkdprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.trew"...
+Time for exporting: 4.185 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 76768962 bytes
+model.lab:	Size of output file is 970 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 16.579 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:44:21 GMT+02:00 2026
+Hostname: r23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66759746/tmp7auabawjprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759746/tmp6a4ge1jsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759746/tmp7auabawjprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 404363 758496 958894 states
+Reachable states exploration and model construction done in 7.723 secs.
+Sorting reachable states list...
+
+Time for model construction: 9.379 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759746/tmp6a4ge1jsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66759746/tmp6a4ge1jsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759746/tmp6a4ge1jsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759746/tmp6a4ge1jsprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.trew"...
+Time for exporting: 6.462 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 76768962 bytes
+model.lab:	Size of output file is 970 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 17.684 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:51:04 GMT+02:00 2026
+Hostname: n23m0280
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66760046/tmprptyfkvmprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66760046/tmpgejbcs51prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66760046/tmprptyfkvmprism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 314942 618746 910606 958894 states
+Reachable states exploration and model construction done in 9.657 secs.
+Sorting reachable states list...
+
+Time for model construction: 11.643 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66760046/tmpgejbcs51prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66760046/tmpgejbcs51prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66760046/tmpgejbcs51prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66760046/tmpgejbcs51prism_from-prism_to-tra_ex_resource-gathering.1300-100-100_tmp_outdir_/model.trew"...
+Time for exporting: 5.113 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 76768962 bytes
+model.lab:	Size of output file is 970 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

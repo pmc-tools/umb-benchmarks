@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.4-0_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.4-0/index.html" target="_blank">wlan.4-0</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[52.667, 38.62, 60.039, 48.062, 33.15]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.4-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 73.871 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:14:56 GMT+02:00 2026
+Hostname: n23m0060
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66785046/tmpdlok18rvprism_from-umb_check_default_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66785046/tmpdlok18rvprism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785046/tmpdlok18rvprism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 6% 14% 22% 28% 34% 40% 46% 52% 58% 62% 68% 74% 78% 84% 90% 94% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 145 iterations in 1.16 seconds (average 0.008000, setup 0.00)
+
+Time for model construction: 52.667 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+
+Transition matrix: 88372 nodes (6 terminal), 762252 minterms, vars: 19r/19c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 854 iterations in 20.01 seconds (average 0.023431, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 345000, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 20.09 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.4-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 56.826 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:52:09 GMT+02:00 2026
+Hostname: n23m0249
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66768965/tmpqft9gba2prism_from-umb_check_default_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768965/tmpqft9gba2prism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768965/tmpqft9gba2prism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 10% 20% 28% 38% 46% 54% 60% 68% 76% 82% 90% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 145 iterations in 0.92 seconds (average 0.006345, setup 0.00)
+
+Time for model construction: 38.62 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+
+Transition matrix: 88372 nodes (6 terminal), 762252 minterms, vars: 19r/19c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 854 iterations in 17.59 seconds (average 0.020597, setup 0.00)
+
+Prob1A: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+yes = 345000, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 17.638 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.4-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 83.531 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:00:01 GMT+02:00 2026
+Hostname: r23m0172
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66772856/tmp2j6vox9rprism_from-umb_check_default_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66772856/tmp2j6vox9rprism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772856/tmp2j6vox9rprism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 6% 12% 18% 24% 28% 34% 40% 44% 50% 54% 60% 64% 68% 74% 78% 84% 88% 92% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 145 iterations in 1.40 seconds (average 0.009655, setup 0.00)
+
+Time for model construction: 60.039 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+
+Transition matrix: 88372 nodes (6 terminal), 762252 minterms, vars: 19r/19c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 854 iterations in 22.67 seconds (average 0.026546, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 345000, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 22.788 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.4-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 68.105 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:40:50 GMT+02:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66790449/tmpr90vazr8prism_from-umb_check_default_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66790449/tmpr90vazr8prism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66790449/tmpr90vazr8prism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 8% 16% 24% 30% 38% 44% 50% 56% 62% 68% 74% 80% 86% 92% 96% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 145 iterations in 1.06 seconds (average 0.007310, setup 0.00)
+
+Time for model construction: 48.062 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+
+Transition matrix: 88372 nodes (6 terminal), 762252 minterms, vars: 19r/19c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 854 iterations in 19.25 seconds (average 0.022541, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 345000, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 19.313 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_wlan.4-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 47.220 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:45:25 GMT+02:00 2026
+Hostname: r23m0085
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66783428/tmpohjrvgy7prism_from-umb_check_default_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66783428/tmpohjrvgy7prism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783428/tmpohjrvgy7prism_from-umb_check_default_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 10% 20% 28% 38% 48% 56% 66% 76% 84% 94% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 145 iterations in 0.74 seconds (average 0.005103, setup 0.00)
+
+Time for model construction: 33.15 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+
+Transition matrix: 88372 nodes (6 terminal), 762252 minterms, vars: 19r/19c/3nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 854 iterations in 13.39 seconds (average 0.015679, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 345000, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 13.434 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

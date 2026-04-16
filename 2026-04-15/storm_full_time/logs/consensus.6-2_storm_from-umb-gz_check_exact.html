@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.6-2_storm_from-umb-gz_check_exact</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.6-2/index.html" target="_blank">consensus.6-2</a> and tool configuration storm_from-umb-gz_check_exact</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[6873.812, 6734.374, TO, 7124.362, 7184.254]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_consensus.6-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb %indir/storm.model.exact.umb.gz --prop %indir/property.props --exact
+Wallclock time: 6873.812 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 12:47:33 2026
+Command line arguments: --timemem --buildfull --explicit-umb /w0/tmp/slurm_tq429871.66768729/tmpe7aon_89storm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/storm.model.exact.umb.gz --prop /w0/tmp/slurm_tq429871.66768729/tmpe7aon_89storm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model construction: 2.900s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * deadlock -> 0 item(s)
+   * agree -> 114258 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+Result (for initial states): 37101798760906709/102027593703751680 (approx. 0.3636447496)
+Time for model checking: 6870.639s.
+
+Performance statistics:
+  * peak memory usage: 3344MB
+  * CPU time: 6857.497s
+  * wallclock time: 6873.623s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_consensus.6-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb %indir/storm.model.exact.umb.gz --prop %indir/property.props --exact
+Wallclock time: 6734.374 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:53:29 2026
+Command line arguments: --timemem --buildfull --explicit-umb /w0/tmp/slurm_tq429871.66772489/tmp0kdidn_0storm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/storm.model.exact.umb.gz --prop /w0/tmp/slurm_tq429871.66772489/tmp0kdidn_0storm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model construction: 2.836s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * deadlock -> 0 item(s)
+   * agree -> 114258 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+Result (for initial states): 37101798760906709/102027593703751680 (approx. 0.3636447496)
+Time for model checking: 6731.285s.
+
+Performance statistics:
+  * peak memory usage: 3344MB
+  * CPU time: 6706.102s
+  * wallclock time: 6734.201s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_consensus.6-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb %indir/storm.model.exact.umb.gz --prop %indir/property.props --exact
+Wallclock time: 7203.014 seconds
+Return code: None (timeout)
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:15:24 2026
+Command line arguments: --timemem --buildfull --explicit-umb /w0/tmp/slurm_tq429871.66769824/tmpbw8d7jdystorm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/storm.model.exact.umb.gz --prop /w0/tmp/slurm_tq429871.66769824/tmpbw8d7jdystorm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model construction: 3.460s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * deadlock -> 0 item(s)
+   * agree -> 114258 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+
+##############################Output to stderr##############################
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 14
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_consensus.6-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb %indir/storm.model.exact.umb.gz --prop %indir/property.props --exact
+Wallclock time: 7124.362 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:45:14 2026
+Command line arguments: --timemem --buildfull --explicit-umb /w0/tmp/slurm_tq429871.66772149/tmp7fg38bztstorm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/storm.model.exact.umb.gz --prop /w0/tmp/slurm_tq429871.66772149/tmp7fg38bztstorm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model construction: 2.898s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * deadlock -> 0 item(s)
+   * agree -> 114258 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+Result (for initial states): 37101798760906709/102027593703751680 (approx. 0.3636447496)
+Time for model checking: 7121.229s.
+
+Performance statistics:
+  * peak memory usage: 3345MB
+  * CPU time: 7096.081s
+  * wallclock time: 7124.222s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-umb-gz_check_exact_consensus.6-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --explicit-umb %indir/storm.model.exact.umb.gz --prop %indir/property.props --exact
+Wallclock time: 7184.254 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:28:33 2026
+Command line arguments: --timemem --buildfull --explicit-umb /w0/tmp/slurm_tq429871.66764982/tmptdh00g5kstorm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/storm.model.exact.umb.gz --prop /w0/tmp/slurm_tq429871.66764982/tmptdh00g5kstorm_from-umb-gz_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model construction: 3.416s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * finished -> 384 item(s)
+   * deadlock -> 0 item(s)
+   * agree -> 114258 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+Result (for initial states): 37101798760906709/102027593703751680 (approx. 0.3636447496)
+Time for model checking: 7180.492s.
+
+Performance statistics:
+  * peak memory usage: 3344MB
+  * CPU time: 7154.795s
+  * wallclock time: 7184.008s
+</pre>
+</div>
+</body>
+</html>

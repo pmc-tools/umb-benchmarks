@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_prism_from-prism_to-tra_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration prism_from-prism_to-tra_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[55823656.0, 55823656.0, 55823656.0, 55823656.0, 55823656.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 3.514 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:08:21 GMT+02:00 2026
+Hostname: n23m0293
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758193/tmpan1jf08rprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758193/tmpf47p0ua6prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758193/tmpan1jf08rprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 0.87 seconds (average 0.006444, setup 0.00)
+
+Time for model construction: 1.29 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 75002 nodes (6 terminal), 2396727 minterms, vars: 51r/51c/13nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66758193/tmpf47p0ua6prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66758193/tmpf47p0ua6prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758193/tmpf47p0ua6prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758193/tmpf47p0ua6prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.trew"...
+Time for exporting: 1.757 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 55807758 bytes
+model.lab:	Size of output file is 15898 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 3.644 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:23:55 GMT+02:00 2026
+Hostname: n23m0040
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758843/tmp1wsjvlptprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758843/tmp9brrl840prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758843/tmp1wsjvlptprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 1.18 seconds (average 0.008741, setup 0.00)
+
+Time for model construction: 1.409 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 75002 nodes (6 terminal), 2396727 minterms, vars: 51r/51c/13nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66758843/tmp9brrl840prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66758843/tmp9brrl840prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758843/tmp9brrl840prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758843/tmp9brrl840prism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.trew"...
+Time for exporting: 1.765 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 55807758 bytes
+model.lab:	Size of output file is 15898 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 3.394 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:47:56 GMT+02:00 2026
+Hostname: n23m0237
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757365/tmp1ei2wfmcprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757365/tmphnfdo7jmprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757365/tmp1ei2wfmcprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 0.89 seconds (average 0.006593, setup 0.00)
+
+Time for model construction: 1.112 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 75002 nodes (6 terminal), 2396727 minterms, vars: 51r/51c/13nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757365/tmphnfdo7jmprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66757365/tmphnfdo7jmprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757365/tmphnfdo7jmprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757365/tmphnfdo7jmprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.trew"...
+Time for exporting: 1.73 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 55807758 bytes
+model.lab:	Size of output file is 15898 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 4.664 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:59:47 GMT+02:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757835/tmpppeh7gbrprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757835/tmp9ijyyhzwprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757835/tmpppeh7gbrprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 1.94 seconds (average 0.014370, setup 0.00)
+
+Time for model construction: 2.242 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 75002 nodes (6 terminal), 2396727 minterms, vars: 51r/51c/13nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757835/tmp9ijyyhzwprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66757835/tmp9ijyyhzwprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757835/tmp9ijyyhzwprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66757835/tmp9ijyyhzwprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.trew"...
+Time for exporting: 1.856 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 55807758 bytes
+model.lab:	Size of output file is 15898 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 4.593 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:11:43 GMT+02:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754532/tmpyhnu0cuxprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754532/tmp7qrvb8fyprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754532/tmpyhnu0cuxprism_from-prism_to-tra_default_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 135 iterations in 1.81 seconds (average 0.013407, setup 0.00)
+
+Time for model construction: 2.094 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+
+Transition matrix: 75002 nodes (6 terminal), 2396727 minterms, vars: 51r/51c/13nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754532/tmp7qrvb8fyprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754532/tmp7qrvb8fyprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754532/tmp7qrvb8fyprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754532/tmp7qrvb8fyprism_from-prism_to-tra_default_csma.3-4_tmp_outdir_/model.trew"...
+Time for exporting: 1.9 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 55807758 bytes
+model.lab:	Size of output file is 15898 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

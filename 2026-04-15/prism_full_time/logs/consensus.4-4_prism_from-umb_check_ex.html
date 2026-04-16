@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.4-4_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.4-4/index.html" target="_blank">consensus.4-4</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[6.945, 6.794, 7.866, 8.366, 7.278]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 6.945 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:14:17 GMT+02:00 2026
+Hostname: n23m0393
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66769737/tmp687m2ga2prism_from-umb_check_ex_consensus.4-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66769737/tmp687m2ga2prism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66769737/tmp687m2ga2prism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.084 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.099 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.687 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.267 seconds.
+Probabilistic reachability took 6.08 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 6.101 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 6.794 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:48:46 GMT+02:00 2026
+Hostname: n23m0344
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66775529/tmps18ueynoprism_from-umb_check_ex_consensus.4-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66775529/tmps18ueynoprism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66775529/tmps18ueynoprism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.078 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.102 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.7 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.231 seconds.
+Probabilistic reachability took 6.045 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 6.062 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.866 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:01:45 GMT+02:00 2026
+Hostname: n23m0393
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66784185/tmptda40g8dprism_from-umb_check_ex_consensus.4-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66784185/tmptda40g8dprism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784185/tmptda40g8dprism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.151 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.1 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.695 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.333 seconds.
+Probabilistic reachability took 6.146 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 6.167 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 8.366 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:56:42 GMT+02:00 2026
+Hostname: n23m0113
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66766527/tmp8rnoe_0dprism_from-umb_check_ex_consensus.4-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66766527/tmp8rnoe_0dprism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66766527/tmp8rnoe_0dprism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.292 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.094 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.516 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 3.847 seconds.
+Probabilistic reachability took 5.474 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.503 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_consensus.4-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.278 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:13:43 GMT+02:00 2026
+Hostname: n23m0111
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66777450/tmpwystke00prism_from-umb_check_ex_consensus.4-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66777450/tmpwystke00prism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [done]
+Variables:   x
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66777450/tmpwystke00prism_from-umb_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.12 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.099 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.662 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.169 seconds.
+Probabilistic reachability took 5.971 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 6.001 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

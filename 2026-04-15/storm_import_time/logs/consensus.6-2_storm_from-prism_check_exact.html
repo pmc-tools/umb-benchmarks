@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.6-2_storm_from-prism_check_exact</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.6-2/index.html" target="_blank">consensus.6-2</a> and tool configuration storm_from-prism_check_exact</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[11.296, 12.143, 9.916, 10.436, 11.13]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_consensus.6-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 7203.192 seconds
+Return code: None (timeout)
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 19:15:38 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66785083/tmpug5yn6yfstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66785083/tmpug5yn6yfstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 11.293s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+
+##############################Output to stderr##############################
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 14
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_consensus.6-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 7203.102 seconds
+Return code: None (timeout)
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 19:24:48 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66785702/tmpd22a9m7nstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66785702/tmpd22a9m7nstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 12.140s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+
+##############################Output to stderr##############################
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 14
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_consensus.6-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 6708.278 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 15:18:43 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66777824/tmpdt8ty6htstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66777824/tmpdt8ty6htstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 9.914s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+Result (for initial states): 37101798760906709/102027593703751680 (approx. 0.3636447496)
+Time for model checking: 6698.071s.
+
+Performance statistics:
+  * peak memory usage: 3380MB
+  * CPU time: 6691.511s
+  * wallclock time: 6708.074s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_consensus.6-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 7203.428 seconds
+Return code: None (timeout)
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:14:15 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66789034/tmpailtirikstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66789034/tmpailtirikstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.021s.
+
+Time for model construction: 10.415s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+
+##############################Output to stderr##############################
+ERROR: The program received signal 15 and will be aborted in 3s.
+Received signal 14
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_consensus.6-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 7016.952 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:42:47 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66771965/tmp3wnbc7qhstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66771965/tmp3wnbc7qhstorm_from-prism_check_exact_consensus.6-2_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 11.127s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1258240
+Transitions: 	6236736
+Choices: 	5008128
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * finished -> 384 item(s)
+   * agree -> 114258 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "disagree": Pmax=? [F ("finished" & (!"agree"))] ...
+Result (for initial states): 37101798760906709/102027593703751680 (approx. 0.3636447496)
+Time for model checking: 7005.454s.
+
+Performance statistics:
+  * peak memory usage: 3390MB
+  * CPU time: 6993.360s
+  * wallclock time: 7016.687s
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log kanban.5_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/kanban.5/index.html" target="_blank">kanban.5</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.144, 0.279, 0.217, 0.166, 0.192]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_kanban.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 447.096 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:24:31 GMT+02:00 2026
+Hostname: n23m0331
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66789629/tmpa9pdeixoprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789629/tmpa9pdeixoprism_from-prism_check_default_kanban.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789629/tmpa9pdeixoprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789629/tmpa9pdeixoprism_from-prism_check_default_kanban.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 71 iterations in 0.12 seconds (average 0.001690, setup 0.00)
+
+Time for model construction: 0.144 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Rate matrix: 6308 nodes (14 terminal), 24460016 minterms, vars: 48r/48c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:2546432
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=48, nodes=6308] [295.7 KB]
+Adding explicit sparse matrices... [levels=27, num=165, compact] [749.6 KB]
+Creating vector for diagonals... [dist=187, compact] [4.9 MB]
+Allocating iteration vectors... [2 x 19.4 MB]
+TOTAL: [44.7 MB]
+
+Starting iterations...
+Iteration 112: max relative diff=0.014838, 5.02 sec so far
+Iteration 225: max relative diff=0.001272, 10.06 sec so far
+Iteration 338: max relative diff=0.000170, 15.08 sec so far
+Iteration 451: max relative diff=0.000040, 20.09 sec so far
+Iteration 565: max relative diff=0.000025, 25.13 sec so far
+Iteration 678: max relative diff=0.000023, 30.16 sec so far
+Iteration 791: max relative diff=0.000023, 35.19 sec so far
+Iteration 904: max relative diff=0.000023, 40.24 sec so far
+Iteration 1017: max relative diff=0.000023, 45.25 sec so far
+Iteration 1131: max relative diff=0.000023, 50.30 sec so far
+Iteration 1245: max relative diff=0.000023, 55.34 sec so far
+Iteration 1359: max relative diff=0.000023, 60.38 sec so far
+Iteration 1472: max relative diff=0.000023, 65.39 sec so far
+Iteration 1586: max relative diff=0.000023, 70.43 sec so far
+Iteration 1699: max relative diff=0.000023, 75.44 sec so far
+Iteration 1812: max relative diff=0.000023, 80.45 sec so far
+Iteration 1925: max relative diff=0.000023, 85.47 sec so far
+Iteration 2038: max relative diff=0.000023, 90.50 sec so far
+Iteration 2151: max relative diff=0.000023, 95.53 sec so far
+Iteration 2264: max relative diff=0.000023, 100.55 sec so far
+Iteration 2378: max relative diff=0.000023, 105.59 sec so far
+Iteration 2491: max relative diff=0.000023, 110.62 sec so far
+Iteration 2604: max relative diff=0.000023, 115.65 sec so far
+Iteration 2716: max relative diff=0.000023, 120.68 sec so far
+Iteration 2829: max relative diff=0.000023, 125.72 sec so far
+Iteration 2942: max relative diff=0.000023, 130.75 sec so far
+Iteration 3055: max relative diff=0.000023, 135.79 sec so far
+Iteration 3168: max relative diff=0.000023, 140.81 sec so far
+Iteration 3281: max relative diff=0.000023, 145.83 sec so far
+Iteration 3394: max relative diff=0.000023, 150.86 sec so far
+Iteration 3507: max relative diff=0.000023, 155.90 sec so far
+Iteration 3620: max relative diff=0.000023, 160.95 sec so far
+Iteration 3733: max relative diff=0.000023, 165.99 sec so far
+Iteration 3845: max relative diff=0.000023, 171.01 sec so far
+Iteration 3957: max relative diff=0.000023, 176.02 sec so far
+Iteration 4071: max relative diff=0.000023, 181.07 sec so far
+Iteration 4185: max relative diff=0.000023, 186.11 sec so far
+Iteration 4298: max relative diff=0.000023, 191.12 sec so far
+Iteration 4412: max relative diff=0.000023, 196.17 sec so far
+Iteration 4525: max relative diff=0.000023, 201.20 sec so far
+Iteration 4638: max relative diff=0.000023, 206.24 sec so far
+Iteration 4751: max relative diff=0.000023, 211.28 sec so far
+Iteration 4864: max relative diff=0.000023, 216.32 sec so far
+Iteration 4977: max relative diff=0.000023, 221.36 sec so far
+Iteration 5091: max relative diff=0.000023, 226.41 sec so far
+Iteration 5204: max relative diff=0.000023, 231.42 sec so far
+Iteration 5318: max relative diff=0.000023, 236.47 sec so far
+Iteration 5431: max relative diff=0.000023, 241.48 sec so far
+Iteration 5544: max relative diff=0.000023, 246.51 sec so far
+Iteration 5657: max relative diff=0.000023, 251.52 sec so far
+Iteration 5771: max relative diff=0.000023, 256.56 sec so far
+Iteration 5885: max relative diff=0.000023, 261.60 sec so far
+Iteration 5999: max relative diff=0.000023, 266.63 sec so far
+Iteration 6111: max relative diff=0.000023, 271.64 sec so far
+Iteration 6223: max relative diff=0.000023, 276.65 sec so far
+Iteration 6336: max relative diff=0.000023, 281.69 sec so far
+Iteration 6449: max relative diff=0.000023, 286.71 sec so far
+Iteration 6562: max relative diff=0.000023, 291.74 sec so far
+Iteration 6675: max relative diff=0.000023, 296.77 sec so far
+Iteration 6788: max relative diff=0.000023, 301.80 sec so far
+Iteration 6901: max relative diff=0.000023, 306.81 sec so far
+Iteration 7015: max relative diff=0.000023, 311.86 sec so far
+Iteration 7129: max relative diff=0.000023, 316.90 sec so far
+Iteration 7243: max relative diff=0.000023, 321.95 sec so far
+Iteration 7356: max relative diff=0.000023, 327.00 sec so far
+Iteration 7469: max relative diff=0.000023, 332.02 sec so far
+Iteration 7582: max relative diff=0.000023, 337.06 sec so far
+Iteration 7696: max relative diff=0.000023, 342.10 sec so far
+Iteration 7810: max relative diff=0.000023, 347.14 sec so far
+Iteration 7923: max relative diff=0.000023, 352.15 sec so far
+Iteration 8037: max relative diff=0.000023, 357.19 sec so far
+Iteration 8151: max relative diff=0.000023, 362.23 sec so far
+Iteration 8264: max relative diff=0.000023, 367.26 sec so far
+Iteration 8378: max relative diff=0.000023, 372.30 sec so far
+Iteration 8491: max relative diff=0.000023, 377.32 sec so far
+Iteration 8605: max relative diff=0.000023, 382.36 sec so far
+Iteration 8718: max relative diff=0.000023, 387.37 sec so far
+Iteration 8831: max relative diff=0.000023, 392.40 sec so far
+Iteration 8943: max relative diff=0.000023, 397.42 sec so far
+Iteration 9056: max relative diff=0.000023, 402.46 sec so far
+Iteration 9169: max relative diff=0.000023, 407.51 sec so far
+Iteration 9281: max relative diff=0.000023, 412.54 sec so far
+Iteration 9394: max relative diff=0.000023, 417.58 sec so far
+Iteration 9507: max relative diff=0.000023, 422.62 sec so far
+Iteration 9620: max relative diff=0.000023, 427.66 sec so far
+Iteration 9733: max relative diff=0.000023, 432.71 sec so far
+Iteration 9846: max relative diff=0.000023, 437.75 sec so far
+Iteration 9959: max relative diff=0.000023, 442.78 sec so far
+
+Jacobi: 10000 iterations in 444.91 seconds (average 0.044461, setup 0.30)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_kanban.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 527.017 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:11:04 GMT+02:00 2026
+Hostname: r23m0105
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66777317/tmpg9uphlw2prism_from-prism_check_default_kanban.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66777317/tmpg9uphlw2prism_from-prism_check_default_kanban.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66777317/tmpg9uphlw2prism_from-prism_check_default_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66777317/tmpg9uphlw2prism_from-prism_check_default_kanban.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 71 iterations in 0.13 seconds (average 0.001831, setup 0.00)
+
+Time for model construction: 0.279 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Rate matrix: 6308 nodes (14 terminal), 24460016 minterms, vars: 48r/48c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:2546432
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=48, nodes=6308] [295.7 KB]
+Adding explicit sparse matrices... [levels=27, num=165, compact] [749.6 KB]
+Creating vector for diagonals... [dist=187, compact] [4.9 MB]
+Allocating iteration vectors... [2 x 19.4 MB]
+TOTAL: [44.7 MB]
+
+Starting iterations...
+Iteration 95: max relative diff=0.025193, 5.03 sec so far
+Iteration 190: max relative diff=0.002317, 10.07 sec so far
+Iteration 284: max relative diff=0.000437, 15.10 sec so far
+Iteration 380: max relative diff=0.000089, 20.13 sec so far
+Iteration 476: max relative diff=0.000034, 25.16 sec so far
+Iteration 572: max relative diff=0.000025, 30.19 sec so far
+Iteration 668: max relative diff=0.000024, 35.22 sec so far
+Iteration 764: max relative diff=0.000023, 40.26 sec so far
+Iteration 861: max relative diff=0.000023, 45.31 sec so far
+Iteration 957: max relative diff=0.000023, 50.34 sec so far
+Iteration 1054: max relative diff=0.000023, 55.37 sec so far
+Iteration 1151: max relative diff=0.000023, 60.43 sec so far
+Iteration 1247: max relative diff=0.000023, 65.45 sec so far
+Iteration 1343: max relative diff=0.000023, 70.51 sec so far
+Iteration 1438: max relative diff=0.000023, 75.54 sec so far
+Iteration 1533: max relative diff=0.000023, 80.57 sec so far
+Iteration 1628: max relative diff=0.000023, 85.61 sec so far
+Iteration 1723: max relative diff=0.000023, 90.64 sec so far
+Iteration 1818: max relative diff=0.000023, 95.67 sec so far
+Iteration 1914: max relative diff=0.000023, 100.73 sec so far
+Iteration 2010: max relative diff=0.000023, 105.75 sec so far
+Iteration 2108: max relative diff=0.000023, 110.80 sec so far
+Iteration 2204: max relative diff=0.000023, 115.82 sec so far
+Iteration 2301: max relative diff=0.000023, 120.84 sec so far
+Iteration 2397: max relative diff=0.000023, 125.89 sec so far
+Iteration 2493: max relative diff=0.000023, 130.91 sec so far
+Iteration 2589: max relative diff=0.000023, 135.94 sec so far
+Iteration 2684: max relative diff=0.000023, 140.95 sec so far
+Iteration 2779: max relative diff=0.000023, 145.97 sec so far
+Iteration 2876: max relative diff=0.000023, 151.01 sec so far
+Iteration 2973: max relative diff=0.000023, 156.06 sec so far
+Iteration 3070: max relative diff=0.000023, 161.10 sec so far
+Iteration 3166: max relative diff=0.000023, 166.12 sec so far
+Iteration 3262: max relative diff=0.000023, 171.14 sec so far
+Iteration 3359: max relative diff=0.000023, 176.16 sec so far
+Iteration 3455: max relative diff=0.000023, 181.21 sec so far
+Iteration 3551: max relative diff=0.000023, 186.24 sec so far
+Iteration 3647: max relative diff=0.000023, 191.26 sec so far
+Iteration 3742: max relative diff=0.000023, 196.29 sec so far
+Iteration 3837: max relative diff=0.000023, 201.30 sec so far
+Iteration 3933: max relative diff=0.000023, 206.34 sec so far
+Iteration 4029: max relative diff=0.000023, 211.35 sec so far
+Iteration 4126: max relative diff=0.000023, 216.38 sec so far
+Iteration 4223: max relative diff=0.000023, 221.43 sec so far
+Iteration 4321: max relative diff=0.000023, 226.45 sec so far
+Iteration 4417: max relative diff=0.000023, 231.49 sec so far
+Iteration 4514: max relative diff=0.000023, 236.54 sec so far
+Iteration 4609: max relative diff=0.000023, 241.56 sec so far
+Iteration 4705: max relative diff=0.000023, 246.60 sec so far
+Iteration 4802: max relative diff=0.000023, 251.63 sec so far
+Iteration 4900: max relative diff=0.000023, 256.69 sec so far
+Iteration 4997: max relative diff=0.000023, 261.73 sec so far
+Iteration 5093: max relative diff=0.000023, 266.75 sec so far
+Iteration 5189: max relative diff=0.000023, 271.78 sec so far
+Iteration 5286: max relative diff=0.000023, 276.82 sec so far
+Iteration 5383: max relative diff=0.000023, 281.86 sec so far
+Iteration 5479: max relative diff=0.000023, 286.91 sec so far
+Iteration 5575: max relative diff=0.000023, 291.95 sec so far
+Iteration 5672: max relative diff=0.000023, 297.01 sec so far
+Iteration 5769: max relative diff=0.000023, 302.02 sec so far
+Iteration 5865: max relative diff=0.000023, 307.03 sec so far
+Iteration 5962: max relative diff=0.000023, 312.09 sec so far
+Iteration 6059: max relative diff=0.000023, 317.14 sec so far
+Iteration 6156: max relative diff=0.000023, 322.18 sec so far
+Iteration 6252: max relative diff=0.000023, 327.20 sec so far
+Iteration 6348: max relative diff=0.000023, 332.23 sec so far
+Iteration 6444: max relative diff=0.000023, 337.26 sec so far
+Iteration 6541: max relative diff=0.000023, 342.29 sec so far
+Iteration 6638: max relative diff=0.000023, 347.32 sec so far
+Iteration 6734: max relative diff=0.000023, 352.33 sec so far
+Iteration 6830: max relative diff=0.000023, 357.35 sec so far
+Iteration 6927: max relative diff=0.000023, 362.39 sec so far
+Iteration 7024: max relative diff=0.000023, 367.45 sec so far
+Iteration 7120: max relative diff=0.000023, 372.48 sec so far
+Iteration 7216: max relative diff=0.000023, 377.52 sec so far
+Iteration 7313: max relative diff=0.000023, 382.55 sec so far
+Iteration 7410: max relative diff=0.000023, 387.56 sec so far
+Iteration 7506: max relative diff=0.000023, 392.61 sec so far
+Iteration 7603: max relative diff=0.000023, 397.65 sec so far
+Iteration 7699: max relative diff=0.000023, 402.66 sec so far
+Iteration 7796: max relative diff=0.000023, 407.70 sec so far
+Iteration 7892: max relative diff=0.000023, 412.72 sec so far
+Iteration 7988: max relative diff=0.000023, 417.76 sec so far
+Iteration 8084: max relative diff=0.000023, 422.77 sec so far
+Iteration 8182: max relative diff=0.000023, 427.83 sec so far
+Iteration 8279: max relative diff=0.000023, 432.88 sec so far
+Iteration 8377: max relative diff=0.000023, 437.94 sec so far
+Iteration 8474: max relative diff=0.000023, 442.97 sec so far
+Iteration 8570: max relative diff=0.000023, 448.02 sec so far
+Iteration 8666: max relative diff=0.000023, 453.07 sec so far
+Iteration 8762: max relative diff=0.000023, 458.13 sec so far
+Iteration 8858: max relative diff=0.000023, 463.16 sec so far
+Iteration 8954: max relative diff=0.000023, 468.17 sec so far
+Iteration 9049: max relative diff=0.000023, 473.18 sec so far
+Iteration 9145: max relative diff=0.000023, 478.21 sec so far
+Iteration 9241: max relative diff=0.000023, 483.27 sec so far
+Iteration 9337: max relative diff=0.000023, 488.31 sec so far
+Iteration 9432: max relative diff=0.000023, 493.33 sec so far
+Iteration 9529: max relative diff=0.000023, 498.36 sec so far
+Iteration 9626: max relative diff=0.000023, 503.39 sec so far
+Iteration 9723: max relative diff=0.000023, 508.44 sec so far
+Iteration 9820: max relative diff=0.000023, 513.45 sec so far
+Iteration 9916: max relative diff=0.000023, 518.50 sec so far
+
+Jacobi: 10000 iterations in 523.26 seconds (average 0.052288, setup 0.38)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_kanban.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 429.884 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:32:44 GMT+02:00 2026
+Hostname: r23m0056
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66790049/tmp0uho0nbgprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66790049/tmp0uho0nbgprism_from-prism_check_default_kanban.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66790049/tmp0uho0nbgprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66790049/tmp0uho0nbgprism_from-prism_check_default_kanban.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 71 iterations in 0.09 seconds (average 0.001268, setup 0.00)
+
+Time for model construction: 0.217 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Rate matrix: 6308 nodes (14 terminal), 24460016 minterms, vars: 48r/48c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:2546432
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=48, nodes=6308] [295.7 KB]
+Adding explicit sparse matrices... [levels=27, num=165, compact] [749.6 KB]
+Creating vector for diagonals... [dist=187, compact] [4.9 MB]
+Allocating iteration vectors... [2 x 19.4 MB]
+TOTAL: [44.7 MB]
+
+Starting iterations...
+Iteration 118: max relative diff=0.012221, 5.04 sec so far
+Iteration 236: max relative diff=0.001042, 10.07 sec so far
+Iteration 354: max relative diff=0.000131, 15.11 sec so far
+Iteration 473: max relative diff=0.000035, 20.15 sec so far
+Iteration 590: max relative diff=0.000024, 25.18 sec so far
+Iteration 708: max relative diff=0.000023, 30.21 sec so far
+Iteration 826: max relative diff=0.000023, 35.23 sec so far
+Iteration 944: max relative diff=0.000023, 40.26 sec so far
+Iteration 1062: max relative diff=0.000023, 45.28 sec so far
+Iteration 1180: max relative diff=0.000023, 50.31 sec so far
+Iteration 1298: max relative diff=0.000023, 55.33 sec so far
+Iteration 1416: max relative diff=0.000023, 60.36 sec so far
+Iteration 1534: max relative diff=0.000023, 65.39 sec so far
+Iteration 1652: max relative diff=0.000023, 70.41 sec so far
+Iteration 1770: max relative diff=0.000023, 75.46 sec so far
+Iteration 1889: max relative diff=0.000023, 80.50 sec so far
+Iteration 2006: max relative diff=0.000023, 85.52 sec so far
+Iteration 2124: max relative diff=0.000023, 90.54 sec so far
+Iteration 2242: max relative diff=0.000023, 95.56 sec so far
+Iteration 2360: max relative diff=0.000023, 100.59 sec so far
+Iteration 2478: max relative diff=0.000023, 105.61 sec so far
+Iteration 2596: max relative diff=0.000023, 110.64 sec so far
+Iteration 2714: max relative diff=0.000023, 115.68 sec so far
+Iteration 2832: max relative diff=0.000023, 120.71 sec so far
+Iteration 2950: max relative diff=0.000023, 125.73 sec so far
+Iteration 3068: max relative diff=0.000023, 130.75 sec so far
+Iteration 3186: max relative diff=0.000023, 135.79 sec so far
+Iteration 3304: max relative diff=0.000023, 140.81 sec so far
+Iteration 3421: max relative diff=0.000023, 145.83 sec so far
+Iteration 3539: max relative diff=0.000023, 150.85 sec so far
+Iteration 3657: max relative diff=0.000023, 155.88 sec so far
+Iteration 3775: max relative diff=0.000023, 160.92 sec so far
+Iteration 3893: max relative diff=0.000023, 165.93 sec so far
+Iteration 4011: max relative diff=0.000023, 170.96 sec so far
+Iteration 4129: max relative diff=0.000023, 175.98 sec so far
+Iteration 4247: max relative diff=0.000023, 181.01 sec so far
+Iteration 4365: max relative diff=0.000023, 186.03 sec so far
+Iteration 4483: max relative diff=0.000023, 191.06 sec so far
+Iteration 4601: max relative diff=0.000023, 196.10 sec so far
+Iteration 4719: max relative diff=0.000023, 201.12 sec so far
+Iteration 4836: max relative diff=0.000023, 206.13 sec so far
+Iteration 4954: max relative diff=0.000023, 211.16 sec so far
+Iteration 5072: max relative diff=0.000023, 216.19 sec so far
+Iteration 5190: max relative diff=0.000023, 221.23 sec so far
+Iteration 5308: max relative diff=0.000023, 226.25 sec so far
+Iteration 5426: max relative diff=0.000023, 231.28 sec so far
+Iteration 5544: max relative diff=0.000023, 236.30 sec so far
+Iteration 5662: max relative diff=0.000023, 241.33 sec so far
+Iteration 5780: max relative diff=0.000023, 246.37 sec so far
+Iteration 5898: max relative diff=0.000023, 251.39 sec so far
+Iteration 6016: max relative diff=0.000023, 256.43 sec so far
+Iteration 6134: max relative diff=0.000023, 261.45 sec so far
+Iteration 6252: max relative diff=0.000023, 266.50 sec so far
+Iteration 6370: max relative diff=0.000023, 271.53 sec so far
+Iteration 6488: max relative diff=0.000023, 276.55 sec so far
+Iteration 6606: max relative diff=0.000023, 281.58 sec so far
+Iteration 6724: max relative diff=0.000023, 286.63 sec so far
+Iteration 6842: max relative diff=0.000023, 291.67 sec so far
+Iteration 6960: max relative diff=0.000023, 296.69 sec so far
+Iteration 7078: max relative diff=0.000023, 301.71 sec so far
+Iteration 7196: max relative diff=0.000023, 306.73 sec so far
+Iteration 7314: max relative diff=0.000023, 311.76 sec so far
+Iteration 7432: max relative diff=0.000023, 316.77 sec so far
+Iteration 7550: max relative diff=0.000023, 321.80 sec so far
+Iteration 7668: max relative diff=0.000023, 326.85 sec so far
+Iteration 7786: max relative diff=0.000023, 331.87 sec so far
+Iteration 7904: max relative diff=0.000023, 336.90 sec so far
+Iteration 8022: max relative diff=0.000023, 341.93 sec so far
+Iteration 8140: max relative diff=0.000023, 346.95 sec so far
+Iteration 8258: max relative diff=0.000023, 351.97 sec so far
+Iteration 8377: max relative diff=0.000023, 357.02 sec so far
+Iteration 8495: max relative diff=0.000023, 362.05 sec so far
+Iteration 8613: max relative diff=0.000023, 367.07 sec so far
+Iteration 8731: max relative diff=0.000023, 372.10 sec so far
+Iteration 8849: max relative diff=0.000023, 377.14 sec so far
+Iteration 8967: max relative diff=0.000023, 382.18 sec so far
+Iteration 9084: max relative diff=0.000023, 387.19 sec so far
+Iteration 9202: max relative diff=0.000023, 392.23 sec so far
+Iteration 9320: max relative diff=0.000023, 397.26 sec so far
+Iteration 9438: max relative diff=0.000023, 402.30 sec so far
+Iteration 9556: max relative diff=0.000023, 407.34 sec so far
+Iteration 9674: max relative diff=0.000023, 412.37 sec so far
+Iteration 9792: max relative diff=0.000023, 417.40 sec so far
+Iteration 9910: max relative diff=0.000023, 422.43 sec so far
+
+Jacobi: 10000 iterations in 426.57 seconds (average 0.042627, setup 0.30)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_kanban.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 422.861 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:52:08 GMT+02:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66768977/tmpre91xpolprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66768977/tmpre91xpolprism_from-prism_check_default_kanban.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66768977/tmpre91xpolprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768977/tmpre91xpolprism_from-prism_check_default_kanban.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 71 iterations in 0.09 seconds (average 0.001268, setup 0.00)
+
+Time for model construction: 0.166 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Rate matrix: 6308 nodes (14 terminal), 24460016 minterms, vars: 48r/48c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:2546432
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=48, nodes=6308] [295.7 KB]
+Adding explicit sparse matrices... [levels=27, num=165, compact] [749.6 KB]
+Creating vector for diagonals... [dist=187, compact] [4.9 MB]
+Allocating iteration vectors... [2 x 19.4 MB]
+TOTAL: [44.7 MB]
+
+Starting iterations...
+Iteration 119: max relative diff=0.011792, 5.02 sec so far
+Iteration 239: max relative diff=0.000990, 10.06 sec so far
+Iteration 358: max relative diff=0.000123, 15.07 sec so far
+Iteration 478: max relative diff=0.000033, 20.10 sec so far
+Iteration 598: max relative diff=0.000024, 25.14 sec so far
+Iteration 717: max relative diff=0.000023, 30.15 sec so far
+Iteration 836: max relative diff=0.000023, 35.19 sec so far
+Iteration 955: max relative diff=0.000023, 40.23 sec so far
+Iteration 1074: max relative diff=0.000023, 45.25 sec so far
+Iteration 1193: max relative diff=0.000023, 50.26 sec so far
+Iteration 1313: max relative diff=0.000023, 55.31 sec so far
+Iteration 1432: max relative diff=0.000023, 60.33 sec so far
+Iteration 1551: max relative diff=0.000023, 65.35 sec so far
+Iteration 1670: max relative diff=0.000023, 70.37 sec so far
+Iteration 1790: max relative diff=0.000023, 75.41 sec so far
+Iteration 1910: max relative diff=0.000023, 80.44 sec so far
+Iteration 2029: max relative diff=0.000023, 85.45 sec so far
+Iteration 2149: max relative diff=0.000023, 90.49 sec so far
+Iteration 2269: max relative diff=0.000023, 95.53 sec so far
+Iteration 2388: max relative diff=0.000023, 100.55 sec so far
+Iteration 2507: max relative diff=0.000023, 105.57 sec so far
+Iteration 2626: max relative diff=0.000023, 110.58 sec so far
+Iteration 2745: max relative diff=0.000023, 115.59 sec so far
+Iteration 2864: max relative diff=0.000023, 120.62 sec so far
+Iteration 2984: max relative diff=0.000023, 125.65 sec so far
+Iteration 3104: max relative diff=0.000023, 130.70 sec so far
+Iteration 3223: max relative diff=0.000023, 135.71 sec so far
+Iteration 3342: max relative diff=0.000023, 140.72 sec so far
+Iteration 3462: max relative diff=0.000023, 145.76 sec so far
+Iteration 3582: max relative diff=0.000023, 150.80 sec so far
+Iteration 3702: max relative diff=0.000023, 155.83 sec so far
+Iteration 3819: max relative diff=0.000023, 160.85 sec so far
+Iteration 3938: max relative diff=0.000023, 165.88 sec so far
+Iteration 4056: max relative diff=0.000023, 170.92 sec so far
+Iteration 4175: max relative diff=0.000023, 175.94 sec so far
+Iteration 4294: max relative diff=0.000023, 180.96 sec so far
+Iteration 4414: max relative diff=0.000023, 186.00 sec so far
+Iteration 4534: max relative diff=0.000023, 191.04 sec so far
+Iteration 4653: max relative diff=0.000023, 196.05 sec so far
+Iteration 4773: max relative diff=0.000023, 201.09 sec so far
+Iteration 4892: max relative diff=0.000023, 206.10 sec so far
+Iteration 5012: max relative diff=0.000023, 211.15 sec so far
+Iteration 5132: max relative diff=0.000023, 216.18 sec so far
+Iteration 5252: max relative diff=0.000023, 221.23 sec so far
+Iteration 5372: max relative diff=0.000023, 226.26 sec so far
+Iteration 5491: max relative diff=0.000023, 231.27 sec so far
+Iteration 5610: max relative diff=0.000023, 236.28 sec so far
+Iteration 5729: max relative diff=0.000023, 241.32 sec so far
+Iteration 5849: max relative diff=0.000023, 246.36 sec so far
+Iteration 5969: max relative diff=0.000023, 251.39 sec so far
+Iteration 6089: max relative diff=0.000023, 256.43 sec so far
+Iteration 6209: max relative diff=0.000023, 261.47 sec so far
+Iteration 6329: max relative diff=0.000023, 266.50 sec so far
+Iteration 6449: max relative diff=0.000023, 271.54 sec so far
+Iteration 6569: max relative diff=0.000023, 276.58 sec so far
+Iteration 6689: max relative diff=0.000023, 281.62 sec so far
+Iteration 6809: max relative diff=0.000023, 286.66 sec so far
+Iteration 6928: max relative diff=0.000023, 291.70 sec so far
+Iteration 7048: max relative diff=0.000023, 296.74 sec so far
+Iteration 7167: max relative diff=0.000023, 301.77 sec so far
+Iteration 7287: max relative diff=0.000023, 306.81 sec so far
+Iteration 7407: max relative diff=0.000023, 311.85 sec so far
+Iteration 7527: max relative diff=0.000023, 316.89 sec so far
+Iteration 7647: max relative diff=0.000023, 321.93 sec so far
+Iteration 7767: max relative diff=0.000023, 326.97 sec so far
+Iteration 7887: max relative diff=0.000023, 332.00 sec so far
+Iteration 8007: max relative diff=0.000023, 337.03 sec so far
+Iteration 8127: max relative diff=0.000023, 342.07 sec so far
+Iteration 8247: max relative diff=0.000023, 347.10 sec so far
+Iteration 8366: max relative diff=0.000023, 352.12 sec so far
+Iteration 8484: max relative diff=0.000023, 357.13 sec so far
+Iteration 8603: max relative diff=0.000023, 362.15 sec so far
+Iteration 8723: max relative diff=0.000023, 367.18 sec so far
+Iteration 8842: max relative diff=0.000023, 372.20 sec so far
+Iteration 8962: max relative diff=0.000023, 377.23 sec so far
+Iteration 9082: max relative diff=0.000023, 382.27 sec so far
+Iteration 9202: max relative diff=0.000023, 387.31 sec so far
+Iteration 9322: max relative diff=0.000023, 392.34 sec so far
+Iteration 9442: max relative diff=0.000023, 397.37 sec so far
+Iteration 9562: max relative diff=0.000023, 402.40 sec so far
+Iteration 9682: max relative diff=0.000023, 407.43 sec so far
+Iteration 9801: max relative diff=0.000023, 412.44 sec so far
+Iteration 9920: max relative diff=0.000023, 417.46 sec so far
+
+Jacobi: 10000 iterations in 421.14 seconds (average 0.042083, setup 0.31)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_kanban.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 436.248 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:19:09 GMT+02:00 2026
+Hostname: r23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66785320/tmpnh2fp9fmprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66785320/tmpnh2fp9fmprism_from-prism_check_default_kanban.5_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66785320/tmpnh2fp9fmprism_from-prism_check_default_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785320/tmpnh2fp9fmprism_from-prism_check_default_kanban.5_tmp_indir_/property.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 71 iterations in 0.10 seconds (average 0.001408, setup 0.00)
+
+Time for model construction: 0.192 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Rate matrix: 6308 nodes (14 terminal), 24460016 minterms, vars: 48r/48c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:2546432
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=48, nodes=6308] [295.7 KB]
+Adding explicit sparse matrices... [levels=27, num=165, compact] [749.6 KB]
+Creating vector for diagonals... [dist=187, compact] [4.9 MB]
+Allocating iteration vectors... [2 x 19.4 MB]
+TOTAL: [44.7 MB]
+
+Starting iterations...
+Iteration 116: max relative diff=0.013043, 5.02 sec so far
+Iteration 234: max relative diff=0.001080, 10.06 sec so far
+Iteration 352: max relative diff=0.000136, 15.07 sec so far
+Iteration 471: max relative diff=0.000035, 20.11 sec so far
+Iteration 588: max relative diff=0.000025, 25.12 sec so far
+Iteration 706: max relative diff=0.000023, 30.16 sec so far
+Iteration 822: max relative diff=0.000023, 35.19 sec so far
+Iteration 939: max relative diff=0.000023, 40.22 sec so far
+Iteration 1056: max relative diff=0.000023, 45.26 sec so far
+Iteration 1172: max relative diff=0.000023, 50.27 sec so far
+Iteration 1288: max relative diff=0.000023, 55.32 sec so far
+Iteration 1403: max relative diff=0.000023, 60.34 sec so far
+Iteration 1519: max relative diff=0.000023, 65.38 sec so far
+Iteration 1635: max relative diff=0.000023, 70.40 sec so far
+Iteration 1751: max relative diff=0.000023, 75.42 sec so far
+Iteration 1866: max relative diff=0.000023, 80.44 sec so far
+Iteration 1982: max relative diff=0.000023, 85.46 sec so far
+Iteration 2097: max relative diff=0.000023, 90.48 sec so far
+Iteration 2213: max relative diff=0.000023, 95.51 sec so far
+Iteration 2329: max relative diff=0.000023, 100.53 sec so far
+Iteration 2445: max relative diff=0.000023, 105.56 sec so far
+Iteration 2561: max relative diff=0.000023, 110.59 sec so far
+Iteration 2677: max relative diff=0.000023, 115.64 sec so far
+Iteration 2793: max relative diff=0.000023, 120.68 sec so far
+Iteration 2909: max relative diff=0.000023, 125.71 sec so far
+Iteration 3025: max relative diff=0.000023, 130.76 sec so far
+Iteration 3141: max relative diff=0.000023, 135.78 sec so far
+Iteration 3257: max relative diff=0.000023, 140.81 sec so far
+Iteration 3373: max relative diff=0.000023, 145.83 sec so far
+Iteration 3489: max relative diff=0.000023, 150.85 sec so far
+Iteration 3605: max relative diff=0.000023, 155.87 sec so far
+Iteration 3721: max relative diff=0.000023, 160.88 sec so far
+Iteration 3837: max relative diff=0.000023, 165.90 sec so far
+Iteration 3953: max relative diff=0.000023, 170.93 sec so far
+Iteration 4069: max relative diff=0.000023, 175.97 sec so far
+Iteration 4185: max relative diff=0.000023, 181.01 sec so far
+Iteration 4301: max relative diff=0.000023, 186.02 sec so far
+Iteration 4417: max relative diff=0.000023, 191.04 sec so far
+Iteration 4532: max relative diff=0.000023, 196.05 sec so far
+Iteration 4647: max relative diff=0.000023, 201.09 sec so far
+Iteration 4763: max relative diff=0.000023, 206.12 sec so far
+Iteration 4879: max relative diff=0.000023, 211.15 sec so far
+Iteration 4995: max relative diff=0.000023, 216.18 sec so far
+Iteration 5111: max relative diff=0.000023, 221.20 sec so far
+Iteration 5227: max relative diff=0.000023, 226.23 sec so far
+Iteration 5343: max relative diff=0.000023, 231.25 sec so far
+Iteration 5459: max relative diff=0.000023, 236.29 sec so far
+Iteration 5575: max relative diff=0.000023, 241.34 sec so far
+Iteration 5691: max relative diff=0.000023, 246.36 sec so far
+Iteration 5807: max relative diff=0.000023, 251.39 sec so far
+Iteration 5923: max relative diff=0.000023, 256.41 sec so far
+Iteration 6037: max relative diff=0.000023, 261.42 sec so far
+Iteration 6153: max relative diff=0.000023, 266.44 sec so far
+Iteration 6269: max relative diff=0.000023, 271.47 sec so far
+Iteration 6385: max relative diff=0.000023, 276.48 sec so far
+Iteration 6501: max relative diff=0.000023, 281.50 sec so far
+Iteration 6617: max relative diff=0.000023, 286.54 sec so far
+Iteration 6733: max relative diff=0.000023, 291.58 sec so far
+Iteration 6849: max relative diff=0.000023, 296.62 sec so far
+Iteration 6963: max relative diff=0.000023, 301.66 sec so far
+Iteration 7079: max relative diff=0.000023, 306.69 sec so far
+Iteration 7195: max relative diff=0.000023, 311.72 sec so far
+Iteration 7311: max relative diff=0.000023, 316.74 sec so far
+Iteration 7427: max relative diff=0.000023, 321.75 sec so far
+Iteration 7543: max relative diff=0.000023, 326.77 sec so far
+Iteration 7659: max relative diff=0.000023, 331.80 sec so far
+Iteration 7775: max relative diff=0.000023, 336.81 sec so far
+Iteration 7891: max relative diff=0.000023, 341.82 sec so far
+Iteration 8007: max relative diff=0.000023, 346.84 sec so far
+Iteration 8123: max relative diff=0.000023, 351.87 sec so far
+Iteration 8239: max relative diff=0.000023, 356.91 sec so far
+Iteration 8355: max relative diff=0.000023, 361.94 sec so far
+Iteration 8471: max relative diff=0.000023, 366.96 sec so far
+Iteration 8587: max relative diff=0.000023, 371.98 sec so far
+Iteration 8703: max relative diff=0.000023, 376.99 sec so far
+Iteration 8818: max relative diff=0.000023, 382.02 sec so far
+Iteration 8932: max relative diff=0.000023, 387.06 sec so far
+Iteration 9048: max relative diff=0.000023, 392.08 sec so far
+Iteration 9164: max relative diff=0.000023, 397.10 sec so far
+Iteration 9280: max relative diff=0.000023, 402.11 sec so far
+Iteration 9396: max relative diff=0.000023, 407.13 sec so far
+Iteration 9512: max relative diff=0.000023, 412.17 sec so far
+Iteration 9628: max relative diff=0.000023, 417.20 sec so far
+Iteration 9744: max relative diff=0.000023, 422.24 sec so far
+Iteration 9860: max relative diff=0.000023, 427.28 sec so far
+Iteration 9975: max relative diff=0.000023, 432.32 sec so far
+
+Jacobi: 10000 iterations in 433.70 seconds (average 0.043340, setup 0.30)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

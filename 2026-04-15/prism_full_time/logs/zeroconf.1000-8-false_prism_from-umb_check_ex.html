@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log zeroconf.1000-8-false_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[56.841, 50.477, 59.295, 46.927, 47.25]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_zeroconf.1000-8-false_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 56.841 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:23:32 GMT+02:00 2026
+Hostname: r23m0207
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66764761/tmpl9caaascprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66764761/tmpl9caaascprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66764761/tmpl9caaascprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.58 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.494 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 46.971 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 270: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.853 seconds.
+Probabilistic reachability took 55.363 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 55.426 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 50.477 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:46:39 GMT+02:00 2026
+Hostname: n23m0181
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66765935/tmp_v5z4envprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66765935/tmp_v5z4envprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66765935/tmp_v5z4envprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.497 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.158 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 41.463 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 280: 5.00 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.62 seconds.
+Probabilistic reachability took 49.264 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 49.337 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 59.295 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:12:54 GMT+02:00 2026
+Hostname: n23m0256
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66773384/tmpot78ubruprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66773384/tmpot78ubruprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66773384/tmpot78ubruprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.513 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.553 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 49.041 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 275: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.738 seconds.
+Probabilistic reachability took 57.361 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 57.45 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_zeroconf.1000-8-false_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 46.927 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:37:28 GMT+02:00 2026
+Hostname: n23m0249
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66768238/tmpo_wwsjboprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768238/tmpo_wwsjboprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768238/tmpo_wwsjboprism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.498 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.064 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 38.678 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 4.812 seconds.
+Probabilistic reachability took 45.591 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 45.642 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 47.250 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:22:57 GMT+02:00 2026
+Hostname: r23m0039
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66778148/tmp7map3t14prism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66778148/tmp7map3t14prism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66778148/tmp7map3t14prism_from-umb_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.562 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.086 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 38.61 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 4.691 seconds.
+Probabilistic reachability took 45.416 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 45.502 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log zeroconf.1000-8-false_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[69.349, 76.694, 60.63, 60.685, 58.807]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 69.349 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:20:26 GMT+02:00 2026
+Hostname: n23m0165
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66789391/tmpb70eoqnmprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789391/tmpb70eoqnmprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789391/tmpb70eoqnmprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789391/tmpb70eoqnmprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 478405 937611 1394584 1829010 1870338 states
+Reachable states exploration and model construction done in 12.248 secs.
+Sorting reachable states list...
+
+Time for model construction: 14.79 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.419 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 45.239 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 267: 5.00 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.893 seconds.
+Probabilistic reachability took 53.578 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 53.643 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 76.694 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:45:17 GMT+02:00 2026
+Hostname: n23m0256
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66772145/tmpi1h2yxf_prism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66772145/tmpi1h2yxf_prism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66772145/tmpi1h2yxf_prism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66772145/tmpi1h2yxf_prism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 424124 853377 1250130 1629274 1870338 states
+Reachable states exploration and model construction done in 13.832 secs.
+Sorting reachable states list...
+
+Time for model construction: 16.569 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.571 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 48.337 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 261: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 6.001 seconds.
+Probabilistic reachability took 56.946 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 57.204 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 60.630 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:22:39 GMT+02:00 2026
+Hostname: n23m0279
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66767401/tmpbbdebygdprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66767401/tmpbbdebygdprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66767401/tmpbbdebygdprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66767401/tmpbbdebygdprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 540161 1067115 1571602 1870338 states
+Reachable states exploration and model construction done in 10.741 secs.
+Sorting reachable states list...
+
+Time for model construction: 13.176 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.081 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 39.751 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.004 seconds.
+Probabilistic reachability took 46.871 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 46.928 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 60.685 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:23:51 GMT+02:00 2026
+Hostname: n23m0293
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66789591/tmpfx_0f97wprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789591/tmpfx_0f97wprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789591/tmpfx_0f97wprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789591/tmpfx_0f97wprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 506097 982481 1458451 1870338 states
+Reachable states exploration and model construction done in 11.822 secs.
+Sorting reachable states list...
+
+Time for model construction: 14.374 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.078 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 38.124 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Iteration 298: 5.01 sec so far
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 5.277 seconds.
+Probabilistic reachability took 45.507 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 45.566 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 58.807 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:34:58 GMT+02:00 2026
+Hostname: n23m0358
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66765242/tmp1rg4g2ejprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66765242/tmp1rg4g2ejprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66765242/tmp1rg4g2ejprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     environment host0
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   b_ip7 b_ip6 b_ip5 b_ip4 b_ip3 b_ip2 b_ip1 b_ip0 n n0 n1 b z ip_mess x y coll probes mess defend ip l
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66765242/tmp1rg4g2ejprism_from-prism_check_ex_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 555774 1112452 1626760 1870338 states
+Reachable states exploration and model construction done in 10.346 secs.
+Sorting reachable states list...
+
+Time for model construction: 12.749 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+Choices:     3443961
+Max/avg:     4/1.84
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 131 iterations and 2.105 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2226 iterations and 38.476 seconds.
+target=16523, yes=171749, no=611330, maybe=1087259
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 311 iterations, 773397910 multiplications and 4.713 seconds.
+Probabilistic reachability took 45.335 seconds.
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 45.387 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.074051452123889E-13 estimated; rel err 8.485108265541957E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log majority.2100_storm_from-prism_check_exact</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/majority.2100/index.html" target="_blank">majority.2100</a> and tool configuration storm_from-prism_check_exact</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[5.398, 6.66, 6.542, 5.3549999999999995, 6.382000000000001]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_majority.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 5.523 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:57:34 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66772679/tmpxdpgi7ucstorm_from-prism_check_exact_majority.2100_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66772679/tmpxdpgi7ucstorm_from-prism_check_exact_majority.2100_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.004s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+WARN  (storm-cli.cpp:27): The model checking query does not seem to be supported for the selected engine. Storm will try to solve the query, but you will most likely get an error for at least one of the provided properties.
+Time for model construction: 5.394s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+ERROR (model-handling.h:1093): Property is unsupported by selected engine/settings.
+
+
+Performance statistics:
+  * peak memory usage: 260MB
+  * CPU time: 5.382s
+  * wallclock time: 5.434s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_majority.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 6.954 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:58:49 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66772742/tmpt1d_n3xcstorm_from-prism_check_exact_majority.2100_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66772742/tmpt1d_n3xcstorm_from-prism_check_exact_majority.2100_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.056s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+WARN  (storm-cli.cpp:27): The model checking query does not seem to be supported for the selected engine. Storm will try to solve the query, but you will most likely get an error for at least one of the provided properties.
+Time for model construction: 6.604s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+ERROR (model-handling.h:1093): Property is unsupported by selected engine/settings.
+
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 6.563s
+  * wallclock time: 6.703s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_majority.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 6.680 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:25:41 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66770696/tmpmj54o1zkstorm_from-prism_check_exact_majority.2100_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66770696/tmpmj54o1zkstorm_from-prism_check_exact_majority.2100_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.004s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+WARN  (storm-cli.cpp:27): The model checking query does not seem to be supported for the selected engine. Storm will try to solve the query, but you will most likely get an error for at least one of the provided properties.
+Time for model construction: 6.538s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+ERROR (model-handling.h:1093): Property is unsupported by selected engine/settings.
+
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 6.518s
+  * wallclock time: 6.584s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_majority.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 5.476 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:15:37 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66789079/tmp2rhgrov3storm_from-prism_check_exact_majority.2100_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66789079/tmp2rhgrov3storm_from-prism_check_exact_majority.2100_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.004s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+WARN  (storm-cli.cpp:27): The model checking query does not seem to be supported for the selected engine. Storm will try to solve the query, but you will most likely get an error for at least one of the provided properties.
+Time for model construction: 5.351s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+ERROR (model-handling.h:1093): Property is unsupported by selected engine/settings.
+
+
+Performance statistics:
+  * peak memory usage: 260MB
+  * CPU time: 5.321s
+  * wallclock time: 5.391s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_majority.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 6.607 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 15:27:31 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66778466/tmp5h8np9h9storm_from-prism_check_exact_majority.2100_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66778466/tmp5h8np9h9storm_from-prism_check_exact_majority.2100_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+WARN  (Program.cpp:238): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+Time for model input parsing: 0.030s.
+
+WARN  (FormulaParserGrammar.cpp:346): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+WARN  (storm-cli.cpp:27): The model checking query does not seem to be supported for the selected engine. Storm will try to solve the query, but you will most likely get an error for at least one of the provided properties.
+Time for model construction: 6.352s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	192000
+Transitions: 	1961600
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * target -> 3000 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "change_state": P=? [true U<=2100 "target"] ...
+ERROR (model-handling.h:1093): Property is unsupported by selected engine/settings.
+
+
+Performance statistics:
+  * peak memory usage: 260MB
+  * CPU time: 6.304s
+  * wallclock time: 6.421s
+</pre>
+</div>
+</body>
+</html>

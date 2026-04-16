@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pnueli-zuck.5_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pnueli-zuck.5/index.html" target="_blank">pnueli-zuck.5</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.779, 0.655, 0.5680000000000001, 0.665, 0.562]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pnueli-zuck.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.112 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:21:39 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66770335/tmp9qai7_9_storm_from-jani_check_cudd_pnueli-zuck.5_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.095s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.680s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "live": Pmax=? [F "target"] ...
+Result (for initial states): 1
+Time for model checking: 0.273s.
+
+Performance statistics:
+  * peak memory usage: 164MB
+  * CPU time: 1.025s
+  * wallclock time: 1.059s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pnueli-zuck.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 0.864 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 18:48:24 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66783531/tmp68bwkf79storm_from-jani_check_cudd_pnueli-zuck.5_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.063s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.589s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "live": Pmax=? [F "target"] ...
+Result (for initial states): 1
+Time for model checking: 0.166s.
+
+Performance statistics:
+  * peak memory usage: 164MB
+  * CPU time: 0.817s
+  * wallclock time: 0.827s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pnueli-zuck.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 0.765 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:11:07 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66773326/tmpeq_1uhaystorm_from-jani_check_cudd_pnueli-zuck.5_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.055s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.511s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "live": Pmax=? [F "target"] ...
+Result (for initial states): 1
+Time for model checking: 0.157s.
+
+Performance statistics:
+  * peak memory usage: 164MB
+  * CPU time: 0.725s
+  * wallclock time: 0.731s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pnueli-zuck.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 0.934 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:41:56 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66765567/tmpv5yzsbp5storm_from-jani_check_cudd_pnueli-zuck.5_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.069s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.593s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "live": Pmax=? [F "target"] ...
+Result (for initial states): 1
+Time for model checking: 0.216s.
+
+Performance statistics:
+  * peak memory usage: 164MB
+  * CPU time: 0.862s
+  * wallclock time: 0.886s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_pnueli-zuck.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 0.750 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:27:54 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66774030/tmp0tucqpj1storm_from-jani_check_cudd_pnueli-zuck.5_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.060s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	397435 (144 nodes)
+Transitions: 	2492035 (5259 nodes)
+Choices: 	2323315
+Reward Models:  none
+Variables: 	rows: 10 meta variables (25 DD variables), columns: 10 meta variables (25 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (26 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.500s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	397435
+Transitions: 	2492035
+Choices: 	2323315
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 10000 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "live": Pmax=? [F "target"] ...
+Result (for initial states): 1
+Time for model checking: 0.154s.
+
+Performance statistics:
+  * peak memory usage: 164MB
+  * CPU time: 0.713s
+  * wallclock time: 0.721s
+</pre>
+</div>
+</body>
+</html>

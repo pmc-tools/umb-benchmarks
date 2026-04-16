@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log bluetooth.1_prism_from-prism_to-umb_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/bluetooth.1/index.html" target="_blank">bluetooth.1</a> and tool configuration prism_from-prism_to-umb_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[ERR, ERR, ERR, ERR, ERR]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_bluetooth.1_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 5.219 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:35:31 GMT+02:00 2026
+Hostname: n23m0060
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759303/tmpqii22_r_prism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759303/tmpv_mj5w8jprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759303/tmpqii22_r_prism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     receiver1 frequency1 sender_frequency replies
+Actions:     [] [time] [reply]
+Variables:   y1 receiver freq1 train1 z1 f1 t1 send freq train c rep rec
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 50 iterations in 0.12 seconds (average 0.002400, setup 0.00)
+
+Time for model construction: 4.681 seconds.
+
+Type:        DTMC
+States:      3411945339 (536870912 initial)
+Transitions: 5035263739
+
+Transition matrix: 14727 nodes (4 terminal), 5035263739 minterms, vars: 52r/52c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66759303/tmpv_mj5w8jprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.DTMCSimple.initialise(DTMCSimple.java:148)
+    at explicit.DTMCSimple.<init>(DTMCSimple.java:67)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:92)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_bluetooth.1_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 3.693 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:51:12 GMT+02:00 2026
+Hostname: r23m0057
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757486/tmppvyfmnapprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757486/tmprc6oll8wprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757486/tmppvyfmnapprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     receiver1 frequency1 sender_frequency replies
+Actions:     [] [time] [reply]
+Variables:   y1 receiver freq1 train1 z1 f1 t1 send freq train c rep rec
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 50 iterations in 0.09 seconds (average 0.001800, setup 0.00)
+
+Time for model construction: 3.232 seconds.
+
+Type:        DTMC
+States:      3411945339 (536870912 initial)
+Transitions: 5035263739
+
+Transition matrix: 14727 nodes (4 terminal), 5035263739 minterms, vars: 52r/52c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757486/tmprc6oll8wprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.DTMCSimple.initialise(DTMCSimple.java:148)
+    at explicit.DTMCSimple.<init>(DTMCSimple.java:67)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:92)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_bluetooth.1_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 4.354 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:17:37 GMT+02:00 2026
+Hostname: r23m0010
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754764/tmpyqgzbb6eprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754764/tmp4od5qeb4prism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754764/tmpyqgzbb6eprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     receiver1 frequency1 sender_frequency replies
+Actions:     [] [time] [reply]
+Variables:   y1 receiver freq1 train1 z1 f1 t1 send freq train c rep rec
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 50 iterations in 0.11 seconds (average 0.002200, setup 0.00)
+
+Time for model construction: 3.83 seconds.
+
+Type:        DTMC
+States:      3411945339 (536870912 initial)
+Transitions: 5035263739
+
+Transition matrix: 14727 nodes (4 terminal), 5035263739 minterms, vars: 52r/52c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66754764/tmp4od5qeb4prism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.DTMCSimple.initialise(DTMCSimple.java:148)
+    at explicit.DTMCSimple.<init>(DTMCSimple.java:67)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:92)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_bluetooth.1_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 7.397 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:04:35 GMT+02:00 2026
+Hostname: r23m0216
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754250/tmpu3qbyp0hprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754250/tmp5i7ofycwprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754250/tmpu3qbyp0hprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     receiver1 frequency1 sender_frequency replies
+Actions:     [] [time] [reply]
+Variables:   y1 receiver freq1 train1 z1 f1 t1 send freq train c rep rec
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 50 iterations in 0.12 seconds (average 0.002400, setup 0.00)
+
+Time for model construction: 6.8 seconds.
+
+Type:        DTMC
+States:      3411945339 (536870912 initial)
+Transitions: 5035263739
+
+Transition matrix: 14727 nodes (4 terminal), 5035263739 minterms, vars: 52r/52c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66754250/tmp5i7ofycwprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.DTMCSimple.initialise(DTMCSimple.java:148)
+    at explicit.DTMCSimple.<init>(DTMCSimple.java:67)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:92)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_bluetooth.1_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 3.655 seconds
+Return code: 1
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:27:08 GMT+02:00 2026
+Hostname: n23m0053
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755130/tmpfqd3adyxprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755130/tmp7_ivgwakprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755130/tmpfqd3adyxprism_from-prism_to-umb_default_bluetooth.1_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     receiver1 frequency1 sender_frequency replies
+Actions:     [] [time] [reply]
+Variables:   y1 receiver freq1 train1 z1 f1 t1 send freq train c rep rec
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 50 iterations in 0.10 seconds (average 0.002000, setup 0.00)
+
+Time for model construction: 3.171 seconds.
+
+Type:        DTMC
+States:      3411945339 (536870912 initial)
+Transitions: 5035263739
+
+Transition matrix: 14727 nodes (4 terminal), 5035263739 minterms, vars: 52r/52c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66755130/tmp7_ivgwakprism_from-prism_to-umb_default_bluetooth.1_tmp_outdir_/model.umb"...
+
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+    at java.base/java.util.ArrayList.<init>(ArrayList.java:161)
+    at explicit.DTMCSimple.initialise(DTMCSimple.java:148)
+    at explicit.DTMCSimple.<init>(DTMCSimple.java:67)
+    at symbolic.build.MTBDD2ExplicitModel.convertModel(MTBDD2ExplicitModel.java:92)
+    at prism.Prism.doExportBuiltModel(Prism.java:2871)
+    at prism.Prism.exportBuiltModelTask(Prism.java:2837)
+    at prism.Prism.exportBuiltModelTasks(Prism.java:2813)
+    at prism.PrismCL.doExports(PrismCL.java:865)
+    at prism.PrismCL.run(PrismCL.java:381)
+    at prism.PrismCL.go(PrismCL.java:227)
+    at prism.PrismCL.main(PrismCL.java:3008)
+
+Error: Caught unhandled exception, aborting....
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

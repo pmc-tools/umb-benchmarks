@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.4-0_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.4-0/index.html" target="_blank">wlan.4-0</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.166, 0.171, 0.224, 0.168, 0.384]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_wlan.4-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 6.111 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:23:50 GMT+02:00 2026
+Hostname: n23m0331
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66789598/tmpk9qbaok5prism_from-umb_check_ex_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66789598/tmpk9qbaok5prism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789598/tmpk9qbaok5prism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.166 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.297 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 2.818 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 5.148 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 5.179 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_wlan.4-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.497 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:06:06 GMT+02:00 2026
+Hostname: n23m0008
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66776821/tmp4vzk0a1iprism_from-umb_check_ex_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66776821/tmp4vzk0a1iprism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66776821/tmp4vzk0a1iprism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.171 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.807 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 3.421 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 6.263 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 6.347 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_wlan.4-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.151 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:03:08 GMT+02:00 2026
+Hostname: n23m0113
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66784254/tmp5mmcbde5prism_from-umb_check_ex_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66784254/tmp5mmcbde5prism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784254/tmp5mmcbde5prism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.224 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.513 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 3.059 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 5.602 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 5.635 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_wlan.4-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.062 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:13:35 GMT+02:00 2026
+Hostname: r23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66788991/tmp51ntek23prism_from-umb_check_ex_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66788991/tmp51ntek23prism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66788991/tmp51ntek23prism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.168 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.722 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 3.333 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 6.073 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 6.105 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_wlan.4-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 6.358 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:23:47 GMT+02:00 2026
+Hostname: n23m0290
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66773871/tmpr5g6bzbgprism_from-umb_check_ex_wlan.4-0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66773871/tmpr5g6bzbgprism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66773871/tmpr5g6bzbgprism_from-umb_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.384 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.269 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 2.794 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 5.096 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 5.122 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[25.343, 28.071, 23.981, 24.439, 26.609]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 25.343 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 12:38:35 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66768278/tmpubk965knstorm_from-jani_check_cudd_mapk-cascade.4-30_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 3.768s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 20.366s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "activated_time": R{"time"}min=? [F "target"] ...
+Result (for initial states): inf
+Time for model checking: 1.145s.
+
+Performance statistics:
+  * peak memory usage: 1128MB
+  * CPU time: 25.037s
+  * wallclock time: 25.301s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 28.071 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:37:52 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66771615/tmpi3vj7911storm_from-jani_check_cudd_mapk-cascade.4-30_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 4.874s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 21.743s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "activated_time": R{"time"}min=? [F "target"] ...
+Result (for initial states): inf
+Time for model checking: 1.375s.
+
+Performance statistics:
+  * peak memory usage: 1128MB
+  * CPU time: 27.696s
+  * wallclock time: 28.018s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 23.981 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 12:21:25 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66767335/tmp5dcfg3_dstorm_from-jani_check_cudd_mapk-cascade.4-30_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 4.180s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 18.585s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "activated_time": R{"time"}min=? [F "target"] ...
+Result (for initial states): inf
+Time for model checking: 1.152s.
+
+Performance statistics:
+  * peak memory usage: 1129MB
+  * CPU time: 23.625s
+  * wallclock time: 23.938s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 24.439 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:34:01 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66790106/tmpivu96chtstorm_from-jani_check_cudd_mapk-cascade.4-30_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 4.749s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 18.341s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "activated_time": R{"time"}min=? [F "target"] ...
+Result (for initial states): inf
+Time for model checking: 1.281s.
+
+Performance statistics:
+  * peak memory usage: 1128MB
+  * CPU time: 24.117s
+  * wallclock time: 24.395s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 26.609 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:46:50 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66775402/tmpr8d3vke5storm_from-jani_check_cudd_mapk-cascade.4-30_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 3.969s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (symbolic)
+States: 	2042426 (4323 nodes)
+Transitions: 	18970804 (97697 nodes)
+Reward Models:  time
+Variables: 	rows: 29 meta variables (65 DD variables), columns: 29 meta variables (65 DD variables)
+Labels: 	3
+   * deadlock -> 350940 state(s) (3056 nodes)
+   * init -> 1 state(s) (66 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 21.404s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	2042426
+Transitions: 	18970804
+Reward Models:  time
+State Labels: 	3 labels
+   * target -> 338423 item(s)
+   * deadlock -> 350940 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "activated_time": R{"time"}min=? [F "target"] ...
+Result (for initial states): inf
+Time for model checking: 1.175s.
+
+Performance statistics:
+  * peak memory usage: 1129MB
+  * CPU time: 26.317s
+  * wallclock time: 26.571s
+</pre>
+</div>
+</body>
+</html>

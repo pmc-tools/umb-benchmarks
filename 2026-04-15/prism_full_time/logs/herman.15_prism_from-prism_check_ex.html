@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log herman.15_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/herman.15/index.html" target="_blank">herman.15</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[30.141, 24.792, 28.812, 24.6, 28.856]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_herman.15_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 30.141 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:40:55 GMT+02:00 2026
+Hostname: n23m0127
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66771849/tmp268hgfehprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66771849/tmp268hgfehprism_from-prism_check_ex_herman.15_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66771849/tmp268hgfehprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10 process11 process12 process13 process14 process15
+Actions:     [step]
+Variables:   x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66771849/tmp268hgfehprism_from-prism_check_ex_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:explicit)...
+
+Computing reachable states... 481 3329 8157 16189 21271 28676 31792 32768 states
+Reachable states exploration and model construction done in 24.32 secs.
+Sorting reachable states list...
+
+Time for model construction: 24.836 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.304 seconds)
+Starting Prob1...
+Prob1 took 0.436 seconds.
+target=30, inf=0, rest=32738
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 246 iterations, 3529816608 multiplications and 3.348 seconds.
+Expected reachability took 4.1 seconds.
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(0,0,1,0,1,0,0,1,0,1,0,0,1,0,1)
+9513:(0,1,0,0,1,0,1,0,0,1,0,1,0,0,1)
+10570:(0,1,0,1,0,0,1,0,1,0,0,1,0,1,0)
+11627:(0,1,0,1,1,0,1,0,1,1,0,1,0,1,1)
+13741:(0,1,1,0,1,0,1,1,0,1,0,1,1,0,1)
+19026:(1,0,0,1,0,1,0,0,1,0,1,0,0,1,0)
+21140:(1,0,1,0,0,1,0,1,0,0,1,0,1,0,0)
+22197:(1,0,1,0,1,1,0,1,0,1,1,0,1,0,1)
+23254:(1,0,1,1,0,1,0,1,1,0,1,0,1,1,0)
+27482:(1,1,0,1,0,1,1,0,1,0,1,1,0,1,0)
+
+Time for model checking: 4.561 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_herman.15_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 24.792 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:00:21 GMT+02:00 2026
+Hostname: n23m0181
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66784141/tmpplhbuqrwprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66784141/tmpplhbuqrwprism_from-prism_check_ex_herman.15_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66784141/tmpplhbuqrwprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10 process11 process12 process13 process14 process15
+Actions:     [step]
+Variables:   x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784141/tmpplhbuqrwprism_from-prism_check_ex_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:explicit)...
+
+Computing reachable states... 985 6020 14897 20656 28948 32513 32768 states
+Reachable states exploration and model construction done in 19.764 secs.
+Sorting reachable states list...
+
+Time for model construction: 20.179 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.277 seconds)
+Starting Prob1...
+Prob1 took 0.41 seconds.
+target=30, inf=0, rest=32738
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 246 iterations, 3529816608 multiplications and 3.065 seconds.
+Expected reachability took 3.759 seconds.
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(0,0,1,0,1,0,0,1,0,1,0,0,1,0,1)
+9513:(0,1,0,0,1,0,1,0,0,1,0,1,0,0,1)
+10570:(0,1,0,1,0,0,1,0,1,0,0,1,0,1,0)
+11627:(0,1,0,1,1,0,1,0,1,1,0,1,0,1,1)
+13741:(0,1,1,0,1,0,1,1,0,1,0,1,1,0,1)
+19026:(1,0,0,1,0,1,0,0,1,0,1,0,0,1,0)
+21140:(1,0,1,0,0,1,0,1,0,0,1,0,1,0,0)
+22197:(1,0,1,0,1,1,0,1,0,1,1,0,1,0,1)
+23254:(1,0,1,1,0,1,0,1,1,0,1,0,1,1,0)
+27482:(1,1,0,1,0,1,1,0,1,0,1,1,0,1,0)
+
+Time for model checking: 4.107 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_herman.15_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 28.812 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:10:23 GMT+02:00 2026
+Hostname: r23m0204
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66764193/tmpgmde97fqprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66764193/tmpgmde97fqprism_from-prism_check_ex_herman.15_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66764193/tmpgmde97fqprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10 process11 process12 process13 process14 process15
+Actions:     [step]
+Variables:   x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66764193/tmpgmde97fqprism_from-prism_check_ex_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:explicit)...
+
+Computing reachable states... 749 3977 9110 16416 24632 29657 32512 32768 states
+Reachable states exploration and model construction done in 23.044 secs.
+Sorting reachable states list...
+
+Time for model construction: 23.578 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.36 seconds)
+Starting Prob1...
+Prob1 took 0.444 seconds.
+target=30, inf=0, rest=32738
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 246 iterations, 3529816608 multiplications and 3.39 seconds.
+Expected reachability took 4.207 seconds.
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(0,0,1,0,1,0,0,1,0,1,0,0,1,0,1)
+9513:(0,1,0,0,1,0,1,0,0,1,0,1,0,0,1)
+10570:(0,1,0,1,0,0,1,0,1,0,0,1,0,1,0)
+11627:(0,1,0,1,1,0,1,0,1,1,0,1,0,1,1)
+13741:(0,1,1,0,1,0,1,1,0,1,0,1,1,0,1)
+19026:(1,0,0,1,0,1,0,0,1,0,1,0,0,1,0)
+21140:(1,0,1,0,0,1,0,1,0,0,1,0,1,0,0)
+22197:(1,0,1,0,1,1,0,1,0,1,1,0,1,0,1)
+23254:(1,0,1,1,0,1,0,1,1,0,1,0,1,1,0)
+27482:(1,1,0,1,0,1,1,0,1,0,1,1,0,1,0)
+
+Time for model checking: 4.624 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_herman.15_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 24.600 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:22:30 GMT+02:00 2026
+Hostname: n23m0107
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66773818/tmpweio5nq1prism_from-prism_check_ex_herman.15_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66773818/tmpweio5nq1prism_from-prism_check_ex_herman.15_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66773818/tmpweio5nq1prism_from-prism_check_ex_herman.15_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10 process11 process12 process13 process14 process15
+Actions:     [step]
+Variables:   x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66773818/tmpweio5nq1prism_from-prism_check_ex_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:explicit)...
+
+Computing reachable states... 993 6369 15929 24578 30724 32760 32768 states
+Reachable states exploration and model construction done in 18.86 secs.
+Sorting reachable states list...
+
+Time for model construction: 19.482 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.289 seconds)
+Starting Prob1...
+Prob1 took 0.44 seconds.
+target=30, inf=0, rest=32738
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 246 iterations, 3529816608 multiplications and 3.254 seconds.
+Expected reachability took 3.994 seconds.
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(0,0,1,0,1,0,0,1,0,1,0,0,1,0,1)
+9513:(0,1,0,0,1,0,1,0,0,1,0,1,0,0,1)
+10570:(0,1,0,1,0,0,1,0,1,0,0,1,0,1,0)
+11627:(0,1,0,1,1,0,1,0,1,1,0,1,0,1,1)
+13741:(0,1,1,0,1,0,1,1,0,1,0,1,1,0,1)
+19026:(1,0,0,1,0,1,0,0,1,0,1,0,0,1,0)
+21140:(1,0,1,0,0,1,0,1,0,0,1,0,1,0,0)
+22197:(1,0,1,0,1,1,0,1,0,1,1,0,1,0,1)
+23254:(1,0,1,1,0,1,0,1,1,0,1,0,1,1,0)
+27482:(1,1,0,1,0,1,1,0,1,0,1,1,0,1,0)
+
+Time for model checking: 4.352 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_herman.15_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 28.856 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:14:16 GMT+02:00 2026
+Hostname: r23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66789022/tmpfdd97tdiprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789022/tmpfdd97tdiprism_from-prism_check_ex_herman.15_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789022/tmpfdd97tdiprism_from-prism_check_ex_herman.15_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     process1 process2 process3 process4 process5 process6 process7 process8 process9 process10 process11 process12 process13 process14 process15
+Actions:     [step]
+Variables:   x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+Labels:      "stable"
+Rewards:     "steps"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789022/tmpfdd97tdiprism_from-prism_check_ex_herman.15_tmp_indir_/property.props"...
+
+1 property:
+(1) "steps": filter(max, R=? [ F "stable" ], "init")
+
+---------------------------------------------------------------------
+
+Model checking: "steps": filter(max, R=? [ F "stable" ], "init")
+
+Building model (engine:explicit)...
+
+Computing reachable states... 765 4033 10819 16712 25089 30751 32705 32768 states
+Reachable states exploration and model construction done in 22.565 secs.
+Sorting reachable states list...
+
+Time for model construction: 23.125 seconds.
+
+Type:        DTMC
+States:      32768 (32768 initial)
+Transitions: 14348908
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.399 seconds)
+Starting Prob1...
+Prob1 took 0.506 seconds.
+target=30, inf=0, rest=32738
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 246 iterations, 3529816608 multiplications and 3.696 seconds.
+Expected reachability took 4.611 seconds.
+
+Maximum value over states satisfying filter: 33.332616661835104
+
+There are 10 states with (approximately) this value:
+5285:(0,0,1,0,1,0,0,1,0,1,0,0,1,0,1)
+9513:(0,1,0,0,1,0,1,0,0,1,0,1,0,0,1)
+10570:(0,1,0,1,0,0,1,0,1,0,0,1,0,1,0)
+11627:(0,1,0,1,1,0,1,0,1,1,0,1,0,1,1)
+13741:(0,1,1,0,1,0,1,1,0,1,0,1,1,0,1)
+19026:(1,0,0,1,0,1,0,0,1,0,1,0,0,1,0)
+21140:(1,0,1,0,0,1,0,1,0,0,1,0,1,0,0)
+22197:(1,0,1,0,1,1,0,1,0,1,1,0,1,0,1)
+23254:(1,0,1,1,0,1,0,1,1,0,1,0,1,1,0)
+27482:(1,1,0,1,0,1,1,0,1,0,1,1,0,1,0)
+
+Time for model checking: 5.01 seconds.
+
+Result: 33.332616661835104
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

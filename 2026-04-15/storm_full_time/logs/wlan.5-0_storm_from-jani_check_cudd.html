@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.5-0_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.5-0/index.html" target="_blank">wlan.5-0</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.988, 1.995, 2.265, 2.339, 2.093]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_wlan.5-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.988 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:16:58 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66789134/tmpd0cay__mstorm_from-jani_check_cudd_wlan.5-0_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.124s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1295218 (3237 nodes)
+Transitions: 	2929960 (19712 nodes)
+Choices: 	1646074
+Reward Models:  none
+Variables: 	rows: 16 meta variables (48 DD variables), columns: 16 meta variables (48 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (49 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.635s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1295218
+Transitions: 	2929960
+Choices: 	1646074
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "sent": Pmin>=1 [F "target"] ...
+Result (for initial states): true
+
+Time for model checking: 0.180s.
+
+Performance statistics:
+  * peak memory usage: 200MB
+  * CPU time: 1.931s
+  * wallclock time: 1.952s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_wlan.5-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 1.995 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:30:20 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66771079/tmp340li3t1storm_from-jani_check_cudd_wlan.5-0_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.131s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1295218 (3237 nodes)
+Transitions: 	2929960 (19712 nodes)
+Choices: 	1646074
+Reward Models:  none
+Variables: 	rows: 16 meta variables (48 DD variables), columns: 16 meta variables (48 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (49 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.634s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1295218
+Transitions: 	2929960
+Choices: 	1646074
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "sent": Pmin>=1 [F "target"] ...
+Result (for initial states): true
+
+Time for model checking: 0.186s.
+
+Performance statistics:
+  * peak memory usage: 200MB
+  * CPU time: 1.941s
+  * wallclock time: 1.963s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_wlan.5-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 2.265 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 18:43:18 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66783349/tmpcr9ytsk0storm_from-jani_check_cudd_wlan.5-0_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 0.152s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1295218 (3237 nodes)
+Transitions: 	2929960 (19712 nodes)
+Choices: 	1646074
+Reward Models:  none
+Variables: 	rows: 16 meta variables (48 DD variables), columns: 16 meta variables (48 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (49 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.858s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1295218
+Transitions: 	2929960
+Choices: 	1646074
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "sent": Pmin>=1 [F "target"] ...
+Result (for initial states): true
+
+Time for model checking: 0.199s.
+
+Performance statistics:
+  * peak memory usage: 200MB
+  * CPU time: 2.199s
+  * wallclock time: 2.225s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_wlan.5-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 2.339 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 15:12:26 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66777350/tmpi2h_omfustorm_from-jani_check_cudd_wlan.5-0_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 0.168s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1295218 (3237 nodes)
+Transitions: 	2929960 (19712 nodes)
+Choices: 	1646074
+Reward Models:  none
+Variables: 	rows: 16 meta variables (48 DD variables), columns: 16 meta variables (48 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (49 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.893s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1295218
+Transitions: 	2929960
+Choices: 	1646074
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "sent": Pmin>=1 [F "target"] ...
+Result (for initial states): true
+
+Time for model checking: 0.215s.
+
+Performance statistics:
+  * peak memory usage: 200MB
+  * CPU time: 2.258s
+  * wallclock time: 2.291s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_wlan.5-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 2.093 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 19:14:55 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66785047/tmpttsab19istorm_from-jani_check_cudd_wlan.5-0_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.132s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	1295218 (3237 nodes)
+Transitions: 	2929960 (19712 nodes)
+Choices: 	1646074
+Reward Models:  none
+Variables: 	rows: 16 meta variables (48 DD variables), columns: 16 meta variables (48 DD variables), nondeterminism: 7 meta variables (7 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (49 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.719s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1295218
+Transitions: 	2929960
+Choices: 	1646074
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "sent": Pmin>=1 [F "target"] ...
+Result (for initial states): true
+
+Time for model checking: 0.190s.
+
+Performance statistics:
+  * peak memory usage: 200MB
+  * CPU time: 2.033s
+  * wallclock time: 2.054s
+</pre>
+</div>
+</body>
+</html>

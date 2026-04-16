@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_storm_from-prism_check_sparse</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration storm_from-prism_check_sparse</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[6.779, 7.385, 7.269, 6.374, 8.08]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props
+Wallclock time: 6.779 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:35:25 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66790171/tmpua95wtpbstorm_from-prism_check_sparse_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66790171/tmpua95wtpbstorm_from-prism_check_sparse_csma.3-4_tmp_indir_/property.props
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 5.941s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.9324469288
+Time for model checking: 0.786s.
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 6.689s
+  * wallclock time: 6.736s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props
+Wallclock time: 7.385 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:14:50 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66769781/tmpehg9oi6istorm_from-prism_check_sparse_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66769781/tmpehg9oi6istorm_from-prism_check_sparse_csma.3-4_tmp_indir_/property.props
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 6.430s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.9324469288
+Time for model checking: 0.903s.
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 7.296s
+  * wallclock time: 7.343s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props
+Wallclock time: 7.269 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 12:34:09 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66768089/tmpy0fgw2i1storm_from-prism_check_sparse_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66768089/tmpy0fgw2i1storm_from-prism_check_sparse_csma.3-4_tmp_indir_/property.props
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 6.365s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.9324469288
+Time for model checking: 0.851s.
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 7.194s
+  * wallclock time: 7.225s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props
+Wallclock time: 6.374 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:29:59 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66765049/tmp8iv1ybfqstorm_from-prism_check_sparse_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66765049/tmp8iv1ybfqstorm_from-prism_check_sparse_csma.3-4_tmp_indir_/property.props
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 5.561s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.9324469288
+Time for model checking: 0.767s.
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 6.296s
+  * wallclock time: 6.336s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_sparse_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props
+Wallclock time: 8.080 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 11:25:42 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66764853/tmp4e_2_qifstorm_from-prism_check_sparse_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66764853/tmp4e_2_qifstorm_from-prism_check_sparse_csma.3-4_tmp_indir_/property.props
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 6.922s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.9324469288
+Time for model checking: 1.091s.
+
+Performance statistics:
+  * peak memory usage: 259MB
+  * CPU time: 7.946s
+  * wallclock time: 8.023s
+</pre>
+</div>
+</body>
+</html>

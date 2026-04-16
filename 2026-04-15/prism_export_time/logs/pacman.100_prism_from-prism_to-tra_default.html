@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pacman.100_prism_from-prism_to-tra_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pacman.100/index.html" target="_blank">pacman.100</a> and tool configuration prism_from-prism_to-tra_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[82.973, 83.858, 84.165, 81.584, 85.172]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_pacman.100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 1752.979 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:18:13 GMT+02:00 2026
+Hostname: n23m0040
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754798/tmpijbxr6xlprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754798/tmp3ggg1xbxprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754798/tmpijbxr6xlprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 303 iterations in 82.67 seconds (average 0.272838, setup 0.00)
+
+Time for model construction: 1668.615 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+
+Transition matrix: 3640220 nodes (44 terminal), 109963876 minterms, vars: 36r/36c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754798/tmp3ggg1xbxprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754798/tmp3ggg1xbxprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754798/tmp3ggg1xbxprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754798/tmp3ggg1xbxprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.trew"...
+Time for exporting: 82.973 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 2942165159 bytes
+model.lab:	Size of output file is 43298323 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_pacman.100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 2003.686 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:03:59 GMT+02:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754243/tmpepfgs9tfprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754243/tmpaem224t9prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754243/tmpepfgs9tfprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 303 iterations in 82.34 seconds (average 0.271749, setup 0.00)
+
+Time for model construction: 1918.412 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+
+Transition matrix: 3640220 nodes (44 terminal), 109963876 minterms, vars: 36r/36c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754243/tmpaem224t9prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754243/tmpaem224t9prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754243/tmpaem224t9prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754243/tmpaem224t9prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.trew"...
+Time for exporting: 83.858 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 2942165159 bytes
+model.lab:	Size of output file is 43298323 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_pacman.100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 1145.081 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:31:39 GMT+02:00 2026
+Hostname: r23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759146/tmp43iqyq0nprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759146/tmppea5xwo8prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759146/tmp43iqyq0nprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 303 iterations in 82.69 seconds (average 0.272904, setup 0.00)
+
+Time for model construction: 1059.411 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+
+Transition matrix: 3640220 nodes (44 terminal), 109963876 minterms, vars: 36r/36c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759146/tmppea5xwo8prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66759146/tmppea5xwo8prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759146/tmppea5xwo8prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66759146/tmppea5xwo8prism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.trew"...
+Time for exporting: 84.165 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 2942165159 bytes
+model.lab:	Size of output file is 43298323 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_pacman.100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 1263.692 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:00:25 GMT+02:00 2026
+Hostname: n23m0134
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754084/tmpriq3be5uprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754084/tmpg299qz2rprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754084/tmpriq3be5uprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 303 iterations in 84.26 seconds (average 0.278086, setup 0.00)
+
+Time for model construction: 1180.687 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+
+Transition matrix: 3640220 nodes (44 terminal), 109963876 minterms, vars: 36r/36c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66754084/tmpg299qz2rprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66754084/tmpg299qz2rprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754084/tmpg299qz2rprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66754084/tmpg299qz2rprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.trew"...
+Time for exporting: 81.584 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 2942165159 bytes
+model.lab:	Size of output file is 43298323 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_default_pacman.100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.tra,lab,rew:precision=17
+Wallclock time: 2794.980 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:23:21 GMT+02:00 2026
+Hostname: r23m0057
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66758812/tmpsmtd74ezprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66758812/tmpoh70uuhzprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra,lab,rew:precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66758812/tmpsmtd74ezprism_from-prism_to-tra_default_pacman.100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman
+Actions:     [] [g0] [stop0] [g1] [stop1] [p] [left] [right] [up] [down]
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP
+Labels:      "Crash"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 303 iterations in 100.08 seconds (average 0.330297, setup 0.00)
+
+Time for model construction: 2708.304 seconds.
+
+Type:        MDP
+States:      79440921 (1 initial)
+Transitions: 109963876
+
+Transition matrix: 3640220 nodes (44 terminal), 109963876 minterms, vars: 36r/36c/9nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66758812/tmpoh70uuhzprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.tra"...
+Exporting labels and satisfying states in plain text format to file "/w0/tmp/slurm_tq429871.66758812/tmpoh70uuhzprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.lab"...
+Exporting state rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758812/tmpoh70uuhzprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.srew"...
+Exporting transition rewards in plain text format to file "/w0/tmp/slurm_tq429871.66758812/tmpoh70uuhzprism_from-prism_to-tra_default_pacman.100_tmp_outdir_/model.trew"...
+Time for exporting: 85.172 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.tra:	Size of output file is 2942165159 bytes
+model.lab:	Size of output file is 43298323 bytes
+model.srew:	File does not exist.
+model.trew:	File does not exist.
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.4-2_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.4-2/index.html" target="_blank">csma.4-2</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.3, 0.393, 0.393, 0.284, 0.555]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_csma.4-2_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 15.131 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:16:19 GMT+02:00 2026
+Hostname: n23m0260
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66789112/tmpoawe871dprism_from-umb_check_ex_csma.4-2_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66789112/tmpoawe871dprism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789112/tmpoawe871dprism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.3 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+Choices:     825504
+Max/avg:     4/1.08
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 186 iterations and 1.47 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 1197 iterations and 10.903 seconds.
+target=9, yes=142601, no=25408, maybe=593953
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 172 iterations, 190125188 multiplications and 1.289 seconds.
+Probabilistic reachability took 13.688 seconds.
+
+Value in the initial state: 0.776459404375732
+
+Time for model checking: 13.74 seconds.
+
+Result: 0.776459404375732 (+/- 6.170079467349154E-6 estimated; rel err 7.946428921560754E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_csma.4-2_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 12.916 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:52:37 GMT+02:00 2026
+Hostname: n23m0237
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66783665/tmpt9jeo12aprism_from-umb_check_ex_csma.4-2_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66783665/tmpt9jeo12aprism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783665/tmpt9jeo12aprism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.393 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+Choices:     825504
+Max/avg:     4/1.08
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 186 iterations and 1.235 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 1197 iterations and 9.101 seconds.
+target=9, yes=142601, no=25408, maybe=593953
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 172 iterations, 190125188 multiplications and 1.142 seconds.
+Probabilistic reachability took 11.501 seconds.
+
+Value in the initial state: 0.776459404375732
+
+Time for model checking: 11.559 seconds.
+
+Result: 0.776459404375732 (+/- 6.170079467349154E-6 estimated; rel err 7.946428921560754E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_csma.4-2_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 15.031 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:20:33 GMT+02:00 2026
+Hostname: n23m0070
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66785388/tmpb7nh66j8prism_from-umb_check_ex_csma.4-2_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66785388/tmpb7nh66j8prism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785388/tmpb7nh66j8prism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.393 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+Choices:     825504
+Max/avg:     4/1.08
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 186 iterations and 1.435 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 1197 iterations and 10.437 seconds.
+target=9, yes=142601, no=25408, maybe=593953
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 172 iterations, 190125188 multiplications and 1.373 seconds.
+Probabilistic reachability took 13.279 seconds.
+
+Value in the initial state: 0.776459404375732
+
+Time for model checking: 13.378 seconds.
+
+Result: 0.776459404375732 (+/- 6.170079467349154E-6 estimated; rel err 7.946428921560754E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_csma.4-2_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 13.236 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:56:22 GMT+02:00 2026
+Hostname: n23m0368
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66791188/tmpw1cfidi7prism_from-umb_check_ex_csma.4-2_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66791188/tmpw1cfidi7prism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66791188/tmpw1cfidi7prism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.284 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+Choices:     825504
+Max/avg:     4/1.08
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 186 iterations and 1.298 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 1197 iterations and 9.879 seconds.
+target=9, yes=142601, no=25408, maybe=593953
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 172 iterations, 190125188 multiplications and 0.901 seconds.
+Probabilistic reachability took 12.107 seconds.
+
+Value in the initial state: 0.776459404375732
+
+Time for model checking: 12.167 seconds.
+
+Result: 0.776459404375732 (+/- 6.170079467349154E-6 estimated; rel err 7.946428921560754E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_csma.4-2_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 15.825 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:53:38 GMT+02:00 2026
+Hostname: n23m0152
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66766348/tmptkpua96eprism_from-umb_check_ex_csma.4-2_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66766348/tmptkpua96eprism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [send1] [send2] [send3] [send4] [end1] [end2] [end3] [end4] [busy1] [busy2] [busy3] [busy4] [cd] [time]
+Variables:   x
+Labels:      "all_delivered" "collision_max_backoff"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66766348/tmptkpua96eprism_from-umb_check_ex_csma.4-2_tmp_indir_/property.props"...
+
+1 property:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.555 seconds.
+
+Type:        MDP
+States:      761962 (1 initial)
+Transitions: 1327068
+Choices:     825504
+Max/avg:     4/1.08
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 186 iterations and 1.593 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 1197 iterations and 11.523 seconds.
+target=9, yes=142601, no=25408, maybe=593953
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 172 iterations, 190125188 multiplications and 1.096 seconds.
+Probabilistic reachability took 14.252 seconds.
+
+Value in the initial state: 0.776459404375732
+
+Time for model checking: 14.308 seconds.
+
+Result: 0.776459404375732 (+/- 6.170079467349154E-6 estimated; rel err 7.946428921560754E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_storm_from-prism_check_exact</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration storm_from-prism_check_exact</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[14.89, 13.415, 12.801, 12.469, 15.794]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 14.890 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 13:35:02 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66771415/tmpyvkmwwmdstorm_from-prism_check_exact_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66771415/tmpyvkmwwmdstorm_from-prism_check_exact_csma.3-4_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 11.735s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 3.000s.
+
+Performance statistics:
+  * peak memory usage: 993MB
+  * CPU time: 14.450s
+  * wallclock time: 14.782s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 13.415 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:42:49 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66790566/tmpvhjymd5tstorm_from-prism_check_exact_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66790566/tmpvhjymd5tstorm_from-prism_check_exact_csma.3-4_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.035s.
+
+Time for model construction: 10.443s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.633s.
+
+Performance statistics:
+  * peak memory usage: 992MB
+  * CPU time: 12.826s
+  * wallclock time: 13.149s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 12.801 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 15:22:58 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66778149/tmp6i5o4k8ustorm_from-prism_check_exact_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66778149/tmp6i5o4k8ustorm_from-prism_check_exact_csma.3-4_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.008s.
+
+Time for model construction: 9.845s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.742s.
+
+Performance statistics:
+  * peak memory usage: 994MB
+  * CPU time: 12.326s
+  * wallclock time: 12.631s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 12.469 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 15:20:28 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66777922/tmpfhowubcmstorm_from-prism_check_exact_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66777922/tmpfhowubcmstorm_from-prism_check_exact_csma.3-4_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 9.907s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.432s.
+
+Performance statistics:
+  * peak memory usage: 994MB
+  * CPU time: 12.138s
+  * wallclock time: 12.380s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-prism_check_exact_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --prism %indir/model.prism --prismcompat --prop %indir/property.props --exact
+Wallclock time: 15.794 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:20:05 2026
+Command line arguments: --timemem --buildfull --prism /w0/tmp/slurm_tq429871.66773735/tmpbb3qn7_zstorm_from-prism_check_exact_csma.3-4_tmp_indir_/model.prism --prismcompat --prop /w0/tmp/slurm_tq429871.66773735/tmpbb3qn7_zstorm_from-prism_check_exact_csma.3-4_tmp_indir_/property.props --exact
+Current working directory: $PWD
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 12.800s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1460287
+Transitions: 	2396727
+Choices: 	1471059
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 1427 item(s)
+   * all_delivered -> 13 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [(!"collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 2599282671417859453572130598089066646673439/2787593149816327892691964784081045188247552 (approx. 0.9324469288)
+Time for model checking: 2.847s.
+
+Performance statistics:
+  * peak memory usage: 994MB
+  * CPU time: 15.360s
+  * wallclock time: 15.693s
+</pre>
+</div>
+</body>
+</html>

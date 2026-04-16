@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log oscillators.8-10-0.1-1-0.1-1.0_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.942, 2.771, 1.774, 2.234, 2.191]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.352 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:53:20 GMT+02:00 2026
+Hostname: n23m0211
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66783707/tmpd55s8suvprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66783707/tmpd55s8suvprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783707/tmpd55s8suvprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2 iterations in 0.02 seconds (average 0.010000, setup 0.00)
+
+Time for model construction: 1.942 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Transition matrix: 80917 nodes (438 terminal), 76623 minterms, vars: 15r/15c
+
+Prob0: 15 iterations in 0.13 seconds (average 0.008667, setup 0.00)
+
+Prob1: 1 iterations in 0.01 seconds (average 0.010000, setup 0.00)
+
+goal = 2, inf = 0, maybe = 24309
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=81533] [3.7 MB]
+Adding explicit sparse matrices... [levels=15, num=1, compact] [397.7 KB]
+Creating vector for diagonals... [dist=1, compact] [47.5 KB]
+Creating vector for RHS... [dist=9, compact] [47.6 KB]
+Allocating iteration vectors... [2 x 189.9 KB]
+TOTAL: [4.6 MB]
+
+Starting iterations...
+
+Jacobi: 3153 iterations in 4.45 seconds (average 0.000152, setup 3.97)
+
+Value in the initial state: 6.007026913358401
+
+Time for model checking: 4.661 seconds.
+
+Result: 6.007026913358401 (+/- 5.972365002886308E-5 estimated; rel err 9.94229772735825E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 9.336 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:36:46 GMT+02:00 2026
+Hostname: n23m0361
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66774564/tmp5s4oo1eaprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66774564/tmp5s4oo1eaprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66774564/tmp5s4oo1eaprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2 iterations in 0.03 seconds (average 0.015000, setup 0.00)
+
+Time for model construction: 2.771 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Transition matrix: 80917 nodes (438 terminal), 76623 minterms, vars: 15r/15c
+
+Prob0: 15 iterations in 0.22 seconds (average 0.014667, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 2, inf = 0, maybe = 24309
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=81533] [3.7 MB]
+Adding explicit sparse matrices... [levels=15, num=1, compact] [397.7 KB]
+Creating vector for diagonals... [dist=1, compact] [47.5 KB]
+Creating vector for RHS... [dist=9, compact] [47.6 KB]
+Allocating iteration vectors... [2 x 189.9 KB]
+TOTAL: [4.6 MB]
+
+Starting iterations...
+
+Jacobi: 3153 iterations in 5.59 seconds (average 0.000174, setup 5.04)
+
+Value in the initial state: 6.007026913358401
+
+Time for model checking: 5.874 seconds.
+
+Result: 6.007026913358401 (+/- 5.972365002886308E-5 estimated; rel err 9.94229772735825E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 6.811 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:18:26 GMT+02:00 2026
+Hostname: r23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66785268/tmphbzfenb0prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66785268/tmphbzfenb0prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785268/tmphbzfenb0prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2 iterations in 0.01 seconds (average 0.005000, setup 0.00)
+
+Time for model construction: 1.774 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Transition matrix: 80917 nodes (438 terminal), 76623 minterms, vars: 15r/15c
+
+Prob0: 15 iterations in 0.16 seconds (average 0.010667, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 2, inf = 0, maybe = 24309
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=81533] [3.7 MB]
+Adding explicit sparse matrices... [levels=15, num=1, compact] [397.7 KB]
+Creating vector for diagonals... [dist=1, compact] [47.5 KB]
+Creating vector for RHS... [dist=9, compact] [47.6 KB]
+Allocating iteration vectors... [2 x 189.9 KB]
+TOTAL: [4.6 MB]
+
+Starting iterations...
+
+Jacobi: 3153 iterations in 4.33 seconds (average 0.000146, setup 3.87)
+
+Value in the initial state: 6.007026913358401
+
+Time for model checking: 4.521 seconds.
+
+Result: 6.007026913358401 (+/- 5.972365002886308E-5 estimated; rel err 9.94229772735825E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 8.351 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:39:47 GMT+02:00 2026
+Hostname: n23m0062
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66783228/tmp3r6jxbtlprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66783228/tmp3r6jxbtlprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783228/tmp3r6jxbtlprism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2 iterations in 0.02 seconds (average 0.010000, setup 0.00)
+
+Time for model construction: 2.234 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Transition matrix: 80917 nodes (438 terminal), 76623 minterms, vars: 15r/15c
+
+Prob0: 15 iterations in 0.16 seconds (average 0.010667, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 2, inf = 0, maybe = 24309
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=81533] [3.7 MB]
+Adding explicit sparse matrices... [levels=15, num=1, compact] [397.7 KB]
+Creating vector for diagonals... [dist=1, compact] [47.5 KB]
+Creating vector for RHS... [dist=9, compact] [47.6 KB]
+Allocating iteration vectors... [2 x 189.9 KB]
+TOTAL: [4.6 MB]
+
+Starting iterations...
+
+Jacobi: 3153 iterations in 4.81 seconds (average 0.000184, setup 4.23)
+
+Value in the initial state: 6.007026913358401
+
+Time for model checking: 5.023 seconds.
+
+Result: 6.007026913358401 (+/- 5.972365002886308E-5 estimated; rel err 9.94229772735825E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 7.752 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:44:11 GMT+02:00 2026
+Hostname: n23m0089
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66768576/tmpf53ncnw1prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768576/tmpf53ncnw1prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768576/tmpf53ncnw1prism_from-umb_check_default_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 2 iterations in 0.02 seconds (average 0.010000, setup 0.00)
+
+Time for model construction: 2.191 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Transition matrix: 80917 nodes (438 terminal), 76623 minterms, vars: 15r/15c
+
+Prob0: 15 iterations in 0.18 seconds (average 0.012000, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 2, inf = 0, maybe = 24309
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=15, nodes=81533] [3.7 MB]
+Adding explicit sparse matrices... [levels=15, num=1, compact] [397.7 KB]
+Creating vector for diagonals... [dist=1, compact] [47.5 KB]
+Creating vector for RHS... [dist=9, compact] [47.6 KB]
+Allocating iteration vectors... [2 x 189.9 KB]
+TOTAL: [4.6 MB]
+
+Starting iterations...
+
+Jacobi: 3153 iterations in 4.72 seconds (average 0.000171, setup 4.18)
+
+Value in the initial state: 6.007026913358401
+
+Time for model checking: 4.974 seconds.
+
+Result: 6.007026913358401 (+/- 5.972365002886308E-5 estimated; rel err 9.94229772735825E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

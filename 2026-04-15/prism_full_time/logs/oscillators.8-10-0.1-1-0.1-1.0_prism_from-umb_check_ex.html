@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log oscillators.8-10-0.1-1-0.1-1.0_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.933, 1.979, 1.834, 1.405, 1.243]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.933 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:09:11 GMT+02:00 2026
+Hostname: n23m0245
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66777183/tmpu7h8jn4dprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66777183/tmpu7h8jn4dprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66777183/tmpu7h8jn4dprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.318 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.013 seconds)
+Starting Prob1...
+Prob1 took 0.013 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.666 seconds.
+Expected reachability took 0.709 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.75 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.979 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:58:59 GMT+02:00 2026
+Hostname: r23m0129
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66784064/tmpqfjv2z7yprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66784064/tmpqfjv2z7yprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784064/tmpqfjv2z7yprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.075 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.018 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.641 seconds.
+Expected reachability took 0.701 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.763 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.834 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:15:25 GMT+02:00 2026
+Hostname: r23m0173
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66769832/tmppza1fc1iprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66769832/tmppza1fc1iprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66769832/tmppza1fc1iprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.102 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.017 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.658 seconds.
+Expected reachability took 0.704 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.774 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.405 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:18:22 GMT+02:00 2026
+Hostname: n23m0260
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66789251/tmpzery7tlxprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66789251/tmpzery7tlxprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789251/tmpzery7tlxprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.049 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.012 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.616 seconds.
+Expected reachability took 0.648 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.696 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1.243 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:53:38 GMT+02:00 2026
+Hostname: n23m0403
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex -importmodel /w0/tmp/slurm_tq429871.66766337/tmpvnnhwwykprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66766337/tmpvnnhwwykprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     [step]
+Variables:   x
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66766337/tmpvnnhwwykprism_from-umb_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.04 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.011 seconds)
+Starting Prob1...
+Prob1 took 0.01 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.528 seconds.
+Expected reachability took 0.556 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.625 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

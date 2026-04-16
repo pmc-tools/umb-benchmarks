@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log embedded.8-12_prism_from-prism_to-umb_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/embedded.8-12/index.html" target="_blank">embedded.8-12</a> and tool configuration prism_from-prism_to-umb_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.296, 0.187, 0.246, 0.301, 0.192]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_embedded.8-12_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 0.774 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:30:00 GMT+02:00 2026
+Hostname: n23m0166
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759074/tmp0qx0zekcprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759074/tmpi9oboym7prism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759074/tmp0qx0zekcprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.029 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 1819 nodes (9 terminal), 36041 minterms, vars: 16r/16c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66759074/tmpi9oboym7prism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb"...
+Time for exporting: 0.296 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 872448 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_embedded.8-12_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 0.649 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:39:23 GMT+02:00 2026
+Hostname: n23m0260
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759541/tmpu4ptbtf9prism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759541/tmpxbatsf2gprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759541/tmpu4ptbtf9prism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.027 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 1819 nodes (9 terminal), 36041 minterms, vars: 16r/16c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66759541/tmpxbatsf2gprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb"...
+Time for exporting: 0.187 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 872448 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_embedded.8-12_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 0.746 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:12:54 GMT+02:00 2026
+Hostname: n23m0201
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66754601/tmpbeupa4iwprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66754601/tmpbhlqbbeuprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66754601/tmpbeupa4iwprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.029 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 1819 nodes (9 terminal), 36041 minterms, vars: 16r/16c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66754601/tmpbhlqbbeuprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb"...
+Time for exporting: 0.246 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 872448 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_embedded.8-12_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 0.837 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:49:35 GMT+02:00 2026
+Hostname: r23m0195
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757424/tmpc4ub0tcsprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757424/tmptefcz1rxprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757424/tmpc4ub0tcsprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.029 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 1819 nodes (9 terminal), 36041 minterms, vars: 16r/16c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66757424/tmptefcz1rxprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb"...
+Time for exporting: 0.301 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 872448 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_default_embedded.8-12_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb:states=false,obs=false,rewards=true,zip=false
+Wallclock time: 0.668 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:36:42 GMT+02:00 2026
+Hostname: n23m0268
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755524/tmp40fd1bgbprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755524/tmpjc3ot1tpprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb:states=false,obs=false,rewards=true,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755524/tmp40fd1bgbprism_from-prism_to-umb_default_embedded.8-12_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus
+Actions:     [] [input_reboot] [output_reboot] [timeout]
+Variables:   s i a o m count comp reqi reqo
+Labels:      "fail_actuators" "l_down"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 21 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.029 seconds.
+
+Type:        CTMC
+States:      8548 (1 initial)
+Transitions: 36041
+
+Rate matrix: 1819 nodes (9 terminal), 36041 minterms, vars: 16r/16c
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.66755524/tmpjc3ot1tpprism_from-prism_to-umb_default_embedded.8-12_tmp_outdir_/model.umb"...
+Time for exporting: 0.192 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 872448 bytes
+</pre>
+</div>
+</body>
+</html>

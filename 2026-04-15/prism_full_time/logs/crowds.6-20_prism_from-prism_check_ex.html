@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log crowds.6-20_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/crowds.6-20/index.html" target="_blank">crowds.6-20</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[91.138, 94.206, 101.316, 92.431, 87.671]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_crowds.6-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 91.138 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:59:40 GMT+02:00 2026
+Hostname: n23m0061
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66784113/tmpol2d1_1uprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66784113/tmpol2d1_1uprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66784113/tmpol2d1_1uprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784113/tmpol2d1_1uprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 498775 906383 1466921 1776571 2402743 2741797 3247731 3839427 4064592 4314028 4604089 5020784 5502793 6175737 6790079 7374398 7656620 7946684 8227017 8511951 8758066 9040970 9531888 10444742 10633591 states
+Reachable states exploration and model construction done in 72.945 secs.
+Sorting reachable states list...
+
+Time for model construction: 80.134 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.028 seconds)
+Starting Prob0...
+Prob0 took 0.518 seconds.
+Starting Prob1...
+Prob1 took 2.735 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 3.958 seconds.
+Probabilistic reachability took 9.288 seconds.
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 9.542 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352691080806785E-6 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_crowds.6-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 94.206 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:28:37 GMT+02:00 2026
+Hostname: n23m0095
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66789852/tmpupq4fft6prism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789852/tmpupq4fft6prism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789852/tmpupq4fft6prism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789852/tmpupq4fft6prism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 476249 859256 1419423 1720529 2267591 2637062 3062672 3646492 3977696 4203362 4471261 4774229 5262786 5826374 6398260 6937899 7459573 7734261 8013402 8298353 8497691 8770643 9018141 9466815 10574686 10633591 states
+Reachable states exploration and model construction done in 75.182 secs.
+Sorting reachable states list...
+
+Time for model construction: 81.806 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.136 seconds)
+Starting Prob0...
+Prob0 took 0.685 seconds.
+Starting Prob1...
+Prob1 took 4.117 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 4.115 seconds.
+Probabilistic reachability took 11.102 seconds.
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 11.348 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352691080806785E-6 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_crowds.6-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 101.316 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:29:44 GMT+02:00 2026
+Hostname: n23m0118
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66771032/tmp5ke736iyprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66771032/tmp5ke736iyprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66771032/tmp5ke736iyprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66771032/tmp5ke736iyprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 443290 787382 1313216 1634456 2000451 2495369 2845082 3294002 3840317 4037803 4231870 4491285 4738608 5193440 5644604 6209354 6703086 7235781 7566245 7801865 8046552 8226446 8465725 8688653 8911583 9128520 9718662 10633591 states
+Reachable states exploration and model construction done in 83.938 secs.
+Sorting reachable states list...
+
+Time for model construction: 90.35 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.242 seconds)
+Starting Prob0...
+Prob0 took 0.676 seconds.
+Starting Prob1...
+Prob1 took 2.806 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 4.272 seconds.
+Probabilistic reachability took 10.041 seconds.
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 10.293 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352691080806785E-6 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_crowds.6-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 92.431 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:41:12 GMT+02:00 2026
+Hostname: r23m0085
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66783275/tmpo0tw5_puprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66783275/tmpo0tw5_puprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66783275/tmpo0tw5_puprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66783275/tmpo0tw5_puprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 521596 896769 1451207 1768290 2407643 2732341 3232247 3846747 4071624 4316818 4616151 5053657 5549748 6194134 6733397 7299905 7614003 7863368 8147604 8427587 8663351 8933762 9166811 9857339 10633591 states
+Reachable states exploration and model construction done in 74.105 secs.
+Sorting reachable states list...
+
+Time for model construction: 80.831 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (1.946 seconds)
+Starting Prob0...
+Prob0 took 0.664 seconds.
+Starting Prob1...
+Prob1 took 4.097 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 3.995 seconds.
+Probabilistic reachability took 10.743 seconds.
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 11.008 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352691080806785E-6 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_crowds.6-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 87.671 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:11:29 GMT+02:00 2026
+Hostname: n23m0400
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66769597/tmp07zjb_eeprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66769597/tmp07zjb_eeprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66769597/tmp07zjb_eeprism_from-prism_check_ex_crowds.6-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66769597/tmp07zjb_eeprism_from-prism_check_ex_crowds.6-20_tmp_indir_/property.props"...
+
+1 property:
+(1) "positive": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "positive": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 548138 967502 1522140 1834583 2492121 2894047 3447045 3929228 4157797 4435024 4723432 5277563 5891356 6511705 7160943 7563355 7839284 8147001 8439547 8728008 9005680 9286006 10223210 10633591 states
+Reachable states exploration and model construction done in 70.182 secs.
+Sorting reachable states list...
+
+Time for model construction: 75.299 seconds.
+
+Warning: Deadlocks detected and fixed in 230230 states
+
+Type:        DTMC
+States:      10633591 (1 initial)
+Transitions: 38261191
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.039 seconds)
+Starting Prob0...
+Prob0 took 0.626 seconds.
+Starting Prob1...
+Prob1 took 4.293 seconds.
+target=352935, yes=363561, no=8587502, maybe=1682528
+Starting value iteration (with Jacobi)...
+Value iteration (with Jacobi) took 206 iterations, 2185323808 multiplications and 3.917 seconds.
+Probabilistic reachability took 10.921 seconds.
+
+Value in the initial state: 0.12047517459031508
+
+Time for model checking: 11.458 seconds.
+
+Result: 0.12047517459031508 (+/- 1.1352691080806785E-6 estimated; rel err 9.423261779376928E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

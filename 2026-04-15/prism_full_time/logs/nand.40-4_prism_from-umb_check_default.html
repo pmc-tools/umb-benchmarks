@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.40-4_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.40-4/index.html" target="_blank">nand.40-4</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2031.134, 2956.109, 2392.243, 1259.624, 1781.14]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.40-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 2031.134 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:14:15 GMT+02:00 2026
+Hostname: n23m0358
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66789021/tmpi1451igxprism_from-umb_check_default_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66789021/tmpi1451igxprism_from-umb_check_default_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789021/tmpi1451igxprism_from-umb_check_default_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1442 iterations in 15.50 seconds (average 0.010749, setup 0.00)
+
+Time for model construction: 539.317 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Transition matrix: 735323 nodes (493 terminal), 6288542 minterms, vars: 22r/22c
+
+Prob0: 1442 iterations in 17.60 seconds (average 0.012205, setup 0.00)
+
+Prob1: 1297 iterations in 14.14 seconds (average 0.010902, setup 0.00)
+
+yes = 141, no = 375263, maybe = 3624118
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=22, nodes=692226] [31.7 MB]
+Adding explicit sparse matrices... [levels=3, num=27009, compact] [858.9 KB]
+Creating vector for diagonals... [dist=1, compact] [7.6 MB]
+Creating vector for RHS... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [108.8 MB]
+
+Starting iterations...
+Iteration 50: max relative diff=inf, 5.10 sec so far
+Iteration 100: max relative diff=inf, 10.17 sec so far
+Iteration 150: max relative diff=inf, 15.24 sec so far
+Iteration 200: max relative diff=inf, 20.29 sec so far
+Iteration 249: max relative diff=inf, 25.35 sec so far
+Iteration 295: max relative diff=inf, 30.42 sec so far
+Iteration 341: max relative diff=inf, 35.47 sec so far
+Iteration 387: max relative diff=inf, 40.51 sec so far
+Iteration 433: max relative diff=inf, 45.57 sec so far
+Iteration 479: max relative diff=inf, 50.63 sec so far
+Iteration 525: max relative diff=inf, 55.68 sec so far
+Iteration 571: max relative diff=inf, 60.73 sec so far
+Iteration 617: max relative diff=inf, 65.80 sec so far
+Iteration 663: max relative diff=inf, 70.88 sec so far
+Iteration 709: max relative diff=inf, 75.94 sec so far
+Iteration 755: max relative diff=inf, 80.98 sec so far
+Iteration 800: max relative diff=inf, 86.01 sec so far
+Iteration 846: max relative diff=inf, 91.06 sec so far
+Iteration 892: max relative diff=inf, 96.09 sec so far
+Iteration 938: max relative diff=inf, 101.13 sec so far
+Iteration 985: max relative diff=inf, 106.24 sec so far
+Iteration 1031: max relative diff=inf, 111.27 sec so far
+Iteration 1077: max relative diff=inf, 116.33 sec so far
+Iteration 1123: max relative diff=inf, 121.40 sec so far
+Iteration 1169: max relative diff=inf, 126.45 sec so far
+Iteration 1215: max relative diff=inf, 131.50 sec so far
+Iteration 1264: max relative diff=inf, 136.59 sec so far
+Iteration 1314: max relative diff=inf, 141.65 sec so far
+Iteration 1364: max relative diff=inf, 146.72 sec so far
+Iteration 1414: max relative diff=inf, 151.80 sec so far
+
+Jacobi: 1441 iterations in 1454.90 seconds (average 0.107238, setup 1300.37)
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 1490.773 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.40-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 2956.109 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:16:32 GMT+02:00 2026
+Hostname: n23m0237
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66769943/tmpkvuvbgj2prism_from-umb_check_default_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66769943/tmpkvuvbgj2prism_from-umb_check_default_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66769943/tmpkvuvbgj2prism_from-umb_check_default_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1442 iterations in 32.53 seconds (average 0.022559, setup 0.00)
+
+Time for model construction: 574.853 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Transition matrix: 735323 nodes (493 terminal), 6288542 minterms, vars: 22r/22c
+
+Prob0: 1442 iterations in 35.35 seconds (average 0.024515, setup 0.00)
+
+Prob1: 1297 iterations in 28.11 seconds (average 0.021673, setup 0.00)
+
+yes = 141, no = 375263, maybe = 3624118
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=22, nodes=692226] [31.7 MB]
+Adding explicit sparse matrices... [levels=3, num=27009, compact] [858.9 KB]
+Creating vector for diagonals... [dist=1, compact] [7.6 MB]
+Creating vector for RHS... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [108.8 MB]
+
+Starting iterations...
+Iteration 58: max relative diff=inf, 5.08 sec so far
+Iteration 116: max relative diff=inf, 10.15 sec so far
+Iteration 174: max relative diff=inf, 15.22 sec so far
+Iteration 232: max relative diff=inf, 20.30 sec so far
+Iteration 289: max relative diff=inf, 25.31 sec so far
+Iteration 347: max relative diff=inf, 30.39 sec so far
+Iteration 405: max relative diff=inf, 35.47 sec so far
+Iteration 463: max relative diff=inf, 40.54 sec so far
+Iteration 521: max relative diff=inf, 45.61 sec so far
+Iteration 579: max relative diff=inf, 50.69 sec so far
+Iteration 637: max relative diff=inf, 55.76 sec so far
+Iteration 695: max relative diff=inf, 60.84 sec so far
+Iteration 753: max relative diff=inf, 65.92 sec so far
+Iteration 811: max relative diff=inf, 70.99 sec so far
+Iteration 869: max relative diff=inf, 76.06 sec so far
+Iteration 927: max relative diff=inf, 81.15 sec so far
+Iteration 985: max relative diff=inf, 86.23 sec so far
+Iteration 1043: max relative diff=inf, 91.31 sec so far
+Iteration 1101: max relative diff=inf, 96.39 sec so far
+Iteration 1159: max relative diff=inf, 101.46 sec so far
+Iteration 1217: max relative diff=inf, 106.54 sec so far
+Iteration 1275: max relative diff=inf, 111.61 sec so far
+Iteration 1333: max relative diff=inf, 116.69 sec so far
+Iteration 1391: max relative diff=inf, 121.76 sec so far
+
+Jacobi: 1441 iterations in 2310.13 seconds (average 0.087529, setup 2184.00)
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 2380.293 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.40-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 2392.243 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:36:49 GMT+02:00 2026
+Hostname: n23m0165
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66790232/tmpevg15iy1prism_from-umb_check_default_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66790232/tmpevg15iy1prism_from-umb_check_default_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66790232/tmpevg15iy1prism_from-umb_check_default_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1442 iterations in 25.46 seconds (average 0.017656, setup 0.00)
+
+Time for model construction: 775.665 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Transition matrix: 735323 nodes (493 terminal), 6288542 minterms, vars: 22r/22c
+
+Prob0: 1442 iterations in 27.24 seconds (average 0.018890, setup 0.00)
+
+Prob1: 1297 iterations in 22.30 seconds (average 0.017194, setup 0.00)
+
+yes = 141, no = 375263, maybe = 3624118
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=22, nodes=692226] [31.7 MB]
+Adding explicit sparse matrices... [levels=3, num=27009, compact] [858.9 KB]
+Creating vector for diagonals... [dist=1, compact] [7.6 MB]
+Creating vector for RHS... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [108.8 MB]
+
+Starting iterations...
+Iteration 37: max relative diff=inf, 5.20 sec so far
+Iteration 74: max relative diff=inf, 10.32 sec so far
+Iteration 110: max relative diff=inf, 15.36 sec so far
+Iteration 147: max relative diff=inf, 20.53 sec so far
+Iteration 183: max relative diff=inf, 25.56 sec so far
+Iteration 220: max relative diff=inf, 30.74 sec so far
+Iteration 257: max relative diff=inf, 35.94 sec so far
+Iteration 294: max relative diff=inf, 41.08 sec so far
+Iteration 330: max relative diff=inf, 46.09 sec so far
+Iteration 367: max relative diff=inf, 51.27 sec so far
+Iteration 404: max relative diff=inf, 56.42 sec so far
+Iteration 441: max relative diff=inf, 61.62 sec so far
+Iteration 478: max relative diff=inf, 66.80 sec so far
+Iteration 515: max relative diff=inf, 71.96 sec so far
+Iteration 552: max relative diff=inf, 77.15 sec so far
+Iteration 589: max relative diff=inf, 82.28 sec so far
+Iteration 626: max relative diff=inf, 87.48 sec so far
+Iteration 663: max relative diff=inf, 92.59 sec so far
+Iteration 700: max relative diff=inf, 97.69 sec so far
+Iteration 736: max relative diff=inf, 102.71 sec so far
+Iteration 773: max relative diff=inf, 107.91 sec so far
+Iteration 810: max relative diff=inf, 113.06 sec so far
+Iteration 847: max relative diff=inf, 118.21 sec so far
+Iteration 884: max relative diff=inf, 123.38 sec so far
+Iteration 921: max relative diff=inf, 128.54 sec so far
+Iteration 958: max relative diff=inf, 133.66 sec so far
+Iteration 994: max relative diff=inf, 138.74 sec so far
+Iteration 1031: max relative diff=inf, 143.91 sec so far
+Iteration 1068: max relative diff=inf, 149.06 sec so far
+Iteration 1105: max relative diff=inf, 154.23 sec so far
+Iteration 1142: max relative diff=inf, 159.40 sec so far
+Iteration 1179: max relative diff=inf, 164.56 sec so far
+Iteration 1216: max relative diff=inf, 169.69 sec so far
+Iteration 1252: max relative diff=inf, 174.70 sec so far
+Iteration 1289: max relative diff=inf, 179.91 sec so far
+Iteration 1326: max relative diff=inf, 185.02 sec so far
+Iteration 1363: max relative diff=inf, 190.21 sec so far
+Iteration 1400: max relative diff=inf, 195.34 sec so far
+Iteration 1436: max relative diff=0.356861, 200.36 sec so far
+
+Jacobi: 1441 iterations in 1560.84 seconds (average 0.139452, setup 1359.89)
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 1615.436 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.40-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1259.624 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:44:40 GMT+02:00 2026
+Hostname: r23m0204
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66765772/tmpq3iqwqw2prism_from-umb_check_default_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66765772/tmpq3iqwqw2prism_from-umb_check_default_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66765772/tmpq3iqwqw2prism_from-umb_check_default_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1442 iterations in 13.66 seconds (average 0.009473, setup 0.00)
+
+Time for model construction: 469.118 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Transition matrix: 735323 nodes (493 terminal), 6288542 minterms, vars: 22r/22c
+
+Prob0: 1442 iterations in 14.41 seconds (average 0.009993, setup 0.00)
+
+Prob1: 1297 iterations in 12.06 seconds (average 0.009298, setup 0.00)
+
+yes = 141, no = 375263, maybe = 3624118
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=22, nodes=692226] [31.7 MB]
+Adding explicit sparse matrices... [levels=3, num=27009, compact] [858.9 KB]
+Creating vector for diagonals... [dist=1, compact] [7.6 MB]
+Creating vector for RHS... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [108.8 MB]
+
+Starting iterations...
+Iteration 56: max relative diff=inf, 5.05 sec so far
+Iteration 112: max relative diff=inf, 10.06 sec so far
+Iteration 168: max relative diff=inf, 15.08 sec so far
+Iteration 224: max relative diff=inf, 20.11 sec so far
+Iteration 280: max relative diff=inf, 25.15 sec so far
+Iteration 336: max relative diff=inf, 30.16 sec so far
+Iteration 392: max relative diff=inf, 35.24 sec so far
+Iteration 448: max relative diff=inf, 40.27 sec so far
+Iteration 504: max relative diff=inf, 45.30 sec so far
+Iteration 560: max relative diff=inf, 50.32 sec so far
+Iteration 616: max relative diff=inf, 55.35 sec so far
+Iteration 672: max relative diff=inf, 60.36 sec so far
+Iteration 728: max relative diff=inf, 65.38 sec so far
+Iteration 784: max relative diff=inf, 70.39 sec so far
+Iteration 841: max relative diff=inf, 75.48 sec so far
+Iteration 897: max relative diff=inf, 80.51 sec so far
+Iteration 953: max relative diff=inf, 85.54 sec so far
+Iteration 1009: max relative diff=inf, 90.58 sec so far
+Iteration 1065: max relative diff=inf, 95.63 sec so far
+Iteration 1121: max relative diff=inf, 100.67 sec so far
+Iteration 1177: max relative diff=inf, 105.69 sec so far
+Iteration 1233: max relative diff=inf, 110.71 sec so far
+Iteration 1289: max relative diff=inf, 115.73 sec so far
+Iteration 1345: max relative diff=inf, 120.76 sec so far
+Iteration 1401: max relative diff=inf, 125.77 sec so far
+
+Jacobi: 1441 iterations in 760.14 seconds (average 0.089764, setup 630.79)
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 789.657 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_nand.40-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1781.140 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:30:40 GMT+02:00 2026
+Hostname: r23m0046
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66767873/tmp_bguiinpprism_from-umb_check_default_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66767873/tmp_bguiinpprism_from-umb_check_default_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66767873/tmp_bguiinpprism_from-umb_check_default_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 1442 iterations in 16.92 seconds (average 0.011734, setup 0.00)
+
+Time for model construction: 570.682 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Transition matrix: 735323 nodes (493 terminal), 6288542 minterms, vars: 22r/22c
+
+Prob0: 1442 iterations in 18.90 seconds (average 0.013107, setup 0.00)
+
+Prob1: 1297 iterations in 15.71 seconds (average 0.012113, setup 0.00)
+
+yes = 141, no = 375263, maybe = 3624118
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=22, nodes=692226] [31.7 MB]
+Adding explicit sparse matrices... [levels=3, num=27009, compact] [858.9 KB]
+Creating vector for diagonals... [dist=1, compact] [7.6 MB]
+Creating vector for RHS... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [108.8 MB]
+
+Starting iterations...
+Iteration 54: max relative diff=inf, 5.02 sec so far
+Iteration 105: max relative diff=inf, 10.10 sec so far
+Iteration 152: max relative diff=inf, 15.21 sec so far
+Iteration 206: max relative diff=inf, 20.25 sec so far
+Iteration 258: max relative diff=inf, 25.30 sec so far
+Iteration 304: max relative diff=inf, 30.36 sec so far
+Iteration 356: max relative diff=inf, 35.43 sec so far
+Iteration 407: max relative diff=inf, 40.46 sec so far
+Iteration 453: max relative diff=inf, 45.57 sec so far
+Iteration 505: max relative diff=inf, 50.61 sec so far
+Iteration 556: max relative diff=inf, 55.68 sec so far
+Iteration 603: max relative diff=inf, 60.73 sec so far
+Iteration 654: max relative diff=inf, 65.75 sec so far
+Iteration 706: max relative diff=inf, 70.84 sec so far
+Iteration 754: max relative diff=inf, 75.92 sec so far
+Iteration 806: max relative diff=inf, 80.99 sec so far
+Iteration 858: max relative diff=inf, 86.09 sec so far
+Iteration 905: max relative diff=inf, 91.10 sec so far
+Iteration 957: max relative diff=inf, 96.19 sec so far
+Iteration 1010: max relative diff=inf, 101.29 sec so far
+Iteration 1059: max relative diff=inf, 106.40 sec so far
+Iteration 1110: max relative diff=inf, 111.42 sec so far
+Iteration 1163: max relative diff=inf, 116.52 sec so far
+Iteration 1212: max relative diff=inf, 121.55 sec so far
+Iteration 1264: max relative diff=inf, 126.65 sec so far
+Iteration 1317: max relative diff=inf, 131.74 sec so far
+Iteration 1365: max relative diff=inf, 136.80 sec so far
+Iteration 1418: max relative diff=inf, 141.84 sec so far
+
+Jacobi: 1441 iterations in 1170.40 seconds (average 0.099944, setup 1026.38)
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 1209.55 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

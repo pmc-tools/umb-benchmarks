@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log firewire.false-36-800_prism_from-prism_to-umb-gz_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/firewire.false-36-800/index.html" target="_blank">firewire.false-36-800</a> and tool configuration prism_from-prism_to-umb-gz_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[12179076.0, 12179076.0, 12179076.0, 12179076.0, 12179076.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_firewire.false-36-800_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 3.242 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:36:03 GMT+02:00 2026
+Hostname: n23m0053
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759329/tmpqdzfjaauprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759329/tmpyrcgh3y9prism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759329/tmpqdzfjaauprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.83 seconds (average 0.006421, setup 0.00)
+
+Time for model construction: 2.134 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759329/tmpyrcgh3y9prism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz"...
+Time for exporting: 0.657 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 12179076 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_firewire.false-36-800_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.927 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 02:24:46 GMT+02:00 2026
+Hostname: n23m0134
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66755062/tmptgbu_2heprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66755062/tmpev2w5dktprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66755062/tmptgbu_2heprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.54 seconds (average 0.005404, setup 0.00)
+
+Time for model construction: 1.812 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66755062/tmpev2w5dktprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz"...
+Time for exporting: 0.653 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 12179076 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_firewire.false-36-800_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.907 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:47:56 GMT+02:00 2026
+Hostname: n23m0134
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757347/tmp6kq93sfrprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757347/tmpoofchv8uprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757347/tmp6kq93sfrprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.48 seconds (average 0.005193, setup 0.00)
+
+Time for model construction: 1.746 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757347/tmpoofchv8uprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz"...
+Time for exporting: 0.64 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 12179076 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_firewire.false-36-800_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 2.829 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 07:52:50 GMT+02:00 2026
+Hostname: n23m0358
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66757546/tmplwpuoaahprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66757546/tmp9p5xr05yprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66757546/tmplwpuoaahprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.48 seconds (average 0.005193, setup 0.00)
+
+Time for model construction: 1.733 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66757546/tmp9p5xr05yprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz"...
+Time for exporting: 0.643 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 12179076 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_default_firewire.false-36-800_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism -exportmodel %outdir/model.umb.gz:states=false,obs=false,rewards=true,zip=true
+Wallclock time: 3.363 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 08:37:10 GMT+02:00 2026
+Hostname: n23m0098
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66759361/tmpg4xlrxvbprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.66759361/tmpik5eewn5prism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz:states=false,obs=false,rewards=true,zip=true'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66759361/tmpg4xlrxvbprism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     wire12 node1 wire21 node2
+Actions:     [] [snd_req12] [snd_ack12] [snd_idle12] [time] [rec_req12] [rec_ack12] [rec_idle12] [rec_idle21] [rec_req21] [rec_ack21] [snd_req21] [snd_ack21] [snd_idle21]
+Variables:   w12 y1 y2 x1 s1 w21 z1 z2 x2 s2
+Labels:      "done"
+Rewards:     "time"
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 285 iterations in 1.71 seconds (average 0.006000, setup 0.00)
+
+Time for model construction: 2.023 seconds.
+
+Type:        MDP
+States:      212268 (1 initial)
+Transitions: 481792
+
+Transition matrix: 88908 nodes (3 terminal), 481792 minterms, vars: 56r/56c/14nd
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.66759361/tmpik5eewn5prism_from-prism_to-umb-gz_default_firewire.false-36-800_tmp_outdir_/model.umb.gz"...
+Time for exporting: 0.777 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb.gz:	Size of output file is 12179076 bytes
+</pre>
+</div>
+</body>
+</html>

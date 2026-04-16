@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log zeroconf.1000-8-false_prism_from-umb_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/zeroconf.1000-8-false/index.html" target="_blank">zeroconf.1000-8-false</a> and tool configuration prism_from-umb_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[2746.37, 1929.746, 2104.4, 2502.905, 1752.217]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_zeroconf.1000-8-false_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 2746.370 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:54:29 GMT+02:00 2026
+Hostname: n23m0087
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66775828/tmp51_0lbhbprism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66775828/tmp51_0lbhbprism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66775828/tmp51_0lbhbprism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 592 iterations in 161.01 seconds (average 0.271976, setup 0.00)
+
+Time for model construction: 707.335 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+
+Transition matrix: 997647 nodes (6 terminal), 4245554 minterms, vars: 21r/21c/4nd
+
+Prob0A: 131 iterations in 30.90 seconds (average 0.235878, setup 0.00)
+
+Prob1E: 2127 iterations in 832.62 seconds (average 0.391453, setup 0.00)
+
+yes = 171749, no = 611330, maybe = 1087259
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=21, nodes=928204] [42.5 MB]
+Adding sparse bits... [levels=3-9, num=33986, compact=4/4] [2.6 MB]
+Creating vector for yes... [dist=2, compact] [3.6 MB]
+Allocating iteration vectors... [3 x 14.3 MB]
+TOTAL: [91.5 MB]
+
+Starting iterations...
+Iteration 44: max relative diff=inf, 5.09 sec so far
+Iteration 89: max relative diff=inf, 10.19 sec so far
+Iteration 133: max relative diff=33.303693, 15.24 sec so far
+Iteration 177: max relative diff=0.000994, 20.26 sec so far
+Iteration 221: max relative diff=0.000923, 25.29 sec so far
+Iteration 265: max relative diff=0.000013, 30.32 sec so far
+Iteration 309: max relative diff=0.000001, 35.34 sec so far
+
+Iterative method: 311 iterations in 1167.67 seconds (average 0.114373, setup 1132.10)
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 2037.69 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.0740549090035865E-13 estimated; rel err 8.485115465254294E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_zeroconf.1000-8-false_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1929.746 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 11:10:22 GMT+02:00 2026
+Hostname: n23m0403
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66764177/tmpevmn6o2qprism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66764177/tmpevmn6o2qprism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66764177/tmpevmn6o2qprism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 592 iterations in 119.10 seconds (average 0.201182, setup 0.00)
+
+Time for model construction: 510.612 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+
+Transition matrix: 997647 nodes (6 terminal), 4245554 minterms, vars: 21r/21c/4nd
+
+Prob0A: 131 iterations in 23.12 seconds (average 0.176489, setup 0.00)
+
+Prob1E: 2127 iterations in 650.55 seconds (average 0.305853, setup 0.00)
+
+yes = 171749, no = 611330, maybe = 1087259
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=21, nodes=928204] [42.5 MB]
+Adding sparse bits... [levels=3-9, num=33986, compact=4/4] [2.6 MB]
+Creating vector for yes... [dist=2, compact] [3.6 MB]
+Allocating iteration vectors... [3 x 14.3 MB]
+TOTAL: [91.5 MB]
+
+Starting iterations...
+Iteration 53: max relative diff=inf, 5.03 sec so far
+Iteration 106: max relative diff=inf, 10.07 sec so far
+Iteration 159: max relative diff=0.091155, 15.09 sec so far
+Iteration 212: max relative diff=0.000929, 20.12 sec so far
+Iteration 265: max relative diff=0.000013, 25.15 sec so far
+
+Iterative method: 311 iterations in 742.22 seconds (average 0.094887, setup 712.71)
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 1418.086 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.0740549090035865E-13 estimated; rel err 8.485115465254294E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_zeroconf.1000-8-false_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 2104.400 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 18:58:16 GMT+02:00 2026
+Hostname: n23m0255
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66784033/tmpigq0xfm8prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66784033/tmpigq0xfm8prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784033/tmpigq0xfm8prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 592 iterations in 128.89 seconds (average 0.217720, setup 0.00)
+
+Time for model construction: 566.908 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+
+Transition matrix: 997647 nodes (6 terminal), 4245554 minterms, vars: 21r/21c/4nd
+
+Prob0A: 131 iterations in 24.25 seconds (average 0.185115, setup 0.00)
+
+Prob1E: 2127 iterations in 675.58 seconds (average 0.317621, setup 0.00)
+
+yes = 171749, no = 611330, maybe = 1087259
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=21, nodes=928204] [42.5 MB]
+Adding sparse bits... [levels=3-9, num=33986, compact=4/4] [2.6 MB]
+Creating vector for yes... [dist=2, compact] [3.6 MB]
+Allocating iteration vectors... [3 x 14.3 MB]
+TOTAL: [91.5 MB]
+
+Starting iterations...
+Iteration 51: max relative diff=inf, 5.04 sec so far
+Iteration 102: max relative diff=inf, 10.05 sec so far
+Iteration 154: max relative diff=0.213158, 15.13 sec so far
+Iteration 205: max relative diff=0.000933, 20.15 sec so far
+Iteration 256: max relative diff=0.000014, 25.18 sec so far
+Iteration 307: max relative diff=0.000002, 30.23 sec so far
+
+Iterative method: 311 iterations in 832.70 seconds (average 0.098457, setup 802.08)
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 1536.441 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.0740549090035865E-13 estimated; rel err 8.485115465254294E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_zeroconf.1000-8-false_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 2502.905 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:55:42 GMT+02:00 2026
+Hostname: n23m0220
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66791150/tmp6slpuxa0prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66791150/tmp6slpuxa0prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66791150/tmp6slpuxa0prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 592 iterations in 138.60 seconds (average 0.234122, setup 0.00)
+
+Time for model construction: 598.808 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+
+Transition matrix: 997647 nodes (6 terminal), 4245554 minterms, vars: 21r/21c/4nd
+
+Prob0A: 131 iterations in 26.84 seconds (average 0.204885, setup 0.00)
+
+Prob1E: 2127 iterations in 724.03 seconds (average 0.340400, setup 0.00)
+
+yes = 171749, no = 611330, maybe = 1087259
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=21, nodes=928204] [42.5 MB]
+Adding sparse bits... [levels=3-9, num=33986, compact=4/4] [2.6 MB]
+Creating vector for yes... [dist=2, compact] [3.6 MB]
+Allocating iteration vectors... [3 x 14.3 MB]
+TOTAL: [91.5 MB]
+
+Starting iterations...
+Iteration 48: max relative diff=inf, 5.08 sec so far
+Iteration 96: max relative diff=inf, 10.18 sec so far
+Iteration 143: max relative diff=1.962813, 15.25 sec so far
+Iteration 190: max relative diff=0.000952, 20.31 sec so far
+Iteration 237: max relative diff=0.000149, 25.33 sec so far
+Iteration 284: max relative diff=0.000013, 30.36 sec so far
+
+Iterative method: 311 iterations in 1144.73 seconds (average 0.106849, setup 1111.50)
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 1902.03 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.0740549090035865E-13 estimated; rel err 8.485115465254294E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_default_zeroconf.1000-8-false_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 1752.217 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:43:05 GMT+02:00 2026
+Hostname: n23m0152
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -importmodel /w0/tmp/slurm_tq429871.66768512/tmpcetqmzd0prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.66768512/tmpcetqmzd0prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [] [reset] [time] [send] [rec]
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768512/tmpcetqmzd0prism_from-umb_check_default_zeroconf.1000-8-false_tmp_indir_/property.props"...
+
+1 property:
+(1) "correct_max": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "correct_max": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+Importing transitions... [ 2% 4% 6% 8% 10% 12% 14% 16% 18% 20% 22% 24% 26% 28% 30% 32% 34% 36% 38% 40% 42% 44% 46% 48% 50% 52% 54% 56% 58% 60% 62% 64% 66% 68% 70% 72% 74% 76% 78% 80% 82% 84% 86% 88% 90% 92% 94% 96% 98% 100% ]
+
+Computing reachable states...
+
+Reachability (BFS): 592 iterations in 135.18 seconds (average 0.228345, setup 0.00)
+
+Time for model construction: 546.352 seconds.
+
+Type:        MDP
+States:      1870338 (1 initial)
+Transitions: 4245554
+
+Transition matrix: 997647 nodes (6 terminal), 4245554 minterms, vars: 21r/21c/4nd
+
+Prob0A: 131 iterations in 24.97 seconds (average 0.190611, setup 0.00)
+
+Prob1E: 2127 iterations in 690.48 seconds (average 0.324626, setup 0.00)
+
+yes = 171749, no = 611330, maybe = 1087259
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=4, levels=21, nodes=928204] [42.5 MB]
+Adding sparse bits... [levels=3-9, num=33986, compact=4/4] [2.6 MB]
+Creating vector for yes... [dist=2, compact] [3.6 MB]
+Allocating iteration vectors... [3 x 14.3 MB]
+TOTAL: [91.5 MB]
+
+Starting iterations...
+Iteration 49: max relative diff=inf, 5.10 sec so far
+Iteration 98: max relative diff=inf, 10.20 sec so far
+Iteration 147: max relative diff=0.945954, 15.27 sec so far
+Iteration 196: max relative diff=0.000939, 20.38 sec so far
+Iteration 245: max relative diff=0.000014, 25.45 sec so far
+Iteration 294: max relative diff=0.000013, 30.54 sec so far
+
+Iterative method: 311 iterations in 484.76 seconds (average 0.103923, setup 452.44)
+
+Value in the initial state: 4.801413635072425E-8
+
+Time for model checking: 1204.142 seconds.
+
+Result: 4.801413635072425E-8 (+/- 4.0740549090035865E-13 estimated; rel err 8.485115465254294E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log pnueli-zuck.10_prism_from-prism_check_default</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/pnueli-zuck.10/index.html" target="_blank">pnueli-zuck.10</a> and tool configuration prism_from-prism_check_default</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[9.691, 14.301, 12.018, 11.864, 11.525]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.10_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 9.691 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:02:26 GMT+02:00 2026
+Hostname: n23m0089
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66784238/tmp7z3do1caprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66784238/tmp7z3do1caprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66784238/tmp7z3do1caprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4 process5 process6 process7 process8 process9
+Actions:     []
+Variables:   p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66784238/tmp7z3do1caprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.68 seconds (average 0.009315, setup 0.00)
+
+Time for model construction: 0.874 seconds.
+
+Type:        MDP
+States:      69994757110 (1 initial)
+Transitions: 891923978050
+
+Transition matrix: 22186 nodes (3 terminal), 891923978050 minterms, vars: 40r/40c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 90 iterations in 3.57 seconds (average 0.039667, setup 0.00)
+
+Prob1E: 91 iterations in 3.94 seconds (average 0.043297, setup 0.00)
+
+yes = 69994757110, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 7.538 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.10_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 14.301 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 13:19:20 GMT+02:00 2026
+Hostname: n23m0270
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66770188/tmpzt2v8076prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66770188/tmpzt2v8076prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66770188/tmpzt2v8076prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4 process5 process6 process7 process8 process9
+Actions:     []
+Variables:   p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66770188/tmpzt2v8076prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.57 seconds (average 0.007808, setup 0.00)
+
+Time for model construction: 0.689 seconds.
+
+Type:        MDP
+States:      69994757110 (1 initial)
+Transitions: 891923978050
+
+Transition matrix: 22186 nodes (3 terminal), 891923978050 minterms, vars: 40r/40c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 90 iterations in 5.96 seconds (average 0.066222, setup 0.00)
+
+Prob1E: 91 iterations in 6.88 seconds (average 0.075604, setup 0.00)
+
+yes = 69994757110, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 12.887 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.10_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 12.018 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:22:19 GMT+02:00 2026
+Hostname: r23m0149
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66778084/tmpcc02k8d_prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66778084/tmpcc02k8d_prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66778084/tmpcc02k8d_prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4 process5 process6 process7 process8 process9
+Actions:     []
+Variables:   p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66778084/tmpcc02k8d_prism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.96 seconds (average 0.013151, setup 0.00)
+
+Time for model construction: 1.11 seconds.
+
+Type:        MDP
+States:      69994757110 (1 initial)
+Transitions: 891923978050
+
+Transition matrix: 22186 nodes (3 terminal), 891923978050 minterms, vars: 40r/40c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 90 iterations in 4.93 seconds (average 0.054778, setup 0.00)
+
+Prob1E: 91 iterations in 5.32 seconds (average 0.058462, setup 0.00)
+
+yes = 69994757110, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 10.272 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.10_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 11.864 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 15:12:27 GMT+02:00 2026
+Hostname: r23m0026
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66777365/tmp7swhqnbsprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66777365/tmp7swhqnbsprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66777365/tmp7swhqnbsprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4 process5 process6 process7 process8 process9
+Actions:     []
+Variables:   p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66777365/tmp7swhqnbsprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.73 seconds (average 0.010000, setup 0.00)
+
+Time for model construction: 0.974 seconds.
+
+Type:        MDP
+States:      69994757110 (1 initial)
+Transitions: 891923978050
+
+Transition matrix: 22186 nodes (3 terminal), 891923978050 minterms, vars: 40r/40c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 90 iterations in 4.22 seconds (average 0.046889, setup 0.00)
+
+Prob1E: 91 iterations in 5.22 seconds (average 0.057363, setup 0.00)
+
+yes = 69994757110, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 9.482 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_default_pnueli-zuck.10_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism  %indir/model.prism %indir/property.props
+Wallclock time: 11.525 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:24:31 GMT+02:00 2026
+Hostname: n23m0331
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism /w0/tmp/slurm_tq429871.66789630/tmpanudgchuprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789630/tmpanudgchuprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789630/tmpanudgchuprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process0 process1 process2 process3 process4 process5 process6 process7 process8 process9
+Actions:     []
+Variables:   p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789630/tmpanudgchuprism_from-prism_check_default_pnueli-zuck.10_tmp_indir_/property.props"...
+
+1 property:
+(1) "live": Pmax=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "live": Pmax=? [ F "target" ]
+
+Building model (engine:symbolic)...
+
+Computing reachable states...
+
+Reachability (BFS): 73 iterations in 0.99 seconds (average 0.013562, setup 0.00)
+
+Time for model construction: 1.128 seconds.
+
+Type:        MDP
+States:      69994757110 (1 initial)
+Transitions: 891923978050
+
+Transition matrix: 22186 nodes (3 terminal), 891923978050 minterms, vars: 40r/40c/10nd
+
+Warning: Switching to MTBDD engine, as number of states is too large for Hybrid engine.
+
+Prob0A: 90 iterations in 4.59 seconds (average 0.051000, setup 0.00)
+
+Prob1E: 91 iterations in 5.07 seconds (average 0.055714, setup 0.00)
+
+yes = 69994757110, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 9.69 seconds.
+
+Result: 1.0 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

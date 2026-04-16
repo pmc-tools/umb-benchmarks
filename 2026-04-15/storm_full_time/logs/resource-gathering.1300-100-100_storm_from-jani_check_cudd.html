@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_storm_from-jani_check_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration storm_from-jani_check_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[23.253, 25.948, 24.376, 18.881, 22.674]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 23.253 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 12:34:41 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66768124/tmp547mcvuastorm_from-jani_check_cudd_resource-gathering.1300-100-100_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.237s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.012s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "prgoldgem": Pmax=? [true Usteps<=1300 "success"] ...
+Result (for initial states): 0.6630608525
+Time for model checking: 21.953s.
+
+Performance statistics:
+  * peak memory usage: 373MB
+  * CPU time: 23.118s
+  * wallclock time: 23.207s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 25.948 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 19:23:22 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66785614/tmp30czvkksstorm_from-jani_check_cudd_resource-gathering.1300-100-100_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.249s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.223s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "prgoldgem": Pmax=? [true Usteps<=1300 "success"] ...
+Result (for initial states): 0.6630608525
+Time for model checking: 24.419s.
+
+Performance statistics:
+  * peak memory usage: 373MB
+  * CPU time: 25.761s
+  * wallclock time: 25.898s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 24.376 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 14:19:27 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66773716/tmpwf1r25rostorm_from-jani_check_cudd_resource-gathering.1300-100-100_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.223s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.211s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "prgoldgem": Pmax=? [true Usteps<=1300 "success"] ...
+Result (for initial states): 0.6630608525
+Time for model checking: 22.886s.
+
+Performance statistics:
+  * peak memory usage: 373MB
+  * CPU time: 24.140s
+  * wallclock time: 24.328s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 18.881 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 15:00:11 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66776205/tmp81pi_3vxstorm_from-jani_check_cudd_resource-gathering.1300-100-100_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.188s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.977s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "prgoldgem": Pmax=? [true Usteps<=1300 "success"] ...
+Result (for initial states): 0.6630608525
+Time for model checking: 17.673s.
+
+Performance statistics:
+  * peak memory usage: 373MB
+  * CPU time: 18.764s
+  * wallclock time: 18.843s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_check_cudd_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani --janiproperty  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 22.674 seconds
+Return code: 0
+##############################
+Storm 1.12.0 (dev)
+
+Date: Wed Apr 15 22:50:56 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.66790932/tmpw8m009x1storm_from-jani_check_cudd_resource-gathering.1300-100-100_tmp_indir_/model.jani --janiproperty --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: $PWD
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.254s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (symbolic)
+States: 	958894 (53 nodes)
+Transitions: 	3325526 (701 nodes)
+Choices: 	3080702
+Reward Models:  none
+Variables: 	rows: 10 meta variables (26 DD variables), columns: 10 meta variables (26 DD variables), nondeterminism: 4 meta variables (4 DD variables)
+Labels: 	3
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (27 nodes)
+   * success
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 1.026s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	958894
+Transitions: 	3325526
+Choices: 	3080702
+Reward Models:  none
+State Labels: 	3 labels
+   * success -> 94 item(s)
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "prgoldgem": Pmax=? [true Usteps<=1300 "success"] ...
+Result (for initial states): 0.6630608525
+Time for model checking: 21.346s.
+
+Performance statistics:
+  * peak memory usage: 372MB
+  * CPU time: 22.523s
+  * wallclock time: 22.631s
+</pre>
+</div>
+</body>
+</html>

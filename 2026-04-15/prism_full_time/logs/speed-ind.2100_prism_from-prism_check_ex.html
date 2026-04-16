@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log speed-ind.2100_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/speed-ind.2100/index.html" target="_blank">speed-ind.2100</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1738.658, 2107.016, 2143.431, 2107.053, 2312.611]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 1738.658 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 22:30:40 GMT+02:00 2026
+Hostname: n23m0176
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66789938/tmpvcv8u__1prism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66789938/tmpvcv8u__1prism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66789938/tmpvcv8u__1prism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66789938/tmpvcv8u__1prism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 369586 743424 states
+Reachable states exploration and model construction done in 5.981 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.505 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 1731.35 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 1731.382 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 2107.016 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 14:46:09 GMT+02:00 2026
+Hostname: n23m0121
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66775359/tmpa9c5mk5oprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66775359/tmpa9c5mk5oprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66775359/tmpa9c5mk5oprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66775359/tmpa9c5mk5oprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 300262 612995 743424 states
+Reachable states exploration and model construction done in 7.319 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.993 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 2098.15 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 2098.199 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 2143.431 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:35:49 GMT+02:00 2026
+Hostname: n23m0288
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66768190/tmpvcvxa6qvprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66768190/tmpvcvxa6qvprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66768190/tmpvcvxa6qvprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66768190/tmpvcvxa6qvprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 300135 597283 743424 states
+Reachable states exploration and model construction done in 7.491 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.042 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 2134.631 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 2134.667 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 2107.053 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 12:19:39 GMT+02:00 2026
+Hostname: n23m0334
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66767218/tmp0x79wmecprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66767218/tmp0x79wmecprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66767218/tmp0x79wmecprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66767218/tmp0x79wmecprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 320809 646594 743424 states
+Reachable states exploration and model construction done in 6.97 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.834 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 2098.014 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 2098.055 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_speed-ind.2100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -ex %indir/model.prism %indir/property.props
+Wallclock time: 2312.611 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.10.2-dev
+Date: Wed Apr 15 19:15:37 GMT+02:00 2026
+Hostname: n23m0130
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -ex /w0/tmp/slurm_tq429871.66785069/tmpqnjf4wdtprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.66785069/tmpqnjf4wdtprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.66785069/tmpqnjf4wdtprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     S1_def S2_def S3_def S4_def Y_def Z_def CC_def XX_def
+Actions:     []
+Variables:   S1 S2 S3 S4 Y Z CC XX
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.66785069/tmpqnjf4wdtprism_from-prism_check_ex_speed-ind.2100_tmp_indir_/property.props"...
+
+1 property:
+(1) "change_state": P=? [ F<=2100 "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "change_state": P=? [ F<=2100 "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 297800 596085 743424 states
+Reachable states exploration and model construction done in 7.491 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.324 seconds.
+
+Type:        CTMC
+States:      743424 (1 initial)
+Transitions: 9518080
+
+Starting backwards transient probability computation...
+
+Uniformisation: q.t = 2.7979107707826114 x 2100.0 = 5875.612618643484
+Fox-Glynn (1.25E-7): left = 5336, right = 6527
+Backwards transient probability computation took 6528 iters and 2303.294 seconds.
+
+Value in the initial state: 0.04229449797846395
+
+Time for model checking: 2303.353 seconds.
+
+Result: 0.04229449797846395
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>
