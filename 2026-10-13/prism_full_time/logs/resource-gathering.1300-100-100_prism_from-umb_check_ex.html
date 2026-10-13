@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[25.351, 21.581, 25.688, 25.41, 21.554]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 25.351 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:50:44 GMT+02:00 2026
+Hostname: n23m0301.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4966919/tmpcgx6s32_prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4966919/tmpcgx6s32_prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [right] [left] [top] [down]
+Variables:   x
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966919/tmpcgx6s32_prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.267 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Starting bounded probabilistic reachability (max)...
+Bounded probabilistic reachability (max) took 1300 iterations and 24.267 seconds.
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 24.333 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 21.581 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:12:34 GMT+02:00 2026
+Hostname: n23m0097.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4961669/tmpgvjben49prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4961669/tmpgvjben49prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [right] [left] [top] [down]
+Variables:   x
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961669/tmpgvjben49prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.273 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Starting bounded probabilistic reachability (max)...
+Bounded probabilistic reachability (max) took 1300 iterations and 20.65 seconds.
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 20.686 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 25.688 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:29:53 GMT+02:00 2026
+Hostname: n23m0294.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4965929/tmpnpfypmwrprism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4965929/tmpnpfypmwrprism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [right] [left] [top] [down]
+Variables:   x
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965929/tmpnpfypmwrprism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.337 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Starting bounded probabilistic reachability (max)...
+Bounded probabilistic reachability (max) took 1300 iterations and 24.213 seconds.
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 24.298 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 25.410 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:19:10 GMT+02:00 2026
+Hostname: n23m0287.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4965341/tmp_lh6rlo0prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4965341/tmp_lh6rlo0prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [right] [left] [top] [down]
+Variables:   x
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965341/tmp_lh6rlo0prism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.279 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Starting bounded probabilistic reachability (max)...
+Bounded probabilistic reachability (max) took 1300 iterations and 24.359 seconds.
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 24.397 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 21.554 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:03:26 GMT+02:00 2026
+Hostname: n23m0279.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4964635/tmp_llwtkyiprism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4964635/tmp_llwtkyiprism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [right] [left] [top] [down]
+Variables:   x
+Labels:      "success"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4964635/tmp_llwtkyiprism_from-umb_check_ex_resource-gathering.1300-100-100_tmp_indir_/property.props"...
+
+1 property:
+(1) "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+---------------------------------------------------------------------
+
+Model checking: "prgoldgem": Pmax=? [ F<=1300 "success" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.254 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Starting bounded probabilistic reachability (max)...
+Bounded probabilistic reachability (max) took 1300 iterations and 20.674 seconds.
+
+Value in the initial state: 0.6630608525241822
+
+Time for model checking: 20.705 seconds.
+
+Result: 0.6630608525241822 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

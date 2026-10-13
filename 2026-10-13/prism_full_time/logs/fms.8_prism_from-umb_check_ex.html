@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log fms.8_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/fms.8/index.html" target="_blank">fms.8</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[546.339, 488.63, 471.951, 457.76, 499.221]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_fms.8_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 546.339 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:45:53 GMT+02:00 2026
+Hostname: n23m0045.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4963106/tmpy0t8ja4wprism_from-umb_check_ex_fms.8_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4963106/tmpy0t8ja4wprism_from-umb_check_ex_fms.8_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4963106/tmpy0t8ja4wprism_from-umb_check_ex_fms.8_tmp_indir_/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 5.029 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+Building reward structure...
+Building embedded DTMC...
+Doing steady-state computation in embedded DTMC (with exit-rate weighting for BSCC probabilities)...
+Time for BSCC computation: 3.479 seconds, found 1 BSCCs.
+
+Computing steady state probabilities for BSCC 1
+Starting value iteration...
+Power method: 1452 iterations in 533.035 seconds.
+
+Value for BSCC 1: 116.62478052164668
+
+All states are in BSCCs (so no reachability probabilities computed)
+
+Value in the initial state: 116.62478052164668
+
+Time for model checking: 540.535 seconds.
+
+Result: 116.62478052164668
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_fms.8_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 488.630 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:38:41 GMT+02:00 2026
+Hostname: n23m0261.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4962787/tmpn038k5riprism_from-umb_check_ex_fms.8_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4962787/tmpn038k5riprism_from-umb_check_ex_fms.8_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4962787/tmpn038k5riprism_from-umb_check_ex_fms.8_tmp_indir_/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 4.897 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+Building reward structure...
+Building embedded DTMC...
+Doing steady-state computation in embedded DTMC (with exit-rate weighting for BSCC probabilities)...
+Time for BSCC computation: 3.107 seconds, found 1 BSCCs.
+
+Computing steady state probabilities for BSCC 1
+Starting value iteration...
+Power method: 1452 iterations in 475.798 seconds.
+
+Value for BSCC 1: 116.62478052164668
+
+All states are in BSCCs (so no reachability probabilities computed)
+
+Value in the initial state: 116.62478052164668
+
+Time for model checking: 482.848 seconds.
+
+Result: 116.62478052164668
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_fms.8_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 471.951 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:34:23 GMT+02:00 2026
+Hostname: n23m0110.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4966167/tmpn38e8929prism_from-umb_check_ex_fms.8_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4966167/tmpn38e8929prism_from-umb_check_ex_fms.8_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966167/tmpn38e8929prism_from-umb_check_ex_fms.8_tmp_indir_/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 5.018 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+Building reward structure...
+Building embedded DTMC...
+Doing steady-state computation in embedded DTMC (with exit-rate weighting for BSCC probabilities)...
+Time for BSCC computation: 3.599 seconds, found 1 BSCCs.
+
+Computing steady state probabilities for BSCC 1
+Starting value iteration...
+Power method: 1452 iterations in 458.478 seconds.
+
+Value for BSCC 1: 116.62478052164668
+
+All states are in BSCCs (so no reachability probabilities computed)
+
+Value in the initial state: 116.62478052164668
+
+Time for model checking: 466.067 seconds.
+
+Result: 116.62478052164668
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_fms.8_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 457.760 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:11:30 GMT+02:00 2026
+Hostname: n23m0107.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4961625/tmpiwdkgidpprism_from-umb_check_ex_fms.8_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4961625/tmpiwdkgidpprism_from-umb_check_ex_fms.8_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961625/tmpiwdkgidpprism_from-umb_check_ex_fms.8_tmp_indir_/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 4.341 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+Building reward structure...
+Building embedded DTMC...
+Doing steady-state computation in embedded DTMC (with exit-rate weighting for BSCC probabilities)...
+Time for BSCC computation: 3.269 seconds, found 1 BSCCs.
+
+Computing steady state probabilities for BSCC 1
+Starting value iteration...
+Power method: 1452 iterations in 445.89 seconds.
+
+Value for BSCC 1: 116.62478052164668
+
+All states are in BSCCs (so no reachability probabilities computed)
+
+Value in the initial state: 116.62478052164668
+
+Time for model checking: 452.76 seconds.
+
+Result: 116.62478052164668
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_fms.8_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 499.221 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:37:33 GMT+02:00 2026
+Hostname: r23m0199.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4966324/tmpnqfyn4u8prism_from-umb_check_ex_fms.8_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4966324/tmpnqfyn4u8prism_from-umb_check_ex_fms.8_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        CTMC
+Actions:     [] [t1] [p1p2] [fp12] [t2] [p2p3] [t3] [t12]
+Variables:   x
+Rewards:     "productivity"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966324/tmpnqfyn4u8prism_from-umb_check_ex_fms.8_tmp_indir_/property.props"...
+
+1 property:
+(1) "productivity": R{"productivity"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "productivity": R{"productivity"}=? [ S ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 5.021 seconds.
+
+Type:        CTMC
+States:      4459455 (1 initial)
+Transitions: 38533968
+Building reward structure...
+Building embedded DTMC...
+Doing steady-state computation in embedded DTMC (with exit-rate weighting for BSCC probabilities)...
+Time for BSCC computation: 3.358 seconds, found 1 BSCCs.
+
+Computing steady state probabilities for BSCC 1
+Starting value iteration...
+Power method: 1452 iterations in 485.859 seconds.
+
+Value for BSCC 1: 116.62478052164668
+
+All states are in BSCCs (so no reachability probabilities computed)
+
+Value in the initial state: 116.62478052164668
+
+Time for model checking: 493.386 seconds.
+
+Result: 116.62478052164668
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

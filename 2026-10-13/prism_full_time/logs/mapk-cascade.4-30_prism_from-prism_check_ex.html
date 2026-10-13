@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[72.841, 76.673, 92.196, 81.491, 78.899]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 72.841 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:50:09 GMT+02:00 2026
+Hostname: n23m0110.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966880/tmplbsfugkxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966880/tmplbsfugkxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966880/tmplbsfugkxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966880/tmplbsfugkxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.158 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.317 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.122 seconds)
+Starting Prob1...
+Prob1 took 0.094 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 125: 5.04 sec so far
+Iteration 256: 10.06 sec so far
+Iteration 388: 15.07 sec so far
+Iteration 523: 20.09 sec so far
+Iteration 658: 25.11 sec so far
+Iteration 792: 30.12 sec so far
+Iteration 926: 35.13 sec so far
+Iteration 1061: 40.16 sec so far
+Iteration 1196: 45.19 sec so far
+Iteration 1331: 50.20 sec so far
+Iteration 1465: 55.20 sec so far
+Iteration 1600: 60.22 sec so far
+Iteration 1732: 65.22 sec so far
+Iteration 1867: 70.26 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 70.601 seconds.
+Expected reachability took 70.824 seconds.
+
+Value in the initial state: 40.672703711883116
+
+Time for model checking: 70.973 seconds.
+
+Result: 40.672703711883116 (+/- 4.045129483579692E-4 estimated; rel err 9.945563275641911E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 76.673 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:32:37 GMT+02:00 2026
+Hostname: n23m0107.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4962498/tmpknmxkphtprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4962498/tmpknmxkphtprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4962498/tmpknmxkphtprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4962498/tmpknmxkphtprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.193 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.352 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.064 seconds)
+Starting Prob1...
+Prob1 took 0.093 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 114: 5.03 sec so far
+Iteration 238: 10.04 sec so far
+Iteration 360: 15.04 sec so far
+Iteration 486: 20.04 sec so far
+Iteration 613: 25.06 sec so far
+Iteration 743: 30.08 sec so far
+Iteration 869: 35.08 sec so far
+Iteration 996: 40.10 sec so far
+Iteration 1124: 45.13 sec so far
+Iteration 1252: 50.15 sec so far
+Iteration 1384: 55.17 sec so far
+Iteration 1516: 60.20 sec so far
+Iteration 1643: 65.21 sec so far
+Iteration 1772: 70.26 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 74.322 seconds.
+Expected reachability took 74.487 seconds.
+
+Value in the initial state: 40.672703711883116
+
+Time for model checking: 74.683 seconds.
+
+Result: 40.672703711883116 (+/- 4.045129483579692E-4 estimated; rel err 9.945563275641911E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 92.196 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:12:22 GMT+02:00 2026
+Hostname: n23m0107.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4965024/tmp2u94vhgfprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4965024/tmp2u94vhgfprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4965024/tmp2u94vhgfprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965024/tmp2u94vhgfprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.565 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.776 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.09 seconds)
+Starting Prob1...
+Prob1 took 0.126 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 98: 5.03 sec so far
+Iteration 205: 10.07 sec so far
+Iteration 312: 15.10 sec so far
+Iteration 418: 20.13 sec so far
+Iteration 523: 25.15 sec so far
+Iteration 628: 30.18 sec so far
+Iteration 734: 35.21 sec so far
+Iteration 840: 40.22 sec so far
+Iteration 949: 45.22 sec so far
+Iteration 1055: 50.26 sec so far
+Iteration 1160: 55.29 sec so far
+Iteration 1264: 60.30 sec so far
+Iteration 1370: 65.30 sec so far
+Iteration 1477: 70.34 sec so far
+Iteration 1584: 75.38 sec so far
+Iteration 1691: 80.40 sec so far
+Iteration 1797: 85.41 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 89.113 seconds.
+Expected reachability took 89.346 seconds.
+
+Value in the initial state: 40.672703711883116
+
+Time for model checking: 89.634 seconds.
+
+Result: 40.672703711883116 (+/- 4.045129483579692E-4 estimated; rel err 9.945563275641911E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 81.491 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:38:04 GMT+02:00 2026
+Hostname: n23m0358.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966342/tmp8vjajqaxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966342/tmp8vjajqaxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966342/tmp8vjajqaxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966342/tmp8vjajqaxprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.348 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.765 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.076 seconds)
+Starting Prob1...
+Prob1 took 0.104 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 109: 5.01 sec so far
+Iteration 227: 10.04 sec so far
+Iteration 347: 15.08 sec so far
+Iteration 468: 20.10 sec so far
+Iteration 589: 25.11 sec so far
+Iteration 710: 30.14 sec so far
+Iteration 831: 35.17 sec so far
+Iteration 952: 40.18 sec so far
+Iteration 1073: 45.18 sec so far
+Iteration 1195: 50.23 sec so far
+Iteration 1316: 55.24 sec so far
+Iteration 1437: 60.26 sec so far
+Iteration 1558: 65.28 sec so far
+Iteration 1677: 70.30 sec so far
+Iteration 1798: 75.31 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 78.563 seconds.
+Expected reachability took 78.77 seconds.
+
+Value in the initial state: 40.672703711883116
+
+Time for model checking: 79.001 seconds.
+
+Result: 40.672703711883116 (+/- 4.045129483579692E-4 estimated; rel err 9.945563275641911E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 78.899 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:08:08 GMT+02:00 2026
+Hostname: r23m0197.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4964853/tmp_ruhue2bprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4964853/tmp_ruhue2bprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4964853/tmp_ruhue2bprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4964853/tmp_ruhue2bprism_from-prism_check_ex_mapk-cascade.4-30_tmp_indir_/property.props"...
+
+1 property:
+(1) "activated_time": R{"time"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "activated_time": R{"time"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.397 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.581 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+Building reward structure...
+Building embedded DTMC...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.082 seconds)
+Starting Prob1...
+Prob1 took 0.11 seconds.
+target=1461, inf=0, rest=98074
+Starting value iteration (with Jacobi) ...
+Iteration 111: 5.03 sec so far
+Iteration 229: 10.04 sec so far
+Iteration 353: 15.06 sec so far
+Iteration 480: 20.09 sec so far
+Iteration 607: 25.10 sec so far
+Iteration 730: 30.11 sec so far
+Iteration 851: 35.11 sec so far
+Iteration 975: 40.14 sec so far
+Iteration 1100: 45.17 sec so far
+Iteration 1226: 50.18 sec so far
+Iteration 1352: 55.20 sec so far
+Iteration 1477: 60.22 sec so far
+Iteration 1598: 65.25 sec so far
+Iteration 1725: 70.28 sec so far
+Iteration 1852: 75.30 sec so far
+Value iteration (with Jacobi) took 1876 iterations, 1689114756 multiplications and 76.263 seconds.
+Expected reachability took 76.464 seconds.
+
+Value in the initial state: 40.672703711883116
+
+Time for model checking: 76.698 seconds.
+
+Result: 40.672703711883116 (+/- 4.045129483579692E-4 estimated; rel err 9.945563275641911E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

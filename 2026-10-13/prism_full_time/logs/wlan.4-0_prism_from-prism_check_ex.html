@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.4-0_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.4-0/index.html" target="_blank">wlan.4-0</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[6.96, 8.45, 8.811, 7.421, 6.898]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.4-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 6.960 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:42:15 GMT+02:00 2026
+Hostname: n23m0135.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966519/tmps50f7gw5prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966519/tmps50f7gw5prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966519/tmps50f7gw5prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966519/tmps50f7gw5prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 345000 states
+Reachable states exploration and model construction done in 1.347 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.613 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.082 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 2.624 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 4.716 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 4.742 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.4-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 8.450 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:18:07 GMT+02:00 2026
+Hostname: n23m0042.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961894/tmpwa6awlr_prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961894/tmpwa6awlr_prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961894/tmpwa6awlr_prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961894/tmpwa6awlr_prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 345000 states
+Reachable states exploration and model construction done in 1.587 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.88 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.624 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 3.245 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 5.88 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 5.908 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.4-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 8.811 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:43:18 GMT+02:00 2026
+Hostname: n23m0294.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966573/tmpba3t7271prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966573/tmpba3t7271prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966573/tmpba3t7271prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966573/tmpba3t7271prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 345000 states
+Reachable states exploration and model construction done in 1.645 secs.
+Sorting reachable states list...
+
+Time for model construction: 2.219 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.645 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 3.255 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 5.912 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 5.945 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.4-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 7.421 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:13:06 GMT+02:00 2026
+Hostname: n23m0107.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961695/tmpe6v8oltcprism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961695/tmpe6v8oltcprism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961695/tmpe6v8oltcprism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961695/tmpe6v8oltcprism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 345000 states
+Reachable states exploration and model construction done in 1.479 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.802 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.238 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 2.748 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 4.997 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 5.024 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_wlan.4-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 6.898 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:39:13 GMT+02:00 2026
+Hostname: n23m0110.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4962800/tmp9p05nti9prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4962800/tmp9p05nti9prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4962800/tmp9p05nti9prism_from-prism_check_ex_wlan.4-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4962800/tmp9p05nti9prism_from-prism_check_ex_wlan.4-0_tmp_indir_/property.props"...
+
+1 property:
+(1) "sent": P>=1 [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "sent": P>=1 [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 345000 states
+Reachable states exploration and model construction done in 1.37 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.613 seconds.
+
+Type:        MDP
+States:      345000 (1 initial)
+Transitions: 762252
+Choices:     440206
+Max/avg:     3/1.28
+
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 854 iterations and 2.068 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 854 iterations and 2.633 seconds.
+target=1, yes=345000, no=0, maybe=0
+Probabilistic reachability took 4.713 seconds.
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 4.74 seconds.
+
+Result: true
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

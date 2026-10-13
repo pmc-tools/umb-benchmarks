@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log kanban.5_prism_from-prism_to-tra-xz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/kanban.5/index.html" target="_blank">kanban.5</a> and tool configuration prism_from-prism_to-tra-xz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[370.433, 557.845, 387.897, 356.639, 351.013]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_kanban.5_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 399.630 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:34:41 GMT+02:00 2026
+Hostname: n23m0055.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955148/tmpydqeego6prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955148/tmpn1lx__4yprism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955148/tmpydqeego6prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 402985 738742 1039296 1321212 1597918 1871539 2150940 2449380 2546432 states
+Reachable states exploration and model construction done in 24.669 secs.
+Sorting reachable states list...
+
+Time for model construction: 28.352 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955148/tmpn1lx__4yprism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp"...
+Time for exporting: 370.433 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 36460468 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_kanban.5_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 594.917 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:50:07 GMT+02:00 2026
+Hostname: n23m0023.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955762/tmpro0jn7p2prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955762/tmp5i7hnu1iprism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955762/tmpro0jn7p2prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 320119 598602 851316 1080282 1308049 1508446 1726911 1932517 2149749 2374995 2546432 states
+Reachable states exploration and model construction done in 31.596 secs.
+Sorting reachable states list...
+
+Time for model construction: 36.083 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955762/tmp5i7hnu1iprism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp"...
+Time for exporting: 557.845 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 36460468 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_kanban.5_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 420.513 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:29:32 GMT+02:00 2026
+Hostname: n23m0261.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4954929/tmp94zqim73prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4954929/tmpefhov9y1prism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4954929/tmp94zqim73prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 312847 610790 875743 1121450 1377646 1629871 1879440 2152389 2411835 2546432 states
+Reachable states exploration and model construction done in 28.156 secs.
+Sorting reachable states list...
+
+Time for model construction: 31.947 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4954929/tmpefhov9y1prism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp"...
+Time for exporting: 387.897 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 36460468 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_kanban.5_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 387.232 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:10:40 GMT+02:00 2026
+Hostname: n23m0071.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956595/tmprpvurhj6prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956595/tmpx7tjg2y4prism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956595/tmprpvurhj6prism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 352331 670277 948216 1215146 1487102 1743208 2018633 2291284 2546432 states
+Reachable states exploration and model construction done in 26.344 secs.
+Sorting reachable states list...
+
+Time for model construction: 29.924 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4956595/tmpx7tjg2y4prism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp"...
+Time for exporting: 356.639 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 36460468 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_kanban.5_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 381.016 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:40:59 GMT+02:00 2026
+Hostname: n23m0048.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955391/tmphgp8juqrprism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955391/tmpvlzlmrbyprism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955391/tmphgp8juqrprism_from-prism_to-tra-xz_ex_kanban.5_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4
+Actions:     [] [in] [s1] [s2]
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4
+Rewards:     "throughput"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 359582 682909 975209 1255307 1520905 1799146 2066346 2358415 2546432 states
+Reachable states exploration and model construction done in 25.768 secs.
+Sorting reachable states list...
+
+Time for model construction: 29.359 seconds.
+
+Type:        CTMC
+States:      2546432 (1 initial)
+Transitions: 24460016
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955391/tmpvlzlmrbyprism_from-prism_to-tra-xz_ex_kanban.5_tmp_outdir_/model.pexp"...
+Time for exporting: 351.013 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 36460468 bytes
+</pre>
+</div>
+</body>
+</html>

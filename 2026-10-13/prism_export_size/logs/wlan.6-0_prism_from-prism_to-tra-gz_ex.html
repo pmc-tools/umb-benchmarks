@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.6-0_prism_from-prism_to-tra-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.6-0/index.html" target="_blank">wlan.6-0</a> and tool configuration prism_from-prism_to-tra-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[45664045.0, 45664045.0, 45664045.0, 45664045.0, 45664045.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_wlan.6-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 53.436 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:51:22 GMT+02:00 2026
+Hostname: n23m0301.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955821/tmp8ubdf258prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955821/tmpgskezoxsprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955821/tmp8ubdf258prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 526304 1161958 1685280 2169300 2583250 3195639 4064682 4898251 5007548 states
+Reachable states exploration and model construction done in 24.616 secs.
+Sorting reachable states list...
+
+Time for model construction: 27.598 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955821/tmpgskezoxsprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp"...
+Time for exporting: 23.449 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 45664045 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_wlan.6-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 49.345 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:43:19 GMT+02:00 2026
+Hostname: n23m0102.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957793/tmp4wvnc3l_prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957793/tmpjm_eiai1prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957793/tmp4wvnc3l_prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 538072 1161201 1675558 2193672 2582089 3185169 4102087 4952955 5007548 states
+Reachable states exploration and model construction done in 24.335 secs.
+Sorting reachable states list...
+
+Time for model construction: 27.385 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4957793/tmpjm_eiai1prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp"...
+Time for exporting: 21.24 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 45664045 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_wlan.6-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 50.706 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:23:19 GMT+02:00 2026
+Hostname: n23m0107.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957087/tmp9ljz4k5fprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957087/tmpdwzgs0mjprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957087/tmp9ljz4k5fprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 534502 1173306 1682972 2172714 2591055 3259309 4147196 4985034 5007548 states
+Reachable states exploration and model construction done in 24.098 secs.
+Sorting reachable states list...
+
+Time for model construction: 26.842 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4957087/tmpdwzgs0mjprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp"...
+Time for exporting: 23.163 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 45664045 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_wlan.6-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 51.377 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:44:59 GMT+02:00 2026
+Hostname: n23m0276.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4954843/tmpi1ydv9xlprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4954843/tmpve_8db3dprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4954843/tmpi1ydv9xlprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 533970 1176368 1684948 2177334 2587405 3254206 4161060 5006038 5007548 states
+Reachable states exploration and model construction done in 24.016 secs.
+Sorting reachable states list...
+
+Time for model construction: 26.965 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4954843/tmpve_8db3dprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp"...
+Time for exporting: 23.751 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 45664045 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_wlan.6-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 52.714 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:57:53 GMT+02:00 2026
+Hostname: r23m0209.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958312/tmp88ivo5lrprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958312/tmp2s7zqfz5prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958312/tmp88ivo5lrprism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 517164 1118138 1658405 2084872 2569889 2797694 3636035 4489388 5007548 states
+Reachable states exploration and model construction done in 26.255 secs.
+Sorting reachable states list...
+
+Time for model construction: 29.056 seconds.
+
+Type:        MDP
+States:      5007548 (1 initial)
+Transitions: 11475748
+Choices:     6350470
+Max/avg:     3/1.27
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4958312/tmp2s7zqfz5prism_from-prism_to-tra-gz_ex_wlan.6-0_tmp_outdir_/model.pexp"...
+Time for exporting: 22.975 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 45664045 bytes
+</pre>
+</div>
+</body>
+</html>

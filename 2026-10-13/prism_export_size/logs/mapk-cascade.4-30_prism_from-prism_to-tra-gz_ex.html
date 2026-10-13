@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log mapk-cascade.4-30_prism_from-prism_to-tra-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/mapk-cascade.4-30/index.html" target="_blank">mapk-cascade.4-30</a> and tool configuration prism_from-prism_to-tra-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[4896166.0, 4896166.0, 4896166.0, 4896166.0, 4896166.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 4.806 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:29:32 GMT+02:00 2026
+Hostname: n23m0272.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4954933/tmpir5e48i1prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4954933/tmp1wzwrq7bprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4954933/tmpir5e48i1prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.313 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.497 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4954933/tmp1wzwrq7bprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp"...
+Time for exporting: 2.696 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 4896166 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 5.072 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:13:02 GMT+02:00 2026
+Hostname: n23m0054.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956650/tmpt1yp9e97prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956650/tmprem8sck5prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956650/tmpt1yp9e97prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.533 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.723 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4956650/tmprem8sck5prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp"...
+Time for exporting: 2.712 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 4896166 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 4.826 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:31:14 GMT+02:00 2026
+Hostname: n23m0237.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4954994/tmp40bf19nmprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4954994/tmpjcf2vjj5prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4954994/tmp40bf19nmprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.323 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.507 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4954994/tmpjcf2vjj5prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp"...
+Time for exporting: 2.703 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 4896166 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 4.841 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:34:00 GMT+02:00 2026
+Hostname: n23m0295.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957522/tmplkljxaivprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957522/tmpr6e7z_01prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957522/tmplkljxaivprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.322 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.513 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4957522/tmpr6e7z_01prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp"...
+Time for exporting: 2.721 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 4896166 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17
+Wallclock time: 5.081 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:13:37 GMT+02:00 2026
+Hostname: n23m0047.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956667/tmprftaz5ilprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956667/tmplxic5ybjprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp.gz:format=explicit,states=false,zip=gzip,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956667/tmprftaz5ilprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     E1 E2 KPTASE KKPTASE MAPK MAPKK MAPKKK
+Actions:     [a_kkk_e1] [d_kkk_e1] [k_kkk_e1] [a_kkk_e2] [d_kkk_e2] [k_kkk_e2] [a_k_ptase] [d_k_ptase] [k_k_ptase] [a_kk_ptase] [d_kk_ptase] [k_kk_ptase] [a_k_kk] [d_k_kk] [k_k_kk] [a_kk_kkk] [d_kk_kkk] [k_kk_kkk]
+Variables:   e1 e2 kptase kkptase k k_kkpp kp kp_kkpp kp_ptase kpp kpp_ptase kk kk_kkkp kkp kkp_kkkp kkp_ptase kkpp kkpp_ptase kkk kkk_e1 kkkp kkkp_e2
+Labels:      "target"
+Rewards:     "time"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 99535 states
+Reachable states exploration and model construction done in 1.45 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.639 seconds.
+
+Type:        CTMC
+States:      99535 (1 initial)
+Transitions: 910872
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4956667/tmplxic5ybjprism_from-prism_to-tra-gz_ex_mapk-cascade.4-30_tmp_outdir_/model.pexp"...
+Time for exporting: 2.815 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.gz:	Size of output file is 4896166 bytes
+</pre>
+</div>
+</body>
+</html>

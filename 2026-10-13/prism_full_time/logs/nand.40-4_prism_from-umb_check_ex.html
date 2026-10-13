@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.40-4_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.40-4/index.html" target="_blank">nand.40-4</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[42.387, 42.823, 44.735, 41.666, 46.884]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.40-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 42.387 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:21:14 GMT+02:00 2026
+Hostname: n23m0287.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4965427/tmpb3iqpbafprism_from-umb_check_ex_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4965427/tmpb3iqpbafprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965427/tmpb3iqpbafprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.429 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.454 seconds)
+Starting Prob0...
+Prob0 took 0.612 seconds.
+Starting Prob1...
+Prob1 took 1.281 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 139: 5.00 sec so far
+Iteration 284: 10.02 sec so far
+Iteration 440: 15.04 sec so far
+Iteration 609: 20.05 sec so far
+Iteration 794: 25.07 sec so far
+Iteration 1000: 30.07 sec so far
+Iteration 1245: 35.09 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 38.807 seconds.
+Probabilistic reachability took 41.179 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 41.292 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.40-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 42.823 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:16:34 GMT+02:00 2026
+Hostname: n23m0291.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4965224/tmpbkzgmd7jprism_from-umb_check_ex_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4965224/tmpbkzgmd7jprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965224/tmpbkzgmd7jprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.515 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.427 seconds)
+Starting Prob0...
+Prob0 took 0.653 seconds.
+Starting Prob1...
+Prob1 took 1.294 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 139: 5.01 sec so far
+Iteration 284: 10.02 sec so far
+Iteration 440: 15.04 sec so far
+Iteration 609: 20.05 sec so far
+Iteration 793: 25.05 sec so far
+Iteration 998: 30.08 sec so far
+Iteration 1244: 35.09 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 38.751 seconds.
+Probabilistic reachability took 41.187 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 41.381 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.40-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 44.735 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 06:57:54 GMT+02:00 2026
+Hostname: n23m0048.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4961038/tmp7e1byinmprism_from-umb_check_ex_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4961038/tmp7e1byinmprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961038/tmp7e1byinmprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.624 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.43 seconds)
+Starting Prob0...
+Prob0 took 0.628 seconds.
+Starting Prob1...
+Prob1 took 1.391 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 135: 5.00 sec so far
+Iteration 276: 10.01 sec so far
+Iteration 428: 15.03 sec so far
+Iteration 586: 20.04 sec so far
+Iteration 758: 25.07 sec so far
+Iteration 949: 30.09 sec so far
+Iteration 1169: 35.10 sec so far
+Iteration 1426: 40.11 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 40.47 seconds.
+Probabilistic reachability took 42.951 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 43.122 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.40-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 41.666 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:55:37 GMT+02:00 2026
+Hostname: n23m0110.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4967133/tmpk2s99tfzprism_from-umb_check_ex_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4967133/tmpk2s99tfzprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4967133/tmpk2s99tfzprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.403 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.452 seconds)
+Starting Prob0...
+Prob0 took 0.685 seconds.
+Starting Prob1...
+Prob1 took 1.491 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 146: 5.01 sec so far
+Iteration 298: 10.01 sec so far
+Iteration 461: 15.03 sec so far
+Iteration 637: 20.04 sec so far
+Iteration 829: 25.06 sec so far
+Iteration 1042: 30.06 sec so far
+Iteration 1293: 35.07 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 37.902 seconds.
+Probabilistic reachability took 40.553 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 40.655 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.40-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 46.884 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:40:40 GMT+02:00 2026
+Hostname: n23m0111.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4966447/tmpnz_y8wtvprism_from-umb_check_ex_nand.40-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4966447/tmpnz_y8wtvprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966447/tmpnz_y8wtvprism_from-umb_check_ex_nand.40-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 0.429 seconds.
+
+Type:        DTMC
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.474 seconds)
+Starting Prob0...
+Prob0 took 0.603 seconds.
+Starting Prob1...
+Prob1 took 1.404 seconds.
+target=4, yes=141, no=375263, maybe=3624118
+Starting value iteration (with Jacobi)...
+Iteration 133: 5.01 sec so far
+Iteration 272: 10.02 sec so far
+Iteration 420: 15.03 sec so far
+Iteration 571: 20.06 sec so far
+Iteration 728: 25.08 sec so far
+Iteration 891: 30.09 sec so far
+Iteration 1078: 35.09 sec so far
+Iteration 1297: 40.10 sec so far
+Value iteration (with Jacobi) took 1441 iterations, 8212786406 multiplications and 43.112 seconds.
+Probabilistic reachability took 45.619 seconds.
+
+Value in the initial state: 0.6186822208151964
+
+Time for model checking: 45.762 seconds.
+
+Result: 0.6186822208151964 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

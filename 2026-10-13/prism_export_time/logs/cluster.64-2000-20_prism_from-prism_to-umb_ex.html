@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log cluster.64-2000-20_prism_from-prism_to-umb_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/cluster.64-2000-20/index.html" target="_blank">cluster.64-2000-20</a> and tool configuration prism_from-prism_to-umb_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.304, 0.278, 0.296, 0.278, 0.372]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_cluster.64-2000-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 1.943 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 00:01:19 GMT+02:00 2026
+Hostname: n23m0310.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958471/tmp4a3wj8t8prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958471/tmpj88snaatprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958471/tmp4a3wj8t8prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 151060 states
+Reachable states exploration and model construction done in 0.872 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.023 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4958471/tmpj88snaatprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.304 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 17128960 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_cluster.64-2000-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 1.943 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:58:28 GMT+02:00 2026
+Hostname: r23m0213.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958335/tmpki3so023prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958335/tmp8mae5zc3prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958335/tmpki3so023prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 151060 states
+Reachable states exploration and model construction done in 0.85 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.007 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4958335/tmp8mae5zc3prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.278 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 17128960 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_cluster.64-2000-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 2.029 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:12:28 GMT+02:00 2026
+Hostname: n23m0038.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956620/tmpsrbctxo0prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956620/tmpng295yl6prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956620/tmpsrbctxo0prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 151060 states
+Reachable states exploration and model construction done in 0.894 secs.
+Sorting reachable states list...
+
+Time for model construction: 1.046 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4956620/tmpng295yl6prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.296 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 17128960 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_cluster.64-2000-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 1.893 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:28:04 GMT+02:00 2026
+Hostname: n23m0357.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957304/tmp0ntq52l5prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957304/tmpzns0aruxprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957304/tmp0ntq52l5prism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 151060 states
+Reachable states exploration and model construction done in 0.85 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.999 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4957304/tmpzns0aruxprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.278 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 17128960 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_cluster.64-2000-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 1.956 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:42:45 GMT+02:00 2026
+Hostname: n23m0287.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957776/tmp7spp68feprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957776/tmpmh2lo7taprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957776/tmp7spp68feprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_indir_/model.prism"...
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight
+Actions:     [] [startLeft] [repairLeft] [startRight] [repairRight] [startToLeft] [startToRight] [startLine] [repairToLeft] [repairToRight] [repairLine]
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n
+Labels:      "minimum"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 151060 states
+Reachable states exploration and model construction done in 0.824 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.984 seconds.
+
+Type:        CTMC
+States:      151060 (1 initial)
+Transitions: 733216
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4957776/tmpmh2lo7taprism_from-prism_to-umb_ex_cluster.64-2000-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.372 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 17128960 bytes
+</pre>
+</div>
+</body>
+</html>

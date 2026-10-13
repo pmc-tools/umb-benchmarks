@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[139.12, 120.952, 119.87, 160.462, 163.282]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 139.120 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:44:13 GMT+02:00 2026
+Hostname: n23m0258.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4963027/tmpwqpax97eprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4963027/tmpwqpax97eprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4963027/tmpwqpax97eprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4963027/tmpwqpax97eprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 471 1008 1546 2083 2622 3163 3706 4245 4786 5328 5871 6414 6960 7503 8046 8589 9133 9677 10223 10774 11313 11798 12324 12865 13394 13932 14470 15003 15543 16076 16617 17158 17708 18258 18808 19360 19913 20471 21027 21583 22138 22696 23255 23820 24311 states
+Reachable states exploration and model construction done in 134.797 secs.
+Sorting reachable states list...
+
+Time for model construction: 135.478 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.011 seconds)
+Starting Prob1...
+Prob1 took 0.012 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.557 seconds.
+Expected reachability took 0.639 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.67 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 120.952 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:45:57 GMT+02:00 2026
+Hostname: n23m0294.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966734/tmpabobq4kzprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966734/tmpabobq4kzprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966734/tmpabobq4kzprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966734/tmpabobq4kzprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 531 1138 1746 2354 2967 3579 4192 4813 5436 6055 6673 7294 7921 8539 9165 9796 10418 11045 11681 12268 12878 13504 14128 14751 15376 16002 16629 17254 17883 18525 19164 19814 20454 21098 21755 22407 23055 23716 24311 states
+Reachable states exploration and model construction done in 116.854 secs.
+Sorting reachable states list...
+
+Time for model construction: 117.514 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.011 seconds)
+Starting Prob1...
+Prob1 took 0.012 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.555 seconds.
+Expected reachability took 0.6 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.611 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 119.870 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 06:57:22 GMT+02:00 2026
+Hostname: n23m0042.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961006/tmpauvtfkqsprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961006/tmpauvtfkqsprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961006/tmpauvtfkqsprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961006/tmpauvtfkqsprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 547 1180 1814 2444 3082 3721 4357 5000 5638 6222 6708 7143 7685 8327 8975 9624 10272 10924 11576 12218 12852 13504 14156 14812 15468 16124 16780 17442 18103 18760 19400 20045 20713 21385 22058 22730 23402 24083 24311 states
+Reachable states exploration and model construction done in 115.132 secs.
+Sorting reachable states list...
+
+Time for model construction: 115.837 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.013 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.566 seconds.
+Expected reachability took 0.624 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.655 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 160.462 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:25:26 GMT+02:00 2026
+Hostname: n23m0066.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4965720/tmp10oz_4hyprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4965720/tmp10oz_4hyprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4965720/tmp10oz_4hyprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965720/tmp10oz_4hyprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 425 884 1337 1745 2201 2656 3066 3521 3980 4392 4847 5307 5744 6279 6786 7275 7763 8252 8742 9235 9726 10214 10701 11122 11618 12034 12459 12956 13375 13803 14303 14722 15151 15650 16116 16661 17173 17675 18175 18674 19170 19668 20168 20670 21178 21592 22091 22540 22957 23457 23909 24311 states
+Reachable states exploration and model construction done in 156.117 secs.
+Sorting reachable states list...
+
+Time for model construction: 156.792 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.012 seconds)
+Starting Prob1...
+Prob1 took 0.015 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.556 seconds.
+Expected reachability took 0.64 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.653 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 163.282 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:39:06 GMT+02:00 2026
+Hostname: n23m0237.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966376/tmp5qbulo1nprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966376/tmp5qbulo1nprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966376/tmp5qbulo1nprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966376/tmp5qbulo1nprism_from-prism_check_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/property.props"...
+
+1 property:
+(1) "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "time_to_synch": R{"time_to_synch"}=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 336 785 1230 1633 2082 2529 2932 3380 3832 4237 4687 5172 5711 6192 6672 7151 7629 8110 8593 9079 9565 10052 10458 10878 11361 11771 12193 12678 13087 13510 13998 14412 14832 15378 15920 16409 16898 17386 17874 18362 18852 19344 19836 20324 20763 21167 21658 22098 22507 22999 23441 23852 24311 states
+Reachable states exploration and model construction done in 158.988 secs.
+Sorting reachable states list...
+
+Time for model construction: 159.682 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+Building reward structure...
+
+Starting expected reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (0.013 seconds)
+Starting Prob1...
+Prob1 took 0.02 seconds.
+target=2, inf=0, rest=24309
+Starting value iteration (with Jacobi) ...
+Value iteration (with Jacobi) took 3154 iterations, 241662634 multiplications and 0.558 seconds.
+Expected reachability took 0.6 seconds.
+
+Value in the initial state: 6.007026913358374
+
+Time for model checking: 0.613 seconds.
+
+Result: 6.007026913358374 (+/- 5.972359070145227E-5 estimated; rel err 9.942287851023186E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

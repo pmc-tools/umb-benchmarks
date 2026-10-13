@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log csma.3-4_prism_from-prism_to-tra-xz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/csma.3-4/index.html" target="_blank">csma.3-4</a> and tool configuration prism_from-prism_to-tra-xz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[38.345, 29.986, 33.804, 39.733, 37.917]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_csma.3-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 48.644 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:28:24 GMT+02:00 2026
+Hostname: n23m0248.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4954874/tmpskev9e3nprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4954874/tmpor9_vj6pprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4954874/tmpskev9e3nprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 620310 1285117 1460287 states
+Reachable states exploration and model construction done in 6.89 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.274 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4954874/tmpor9_vj6pprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp"...
+Time for exporting: 38.345 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 2773004 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_csma.3-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 38.226 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:59:02 GMT+02:00 2026
+Hostname: n23m0113.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958350/tmp9qisz7i0prism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958350/tmpbqpz8jzxprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958350/tmp9qisz7i0prism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 681137 1374072 1460287 states
+Reachable states exploration and model construction done in 6.375 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.574 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4958350/tmpbqpz8jzxprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp"...
+Time for exporting: 29.986 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 2773004 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_csma.3-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 42.568 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:38:07 GMT+02:00 2026
+Hostname: n23m0045.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955277/tmpac9kffhhprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955277/tmp2r05j4yoprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955277/tmpac9kffhhprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 638293 1285910 1460287 states
+Reachable states exploration and model construction done in 6.799 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.079 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955277/tmp2r05j4yoprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp"...
+Time for exporting: 33.804 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 2773004 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_csma.3-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 48.406 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:29:50 GMT+02:00 2026
+Hostname: n23m0336.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957363/tmpzz3ghtleprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957363/tmpvrkfk9eeprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957363/tmpzz3ghtleprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 668365 1328957 1460287 states
+Reachable states exploration and model construction done in 6.638 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.037 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4957363/tmpvrkfk9eeprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp"...
+Time for exporting: 39.733 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 2773004 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra-xz_ex_csma.3-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17
+Wallclock time: 46.686 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:28:04 GMT+02:00 2026
+Hostname: n23m0047.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957293/tmp0g_lgs3oprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957293/tmppqn4h7uuprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp.xz:format=explicit,states=false,zip=xz,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957293/tmp0g_lgs3oprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 station3
+Actions:     [] [send1] [send2] [send3] [end1] [end2] [end3] [busy1] [busy2] [busy3] [cd] [time]
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 s3 x3 bc3 cd3
+Labels:      "all_delivered" "collision_max_backoff"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 677537 1324434 1460287 states
+Reachable states exploration and model construction done in 6.695 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.976 seconds.
+
+Type:        MDP
+States:      1460287 (1 initial)
+Transitions: 2396727
+Choices:     1471059
+Max/avg:     3/1.01
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4957293/tmppqn4h7uuprism_from-prism_to-tra-xz_ex_csma.3-4_tmp_outdir_/model.pexp"...
+Time for exporting: 37.917 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp.xz:	Size of output file is 2773004 bytes
+</pre>
+</div>
+</body>
+</html>

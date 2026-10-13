@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log crowds.5-20_prism_from-prism_to-umb_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/crowds.5-20/index.html" target="_blank">crowds.5-20</a> and tool configuration prism_from-prism_to-umb_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.289, 0.268, 0.304, 0.441, 0.286]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_crowds.5-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 16.060 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:54:11 GMT+02:00 2026
+Hostname: n23m0301.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955933/tmpg_a2boi_prism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955933/tmpswkhbxewprism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955933/tmpg_a2boi_prism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 452044 828395 1362047 1655644 2061951 states
+Reachable states exploration and model construction done in 13.951 secs.
+Sorting reachable states list...
+
+Time for model construction: 15.04 seconds.
+
+Warning: Deadlocks detected and fixed in 53130 states
+
+Type:        DTMC
+States:      2061951 (1 initial)
+Transitions: 7374951
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4955933/tmpswkhbxewprism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.289 seconds.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 135275008 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_crowds.5-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 14.798 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:34:06 GMT+02:00 2026
+Hostname: n23m0042.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955125/tmpccs4p56qprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955125/tmpreb7rd31prism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955125/tmpccs4p56qprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 524063 975211 1452226 1725018 2061951 states
+Reachable states exploration and model construction done in 13.123 secs.
+Sorting reachable states list...
+
+Time for model construction: 13.975 seconds.
+
+Warning: Deadlocks detected and fixed in 53130 states
+
+Type:        DTMC
+States:      2061951 (1 initial)
+Transitions: 7374951
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4955125/tmpreb7rd31prism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.268 seconds.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 135275008 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_crowds.5-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 16.002 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:51:01 GMT+02:00 2026
+Hostname: n23m0254.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958028/tmpdkehtr5qprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958028/tmp2pxbs64cprism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958028/tmpdkehtr5qprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 463165 811365 1346936 1637452 2061951 states
+Reachable states exploration and model construction done in 14.058 secs.
+Sorting reachable states list...
+
+Time for model construction: 15.038 seconds.
+
+Warning: Deadlocks detected and fixed in 53130 states
+
+Type:        DTMC
+States:      2061951 (1 initial)
+Transitions: 7374951
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4958028/tmp2pxbs64cprism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.304 seconds.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 135275008 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_crowds.5-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 17.628 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:08:53 GMT+02:00 2026
+Hostname: n23m0038.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956520/tmprpko8n4bprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956520/tmpcgsadz93prism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956520/tmprpko8n4bprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 412144 794773 1371756 1685517 2061951 states
+Reachable states exploration and model construction done in 13.451 secs.
+Sorting reachable states list...
+
+Time for model construction: 14.658 seconds.
+
+Warning: Deadlocks detected and fixed in 53130 states
+
+Type:        DTMC
+States:      2061951 (1 initial)
+Transitions: 7374951
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4956520/tmpcgsadz93prism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.441 seconds.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 135275008 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb_ex_crowds.5-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umb:format=umb,states=false,zip=false
+Wallclock time: 16.049 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:19:20 GMT+02:00 2026
+Hostname: n23m0279.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956945/tmpcjk_0dvdprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956945/tmppdp60rqcprism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb:format=umb,states=false,zip=false'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956945/tmpcjk_0dvdprism_from-prism_to-umb_ex_crowds.5-20_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     crowds
+Actions:     []
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 425654 799585 1346064 1632438 2061951 states
+Reachable states exploration and model construction done in 14.278 secs.
+Sorting reachable states list...
+
+Time for model construction: 15.16 seconds.
+
+Warning: Deadlocks detected and fixed in 53130 states
+
+Type:        DTMC
+States:      2061951 (1 initial)
+Transitions: 7374951
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4956945/tmppdp60rqcprism_from-prism_to-umb_ex_crowds.5-20_tmp_outdir_/model.umb"...
+Time for exporting: 0.286 seconds.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umb:	Size of output file is 135275008 bytes
+</pre>
+</div>
+</body>
+</html>

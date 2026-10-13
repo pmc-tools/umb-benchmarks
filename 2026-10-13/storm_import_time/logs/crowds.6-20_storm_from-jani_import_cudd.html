@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log crowds.6-20_storm_from-jani_import_cudd</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/crowds.6-20/index.html" target="_blank">crowds.6-20</a> and tool configuration storm_from-jani_import_cudd</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[46.086, 46.357, 54.211999999999996, 54.260999999999996, 45.983000000000004]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_import_cudd_crowds.6-20_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 46.119 seconds
+Return code: 0
+##############################
+Storm 1.14.0 (dev)
+
+Date: Tue Oct 13 09:55:36 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.4967137/tmpc6zt8qhlstorm_from-jani_import_cudd_crowds.6-20_tmp_indir_/model.jani --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: /rwthfs/rz/cluster/hpcwork/rwth1632/umb-benchmarking/experiments
+
+Time for model input parsing: 0.002s.
+
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+Time for model construction: 0.171s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	10633591 (4792 nodes)
+Transitions: 	38261191 (26509 nodes)
+Reward Models:  none
+Variables: 	rows: 33 meta variables (79 DD variables), columns: 33 meta variables (79 DD variables)
+Labels: 	3
+   * deadlock -> 230230 state(s) (464 nodes)
+   * init -> 1 state(s) (80 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 45.913s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10633591
+Transitions: 	38261191
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 352935 item(s)
+   * deadlock -> 230230 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Performance statistics:
+  * peak memory usage: 1390MB
+  * CPU time: 45.830s
+  * wallclock time: 46.099s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_import_cudd_crowds.6-20_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 46.394 seconds
+Return code: 0
+##############################
+Storm 1.14.0 (dev)
+
+Date: Tue Oct 13 09:04:28 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.4964677/tmpyt3o8vbsstorm_from-jani_import_cudd_crowds.6-20_tmp_indir_/model.jani --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: /rwthfs/rz/cluster/hpcwork/rwth1632/umb-benchmarking/experiments
+
+Time for model input parsing: 0.002s.
+
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+Time for model construction: 0.200s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	10633591 (4792 nodes)
+Transitions: 	38261191 (26509 nodes)
+Reward Models:  none
+Variables: 	rows: 33 meta variables (79 DD variables), columns: 33 meta variables (79 DD variables)
+Labels: 	3
+   * deadlock -> 230230 state(s) (464 nodes)
+   * init -> 1 state(s) (80 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 46.155s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10633591
+Transitions: 	38261191
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 352935 item(s)
+   * deadlock -> 230230 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Performance statistics:
+  * peak memory usage: 1390MB
+  * CPU time: 46.133s
+  * wallclock time: 46.372s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_import_cudd_crowds.6-20_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 54.254 seconds
+Return code: 0
+##############################
+Storm 1.14.0 (dev)
+
+Date: Tue Oct 13 07:30:58 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.4962437/tmp0e60k1zastorm_from-jani_import_cudd_crowds.6-20_tmp_indir_/model.jani --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: /rwthfs/rz/cluster/hpcwork/rwth1632/umb-benchmarking/experiments
+
+Time for model input parsing: 0.002s.
+
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+Time for model construction: 0.228s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	10633591 (4792 nodes)
+Transitions: 	38261191 (26509 nodes)
+Reward Models:  none
+Variables: 	rows: 33 meta variables (79 DD variables), columns: 33 meta variables (79 DD variables)
+Labels: 	3
+   * deadlock -> 230230 state(s) (464 nodes)
+   * init -> 1 state(s) (80 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 53.982s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10633591
+Transitions: 	38261191
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 352935 item(s)
+   * deadlock -> 230230 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Performance statistics:
+  * peak memory usage: 1390MB
+  * CPU time: 53.894s
+  * wallclock time: 54.228s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_import_cudd_crowds.6-20_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 54.304 seconds
+Return code: 0
+##############################
+Storm 1.14.0 (dev)
+
+Date: Tue Oct 13 09:01:17 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.4964500/tmp71g_vj45storm_from-jani_import_cudd_crowds.6-20_tmp_indir_/model.jani --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: /rwthfs/rz/cluster/hpcwork/rwth1632/umb-benchmarking/experiments
+
+Time for model input parsing: 0.002s.
+
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+Time for model construction: 0.227s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	10633591 (4792 nodes)
+Transitions: 	38261191 (26509 nodes)
+Reward Models:  none
+Variables: 	rows: 33 meta variables (79 DD variables), columns: 33 meta variables (79 DD variables)
+Labels: 	3
+   * deadlock -> 230230 state(s) (464 nodes)
+   * init -> 1 state(s) (80 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 54.032s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10633591
+Transitions: 	38261191
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 352935 item(s)
+   * deadlock -> 230230 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Performance statistics:
+  * peak memory usage: 1390MB
+  * CPU time: 53.946s
+  * wallclock time: 54.278s
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: storm_from-jani_import_cudd_crowds.6-20_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/storm --timemem --buildfull --jani %indir/model.jani  --engine dd-to-sparse --ddlib cudd --cudd:maxmem 8192
+Wallclock time: 46.023 seconds
+Return code: 0
+##############################
+Storm 1.14.0 (dev)
+
+Date: Tue Oct 13 07:27:04 2026
+Command line arguments: --timemem --buildfull --jani /w0/tmp/slurm_tq429871.4962255/tmp1ha29_oostorm_from-jani_import_cudd_crowds.6-20_tmp_indir_/model.jani --engine dd-to-sparse --ddlib cudd '--cudd:maxmem' 8192
+Current working directory: /rwthfs/rz/cluster/hpcwork/rwth1632/umb-benchmarking/experiments
+
+Time for model input parsing: 0.002s.
+
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1505): The guard 'false' is unsatisfiable.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+WARN  (DdJaniModelBuilder.cpp:1723): Guard of an edge in a DTMC overlaps with previous guards.
+Time for model construction: 0.195s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	10633591 (4792 nodes)
+Transitions: 	38261191 (26509 nodes)
+Reward Models:  none
+Variables: 	rows: 33 meta variables (79 DD variables), columns: 33 meta variables (79 DD variables)
+Labels: 	3
+   * deadlock -> 230230 state(s) (464 nodes)
+   * init -> 1 state(s) (80 nodes)
+   * target
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 45.786s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10633591
+Transitions: 	38261191
+Reward Models:  none
+State Labels: 	3 labels
+   * target -> 352935 item(s)
+   * deadlock -> 230230 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Performance statistics:
+  * peak memory usage: 1390MB
+  * CPU time: 45.744s
+  * wallclock time: 45.999s
+</pre>
+</div>
+</body>
+</html>

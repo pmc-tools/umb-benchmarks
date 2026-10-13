@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log oscillators.8-10-0.1-1-0.1-1.0_prism_from-prism_to-tra_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/oscillators.8-10-0.1-1-0.1-1.0/index.html" target="_blank">oscillators.8-10-0.1-1-0.1-1.0</a> and tool configuration prism_from-prism_to-tra_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.383, 0.387, 0.386, 0.376, 0.412]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp:format=explicit,states=false,zip=false,precision=17
+Wallclock time: 120.310 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:47:16 GMT+02:00 2026
+Hostname: n23m0237.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955651/tmpv97odsgwprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955651/tmpznta36z4prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp:format=explicit,states=false,zip=false,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955651/tmpv97odsgwprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 538 1153 1768 2387 3006 3623 4249 4873 5491 6083 6704 7325 7946 8566 9188 9813 10438 11064 11694 12332 12967 13597 14235 14873 15507 16148 16789 17426 18068 18719 19359 19959 20590 21245 21913 22549 23168 23818 24311 states
+Reachable states exploration and model construction done in 116.378 secs.
+Sorting reachable states list...
+
+Time for model construction: 117.048 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955651/tmpznta36z4prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp"...
+Time for exporting: 0.383 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp:	Size of output file is 2424765 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp:format=explicit,states=false,zip=false,precision=17
+Wallclock time: 162.212 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:36:34 GMT+02:00 2026
+Hostname: n23m0054.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957562/tmp_j2yzpvyprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957562/tmpyqbzfqf5prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp:format=explicit,states=false,zip=false,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957562/tmp_j2yzpvyprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 362 835 1238 1663 2140 2547 2967 3454 3904 4440 4937 5422 5907 6390 6871 7353 7837 8321 8806 9211 9689 10126 10533 11008 11450 11859 12327 12775 13183 13647 14142 14686 15174 15661 16149 16636 17125 17619 18112 18604 19098 19508 19942 20430 20843 21273 21766 22183 22608 23105 23527 23947 24311 states
+Reachable states exploration and model construction done in 157.973 secs.
+Sorting reachable states list...
+
+Time for model construction: 158.652 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4957562/tmpyqbzfqf5prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp"...
+Time for exporting: 0.387 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp:	Size of output file is 2424765 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp:format=explicit,states=false,zip=false,precision=17
+Wallclock time: 157.087 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:43:15 GMT+02:00 2026
+Hostname: n23m0060.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955494/tmpyd0x2h6wprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955494/tmp4c2tcyv2prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp:format=explicit,states=false,zip=false,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955494/tmpyd0x2h6wprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 436 935 1366 1778 2278 2714 3123 3622 4062 4473 4974 5414 5836 6390 6930 7429 7924 8416 8912 9409 9906 10402 10898 11371 11838 12258 12730 13202 13626 14100 14572 14997 15467 15945 16400 16974 17497 18003 18508 19015 19524 20033 20543 21053 21557 21995 22510 22945 23380 23897 24311 states
+Reachable states exploration and model construction done in 153.058 secs.
+Sorting reachable states list...
+
+Time for model construction: 153.8 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955494/tmp4c2tcyv2prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp"...
+Time for exporting: 0.386 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp:	Size of output file is 2424765 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp:format=explicit,states=false,zip=false,precision=17
+Wallclock time: 165.069 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:50:42 GMT+02:00 2026
+Hostname: n23m0261.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955786/tmpaeamh15aprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955786/tmppluekhc7prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp:format=explicit,states=false,zip=false,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955786/tmpaeamh15aprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 411 840 1237 1696 2119 2526 3041 3536 4006 4478 4945 5414 5883 6352 6820 7288 7727 8168 8559 8998 9442 9834 10266 10715 11106 11537 12000 12434 12972 13470 13939 14409 14880 15351 15823 16295 16771 17244 17642 18129 18544 18935 19414 19827 20219 20698 21113 21507 21987 22466 22996 23506 24033 24311 states
+Reachable states exploration and model construction done in 160.623 secs.
+Sorting reachable states list...
+
+Time for model construction: 161.413 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4955786/tmppluekhc7prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp"...
+Time for exporting: 0.376 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp:	Size of output file is 2424765 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.pexp:format=explicit,states=false,zip=false,precision=17
+Wallclock time: 159.673 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:21:02 GMT+02:00 2026
+Hostname: r23m0213.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956991/tmp7t8xq2l2prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956991/tmpcxa5tp8aprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp:format=explicit,states=false,zip=false,precision=17'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956991/tmp7t8xq2l2prism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_indir_/model.prism"...
+
+Type:        DTMC
+Modules:     oscillator_population
+Actions:     [step]
+Variables:   k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 k_9 k_10
+Labels:      "target"
+Rewards:     "time_to_synch"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 426 913 1399 1883 2368 2774 3206 3686 4093 4523 5007 5418 5841 6329 6742 7158 7704 8230 8713 9200 9687 10174 10662 11150 11639 12128 12605 13048 13453 13938 14379 14784 15280 15714 16119 16619 17045 17459 18013 18576 19070 19567 20065 20564 21063 21562 22062 22563 23049 23506 23923 24311 states
+Reachable states exploration and model construction done in 155.419 secs.
+Sorting reachable states list...
+
+Time for model construction: 156.168 seconds.
+
+Type:        DTMC
+States:      24311 (1 initial)
+Transitions: 76623
+
+Exporting model in plain text format to file "/w0/tmp/slurm_tq429871.4956991/tmpcxa5tp8aprism_from-prism_to-tra_ex_oscillators.8-10-0.1-1-0.1-1.0_tmp_outdir_/model.pexp"...
+Time for exporting: 0.412 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.pexp:	Size of output file is 2424765 bytes
+</pre>
+</div>
+</body>
+</html>

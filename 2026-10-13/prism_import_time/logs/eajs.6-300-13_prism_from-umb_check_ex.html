@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.692, 1.558, 1.41, 1.597, 1.714]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 51.347 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:37:35 GMT+02:00 2026
+Hostname: n23m0255.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4962739/tmp67x6ddeaprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4962739/tmp67x6ddeaprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [tick]
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4962739/tmp67x6ddeaprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.692 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 24.878 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 36: 5.01 sec so far
+Iteration 71: 10.16 sec so far
+Iteration 104: 15.31 sec so far
+Iteration 135: 20.47 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 23.67 seconds.
+Expected reachability took 48.598 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 48.953 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 49.884 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:41:44 GMT+02:00 2026
+Hostname: n23m0111.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4966500/tmp74ukfznvprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4966500/tmp74ukfznvprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [tick]
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966500/tmp74ukfznvprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.558 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 24.345 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 36: 5.02 sec so far
+Iteration 72: 10.11 sec so far
+Iteration 106: 15.21 sec so far
+Iteration 138: 20.34 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.987 seconds.
+Expected reachability took 47.366 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 47.671 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 44.182 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:09:20 GMT+02:00 2026
+Hostname: n23m0097.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4961523/tmp9ahwu0roprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4961523/tmp9ahwu0roprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [tick]
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961523/tmp9ahwu0roprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.41 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 21.716 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 43: 5.04 sec so far
+Iteration 82: 10.04 sec so far
+Iteration 119: 15.09 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 20.114 seconds.
+Expected reachability took 41.859 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 42.171 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 52.655 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:30:59 GMT+02:00 2026
+Hostname: n23m0045.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4962432/tmp5ymxgzguprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4962432/tmp5ymxgzguprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [tick]
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4962432/tmp5ymxgzguprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.597 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 26.918 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 38: 5.12 sec so far
+Iteration 73: 10.14 sec so far
+Iteration 106: 15.19 sec so far
+Iteration 137: 20.22 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.991 seconds.
+Expected reachability took 49.945 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 50.39 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 50.323 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:19:44 GMT+02:00 2026
+Hostname: n23m0254.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4961968/tmpl3j93uakprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4961968/tmpl3j93uakprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        MDP
+Actions:     [tick]
+Variables:   x
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961968/tmpl3j93uakprism_from-umb_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.714 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 25.023 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 39: 5.09 sec so far
+Iteration 75: 10.15 sec so far
+Iteration 109: 15.28 sec so far
+Iteration 141: 20.40 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.464 seconds.
+Expected reachability took 47.53 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 47.828 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

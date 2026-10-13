@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log wlan.5-0_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/wlan.5-0/index.html" target="_blank">wlan.5-0</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[9694593.0, 9694593.0, 9694593.0, 9694593.0, 9694587.0]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_wlan.5-0_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 7.868 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:41:33 GMT+02:00 2026
+Hostname: n23m0045.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955417/tmp__yl9kvjprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955417/tmpyw7jhr4uprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955417/tmp__yl9kvjprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 569268 1295218 states
+Reachable states exploration and model construction done in 5.993 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.721 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4955417/tmpyw7jhr4uprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.521 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 9694593 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_wlan.5-0_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 8.078 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 00:01:52 GMT+02:00 2026
+Hostname: n23m0120.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958493/tmpcbtqzaq2prism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958493/tmp6cz2wwleprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958493/tmpcbtqzaq2prism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 542190 1265194 1295218 states
+Reachable states exploration and model construction done in 6.141 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.976 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4958493/tmp6cz2wwleprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.49 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 9694593 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_wlan.5-0_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 7.950 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:54:46 GMT+02:00 2026
+Hostname: n23m0046.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955947/tmpan6wo2_bprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955947/tmp_wrjd5ztprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955947/tmpan6wo2_bprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 563774 1289866 1295218 states
+Reachable states exploration and model construction done in 6.026 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.731 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4955947/tmp_wrjd5ztprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.522 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 9694593 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_wlan.5-0_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 10.810 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:43:22 GMT+02:00 2026
+Hostname: n23m0294.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957811/tmpwencfbcbprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957811/tmpbdsxd1hpprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957811/tmpwencfbcbprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 558230 1225850 1295218 states
+Reachable states exploration and model construction done in 6.266 secs.
+Sorting reachable states list...
+
+Time for model construction: 7.387 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4957811/tmpbdsxd1hpprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.616 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 9694593 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_wlan.5-0_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 7.323 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:33:32 GMT+02:00 2026
+Hostname: n23m0042.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4955102/tmpszok33sdprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4955102/tmpt7zh9vn4prism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4955102/tmpszok33sdprism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     medium station1 station2
+Actions:     [] [send1] [send2] [finish1] [finish2] [time]
+Variables:   col c1 c2 x1 s1 slot1 backoff1 bc1 x2 s2 slot2 backoff2 bc2
+Labels:      "target"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 624185 1295218 states
+Reachable states exploration and model construction done in 5.528 secs.
+Sorting reachable states list...
+
+Time for model construction: 6.279 seconds.
+
+Type:        MDP
+States:      1295218 (1 initial)
+Transitions: 2929960
+Choices:     1646074
+Max/avg:     3/1.27
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4955102/tmpt7zh9vn4prism_from-prism_to-umb-gz_ex_wlan.5-0_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.476 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 9694587 bytes
+</pre>
+</div>
+</body>
+</html>

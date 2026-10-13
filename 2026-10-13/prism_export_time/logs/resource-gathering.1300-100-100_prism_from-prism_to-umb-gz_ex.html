@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log resource-gathering.1300-100-100_prism_from-prism_to-umb-gz_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/resource-gathering.1300-100-100/index.html" target="_blank">resource-gathering.1300-100-100</a> and tool configuration prism_from-prism_to-umb-gz_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.601, 0.612, 0.638, 0.604, 0.618]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 11.312 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:37:46 GMT+02:00 2026
+Hostname: r23m0213.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4957613/tmpltwu7635prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4957613/tmpov6kzjakprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4957613/tmpltwu7635prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 367946 714533 958894 states
+Reachable states exploration and model construction done in 8.521 secs.
+Sorting reachable states list...
+
+Time for model construction: 10.09 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4957613/tmpov6kzjakprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.601 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 12133224 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 10.206 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:03:01 GMT+02:00 2026
+Hostname: n23m0071.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956269/tmp2kirkeuzprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956269/tmp4k6prskaprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956269/tmp2kirkeuzprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 403817 769457 958894 states
+Reachable states exploration and model construction done in 7.492 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.991 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4956269/tmp4k6prskaprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.612 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 12133224 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 10.977 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 22:30:09 GMT+02:00 2026
+Hostname: n23m0042.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4954958/tmp9hknj24tprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4954958/tmp4mrc0n0cprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4954958/tmp9hknj24tprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 433343 842827 958894 states
+Reachable states exploration and model construction done in 6.916 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.484 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4954958/tmp4mrc0n0cprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.638 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 12133225 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 10.093 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:57:53 GMT+02:00 2026
+Hostname: n23m0310.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4958323/tmp0zdav4l3prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4958323/tmpxai_lbluprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4958323/tmp0zdav4l3prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 404199 791048 958894 states
+Reachable states exploration and model construction done in 7.381 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.9 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4958323/tmpxai_lbluprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.604 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 12133223 bytes
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism -exportmodel %outdir/model.umbgz:format=umb,states=false,zip=gzip
+Wallclock time: 10.078 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Mon Oct 12 23:05:21 GMT+02:00 2026
+Hostname: n23m0254.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4956370/tmpy2eudj0kprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism -exportmodel '/w0/tmp/slurm_tq429871.4956370/tmpt3gzqb9uprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz:format=umb,states=false,zip=gzip'
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4956370/tmpy2eudj0kprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     robot goldcounter gemcounter
+Actions:     [right] [left] [top] [down]
+Variables:   gold gem attacked x y required_gold required_gem
+Labels:      "success"
+
+Building model (engine:explicit)...
+
+Computing reachable states... 412849 790489 958894 states
+Reachable states exploration and model construction done in 7.301 secs.
+Sorting reachable states list...
+
+Time for model construction: 8.839 seconds.
+
+Type:        MDP
+States:      958894 (1 initial)
+Transitions: 3325526
+Choices:     3080702
+Max/avg:     4/3.21
+
+Exporting model in UMB format to file "/w0/tmp/slurm_tq429871.4956370/tmpt3gzqb9uprism_from-prism_to-umb-gz_ex_resource-gathering.1300-100-100_tmp_outdir_/model.umbgz"...
+Time for exporting: 0.618 seconds.
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+
+############################## Output files ##############################
+model.umbgz:	Size of output file is 12133224 bytes
+</pre>
+</div>
+</body>
+</html>

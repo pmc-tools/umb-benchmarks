@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log nand.60-4_prism_from-umb_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/nand.60-4/index.html" target="_blank">nand.60-4</a> and tool configuration prism_from-umb_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[1.828, 1.936, 2.332, 2.248, 2.033]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.60-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 290.234 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:05:31 GMT+02:00 2026
+Hostname: n23m0111.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4964728/tmpsno6wz3bprism_from-umb_check_ex_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4964728/tmpsno6wz3bprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4964728/tmpsno6wz3bprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.828 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (1.851 seconds)
+Starting Prob0...
+Prob0 took 2.644 seconds.
+Starting Prob1...
+Prob1 took 6.008 seconds.
+target=6, yes=547, no=1757695, maybe=17067840
+Starting value iteration (with Jacobi)...
+Iteration 33: 5.10 sec so far
+Iteration 66: 10.19 sec so far
+Iteration 99: 15.28 sec so far
+Iteration 132: 20.44 sec so far
+Iteration 161: 25.49 sec so far
+Iteration 190: 30.54 sec so far
+Iteration 219: 35.54 sec so far
+Iteration 249: 40.57 sec so far
+Iteration 279: 45.59 sec so far
+Iteration 310: 50.75 sec so far
+Iteration 341: 55.82 sec so far
+Iteration 372: 60.83 sec so far
+Iteration 404: 65.95 sec so far
+Iteration 436: 70.99 sec so far
+Iteration 468: 76.03 sec so far
+Iteration 500: 81.18 sec so far
+Iteration 532: 86.22 sec so far
+Iteration 565: 91.37 sec so far
+Iteration 598: 96.43 sec so far
+Iteration 632: 101.46 sec so far
+Iteration 667: 106.54 sec so far
+Iteration 702: 111.63 sec so far
+Iteration 737: 116.70 sec so far
+Iteration 772: 121.74 sec so far
+Iteration 808: 126.87 sec so far
+Iteration 844: 131.99 sec so far
+Iteration 880: 137.03 sec so far
+Iteration 917: 142.10 sec so far
+Iteration 954: 147.12 sec so far
+Iteration 992: 152.20 sec so far
+Iteration 1030: 157.23 sec so far
+Iteration 1069: 162.29 sec so far
+Iteration 1109: 167.34 sec so far
+Iteration 1150: 172.40 sec so far
+Iteration 1191: 177.45 sec so far
+Iteration 1232: 182.51 sec so far
+Iteration 1273: 187.55 sec so far
+Iteration 1315: 192.59 sec so far
+Iteration 1358: 197.63 sec so far
+Iteration 1403: 202.74 sec so far
+Iteration 1449: 207.84 sec so far
+Iteration 1495: 212.91 sec so far
+Iteration 1542: 218.00 sec so far
+Iteration 1591: 223.08 sec so far
+Iteration 1641: 228.11 sec so far
+Iteration 1692: 233.17 sec so far
+Iteration 1742: 238.22 sec so far
+Iteration 1793: 243.22 sec so far
+Iteration 1847: 248.26 sec so far
+Iteration 1902: 253.29 sec so far
+Iteration 1958: 258.32 sec so far
+Iteration 2015: 263.41 sec so far
+Iteration 2072: 268.48 sec so far
+Iteration 2128: 273.49 sec so far
+Value iteration (with Jacobi) took 2161 iterations, 58335924875 multiplications and 276.74 seconds.
+Probabilistic reachability took 287.292 seconds.
+
+Value in the initial state: 0.6867214589192253
+
+Time for model checking: 287.797 seconds.
+
+Result: 0.6867214589192253 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.60-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 270.124 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:38:03 GMT+02:00 2026
+Hostname: r23m0198.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4966344/tmp6qc2tvojprism_from-umb_check_ex_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4966344/tmp6qc2tvojprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966344/tmp6qc2tvojprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 1.936 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (1.951 seconds)
+Starting Prob0...
+Prob0 took 2.82 seconds.
+Starting Prob1...
+Prob1 took 5.526 seconds.
+target=6, yes=547, no=1757695, maybe=17067840
+Starting value iteration (with Jacobi)...
+Iteration 33: 5.11 sec so far
+Iteration 66: 10.22 sec so far
+Iteration 99: 15.36 sec so far
+Iteration 132: 20.50 sec so far
+Iteration 165: 25.56 sec so far
+Iteration 198: 30.66 sec so far
+Iteration 231: 35.78 sec so far
+Iteration 264: 40.88 sec so far
+Iteration 297: 46.04 sec so far
+Iteration 330: 51.16 sec so far
+Iteration 364: 56.25 sec so far
+Iteration 398: 61.26 sec so far
+Iteration 433: 66.33 sec so far
+Iteration 468: 71.39 sec so far
+Iteration 503: 76.44 sec so far
+Iteration 538: 81.53 sec so far
+Iteration 574: 86.65 sec so far
+Iteration 610: 91.65 sec so far
+Iteration 647: 96.69 sec so far
+Iteration 685: 101.80 sec so far
+Iteration 722: 106.84 sec so far
+Iteration 759: 111.84 sec so far
+Iteration 797: 116.89 sec so far
+Iteration 836: 121.96 sec so far
+Iteration 876: 127.03 sec so far
+Iteration 917: 132.14 sec so far
+Iteration 958: 137.24 sec so far
+Iteration 999: 142.30 sec so far
+Iteration 1040: 147.31 sec so far
+Iteration 1082: 152.32 sec so far
+Iteration 1126: 157.43 sec so far
+Iteration 1170: 162.44 sec so far
+Iteration 1214: 167.51 sec so far
+Iteration 1259: 172.60 sec so far
+Iteration 1305: 177.69 sec so far
+Iteration 1352: 182.71 sec so far
+Iteration 1400: 187.72 sec so far
+Iteration 1449: 192.79 sec so far
+Iteration 1498: 197.83 sec so far
+Iteration 1548: 202.84 sec so far
+Iteration 1600: 207.84 sec so far
+Iteration 1654: 212.90 sec so far
+Iteration 1708: 217.93 sec so far
+Iteration 1763: 222.97 sec so far
+Iteration 1820: 228.05 sec so far
+Iteration 1880: 233.09 sec so far
+Iteration 1941: 238.16 sec so far
+Iteration 2002: 243.20 sec so far
+Iteration 2063: 248.27 sec so far
+Iteration 2124: 253.34 sec so far
+Value iteration (with Jacobi) took 2161 iterations, 58335924875 multiplications and 256.749 seconds.
+Probabilistic reachability took 267.116 seconds.
+
+Value in the initial state: 0.6867214589192253
+
+Time for model checking: 267.557 seconds.
+
+Result: 0.6867214589192253 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.60-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 315.323 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:15:29 GMT+02:00 2026
+Hostname: r23m0202.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4965174/tmpcplihwspprism_from-umb_check_ex_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4965174/tmpcplihwspprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965174/tmpcplihwspprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 2.332 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.334 seconds)
+Starting Prob0...
+Prob0 took 3.084 seconds.
+Starting Prob1...
+Prob1 took 6.511 seconds.
+target=6, yes=547, no=1757695, maybe=17067840
+Starting value iteration (with Jacobi)...
+Iteration 28: 5.05 sec so far
+Iteration 56: 10.07 sec so far
+Iteration 84: 15.18 sec so far
+Iteration 112: 20.26 sec so far
+Iteration 140: 25.44 sec so far
+Iteration 168: 30.58 sec so far
+Iteration 196: 35.67 sec so far
+Iteration 224: 40.74 sec so far
+Iteration 252: 45.80 sec so far
+Iteration 279: 50.80 sec so far
+Iteration 307: 55.87 sec so far
+Iteration 336: 60.91 sec so far
+Iteration 366: 66.02 sec so far
+Iteration 396: 71.06 sec so far
+Iteration 427: 76.21 sec so far
+Iteration 457: 81.30 sec so far
+Iteration 487: 86.32 sec so far
+Iteration 517: 91.43 sec so far
+Iteration 547: 96.50 sec so far
+Iteration 578: 101.62 sec so far
+Iteration 609: 106.66 sec so far
+Iteration 640: 111.68 sec so far
+Iteration 672: 116.83 sec so far
+Iteration 704: 121.94 sec so far
+Iteration 737: 127.00 sec so far
+Iteration 770: 132.03 sec so far
+Iteration 803: 137.03 sec so far
+Iteration 837: 142.16 sec so far
+Iteration 872: 147.30 sec so far
+Iteration 907: 152.37 sec so far
+Iteration 942: 157.52 sec so far
+Iteration 977: 162.64 sec so far
+Iteration 1012: 167.69 sec so far
+Iteration 1047: 172.78 sec so far
+Iteration 1083: 177.85 sec so far
+Iteration 1120: 182.89 sec so far
+Iteration 1157: 187.89 sec so far
+Iteration 1196: 192.96 sec so far
+Iteration 1235: 198.03 sec so far
+Iteration 1274: 203.07 sec so far
+Iteration 1313: 208.09 sec so far
+Iteration 1354: 213.09 sec so far
+Iteration 1396: 218.21 sec so far
+Iteration 1437: 223.28 sec so far
+Iteration 1478: 228.30 sec so far
+Iteration 1520: 233.39 sec so far
+Iteration 1563: 238.44 sec so far
+Iteration 1608: 243.54 sec so far
+Iteration 1653: 248.54 sec so far
+Iteration 1698: 253.57 sec so far
+Iteration 1745: 258.59 sec so far
+Iteration 1794: 263.63 sec so far
+Iteration 1845: 268.67 sec so far
+Iteration 1898: 273.76 sec so far
+Iteration 1951: 278.82 sec so far
+Iteration 2003: 283.88 sec so far
+Iteration 2054: 288.96 sec so far
+Iteration 2105: 293.99 sec so far
+Iteration 2156: 298.99 sec so far
+Value iteration (with Jacobi) took 2161 iterations, 58335924875 multiplications and 299.846 seconds.
+Probabilistic reachability took 311.849 seconds.
+
+Value in the initial state: 0.6867214589192253
+
+Time for model checking: 312.303 seconds.
+
+Result: 0.6867214589192253 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.60-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 316.406 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:29:43 GMT+02:00 2026
+Hostname: n23m0167.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4965933/tmpsb7i97ztprism_from-umb_check_ex_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4965933/tmpsb7i97ztprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965933/tmpsb7i97ztprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 2.248 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.271 seconds)
+Starting Prob0...
+Prob0 took 3.084 seconds.
+Starting Prob1...
+Prob1 took 6.863 seconds.
+target=6, yes=547, no=1757695, maybe=17067840
+Starting value iteration (with Jacobi)...
+Iteration 27: 5.01 sec so far
+Iteration 55: 10.18 sec so far
+Iteration 82: 15.21 sec so far
+Iteration 110: 20.38 sec so far
+Iteration 138: 25.56 sec so far
+Iteration 166: 30.75 sec so far
+Iteration 194: 35.81 sec so far
+Iteration 223: 40.96 sec so far
+Iteration 252: 46.12 sec so far
+Iteration 281: 51.26 sec so far
+Iteration 310: 56.36 sec so far
+Iteration 339: 61.41 sec so far
+Iteration 368: 66.51 sec so far
+Iteration 397: 71.51 sec so far
+Iteration 427: 76.63 sec so far
+Iteration 457: 81.77 sec so far
+Iteration 487: 86.93 sec so far
+Iteration 517: 92.03 sec so far
+Iteration 547: 97.07 sec so far
+Iteration 578: 102.15 sec so far
+Iteration 610: 107.25 sec so far
+Iteration 643: 112.40 sec so far
+Iteration 676: 117.50 sec so far
+Iteration 709: 122.61 sec so far
+Iteration 742: 127.69 sec so far
+Iteration 774: 132.72 sec so far
+Iteration 807: 137.89 sec so far
+Iteration 840: 142.97 sec so far
+Iteration 874: 148.06 sec so far
+Iteration 909: 153.20 sec so far
+Iteration 944: 158.31 sec so far
+Iteration 978: 163.31 sec so far
+Iteration 1014: 168.41 sec so far
+Iteration 1050: 173.43 sec so far
+Iteration 1087: 178.48 sec so far
+Iteration 1125: 183.56 sec so far
+Iteration 1163: 188.56 sec so far
+Iteration 1202: 193.67 sec so far
+Iteration 1239: 198.68 sec so far
+Iteration 1277: 203.76 sec so far
+Iteration 1316: 208.81 sec so far
+Iteration 1356: 213.82 sec so far
+Iteration 1397: 218.85 sec so far
+Iteration 1438: 223.86 sec so far
+Iteration 1479: 228.91 sec so far
+Iteration 1522: 233.94 sec so far
+Iteration 1567: 239.03 sec so far
+Iteration 1613: 244.10 sec so far
+Iteration 1660: 249.16 sec so far
+Iteration 1707: 254.19 sec so far
+Iteration 1754: 259.21 sec so far
+Iteration 1801: 264.22 sec so far
+Iteration 1851: 269.29 sec so far
+Iteration 1902: 274.31 sec so far
+Iteration 1953: 279.32 sec so far
+Iteration 2004: 284.33 sec so far
+Iteration 2055: 289.34 sec so far
+Iteration 2106: 294.42 sec so far
+Iteration 2159: 299.46 sec so far
+Value iteration (with Jacobi) took 2161 iterations, 58335924875 multiplications and 300.044 seconds.
+Probabilistic reachability took 312.32 seconds.
+
+Value in the initial state: 0.6867214589192253
+
+Time for model checking: 312.795 seconds.
+
+Result: 0.6867214589192253 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-umb_check_ex_nand.60-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex -importmodel %indir/prism.model.umb %indir/property.props
+Wallclock time: 304.153 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:48:01 GMT+02:00 2026
+Hostname: n23m0279.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex -importmodel /w0/tmp/slurm_tq429871.4963217/tmp3iaps_bxprism_from-umb_check_ex_nand.60-4_tmp_indir_/prism.model.umb /w0/tmp/slurm_tq429871.4963217/tmp3iaps_bxprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props
+
+Importing model from "prism.model.umb"...
+
+Type:        DTMC
+Actions:     []
+Variables:   x
+Labels:      "target"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4963217/tmp3iaps_bxprism_from-umb_check_ex_nand.60-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "reliable": P=? [ F "target" ]
+
+---------------------------------------------------------------------
+
+Model checking: "reliable": P=? [ F "target" ]
+
+Building model (engine:explicit)...
+
+Time for model construction: 2.033 seconds.
+
+Type:        DTMC
+States:      18826082 (1 initial)
+Transitions: 29772212
+
+Starting probabilistic reachability...
+Calculating predecessor relation for discrete-time Markov chain...  done (2.146 seconds)
+Starting Prob0...
+Prob0 took 3.048 seconds.
+Starting Prob1...
+Prob1 took 6.336 seconds.
+target=6, yes=547, no=1757695, maybe=17067840
+Starting value iteration (with Jacobi)...
+Iteration 29: 5.16 sec so far
+Iteration 58: 10.31 sec so far
+Iteration 86: 15.31 sec so far
+Iteration 114: 20.33 sec so far
+Iteration 143: 25.44 sec so far
+Iteration 172: 30.53 sec so far
+Iteration 201: 35.60 sec so far
+Iteration 230: 40.66 sec so far
+Iteration 259: 45.75 sec so far
+Iteration 288: 50.91 sec so far
+Iteration 318: 56.08 sec so far
+Iteration 348: 61.18 sec so far
+Iteration 378: 66.21 sec so far
+Iteration 409: 71.31 sec so far
+Iteration 440: 76.38 sec so far
+Iteration 470: 81.42 sec so far
+Iteration 501: 86.47 sec so far
+Iteration 532: 91.50 sec so far
+Iteration 564: 96.64 sec so far
+Iteration 596: 101.69 sec so far
+Iteration 629: 106.82 sec so far
+Iteration 662: 111.86 sec so far
+Iteration 695: 116.91 sec so far
+Iteration 729: 122.06 sec so far
+Iteration 763: 127.19 sec so far
+Iteration 797: 132.26 sec so far
+Iteration 832: 137.39 sec so far
+Iteration 867: 142.41 sec so far
+Iteration 903: 147.48 sec so far
+Iteration 939: 152.52 sec so far
+Iteration 975: 157.54 sec so far
+Iteration 1012: 162.68 sec so far
+Iteration 1049: 167.78 sec so far
+Iteration 1087: 172.86 sec so far
+Iteration 1126: 177.94 sec so far
+Iteration 1165: 182.96 sec so far
+Iteration 1205: 188.07 sec so far
+Iteration 1245: 193.17 sec so far
+Iteration 1285: 198.20 sec so far
+Iteration 1326: 203.21 sec so far
+Iteration 1369: 208.30 sec so far
+Iteration 1412: 213.31 sec so far
+Iteration 1456: 218.43 sec so far
+Iteration 1500: 223.50 sec so far
+Iteration 1545: 228.62 sec so far
+Iteration 1592: 233.72 sec so far
+Iteration 1640: 238.79 sec so far
+Iteration 1688: 243.85 sec so far
+Iteration 1737: 248.96 sec so far
+Iteration 1787: 254.01 sec so far
+Iteration 1839: 259.04 sec so far
+Iteration 1893: 264.09 sec so far
+Iteration 1947: 269.13 sec so far
+Iteration 2001: 274.17 sec so far
+Iteration 2055: 279.20 sec so far
+Iteration 2109: 284.24 sec so far
+Value iteration (with Jacobi) took 2161 iterations, 58335924875 multiplications and 289.377 seconds.
+Probabilistic reachability took 300.972 seconds.
+
+Value in the initial state: 0.6867214589192253
+
+Time for model checking: 301.448 seconds.
+
+Result: 0.6867214589192253 (exact floating point)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

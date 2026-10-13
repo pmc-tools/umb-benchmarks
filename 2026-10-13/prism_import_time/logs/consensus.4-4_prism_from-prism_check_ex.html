@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log consensus.4-4_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/consensus.4-4/index.html" target="_blank">consensus.4-4</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[0.391, 0.386, 0.775, 0.341, 0.383]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_consensus.4-4_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 6.418 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 08:57:37 GMT+02:00 2026
+Hostname: r23m0197.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4964314/tmp7r2o8u7dprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4964314/tmp7r2o8u7dprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4964314/tmp7r2o8u7dprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4
+Actions:     [] [done]
+Variables:   counter pc1 coin1 pc2 coin2 pc3 coin3 pc4 coin4
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4964314/tmp7r2o8u7dprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 43136 states
+Reachable states exploration and model construction done in 0.273 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.391 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.082 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.478 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 3.784 seconds.
+Probabilistic reachability took 5.374 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.395 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_consensus.4-4_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 6.857 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:12:53 GMT+02:00 2026
+Hostname: r23m0211.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4965066/tmpqnt4fhaiprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4965066/tmpqnt4fhaiprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4965066/tmpqnt4fhaiprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4
+Actions:     [] [done]
+Variables:   counter pc1 coin1 pc2 coin2 pc3 coin3 pc4 coin4
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965066/tmpqnt4fhaiprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 43136 states
+Reachable states exploration and model construction done in 0.265 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.386 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.085 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.63 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.02 seconds.
+Probabilistic reachability took 5.769 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.79 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_consensus.4-4_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 7.174 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:36:29 GMT+02:00 2026
+Hostname: n23m0308.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4966272/tmprjqx8_okprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4966272/tmprjqx8_okprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4966272/tmprjqx8_okprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4
+Actions:     [] [done]
+Variables:   counter pc1 coin1 pc2 coin2 pc3 coin3 pc4 coin4
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4966272/tmprjqx8_okprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 43136 states
+Reachable states exploration and model construction done in 0.27 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.775 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.089 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.57 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.022 seconds.
+Probabilistic reachability took 5.712 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.734 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_consensus.4-4_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 5.798 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 06:58:26 GMT+02:00 2026
+Hostname: n23m0044.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961059/tmpmmip7l94prism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961059/tmpmmip7l94prism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961059/tmpmmip7l94prism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4
+Actions:     [] [done]
+Variables:   counter pc1 coin1 pc2 coin2 pc3 coin3 pc4 coin4
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961059/tmpmmip7l94prism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 43136 states
+Reachable states exploration and model construction done in 0.239 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.341 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.075 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.336 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 3.482 seconds.
+Probabilistic reachability took 4.918 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 4.935 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_consensus.4-4_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 6.762 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:58:17 GMT+02:00 2026
+Hostname: n23m0252.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4967264/tmp7jl3iaerprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4967264/tmp7jl3iaerprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4967264/tmp7jl3iaerprism_from-prism_check_ex_consensus.4-4_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     process1 process2 process3 process4
+Actions:     [] [done]
+Variables:   counter pc1 coin1 pc2 coin2 pc3 coin3 pc4 coin4
+Labels:      "finished" "agree"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4967264/tmp7jl3iaerprism_from-prism_check_ex_consensus.4-4_tmp_indir_/property.props"...
+
+1 property:
+(1) "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 43136 states
+Reachable states exploration and model construction done in 0.267 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.383 seconds.
+
+Type:        MDP
+States:      43136 (1 initial)
+Transitions: 144352
+Choices:     115840
+Max/avg:     4/2.69
+
+Starting probabilistic reachability (max)...
+Starting Prob0 (max)...
+Prob0 (max) took 149 iterations and 0.088 seconds.
+Starting Prob1 (max)...
+Prob1 (max) took 2595 iterations and 1.531 seconds.
+target=56, yes=10872, no=910, maybe=31354
+Starting value iteration (max, with Power method)...
+Value iteration (max, with Power method) took 6873 iterations, 812168664 multiplications and 4.094 seconds.
+Probabilistic reachability took 5.724 seconds.
+
+Value in the initial state: 0.15605695062063785
+
+Time for model checking: 5.744 seconds.
+
+Result: 0.15605695062063785 (+/- 1.5602125169600354E-6 estimated; rel err 9.99771244250946E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log eajs.6-300-13_prism_from-prism_check_ex</title>
+<link rel="stylesheet" type="text/css" href=../../style.css>
+</head>
+<body>
+<h3>Log files for model <a href="../../models/eajs.6-300-13/index.html" target="_blank">eajs.6-300-13</a> and tool configuration prism_from-prism_check_ex</h3>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Parsed values</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">[120.096, 122.969, 118.186, 120.101, 107.45]</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_eajs.6-300-13_rep1.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 120.096 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 06:58:27 GMT+02:00 2026
+Hostname: n23m0050.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961069/tmpsdgbekr_prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961069/tmpsdgbekr_prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961069/tmpsdgbekr_prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961069/tmpsdgbekr_prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 352502 733438 1114443 1479566 1882003 2247782 2638161 3014677 3393081 3782843 4160704 4554096 4916777 5319543 5676889 6069820 6445212 6833216 7209874 7616255 7901694 states
+Reachable states exploration and model construction done in 62.445 secs.
+Sorting reachable states list...
+
+Time for model construction: 70.892 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 24.981 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 39: 5.07 sec so far
+Iteration 75: 10.07 sec so far
+Iteration 108: 15.09 sec so far
+Iteration 140: 20.14 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.373 seconds.
+Expected reachability took 47.388 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 48.033 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_eajs.6-300-13_rep2.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 122.969 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:07:43 GMT+02:00 2026
+Hostname: n23m0045.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961467/tmptyewzysgprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961467/tmptyewzysgprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961467/tmptyewzysgprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961467/tmptyewzysgprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 310687 670954 1026141 1370000 1737285 2098519 2434865 2808457 3171476 3543878 3940544 4327711 4701796 5087215 5461567 5844372 6232667 6611168 6967706 7324767 7706594 7901694 states
+Reachable states exploration and model construction done in 64.915 secs.
+Sorting reachable states list...
+
+Time for model construction: 73.238 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 25.664 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 38: 5.06 sec so far
+Iteration 74: 10.20 sec so far
+Iteration 107: 15.25 sec so far
+Iteration 138: 20.32 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.977 seconds.
+Expected reachability took 48.686 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 48.973 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_eajs.6-300-13_rep3.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 118.186 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:08:48 GMT+02:00 2026
+Hostname: n23m0047.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4961512/tmpjodcstp8prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4961512/tmpjodcstp8prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4961512/tmpjodcstp8prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4961512/tmpjodcstp8prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 349164 724052 1108833 1481579 1855835 2237621 2630880 3020955 3384722 3778548 4152988 4539516 4937650 5335599 5685064 6071354 6428944 6790620 7180858 7558111 7901694 states
+Reachable states exploration and model construction done in 62.98 secs.
+Sorting reachable states list...
+
+Time for model construction: 70.598 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 24.257 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 39: 5.07 sec so far
+Iteration 75: 10.11 sec so far
+Iteration 109: 15.20 sec so far
+Iteration 141: 20.29 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.341 seconds.
+Expected reachability took 46.63 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 46.894 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_eajs.6-300-13_rep4.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 120.101 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 07:30:24 GMT+02:00 2026
+Hostname: n23m0042.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4962406/tmp1hukfv5rprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4962406/tmp1hukfv5rprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4962406/tmp1hukfv5rprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4962406/tmp1hukfv5rprism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 345087 721907 1101469 1485800 1871932 2237451 2630265 3006007 3409937 3786079 4168940 4569190 4952369 5354299 5729310 6129964 6532407 6908986 7308568 7694424 7901694 states
+Reachable states exploration and model construction done in 61.433 secs.
+Sorting reachable states list...
+
+Time for model construction: 69.324 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 26.05 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 37: 5.02 sec so far
+Iteration 73: 10.16 sec so far
+Iteration 107: 15.31 sec so far
+Iteration 139: 20.47 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 22.878 seconds.
+Expected reachability took 48.96 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 49.479 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+<div class="box">
+<div class="boxlabelo"><div class="boxlabelc">Log file: prism_from-prism_check_ex_eajs.6-300-13_rep5.log</div></div>
+<pre style="overflow:auto; padding-bottom: 1.5ex">Command(s):
+../bin/prism -javamaxmem 32g -buildall -ex %indir/model.prism %indir/property.props
+Wallclock time: 107.450 seconds
+Return code: 0
+##############################
+PRISM
+=====
+
+Version: 4.11
+Date: Tue Oct 13 09:25:56 GMT+02:00 2026
+Hostname: n23m0135.hpc.itc.rwth-aachen.de
+Memory limits: cudd=1g, java(heap)=32g
+Command line: prism -javamaxmem 32g -buildall -ex /w0/tmp/slurm_tq429871.4965755/tmplrr4q3y2prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism /w0/tmp/slurm_tq429871.4965755/tmplrr4q3y2prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props
+
+Parsing PRISM model file "/w0/tmp/slurm_tq429871.4965755/tmplrr4q3y2prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/model.prism"...
+
+Type:        MDP
+Modules:     Battery Process_1 Process_2 Resources Process_3 Process_4 Process_6 Process_5
+Actions:     [tick]
+Variables:   battery_load failure_1 loc_1 t_1 t_2 loc_2 boost_1 user_1 t_3 loc_3 t_4 loc_4 loc_6 t_6 t_5 loc_5
+Labels:      "emptyBattery"
+Rewards:     "utilityLocal"
+
+Parsing properties file "/w0/tmp/slurm_tq429871.4965755/tmplrr4q3y2prism_from-prism_check_ex_eajs.6-300-13_tmp_indir_/property.props"...
+
+1 property:
+(1) "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+---------------------------------------------------------------------
+
+Model checking: "ExpUtil": R{"utilityLocal"}max=? [ F "emptyBattery" ]
+
+Building model (engine:explicit)...
+
+Computing reachable states... 372406 790652 1184820 1609943 2036717 2438862 2882772 3298318 3732431 4175076 4600981 5021523 5464457 5884027 6263219 6708559 7095019 7542458 7901694 states
+Reachable states exploration and model construction done in 56.679 secs.
+Sorting reachable states list...
+
+Time for model construction: 64.957 seconds.
+
+Type:        MDP
+States:      7901694 (1 initial)
+Transitions: 19722777
+Choices:     11897412
+Max/avg:     12/1.51
+Building reward structure...
+
+Starting expected reachability (max)...
+Starting Prob1 (min)...
+Prob1 (min) took 300 iterations and 21.636 seconds.
+target=28620, inf=0, rest=7873074
+Starting value iteration (max, with Power method)...
+Iteration 44: 5.06 sec so far
+Iteration 84: 10.16 sec so far
+Iteration 122: 15.28 sec so far
+Value iteration (max, with Power method) took 153 iterations, 3006649971 multiplications and 19.769 seconds.
+Expected reachability took 41.44 seconds.
+
+Value in the initial state: 12.05111075489705
+
+Time for model checking: 41.701 seconds.
+
+Result: 12.05111075489705 (+/- 7.207646237815938E-5 estimated; rel err 5.980897847849471E-6)
+
+
+##############################Output to stderr##############################
+Picked up JAVA_TOOL_OPTIONS: -Xmx32g
+</pre>
+</div>
+</body>
+</html>
